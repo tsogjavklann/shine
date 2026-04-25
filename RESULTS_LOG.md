@@ -394,6 +394,94 @@ Reason for low main-sample coverage: 25-60 насны хүмүүсийн ихэ�
 
 ---
 
+## CHECKPOINT 2.6 (UPDATED) — Full 14-spec IV Survey — 🎉 NEW BREAKTHROUGH
+
+R/12e_iv_remaining.R-аар үлдсэн 6 IV-ийг шалгасан. Гол найрсаг үр дүн: **teacher_supply_at_17 нь F=46.6, N=8,575 STRONG IV** болсон.
+
+### FULL T2b — 14-spec IV survey (sorted by F desc)
+
+| # | Spec | Family | N | β_IV | SE | **F** | Verdict |
+|---|---|---|---|---|---|---|---|
+| 06 | mother_educ_level | Family | 966 | 0.118 | 0.007 | **117** | ✅ STRONG |
+| 05 | father_educ_level | Family | 658 | 0.067 | 0.011 | **103** | ✅ STRONG |
+| 08 | n_siblings | Family | 1,032 | 0.102 | 0.016 | **84** | ✅ STRONG |
+| 07 | parents_combined | Family | 592 | 0.090 | 0.014 | **64** | ✅ STRONG |
+| **13** | **teacher_supply_at_17** | **Supply** | **8,575** | **0.114** | **0.020** | **46.6** | **✅ STRONG** ⭐ |
+| 11 | birth_aimag_22dummies | Geo | 9,077 | 0.079 | 0.015 | 5.9 | 🟡 MARGINAL |
+| 12-old | distance + reform | Combo | 8,575 | 0.426 | 0.141 | 1.18 | ❌ WEAK |
+| 12-new | aimag × cohort | Combo | 8,575 | 0.076 | 0.012 | 2.80 | ❌ WEAK |
+| 04 | distance_to_ub | Geo | 9,077 | 0.409 | 0.127 | 2.17 | ❌ WEAK |
+| 01 | reform_main | Cohort | 8,575 | 0.891 | 0.799 | 0.54 | 🚨 USELESS |
+| 09 | birth_order | Family | 1,032 | 1.861 | 0.003 | 0.42 | 🚨 USELESS |
+| 03 | reform_alt_1999 | Cohort | 8,772 | 0.593 | 0.806 | 0.29 | 🚨 USELESS |
+| 02 | reform_alt_1997 | Cohort | 8,320 | -8.21 | 99.1 | 0.004 | 🚨 USELESS |
+| **08** | quarter_of_birth | Time | 0 | — | — | NA | ⏸ SKIPPED |
+| **10** | pre_1990_supply | Supply | 0 | — | — | NA | ⏸ SKIPPED |
+| **11** | transition_shock | Time | 0 | — | — | NA | ⏸ SKIPPED |
+| **14** | urbanization_at_17 | Supply | 0 | — | — | NA | ⏸ SKIPPED |
+
+### Skipped specs — empirical reasons
+
+| Spec | Reason |
+|---|---|
+| 08 quarter_of_birth | HSES q0105m нь "нас сараар" (нярай хүүхдэд only, year=0). Adult-уудад month-of-birth бүртгэдэггүй. Angrist-Krueger 1991 design феасибл биш. |
+| 10 pre_1990_supply | NSO API ЕБС data эхлэлийн жил 2001 (DT_NSO_2001_002V1). Pre-1990 schools by aimag data нь NSO-ийн интернет API-д байхгүй. |
+| 11 transition_shock | Aimag-level GDP for 1995-2000 NSO API-д нэмж олдсонгүй. Conceptual specification дутуу. |
+| 14 urbanization_at_17 | DT_NSO_0300_004V1 fetched-сан боловч parsing-д Хот/Хөдөө dimension breakdown олдсонгүй (table нь aggregate-аар байна). 추가 NSO table search шаардлагатай. |
+
+### КЛЮЧ: Spec 13 teacher_supply_at_17 — game-changer
+
+🌟 **F = 46.6, β = 0.114, N = 8,575**
+
+- **Family B (Card/Duflo supply-side identification)**: Teacher count in birth aimag at year (birth_year + 17) — when respondent decided about post-secondary education
+- **Strong first stage**: F = 46.6 ≫ 10 threshold
+- **Full main_sample**: N = 8,575 (post-donut filter, all home_aimag valid)
+- **Sensible β**: 11.4% return per year of schooling — well above OLS (5.9%) but in IV literature range
+- **Identification**: teacher availability when 17 affected schooling decisions but not adult labour-market productivity directly (assumption defensible)
+
+Caveat: Teacher_supply_at_17-аас school_access (q_home, 6-17 насны schools/students density) хоёр нь хоёулаа birth_aimag supply-side variables — collinearity/exclusion concern байж болзошгүй. R/14_caner_hansen_main.R-д IVTR threshold estimation-д ашиглахдаа teacher_supply нь IV, school_access нь threshold variable байх — өөр өөр хувьсагч (different age windows + different counts). Robust orthogonalization шаардлагатай.
+
+### NEW STRATEGY OPTIONS — шинэчлэгдсэн
+
+| Option | IV (main) | N | F | Threshold | Recommend? |
+|---|---|---|---|---|---|
+| **A** PIVOT to OLS | none | 9,077 | n/a | OLS-Threshold | clean но no IV |
+| B'1 mother_educ | mother | 966 | 117 | small N issue | small sample |
+| B'2 birth_aimag | 22-dummy | 9,077 | 5.9 | AR-CI mandatory | marginal F |
+| B'3 Combo (family + birth_aimag) | both | both | 5.9-117 | mixed | rich but complex |
+| **B'4** ⭐ **teacher_supply_at_17** | **teacher_at_17** | **8,575** | **46.6** | **✅ Full sample IVTR** | ⭐⭐⭐ **NEW BEST** |
+| B'5 Combo (B'4 + family robustness) | teacher main + mother robust | 8,575 + 966 | 46.6 + 117 | full N | richest |
+
+### МИНИЙ ШИНЭЧИЛСЭН САНАЛ: **B'5 (Combo)** — teacher_supply_at_17 main + family IV robustness
+
+**Paper structure (recommended UPDATE):**
+1. **§4 Main results**:
+   - 4.1 OLS Mincer baseline (β = 0.059, F = 355, N = 9,077)
+   - 4.2 **Main IV: teacher_supply_at_17 (β = 0.114, F = 46.6, N = 8,575)** — Card/Duflo supply-side
+   - 4.3 OLS-Threshold AND IVTR by school_access (q_home), N = 8,575 — full Caner-Hansen 2004
+2. **§5 Robustness**:
+   - 5.1 Family IV: mother_educ (β = 0.118, F = 117, N = 966) — confirms IV β ~ 0.11
+   - 5.2 birth_aimag 22-dummy IV (β = 0.079, F = 5.9, AR-robust) — geographic robustness
+   - 5.3 Reform IV (cohort design) **documented as FAILED** — Mongolia-specific story
+3. **§6 Discussion**:
+   - Why cohort IV fails in Mongolia (high baseline education, boarding schools)
+   - Heterogeneity: schools_per_1000_students threshold separates "low-access" vs "high-access" returns
+
+### Гарц
+
+- [output/tables/T2b_iv_search.csv](output/tables/T2b_iv_search.csv) — FULL 17-row IV survey
+- [R/12e_iv_remaining.R](R/12e_iv_remaining.R) — remaining 6 specs
+- [output/logs/12e_iv_remaining.log](output/logs/12e_iv_remaining.log)
+
+### Хүлээж байна — UPDATED FINAL CHOICE
+
+🟡 **A / B'1 / B'2 / B'3 / B'4 / B'5?**
+
+Strongest recommendation: **B'5** (teacher_supply_at_17 main + family IV robustness).
+Alternative: **B'4** (teacher_supply alone) for simpler paper structure.
+
+---
+
 ## Долоо хоног 3 — IVTR (TBD)
 | # | Скрипт | Статус |
 |---|---|---|

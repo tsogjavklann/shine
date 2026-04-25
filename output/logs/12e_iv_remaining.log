@@ -1,0 +1,57 @@
+==========================================================
+12e_iv_remaining.R — Remaining 6 IV specs   2026-04-26 07:28:55.586418 
+==========================================================
+
+NEW BLOCK results (specs 8, 10, 11, 12, 13, 14):
+# A tibble: 6 × 12
+  spec    family     N iv    pi_hat se_pi  t_pi F_first beta_iv se_beta sargan_p
+  <chr>   <chr>  <int> <chr>  <dbl> <dbl> <dbl>   <dbl>   <dbl>   <dbl>    <dbl>
+1 12 aim… Combo   8575 as.f…     NA    NA    NA    2.80  0.0762  0.0115        1
+2 13 tea… Supply  8575 teac…     NA    NA    NA   46.6   0.114   0.0198       NA
+3 14 urb… Supply     0 urba…     NA    NA    NA   NA    NA      NA            NA
+4 08 qua… Time       0 as.f…     NA    NA    NA   NA    NA      NA            NA
+5 10 pre… Supply     0 pre_…     NA    NA    NA   NA    NA      NA            NA
+6 11 tra… Time       0 aima…     NA    NA    NA   NA    NA      NA            NA
+# ℹ 1 more variable: verdict <chr>
+
+FULL 14-spec T2b table (sorted by F desc):
+# A tibble: 17 × 12
+   spec    family     N iv      pi_hat   se_pi    t_pi  F_first beta_iv  se_beta
+   <chr>   <chr>  <dbl> <chr>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>    <dbl>
+ 1 06 mot… Family   966 moth…  0.512    0.0472 10.8     1.17e+2  0.118   0.00717
+ 2 05 fat… Family   658 fath…  0.476    0.0469 10.1     1.03e+2  0.0672  0.0113 
+ 3 08 n_s… Family  1032 n_si… -0.177    0.0193 -9.19    8.44e+1  0.102   0.0155 
+ 4 07 par… Family   592 fath… NA       NA      NA       6.35e+1  0.0898  0.0140 
+ 5 13 tea… Supply  8575 teac… NA       NA      NA       4.66e+1  0.114   0.0198 
+ 6 11 bir… Geogr…  9077 as.f… NA       NA      NA       5.90e+0  0.0791  0.0151 
+ 7 12 aim… Combo   8575 as.f… NA       NA      NA       2.80e+0  0.0762  0.0115 
+ 8 04 dis… Geogr…  9077 dist… -0.00015  0.0001 -1.47    2.17e+0  0.409   0.127  
+ 9 12 dis… Combo   8575 dist… NA       NA      NA       1.18e+0  0.426   0.141  
+10 01 ref… Cohort  8575 refo…  0.0740   0.100   0.738   5.44e-1  0.891   0.799  
+11 09 bir… Family  1032 birt… -0.0179   0.0275 -0.648   4.20e-1  1.86    0.00292
+12 03 ref… Cohort  8772 refo…  0.0723   0.134   0.538   2.89e-1  0.593   0.806  
+13 02 ref… Cohort  8320 refo… -0.00633  0.104  -0.0608  3.69e-3 -8.21   99.1    
+14 14 urb… Supply     0 urba… NA       NA      NA      NA       NA      NA      
+15 08 qua… Time       0 as.f… NA       NA      NA      NA       NA      NA      
+16 10 pre… Supply     0 pre_… NA       NA      NA      NA       NA      NA      
+17 11 tra… Time       0 aima… NA       NA      NA      NA       NA      NA      
+# ℹ 2 more variables: sargan_p <dbl>, verdict <chr>
+
+Verdict summary:
+
+      ⏸ SKIPPED — aimag-GDP 1995-2000 NSO API-д нэмж олдсонгүй; conceptual specification дутуу 
+                                                                                             1 
+                                 ⏸ SKIPPED — NSO API эхлэлийн жил 2001 (pre-1990 data байхгүй) 
+                                                                                             1 
+⏸ SKIPPED — q0105m нь нярай нас (НЕ birth month); HSES adult-уудад month-of-birth бүртгэдэггүй 
+                                                                                             1 
+                                                                        ⏭ N=0 < 1000 (skipped) 
+                                                                                             1 
+                                                                              ✅ STRONG (F≥10) 
+                                                                                             5 
+                                                                                 ❌ WEAK (F<5) 
+                                                                                             3 
+                                                                              🚨 USELESS (F<1) 
+                                                                                             4 
+                                                                        🟡 MARGINAL (F∈[5,10)) 
+                                                                                             1 

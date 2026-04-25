@@ -51,6 +51,7 @@ output/logs/10_run.log
 output/logs/11_run.log
 output/logs/12_run.log
 output/logs/12b_run.log
+output/logs/12e_run.log
 output/logs/_nso_test.log
 # Үлдэгдэл: setup.log, NN_<scriptname>.log (per-script structured logs), all *.csv
 
