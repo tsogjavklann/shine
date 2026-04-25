@@ -1,0 +1,26 @@
+==========================================================
+03b_family_structure.R лог   2026-04-26 07:07:48.098065 
+==========================================================
+Total roster rows extracted: 234690
+
+Coverage by wave (in full indiv panel):
+# A tibble: 4 × 7
+   wave n_total n_child_of_head pct_father_educ pct_mother_educ pct_n_siblings
+  <int>   <int>           <int>           <dbl>           <dbl>          <dbl>
+1  2020   59737           27173            38.8            44.4           45.5
+2  2021   40129           18236            38.6            44.3           45.4
+3  2022   80926           36845            38.7            44.4           45.5
+4  2024   53898           24520            39.0            44.1           45.5
+# ℹ 1 more variable: pct_age_m <dbl>
+
+Effective coverage in MAIN home_aimag wage panel (n=9,077):
+# A tibble: 1 × 9
+  n_main_home n_father_educ n_mother_educ n_either_parent n_siblings_obs
+        <int>         <int>         <int>           <int>          <int>
+1        9077           658           966            1032           1032
+# ℹ 4 more variables: pct_father_educ <dbl>, pct_mother_educ <dbl>,
+#   pct_either_parent <dbl>, pct_siblings <dbl>
+
+Decision rule:
+  - n_either_parent ≥ 3,000: parental IV viable
+  - n_siblings_obs ≥ 3,000: siblings IV viable

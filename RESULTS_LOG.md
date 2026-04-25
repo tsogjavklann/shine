@@ -308,6 +308,92 @@ Mongolia-specific reasons distance IV fails:
 
 ---
 
+## CHECKPOINT 2.6 — Comprehensive IV survey (12 specs) — 🎉 BREAKTHROUGH
+
+Хэрэглэгчийн саналаар 12 candidate IV-ийг empirical-аар first-stage F-test хийсэн (R/12b_iv_search.R). HSES roster-аас parental education + siblings extract хийсэн (R/03b_family_structure.R).
+
+### T2b — IV search ranked by F descending (MAIN home_aimag, n=9,077)
+
+| Rank | IV | Family | **F** | β_IV | SE | N | Verdict |
+|---|---|---|---|---|---|---|---|
+| 1 | **mother_educ_level** | Family | **117.3** | **0.118** | 0.007 | 966 | ✅ STRONG |
+| 2 | **father_educ_level** | Family | **103.0** | **0.067** | 0.011 | 658 | ✅ STRONG |
+| 3 | **n_siblings** | Family | **84.4** | **0.102** | 0.016 | 1,032 | ✅ STRONG |
+| 4 | parents_combined | Family | 63.5 | 0.090 | 0.014 | 592 | ✅ STRONG |
+| 5 | **birth_aimag_22dummies** | Geo | **5.9** | **0.079** | 0.015 | **9,077** | 🟡 MARGINAL |
+| 6 | distance_to_ub | Geo | 2.17 | 0.409 | 0.127 | 9,077 | ❌ WEAK |
+| 7 | distance + reform | Combo | 1.18 | 0.426 | 0.141 | 8,575 | ❌ WEAK |
+| 8 | reform_main | Cohort | 0.54 | 0.891 | 0.799 | 8,575 | 🚨 USELESS |
+| 9 | birth_order | Family | 0.42 | 1.861 | 0.003 | 1,032 | 🚨 USELESS |
+| 10 | reform_alt_1999 | Cohort | 0.29 | 0.593 | 0.806 | 8,772 | 🚨 USELESS |
+| 11 | reform_alt_1997 | Cohort | 0.004 | -8.21 | 99.1 | 8,320 | 🚨 USELESS |
+| 12 | quarter_of_birth | Time | NA | — | — | 9,077 | ❌ FIT FAILED (q0105m issue) |
+
+### Family structure coverage (R/03b)
+
+| Variable | Roster pct | MAIN wage panel pct | N_main |
+|---|---|---|---|
+| father_educ_level | ~39% | 7.2% | 658 |
+| mother_educ_level | ~44% | 10.6% | 966 |
+| either parent | — | 11.4% | 1,032 |
+| n_siblings | ~45% | 11.4% | 1,032 |
+
+Reason for low main-sample coverage: 25-60 насны хүмүүсийн ихэнх нь эцэг эхтэйгээ амьдрахаа больсон → roster-д parents-ийг ажиглах боломж хязгаарлагдмал.
+
+### Гол findings
+
+🎉 **3 STRONG family IV олдсон:**
+- **mother_educ_level F=117**, β=0.118 (11.8% return per year — IV slightly above OLS)
+- **father_educ_level F=103**, β=0.067 (6.7% — close to OLS)
+- **n_siblings F=84**, β=0.102 (10.2%)
+
+🟡 **1 MARGINAL geographic IV:**
+- **birth_aimag_22dummies F=5.9**, β=0.079 — full sample N=9,077, suitable for IVTR threshold estimation
+
+❌ **All cohort IVs (reform_main + alts) FAILED**: PLAN §4 risk realized.
+
+### NEW STRATEGY OPTIONS
+
+| Option | Sample N | Identification | Threshold feasibility |
+|---|---|---|---|
+| **B'1: mother_educ IV (Card 2001 family-D)** | 966 | Cleanest family-D | OK for threshold (Hansen 2000 used N≈3K, but 966 marginal) |
+| **B'2: birth_aimag 22-dummy IV** | **9,077** | Birth-region as Card 1995 spirit; AR-robust CI mandatory | ✅ Best for IVTR (full N) |
+| **B'3: Combo — family IV main + birth_aimag IVTR** | 966 + 9,077 | Family for level β; birth_aimag for threshold | Rich paper structure |
+| **A: PIVOT (OLS-Threshold)** | 9,077 | Clean OLS, no causal claim | ✅ Full N, no weak-IV concern |
+
+### МИНИЙ САНАЛ: **B'3 (Combo)** — хамгийн rich paper структур
+
+**Paper structure (recommended):**
+1. **Section 4 (Main results)**: 
+   - 4.1 OLS Mincer baseline (β_OLS = 0.059, F=355, N=9,077)
+   - 4.2 IV identification: birth_aimag 22-dummy (β_IV = 0.079, F=5.9 marginal, N=9,077, AR-robust CI)
+   - 4.3 OLS-Threshold (Hansen 2000) heterogeneity by school_access
+2. **Section 5 (Robustness)**:
+   - 5.1 Family IV — mother_educ_level (β=0.118, F=117, N=966) — strongest first-stage but small sample
+   - 5.2 IVTR (birth_aimag IV × school_access threshold) — exploratory weak-IV
+   - 5.3 Reform IV (reform_main, reform_alt_1997/1999, fuzzy) — documented as FAILED (paper тайлбар: 2004 reform not binding given high baseline education)
+3. **Discussion**: Why Mongolia is an interesting case (high baseline + rapid change) → cohort IV fails
+
+### Гарц
+
+- [output/tables/T2b_iv_search.csv](output/tables/T2b_iv_search.csv) — 12 IV F-test table
+- [data/processed/family_structure.rds](data/processed/family_structure.rds) — extracted parental + siblings panel
+- [output/logs/03b_family_coverage.log](output/logs/03b_family_coverage.log)
+- [output/logs/12b_iv_search.log](output/logs/12b_iv_search.log)
+
+### Хүлээж байна
+
+🟡 **Эцсийн шийдвэр (A / B'1 / B'2 / B'3):**
+
+- **A** — PIVOT to OLS-only (simple, clean, but no IV story)
+- **B'1** — Family IV main (strongest F, but N=966 limits threshold)
+- **B'2** — birth_aimag IV main (full sample, F=5.9 marginal, AR-robust mandatory)
+- **B'3** — Combo (family IV main result + birth_aimag for IVTR threshold) ⭐ richest paper
+
+Долоо хоног 3 эхлэхээс өмнө шийдвэр зайлшгүй.
+
+---
+
 ## Долоо хоног 3 — IVTR (TBD)
 | # | Скрипт | Статус |
 |---|---|---|

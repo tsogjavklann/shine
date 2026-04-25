@@ -1,0 +1,13 @@
+spec,family,N,iv,pi_hat,se_pi,t_pi,F_first,beta_iv,se_beta,sargan_p,verdict
+06 mother_educ_level,Family,966,mother_educ_level,0.51156,0.04724,10.82941,117.2761,0.1179,0.00717,NA,✅ STRONG (F≥10)
+05 father_educ_level,Family,658,father_educ_level,0.47618,0.04693,10.1466,102.95344,0.0672,0.01126,NA,✅ STRONG (F≥10)
+08 n_siblings,Family,1032,n_siblings,-0.17741,0.01931,-9.18911,84.43968,0.10195,0.01553,NA,✅ STRONG (F≥10)
+07 parents_combined,Family,592,father_educ_level + mother_educ_level,NA,NA,NA,63.5037,0.08976,0.01405,1,✅ STRONG (F≥10)
+11 birth_aimag_factor,Geography,9077,as.factor(birth_aimag),NA,NA,NA,5.89513,0.07908,0.01509,1,"🟡 MARGINAL (F∈[5,10))"
+04 distance_to_ub,Geography,9077,distance_to_ub,-1.5e-4,1e-4,-1.47238,2.1679,0.40879,0.12676,NA,❌ WEAK (F<5)
+12 distance + reform,Combo,8575,distance_to_ub + reform_main,NA,NA,NA,1.17566,0.42557,0.14066,1,❌ WEAK (F<5)
+01 reform_main,Cohort,8575,reform_main,0.07403,0.10038,0.73754,0.54397,0.89097,0.79878,NA,🚨 USELESS (F<1)
+09 birth_order,Family,1032,birth_order,-0.01786,0.02754,-0.64837,0.42039,1.86133,0.00292,NA,🚨 USELESS (F<1)
+03 reform_alt_1999,Cohort,8772,reform_alt_1999,0.07227,0.13441,0.53769,0.28911,0.59335,0.80608,NA,🚨 USELESS (F<1)
+02 reform_alt_1997,Cohort,8320,reform_alt_1997,-0.00633,0.10419,-0.06075,0.00369,-8.21131,99.13009,NA,🚨 USELESS (F<1)
+10 quarter_of_birth,Time,9077,as.factor(quarter_birth),NA,NA,NA,NA,NA,NA,NA,❌ FIT FAILED
