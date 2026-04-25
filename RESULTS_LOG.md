@@ -233,6 +233,81 @@ PLAN §4 эрсдэлийн хүснэгтэд урьдчилан тэмдэгл
 
 ---
 
+## CHECKPOINT 2.5 — Geographic IV (Card 1995, distance to UB) — ⚠️ ALSO WEAK
+
+Хэрэглэгчийн саналаар Option B-ийг шалгасан: distance from birth aimag to Ulaanbaatar.
+
+### Setup
+
+- 22 aimag-center coordinates hand-coded (Wikipedia)
+- Haversine distance (km) to UB Sukhbaatar Square (47.918°N, 106.917°E)
+- Range: **0 km (UB)** → **1,253 km (Bayan-Olgii)**
+
+### First-stage F results (MAIN home_aimag, n=9,077)
+
+| Spec | π̂_distance | SE_2way | t-stat | p-value | **F** | R²_adj |
+|---|---|---|---|---|---|---|
+| 1) distance only, wave FE | -1.9e-4 | 9.5e-5 | -1.96 | 0.050 | **3.84** | 0.060 |
+| 2) **distance + region FE + wave FE (canonical)** | -1.5e-4 | 1.0e-4 | -1.47 | 0.141 | **2.17** | 0.067 |
+| 3) + location FE (Main B-style) | -1.5e-4 | 1.0e-4 | -1.53 | 0.127 | **2.33** | 0.069 |
+
+🔴 **F = 2.17 in canonical spec — STILL VERY WEAK (<5).**
+
+### Sign analysis
+
+- π̂_distance = -1.5e-4 years per km — **Card-style sign correct** (farther → less education)
+- Magnitude: UB (0 km) → Bayan-Olgii (1,253 km) gives Δeduc = -1.5e-4 × 1253 ≈ **-0.19 years**
+- Empirically tiny effect
+
+### Birth-aimag panel sizes + mean educ_years
+
+| Aimag (sample) | Distance km | N | mean_educ |
+|---|---|---|---|
+| UB (11) | 0 | 1,231 | 13.4 |
+| Tov (41) | 24 | 547 | 12.3 |
+| Erdenet (61) | 243 | 148 | 13.2 |
+| Khovsgol (67) | 530 | 428 | 13.0 |
+| Bayan-Olgii (83) | 1,253 | 332 | 12.5 |
+
+→ Mean educ_years variation **across aimags only 0.9 years** (12.2-13.4 range). Mongolia's baseline education is uniformly high → distance IV magnitude tiny → weak first stage.
+
+### Diagnosis
+
+Mongolia-specific reasons distance IV fails:
+1. **Boarding schools (дотуур байр)** at soum/aimag centres → distance to UB doesn't deter education
+2. **Universal compulsory education** since 1990s → 9-11 years of schooling regardless of geography
+3. **Inter-aimag mobility for education** common (rural students move to UB universities)
+
+### Verdict on Option B
+
+❌ **Distance-to-UB IV does NOT solve the weak-IV problem.** F=2.17 is below the F=5 threshold. Same trigger as reform_main IV.
+
+### Strategy update
+
+| Option | Status |
+|---|---|
+| **A) PIVOT to OLS-Quantile/Threshold MAIN** ⭐ | ✅ **Strongly recommended now** — both IV designs failed |
+| B) Alternative IV (distance to UB) | ❌ Just tested — also F < 5 |
+| B') Other IV (parental educ, sibling count) | Possible but unlikely to work given the structural issue |
+| C) Continue IV with caveats | Now equivalent to Option A in practice |
+| D) Restructure topic | Same as before |
+
+**Conclusion:** The data simply does not support a strong IV identification of the schooling-wage relationship in Mongolia (high baseline education + small effective variation). **PIVOT to OLS Mincer + Hansen (2000) OLS-Threshold heterogeneity** is the only academically defensible path forward.
+
+### Гарц
+
+- [output/tables/T_2_5_distance_iv_first_stage.csv](output/tables/T_2_5_distance_iv_first_stage.csv)
+- [data/aux/aimag_distance_to_ub.csv](data/aux/aimag_distance_to_ub.csv)
+- [output/logs/05c_distance_iv.log](output/logs/05c_distance_iv.log)
+
+### Хүлээж байна
+
+🟡 **Эцсийн зөвшөөрөл (A vs other):**
+- **A (PIVOT)** → R/13_threshold_grid.R-ыг OLS threshold болгож шинэчилнэ; R/14-аас IVTR-ыг exploratory section болгож хадгална. Mincer + OLS-Threshold (Hansen 2000) framework-аар paper-ийг ажиллуулна.
+- **B' (өөр IV)** → Хэрэв танаас урам зориг авах боломжтой parental education / pre-reform regional spending-ийн өөр IV байгаа бол шалгая (~1 долоо хоног).
+
+---
+
 ## Долоо хоног 3 — IVTR (TBD)
 | # | Скрипт | Статус |
 |---|---|---|
