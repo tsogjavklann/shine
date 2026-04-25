@@ -1,0 +1,32 @@
+==========================================================
+05_education_supply.R лог   2026-04-26 05:48:22.82173 
+==========================================================
+Wage panel rows:           43070
+home_aimag valid q_home:   9849 (22.87%)
+newaimag valid q_new:      23331 (54.17%)
+
+Decision: ASK_USER
+
+school_access distribution:
+# A tibble: 2 × 9
+  label      n  mean    sd    p5   p25 median   p75   p95
+  <chr>  <int> <dbl> <dbl> <dbl> <dbl>  <dbl> <dbl> <dbl>
+1 q_home  9849  1.55 0.379 0.898  1.27   1.52  1.87  2.13
+2 q_new  23331  1.39 0.408 0.890  1.00   1.38  1.74  2.06
+
+ed_supply year range: 2000-2025
+ed_supply by year (n_aimags):
+# A tibble: 26 × 2
+    year     n
+   <int> <int>
+ 1  2000    22
+ 2  2001    22
+ 3  2002    22
+ 4  2003    22
+ 5  2004    22
+ 6  2005    22
+ 7  2006    22
+ 8  2007    22
+ 9  2008    22
+10  2009    22
+# ℹ 16 more rows

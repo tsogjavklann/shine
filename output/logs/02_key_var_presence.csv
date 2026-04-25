@@ -1,0 +1,36 @@
+var_name,label,w2020_basicvars,w2020_indiv,w2021_basicvars,w2021_indiv,w2022_basicvars,w2022_indiv,w2023_basicvars,w2023_hhold,w2023_indiv,w2024_basicvars,w2024_indiv
+q0436a,4.36 [НЭР] нь сүүлийн 12 сард үндсэн ажлаасаа х,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+q0436a,4.36 [НЭР] нь сүүлийн 12 сард үндсэн ажлаасаа хэдэн төгрөгийн цалин авсан бэ? Сү,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+q0436b,4.36 [НЭР] нь сүүлийн 12 сард үндсэн ажлаасаа х,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+q0436b,4.36 [НЭР] нь сүүлийн 12 сард үндсэн ажлаасаа хэдэн төгрөгийн цалин авсан бэ? Сү,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+q0437,4.37 [НЭР] энэ ажлыг хэдэн сар хийсэн бэ?,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+q0438,4.38 [НЭР] ажилласан сарууддаа энэ ажилд сард,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+q0438,4.38 [НЭР] ажилласан сарууддаа энэ ажилд сард  дунджаар  хэдэн өдөр зарцуулсан б,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+q0439,4.39 [НЭР] ажилласан саруудын өдрүүддээ энэ а,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+q0439,4.39 [НЭР] ажилласан саруудын өдрүүддээ энэ ажилд өдөрт   дунджаар хэдэн цаг зар,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+q0427,4.27 [НЭР] сүүлийн 7 хоногт үндсэн ажилдаа ний,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+q0427,4.27 [НЭР] сүүлийн 7 хоногт үндсэн ажилдаа нийтдээ хэдэн цаг зарцуулсан бэ?,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+q0414,4.14 Сүүлийн 12 сард энэ үйл ажиллагаанаас олс,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+q0414,4.14 Сүүлийн 12 сард энэ үйл ажиллагаанаас олсон орлого нь тухайн хугацаанд тана,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+q0118a,"1.18 [НЭР] хамгийн сүүлд аль аймаг, сумаас шил",FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+q0118a,"1.18 [НЭР] хамгийн сүүлд аль аймаг, сумаас шилжиж ирсэн бэ? Аймаг/ Нийслэл",FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+q0118a,1.18 [НЭР] хаана төрсөн бэ? Аймаг/ Нийслэл,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE
+q0306,"3.06 [НЭР] сүүлийн 30 хоногт өвдөж, гэмтсэн үү?",FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+q0306,"3.06 Сүүлийн 12 сард танай өрх ноос, ноолуур, арьс, шир, сүү болон бусад бүтээгд",FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+q0307,3.07 [НЭР] сүүлийн 30 хоногт ер нь (өвдсөн эсвэл,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+q0307,3.07 [НЭР] сүүлийн 30 хоногт ер нь (өвдсөн эсвэл  урьдчилан сэргийлэх зорилгоор),FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+q0308,3.08 [НЭР] ӨВДСӨН ХЭДИЙ Ч ЭМНЭЛЭГТ ХАНДААГҮЙ Э,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+q0308,3.08 [НЭР] ӨВДСӨН ХЭДИЙ Ч ЭМНЭЛЭГТ ХАНДААГҮЙ ЭСЭХИЙГ ШАЛГА.,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+q0102,1.02 Өрхийн тэргүүлэгчтэй ямар хамааралтай в,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+q0102,1.02 Өрхийн тэргүүлэгчтэй ямар хамааралтай вэ?,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE
+q0103,1.03 Хүйс,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE
+q0104,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+q0202,2.02 ХАРИУЛЖ БАЙГАА ХҮНИЙ ХУВИЙН ДУГААРЫГ  БИ,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+q0202,2.02 ХАРИУЛЖ БАЙГАА ХҮНИЙ ХУВИЙН ДУГААРЫГ  БИЧНЭ ҮҮ,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+q0202,2.02 Энэ гишүүн өөрөө хариулж байна уу?,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+newaimag,New code of aimag,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE
+aimag,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+newsoum,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+intmonth,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+intyear,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+yymm,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA

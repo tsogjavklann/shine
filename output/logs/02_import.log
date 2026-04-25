@@ -1,0 +1,68 @@
+==========================================================
+02_import_hses.R лог   2026-04-26 04:47:56.883802 
+==========================================================
+Файл олдсон: 15 / 15
+Нийт мөр (бүх 15 файл): 414408
+
+--- Wave × file × n_rows ---
+# A tibble: 15 × 5
+    wave type      file               n_rows n_cols
+   <int> <chr>     <chr>               <int>  <int>
+ 1  2020 basicvars basicvars (11).dta  16460     11
+ 2  2021 basicvars basicvars (12).dta  11199     11
+ 3  2022 basicvars basicvars (13).dta  22995     12
+ 4  2023 basicvars basicvars (14).dta   8550     12
+ 5  2024 basicvars basicvars.dta       15513     14
+ 6  2020 hhold     01_hhold (11).dta   16460     90
+ 7  2021 hhold     01_hhold (12).dta   11199     90
+ 8  2022 hhold     01_hhold (13).dta   22995    111
+ 9  2023 hhold     01_hhold (14).dta    8550     47
+10  2024 hhold     01_hhold.dta        15513    132
+11  2020 indiv     02_indiv (12).dta   59737    177
+12  2021 indiv     02_indiv (13).dta   40129    177
+13  2022 indiv     02_indiv (14).dta   80926    177
+14  2023 indiv     02_indiv (15).dta   30284     27
+15  2024 indiv     02_indiv.dta        53898    184
+
+--- Key variable presence (T/F) ---
+# A tibble: 35 × 13
+   var_name label        w2020_basicvars w2020_indiv w2021_basicvars w2021_indiv
+   <chr>    <chr>        <lgl>           <lgl>       <lgl>           <lgl>      
+ 1 q0436a   4.36 [НЭР] … FALSE           TRUE        FALSE           FALSE      
+ 2 q0436a   4.36 [НЭР] … FALSE           FALSE       FALSE           TRUE       
+ 3 q0436b   4.36 [НЭР] … FALSE           TRUE        FALSE           FALSE      
+ 4 q0436b   4.36 [НЭР] … FALSE           FALSE       FALSE           TRUE       
+ 5 q0437    4.37 [НЭР] … FALSE           TRUE        FALSE           TRUE       
+ 6 q0438    4.38 [НЭР] … FALSE           TRUE        FALSE           FALSE      
+ 7 q0438    4.38 [НЭР] … FALSE           FALSE       FALSE           TRUE       
+ 8 q0439    4.39 [НЭР] … FALSE           TRUE        FALSE           FALSE      
+ 9 q0439    4.39 [НЭР] … FALSE           FALSE       FALSE           TRUE       
+10 q0427    4.27 [НЭР] … FALSE           TRUE        FALSE           FALSE      
+11 q0427    4.27 [НЭР] … FALSE           FALSE       FALSE           TRUE       
+12 q0414    4.14 Сүүлий… FALSE           TRUE        FALSE           FALSE      
+13 q0414    4.14 Сүүлий… FALSE           FALSE       FALSE           TRUE       
+14 q0118a   1.18 [НЭР] … FALSE           TRUE        FALSE           FALSE      
+15 q0118a   1.18 [НЭР] … FALSE           FALSE       FALSE           TRUE       
+16 q0118a   1.18 [НЭР] … FALSE           FALSE       FALSE           FALSE      
+17 q0306    3.06 [НЭР] … FALSE           TRUE        FALSE           TRUE       
+18 q0306    3.06 Сүүлий… FALSE           FALSE       FALSE           FALSE      
+19 q0307    3.07 [НЭР] … FALSE           TRUE        FALSE           FALSE      
+20 q0307    3.07 [НЭР] … FALSE           FALSE       FALSE           TRUE       
+21 q0308    3.08 [НЭР] … FALSE           TRUE        FALSE           FALSE      
+22 q0308    3.08 [НЭР] … FALSE           FALSE       FALSE           TRUE       
+23 q0102    1.02 Өрхийн… FALSE           TRUE        FALSE           FALSE      
+24 q0102    1.02 Өрхийн… FALSE           FALSE       FALSE           TRUE       
+25 q0103    1.03 Хүйс    FALSE           TRUE        FALSE           TRUE       
+26 q0104    <NA>         NA              NA          NA              NA         
+27 q0202    2.02 ХАРИУЛ… FALSE           TRUE        FALSE           FALSE      
+28 q0202    2.02 ХАРИУЛ… FALSE           FALSE       FALSE           TRUE       
+29 q0202    2.02 Энэ ги… FALSE           FALSE       FALSE           FALSE      
+30 newaimag New code of… TRUE            FALSE       TRUE            FALSE      
+31 aimag    <NA>         NA              NA          NA              NA         
+32 newsoum  <NA>         NA              NA          NA              NA         
+33 intmonth <NA>         NA              NA          NA              NA         
+34 intyear  <NA>         NA              NA          NA              NA         
+35 yymm     <NA>         NA              NA          NA              NA         
+# ℹ 7 more variables: w2022_basicvars <lgl>, w2022_indiv <lgl>,
+#   w2023_basicvars <lgl>, w2023_hhold <lgl>, w2023_indiv <lgl>,
+#   w2024_basicvars <lgl>, w2024_indiv <lgl>

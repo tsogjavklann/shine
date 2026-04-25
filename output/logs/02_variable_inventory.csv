@@ -1,0 +1,1273 @@
+wave,file_type,var_name,var_label,var_class
+2020,basicvars,identif,group(identif),numeric
+2020,basicvars,cluster,Түүврийн нэгжийн дугаар,numeric
+2020,basicvars,newaimag,New code of aimag,haven_labelled
+2020,basicvars,location,Strata 4 locations,haven_labelled
+2020,basicvars,urban,Urban/rural,haven_labelled
+2020,basicvars,region,Region,haven_labelled
+2020,basicvars,month,Calendar month of the interview,numeric
+2020,basicvars,quarter,Calendar quarter of the interview,numeric
+2020,basicvars,strata,Strata 3,numeric
+2020,basicvars,hhweight,Last weight,numeric
+2020,basicvars,hhsize,Household size,numeric
+2021,basicvars,identif,group(identif),numeric
+2021,basicvars,cluster,Түүврийн нэгжийн дугаар,haven_labelled
+2021,basicvars,newaimag,New code of aimag,haven_labelled
+2021,basicvars,location,Strata 4 locations,haven_labelled
+2021,basicvars,urban,Urban/rural,haven_labelled
+2021,basicvars,region,Region,haven_labelled
+2021,basicvars,month,Calendar month of the interview,numeric
+2021,basicvars,quarter,Calendar quarter of the interview,numeric
+2021,basicvars,strata,Strata 3,numeric
+2021,basicvars,hhsize,Household size,numeric
+2021,basicvars,hhweight,NA,numeric
+2022,basicvars,identif,group(identif),numeric
+2022,basicvars,cluster,Түүврийн нэгжийн дугаар,haven_labelled
+2022,basicvars,newaimag,New code of aimag,haven_labelled
+2022,basicvars,location,Strata 4 locations,haven_labelled
+2022,basicvars,urban,Urban/rural,haven_labelled
+2022,basicvars,region,Region,haven_labelled
+2022,basicvars,month,Calendar month of the interview,numeric
+2022,basicvars,quarter,Calendar quarter of the interview,numeric
+2022,basicvars,strata,Strata 3,numeric
+2022,basicvars,hhsize,Household size,numeric
+2022,basicvars,aimagsoum,Combinations of aimags and soums,numeric
+2022,basicvars,hhweight,NA,numeric
+2023,basicvars,identif,group(identif),numeric
+2023,basicvars,cluster,Түүврийн нэгжийн дугаар,haven_labelled
+2023,basicvars,newaimag,New code of aimag,haven_labelled
+2023,basicvars,location,Strata 4 locations,haven_labelled
+2023,basicvars,urban,Urban/rural,haven_labelled
+2023,basicvars,region,Region,haven_labelled
+2023,basicvars,month,Calendar month of the interview,numeric
+2023,basicvars,quarter,Calendar quarter of the interview,numeric
+2023,basicvars,strata,Strata 3,numeric
+2023,basicvars,hhsize,Household size,numeric
+2023,basicvars,hhweight,NA,numeric
+2023,basicvars,aimagsoum,Combinations of aimags and soums,numeric
+2024,basicvars,identif,group(identif),numeric
+2024,basicvars,newaimag,New code of aimag,haven_labelled
+2024,basicvars,urban,Urban/rural,haven_labelled
+2024,basicvars,region,Region,haven_labelled
+2024,basicvars,location,Strata 4 locations,haven_labelled
+2024,basicvars,strata,Strata 3,numeric
+2024,basicvars,aimagsoum,Combinations of aimags and soums,numeric
+2024,basicvars,month,Month,numeric
+2024,basicvars,quarter,Calendar quarter of the interview,numeric
+2024,basicvars,hhsize,Household size,numeric
+2024,basicvars,hhweight,Raked weights,numeric
+2024,basicvars,panel_household_with_2022,NA,numeric
+2024,basicvars,identif22,group(identif),numeric
+2024,basicvars,hhweight_panel,Raked weights,numeric
+2020,hhold,identif,group(identif),numeric
+2020,hhold,hhsize_cover,9. Өрхийн ам бүлийн тоо,numeric
+2020,hhold,hh_no,12. Өрхийн дугаар,numeric
+2020,hhold,h15,15. Өрхийн түүврийн сонголт,haven_labelled
+2020,hhold,q0547,5.47 Сүүлийн 12 сард танай өрхийн гишүүд хувь ,haven_labelled
+2020,hhold,q0601,6.01 Сүүлийн 12 сард танайх мал аж ахуй эрхэлс,haven_labelled
+2020,hhold,q0607,"6.07 Сүүлийн 12 сард танай өрх ноос, ноолуур, а",haven_labelled
+2020,hhold,q0615,6.15 Та болон танай өрхийн гишүүдээс хэн нэг ,haven_labelled
+2020,hhold,q0616,6.16 Таны болон танай өрхийн тариалан эрхлэх,numeric
+2020,hhold,q0617,"6.17 Танайх сүүлийн 12 сард үр тариа, хүнсний н",haven_labelled
+2020,hhold,q0618,6.18 Сүүлийн 12 сард танай өрхийн гишүүдийн та,numeric
+2020,hhold,q0701,"7.01 Сүүлийн 12 сард ХАА-н бус үйлдвэрлэл, худа",haven_labelled
+2020,hhold,q0702,"7.02 Хэдэн төрлийн үйлдвэрлэл, худалдаа, үйлч",numeric
+2020,hhold,q0801,8.01 Та болон танай өрхийн гишүүд хадгаламжт,haven_labelled
+2020,hhold,q0802,8.02 Сүүлийн 12 сард хадгаламжиндаа хэдэн төг,numeric
+2020,hhold,q0803,8.03 Сүүлийн 12 сарын хугацаанд та болон танай,haven_labelled
+2020,hhold,q0804,8.04 Зээл авах шаардлага хангаагүйгээс зээлэ,haven_labelled
+2020,hhold,q0805,8.05 Нийт хэдэн тохиолдол гарсан бэ?,numeric
+2020,hhold,q0806,8.06 Сүүлийн 12 сард танай өрх болон өрхийн ги,haven_labelled
+2020,hhold,q0807,8.07 Танай өрх сүүлийн 12 сард нийт хэдэн зээл,numeric
+2020,hhold,q0901,9.01 Танайх өөрийн эзэмшлийн сууцтай юу?,haven_labelled
+2020,hhold,q0902,9.02 Танайх өөрийн эзэмшлийн хэдэн сууцтай в,numeric
+2020,hhold,q0903,9.03 Одоо амьдарч байгаа сууц тань танай үндс,haven_labelled
+2020,hhold,q0904,9.04 ТУХАЙН ӨРХИЙН СУУЦНЫ ТӨРӨЛ.,haven_labelled
+2020,hhold,q0905,9.05 Танай сууц хэдэн өрөөтэй вэ?,numeric
+2020,hhold,q0906,9.06 Танай өрхийн сууцны ханын гаднах матери,haven_labelled
+2020,hhold,q0907,9.07 Танай өрхийн сууцны дээврийн хучилтын м,haven_labelled
+2020,hhold,q0908,9.08 Танай өрхийн сууцны шалны материал юу вэ,haven_labelled
+2020,hhold,q0909,9.09 Танай сууцны хүн амьдрах талбайн хэмжээ,numeric
+2020,hhold,q0910,9.10 Танай сууцны нийт талбайн хэмжээ хэд вэ?,numeric
+2020,hhold,q0911,9.11 Танай өрхийн амьдарч байгаа сууцны талб,numeric
+2020,hhold,q0912,9.12 Танай гэр хэдэн ханатай вэ?,numeric
+2020,hhold,q0913,"9.13 Танай гэрийн дээвэр дан уу, давхар уу?",haven_labelled
+2020,hhold,q0914,9.14 Танай гэрийн дээвэр хүйтний улиралд дан,haven_labelled
+2020,hhold,q0915,"9.15 Танай гэрийн туурга дан уу, давхар уу?",haven_labelled
+2020,hhold,q0916,9.16 Танай гэрийн туурга хүйтний улиралд дан,haven_labelled
+2020,hhold,q0917,9.17 Танай гэр ямар шалтай вэ?,haven_labelled
+2020,hhold,q0918,9.18 Танай гэр хүйтний улиралд ямар шалтай вэ,haven_labelled
+2020,hhold,q0919,9.19 Танай энэ сууц тань ашиглалтад ороод хэд,numeric
+2020,hhold,q0920,9.20 Танайх энэ сууцанд хэр удаан амьдарч бай,numeric
+2020,hhold,q0921,9.21 Та энэ сууцныхаа өмчийн хэлбэрийг хэлнэ,haven_labelled
+2020,hhold,q0922,9.22 Танай өрх яаж сууцтай болсон бэ?,haven_labelled
+2020,hhold,q0923,9.23 Сууцтай болохын тулд зээл авсан уу?,haven_labelled
+2020,hhold,q0924,9.24 Хэрэв танай өрх энэ сууцыг хэн нэгнээс т,numeric
+2020,hhold,q0925,9.25 Та сууцаа сард хэдэн төгрөгөөр түрээсэл,numeric
+2020,hhold,q0926,9.26 Танай гэрийн халаалтын үндсэн эх үүсвэр,haven_labelled
+2020,hhold,q0927,9.27 Танай өрхийн халаалтандаа ихэвчлэн хэрэ,haven_labelled
+2020,hhold,q0928,9.28 Танай сууцны гэрэлтүүлгийн үндсэн эх үү,haven_labelled
+2020,hhold,q0929,9.29 Танайх ундны усаа ихэвчлэн ямар эх үүсвэ,haven_labelled
+2020,hhold,q0930,9.30 Танай усны эх үүсвэр хаана байдаг вэ?,haven_labelled
+2020,hhold,q0931,9.31 Гэртээ ус авчрахад хэдэн минут зарцуулд,haven_labelled
+2020,hhold,q0932,9.32 Танайх усаа хэр холоос авдаг вэ?,haven_labelled
+2020,hhold,q0933,9.33 Танайх унд болон ахуйн хэрэглээндээ хон,numeric
+2020,hhold,q0934,9.34 Танайх ямар бие засах газар ашигладаг вэ,haven_labelled
+2020,hhold,q0935,9.35 Танайх бие засах газраа бусадтай хамтар,haven_labelled
+2020,hhold,q0936,9.36 Бие засах газар чинь хаана байдаг вэ?,haven_labelled
+2020,hhold,q0937,9.37 Танайх ахуйн бохир усаа яаж зайлуулдаг в,haven_labelled
+2020,hhold,q0938,"9.38 Танайх хатуу хог, хаягдлаа яаж зайлуулда",haven_labelled
+2020,hhold,q1001,10.01 Танайх харилцуур утастай юу?,haven_labelled
+2020,hhold,q1002,10.02 Танайх гэртээ интернеттэй юу?,haven_labelled
+2020,hhold,q1003,10.03 Танай өрхийн хэдэн гишүүд интернет ашиг,numeric
+2020,hhold,q1004,10.04 Танай өрхийн хэдэн гишүүн гар утсаараа ,numeric
+2020,hhold,q1005,10.05 Танай өрх болон өрхийн хэн нэг гишүүн га,haven_labelled
+2020,hhold,q1006a,Өмчилсөн газар м2,numeric
+2020,hhold,q1006b,Эзэмшдэг газар м2,numeric
+2020,hhold,q1007a,"A Яаралтай тусламж, үйлчилгээ авах боломжто",numeric
+2020,hhold,q1007b,Б Амбулаторийн үйлчилгээ авах боломжтой эс,numeric
+2020,hhold,q1007c,В Эмнэлэгт хэвтэн эмчлүүлэх боломжтой эсэх,numeric
+2020,hhold,q1007d,Г Эмчид үзүүлэх боломжтой эсэх,numeric
+2020,hhold,q1007e,Д Шинжилгээний лаборатори байгаа эсэх,numeric
+2020,hhold,q1007f,Е Рентген шинжилгээний үйлчилгээ байгаа эс,numeric
+2020,hhold,q1007g,Ё Эрүүл мэндийн урьдчилан сэргийлэх үйлчил,numeric
+2020,hhold,q1008,"10.08 Та болон танай өрхийн гишүүдэд архи, сог",haven_labelled
+2020,hhold,q1009,10.09 Та болон танай өрхийн хэн нэгэн гишүүн с,haven_labelled
+2020,hhold,q1010a,А Өдрийн цагаар,haven_labelled
+2020,hhold,q1010b,Б Оройн цагаар,haven_labelled
+2020,hhold,q1011,10.11 Таны амьдарч буй орчинд гэмт хэрэг/ дээр,haven_labelled
+2020,hhold,q1012,10.12 Сүүлийн 30 хоногт танай гэр бүлийн хэн нэ,haven_labelled
+2020,hhold,q1013a,A Үер,numeric
+2020,hhold,q1013b,Б Ган гачиг,numeric
+2020,hhold,q1013c,В Зуд,numeric
+2020,hhold,q1013d,Г Газар хөдлөлт,numeric
+2020,hhold,q1013e,Д Бичил уурхайн осол,numeric
+2020,hhold,q1013f,Е Усны осол,numeric
+2020,hhold,q1013g,Ё Тээврийн хэрэгслийн осол,numeric
+2020,hhold,q1013h,Ж Гал түймэр,numeric
+2020,hhold,q1013i,З Гоц халдварт өвчин (хүний),numeric
+2020,hhold,q1013j,Л Гоц халдварт өвчин (малын),numeric
+2020,hhold,visitor,Хоносон зочины тоо,numeric
+2020,hhold,ndays,Хоносон өдрийн тоо-хүн/өдөр,numeric
+2021,hhold,identif,group(identif),numeric
+2021,hhold,hhsize_cover,9. Өрхийн ам бүлийн тоо,numeric
+2021,hhold,hh_no,12. Өрхийн дугаар,numeric
+2021,hhold,h15,15. Өрхийн түүврийн сонголт,haven_labelled
+2021,hhold,q0547,"5.47 Сүүлийн 12 сард танай өрхийн гишүүд хувь хүн, хамаатан, найз нөхөд болон ту",haven_labelled
+2021,hhold,q0601,6.01 Сүүлийн 12 сард танайх мал аж ахуй эрхэлсэн үү?/ Танай өрх малтай юу?,haven_labelled
+2021,hhold,q0607,"6.07 Сүүлийн 12 сард танай өрх ноос, ноолуур, арьс, шир, сүү болон бусад бүтээгд",haven_labelled
+2021,hhold,q0615,6.15 Та болон танай өрхийн гишүүдээс хэн нэг нь сүүлийн 12 сард тариалан эрхлэх,haven_labelled
+2021,hhold,q0616,6.16 Таны болон танай өрхийн тариалан эрхлэх газрын талбайн хэмжээ,numeric
+2021,hhold,q0617,"6.17 Танайх сүүлийн 12 сард үр тариа, хүнсний ногоо, жимс тариалсан уу?",haven_labelled
+2021,hhold,q0618,6.18 Сүүлийн 12 сард танай өрхийн гишүүдийн тариалсан газрын нийт хэмжээ,numeric
+2021,hhold,q0701,"7.01 Сүүлийн 12 сард ХАА-н бус үйлдвэрлэл, худалдаа, үйлчилгээ эрхэлсэн үү?",haven_labelled
+2021,hhold,q0702,"7.02 Хэдэн төрлийн үйлдвэрлэл, худалдаа, үйлчилгээ эрхэлсэн бэ?",numeric
+2021,hhold,q0801,8.01 Та болон танай өрхийн гишүүд хадгаламжтай юу?,haven_labelled
+2021,hhold,q0802,8.02 Сүүлийн 12 сард хадгаламжиндаа хэдэн төгрөг хийсэн бэ?,numeric
+2021,hhold,q0803,8.03 Сүүлийн 12 сарын хугацаанд та болон танай өрхийн аль нэг гишүүн зээл авах з,haven_labelled
+2021,hhold,q0804,8.04 Зээл авах шаардлага хангаагүйгээс зээлээ авч чадаагүй тохиолдол гарсан уу?,haven_labelled
+2021,hhold,q0805,8.05 Нийт хэдэн тохиолдол гарсан бэ?,numeric
+2021,hhold,q0806,8.06 Сүүлийн 12 сард танай өрх болон өрхийн гишүүдээс ямар нэг төрлийн зээл авса,haven_labelled
+2021,hhold,q0807,8.07 Танай өрх сүүлийн 12 сард нийт хэдэн зээл төлсөн бэ?,numeric
+2021,hhold,q0901,9.01 Танайх өөрийн эзэмшлийн сууцтай юу?,haven_labelled
+2021,hhold,q0902,9.02 Танайх өөрийн эзэмшлийн хэдэн сууцтай вэ?,numeric
+2021,hhold,q0903,9.03 Одоо амьдарч байгаа сууц тань танай үндсэн сууц мөн үү?,haven_labelled
+2021,hhold,q0904,9.04 ТУХАЙН ӨРХИЙН СУУЦНЫ ТӨРӨЛ.,haven_labelled
+2021,hhold,q0905,9.05 Танай сууц хэдэн өрөөтэй вэ?,numeric
+2021,hhold,q0906,9.06 Танай өрхийн сууцны ханын гаднах материал юу вэ?,haven_labelled
+2021,hhold,q0907,9.07 Танай өрхийн сууцны дээврийн хучилтын материал юу вэ?,haven_labelled
+2021,hhold,q0908,9.08 Танай өрхийн сууцны шалны материал юу вэ?,haven_labelled
+2021,hhold,q0909,9.09 Танай сууцны хүн амьдрах талбайн хэмжээ хэд вэ?,numeric
+2021,hhold,q0910,9.10 Танай сууцны нийт талбайн хэмжээ хэд вэ?,numeric
+2021,hhold,q0911,9.11 Танай өрхийн амьдарч байгаа сууцны талбайн хэмжээ хэд вэ?,numeric
+2021,hhold,q0912,9.12 Танай гэр хэдэн ханатай вэ?,numeric
+2021,hhold,q0913,"9.13 Танай гэрийн дээвэр дан уу, давхар уу?",haven_labelled
+2021,hhold,q0914,"9.14 Танай гэрийн дээвэр хүйтний улиралд дан байдаг уу, давхар байдаг уу?",haven_labelled
+2021,hhold,q0915,"9.15 Танай гэрийн туурга дан уу, давхар уу?",haven_labelled
+2021,hhold,q0916,"9.16 Танай гэрийн туурга хүйтний улиралд дан байдаг уу, давхар байдаг уу?",haven_labelled
+2021,hhold,q0917,9.17 Танай гэр ямар шалтай вэ?,haven_labelled
+2021,hhold,q0918,9.18 Танай гэр хүйтний улиралд ямар шалтай вэ?,haven_labelled
+2021,hhold,q0919,9.19 Танай энэ сууц тань ашиглалтад ороод хэдэн жил болж байна вэ?,numeric
+2021,hhold,q0920,9.20 Танайх энэ сууцанд хэр удаан амьдарч байгаа вэ?,numeric
+2021,hhold,q0921,9.21 Та энэ сууцныхаа өмчийн хэлбэрийг хэлнэ үү?,haven_labelled
+2021,hhold,q0922,9.22 Танай өрх яаж сууцтай болсон бэ?,haven_labelled
+2021,hhold,q0923,9.23 Сууцтай болохын тулд зээл авсан уу?,haven_labelled
+2021,hhold,q0924,9.24 Хэрэв танай өрх энэ сууцыг хэн нэгнээс түрээсэлж байна гэж бодвол сард хэдэ,numeric
+2021,hhold,q0925,9.25 Та сууцаа сард хэдэн төгрөгөөр түрээсэлдэг вэ?,numeric
+2021,hhold,q0926,9.26 Танай гэрийн халаалтын үндсэн эх үүсвэр юу вэ?,haven_labelled
+2021,hhold,q0927,9.27 Танай өрхийн халаалтандаа ихэвчлэн хэрэглэдэг түлш болон эрчим хүчний эх үү,haven_labelled
+2021,hhold,q0928,9.28 Танай сууцны гэрэлтүүлгийн үндсэн эх үүсвэр юу вэ?,haven_labelled
+2021,hhold,q0929,9.29 Танайх ундны усаа ихэвчлэн ямар эх үүсвэрээс авдаг вэ?,haven_labelled
+2021,hhold,q0930,9.30 Танай усны эх үүсвэр хаана байдаг вэ?,haven_labelled
+2021,hhold,q0931,9.31 Гэртээ ус авчрахад хэдэн минут зарцуулдаг вэ?,haven_labelled
+2021,hhold,q0932,9.32 Танайх усаа хэр холоос авдаг вэ?,haven_labelled
+2021,hhold,q0933,9.33 Танайх унд болон ахуйн хэрэглээндээ хоногт хэдэн литр ус хэрэглэдэг вэ?,numeric
+2021,hhold,q0934,9.34 Танайх ямар бие засах газар ашигладаг вэ?,haven_labelled
+2021,hhold,q0935,9.35 Танайх бие засах газраа бусадтай хамтарч ашигладаг уу?,haven_labelled
+2021,hhold,q0936,9.36 Бие засах газар чинь хаана байдаг вэ?,haven_labelled
+2021,hhold,q0937,9.37 Танайх ахуйн бохир усаа яаж зайлуулдаг вэ?,haven_labelled
+2021,hhold,q0938,"9.38 Танайх хатуу хог, хаягдлаа яаж зайлуулдаг вэ?",haven_labelled
+2021,hhold,q1001,10.01 Танайх харилцуур утастай юу?,haven_labelled
+2021,hhold,q1002,10.02 Танайх гэртээ интернеттэй юу?,haven_labelled
+2021,hhold,q1003,10.03 Танай өрхийн хэдэн гишүүд интернет ашигладаг вэ?,numeric
+2021,hhold,q1004,10.04 Танай өрхийн хэдэн гишүүн гар утсаараа интернет ашигладаг вэ?,numeric
+2021,hhold,q1005,"10.05 Танай өрх болон өрхийн хэн нэг гишүүн газар өмчилдөг үү, эзэмшдэг үү?",haven_labelled
+2021,hhold,q1006a,Өмчилсөн газар м2,numeric
+2021,hhold,q1006b,Эзэмшдэг газар м2,numeric
+2021,hhold,q1007a,"A Яаралтай тусламж, үйлчилгээ авах боломжтой эсэх",numeric
+2021,hhold,q1007b,Б Амбулаторийн үйлчилгээ авах боломжтой эсэх,numeric
+2021,hhold,q1007c,В Эмнэлэгт хэвтэн эмчлүүлэх боломжтой эсэх,numeric
+2021,hhold,q1007d,Г Эмчид үзүүлэх боломжтой эсэх,numeric
+2021,hhold,q1007e,Д Шинжилгээний лаборатори байгаа эсэх,numeric
+2021,hhold,q1007f,Е Рентген шинжилгээний үйлчилгээ байгаа эсэх,numeric
+2021,hhold,q1007g,Ё Эрүүл мэндийн урьдчилан сэргийлэх үйлчилгээгээр хангагдах боломжтой эсэх,numeric
+2021,hhold,q1008,"10.08 Та болон танай өрхийн гишүүдэд архи, согтууруулах ундаа ууж үзсэн хүн байд",haven_labelled
+2021,hhold,q1009,10.09 Та болон танай өрхийн хэн нэгэн гишүүн сүүлийн 30 хоногийн согтууруулах ун,haven_labelled
+2021,hhold,q1010a,А Өдрийн цагаар,haven_labelled
+2021,hhold,q1010b,Б Оройн цагаар,haven_labelled
+2021,hhold,q1011,"10.11 Таны амьдарч буй орчинд гэмт хэрэг/ дээрэм эсвэл хүчирхийлэл, халдлага хэр",haven_labelled
+2021,hhold,q1012,"10.12 Сүүлийн 30 хоногт танай гэр бүлийн хэн нэг гишүүн ажиллаж, амьдарч буй орч",haven_labelled
+2021,hhold,q1013a,A Үер,numeric
+2021,hhold,q1013b,Б Ган гачиг,numeric
+2021,hhold,q1013c,В Зуд,numeric
+2021,hhold,q1013d,Г Газар хөдлөлт,numeric
+2021,hhold,q1013e,Д Бичил уурхайн осол,numeric
+2021,hhold,q1013f,Е Усны осол,numeric
+2021,hhold,q1013g,Ё Тээврийн хэрэгслийн осол,numeric
+2021,hhold,q1013h,Ж Гал түймэр,numeric
+2021,hhold,q1013i,З Гоц халдварт өвчин (хүний),numeric
+2021,hhold,q1013j,Л Гоц халдварт өвчин (малын),numeric
+2021,hhold,visitor,Хоносон зочины тоо,numeric
+2021,hhold,ndays,Хоносон өдрийн тоо-хүн/өдөр,numeric
+2022,hhold,identif,group(identif),numeric
+2022,hhold,hh_no,12. Өрхийн дугаар,numeric
+2022,hhold,h15,15. Өрхийн түүврийн сонголт,haven_labelled
+2022,hhold,cover_visit_count,Очсон удаа,haven_labelled
+2022,hhold,v1_dd,Өдөр,numeric
+2022,hhold,v1_mm,Сар,numeric
+2022,hhold,v1_yy,Он,numeric
+2022,hhold,v1_res,Үр дүн,haven_labelled
+2022,hhold,v2_dd,Өдөр,numeric
+2022,hhold,v2_mm,Сар,numeric
+2022,hhold,v2_yy,Он,numeric
+2022,hhold,v2_res,Үр дүн,haven_labelled
+2022,hhold,v3_dd,Өдөр,numeric
+2022,hhold,v3_mm,Сар,numeric
+2022,hhold,v3_yy,Он,numeric
+2022,hhold,v3_res,Үр дүн,haven_labelled
+2022,hhold,q0547,"5.47 Сүүлийн 12 сард танай өрхийн гишүүд хувь хүн, хамаатан, найз нөхөд болон ту",haven_labelled
+2022,hhold,q0601,6.01 Сүүлийн 12 сард танайх мал аж ахуй эрхэлсэн үү?/ Танай өрх малтай юу?,haven_labelled
+2022,hhold,q0607,"6.07 Сүүлийн 12 сард танай өрх ноос, ноолуур, арьс, шир, сүү болон бусад бүтээгд",haven_labelled
+2022,hhold,q0615,6.15 Та болон танай өрхийн гишүүдээс хэн нэг нь сүүлийн 12 сард тариалан эрхлэх,haven_labelled
+2022,hhold,q0616,6.16 Таны болон танай өрхийн тариалан эрхлэх газрын талбайн хэмжээ,numeric
+2022,hhold,q0617,"6.17 Танайх сүүлийн 12 сард үр тариа, хүнсний ногоо, жимс тариалсан уу?",haven_labelled
+2022,hhold,q0618,6.18 Сүүлийн 12 сард танай өрхийн гишүүдийн тариалсан газрын нийт хэмжээ,numeric
+2022,hhold,q0701,"7.01 Сүүлийн 12 сард ХАА-н бус үйлдвэрлэл, худалдаа, үйлчилгээ эрхэлсэн үү?",haven_labelled
+2022,hhold,q0702,"7.02 Хэдэн төрлийн үйлдвэрлэл, худалдаа, үйлчилгээ эрхэлсэн бэ?",numeric
+2022,hhold,q0801,8.01 Та болон танай өрхийн гишүүд хадгаламжтай юу?,haven_labelled
+2022,hhold,q0802,8.02 Сүүлийн 12 сард хадгаламжиндаа хэдэн төгрөг хийсэн бэ?,numeric
+2022,hhold,q0803,8.03 Сүүлийн 12 сарын хугацаанд та болон танай өрхийн аль нэг гишүүн зээл авах з,haven_labelled
+2022,hhold,q0804,8.04 Зээл авах шаардлага хангаагүйгээс зээлээ авч чадаагүй тохиолдол гарсан уу?,haven_labelled
+2022,hhold,q0805,8.05 Нийт хэдэн тохиолдол гарсан бэ?,numeric
+2022,hhold,q0806,8.06 Сүүлийн 12 сард танай өрх болон өрхийн гишүүдээс ямар нэг төрлийн зээл авса,haven_labelled
+2022,hhold,q0807,8.07 Танай өрх сүүлийн 12 сард нийт хэдэн зээл төлсөн бэ?,numeric
+2022,hhold,q0901,9.01 Танайх өөрийн эзэмшлийн сууцтай юу?,haven_labelled
+2022,hhold,q0902,9.02 Танайх өөрийн эзэмшлийн хэдэн сууцтай вэ?,numeric
+2022,hhold,q0903,9.03 Одоо амьдарч байгаа сууц тань танай үндсэн сууц мөн үү?,haven_labelled
+2022,hhold,q0904,9.04 ТУХАЙН ӨРХИЙН СУУЦНЫ ТӨРӨЛ.,haven_labelled
+2022,hhold,q0905,9.05 Танай сууц хэдэн өрөөтэй вэ?,numeric
+2022,hhold,q0906a,9.06a Танай өрхийн сууцны ханын үндсэн материал юу вэ?,haven_labelled
+2022,hhold,q0906b,"9.06б Танай өрхийн сууцны ханын гадна өнгөлгөө, фасадны материал юу вэ?",haven_labelled
+2022,hhold,q0907,9.07 Танай өрхийн сууцны дээврийн хучилтын материал юу вэ?,haven_labelled
+2022,hhold,q0908a,9.08a Танай өрхийн сууцны шалны үндсэн материал юу вэ?,haven_labelled
+2022,hhold,q0908b,9.08б Танай өрхийн сууцны шалны хучилтын материал юу вэ?,haven_labelled
+2022,hhold,q0909,9.09 Танай сууцны хүн амьдрах талбайн хэмжээ хэд вэ?,numeric
+2022,hhold,q0910,9.10 Танай сууцны нийт талбайн хэмжээ хэд вэ?,numeric
+2022,hhold,q0911,9.11 Танай өрхийн амьдарч байгаа сууцны талбайн хэмжээ хэд вэ?,numeric
+2022,hhold,q0912,9.12 Танай гэр хэдэн ханатай вэ?,numeric
+2022,hhold,q0913,"9.13 Танай гэрийн дээвэр дан уу, давхар уу?",haven_labelled
+2022,hhold,q0914,"9.14 Танай гэрийн дээвэр хүйтний улиралд дан байдаг уу, давхар байдаг уу?",haven_labelled
+2022,hhold,q0915,"9.15 Танай гэрийн туурга дан уу, давхар уу?",haven_labelled
+2022,hhold,q0916,"9.16 Танай гэрийн туурга хүйтний улиралд дан байдаг уу, давхар байдаг уу?",haven_labelled
+2022,hhold,q0917,9.17 Танай гэр ямар шалтай вэ?,haven_labelled
+2022,hhold,q0918,9.18 Танай гэр хүйтний улиралд ямар шалтай вэ?,haven_labelled
+2022,hhold,q0919,9.19 Танай энэ сууц тань ашиглалтад ороод хэдэн жил болж байна вэ?,numeric
+2022,hhold,q0920,9.20 Танайх энэ сууцанд хэр удаан амьдарч байгаа вэ?,numeric
+2022,hhold,q0921,9.21 Та энэ сууцныхаа өмчийн хэлбэрийг хэлнэ үү?,haven_labelled
+2022,hhold,q0922,9.22 Танай өрх яаж сууцтай болсон бэ?,haven_labelled
+2022,hhold,q0923,9.23 Сууцтай болохын тулд зээл авсан уу?,haven_labelled
+2022,hhold,q0924,9.24 Хэрэв танай өрх энэ сууцыг хэн нэгнээс түрээсэлж байна гэж бодвол сард хэдэ,numeric
+2022,hhold,q0925,9.25 Та сууцаа сард хэдэн төгрөгөөр түрээсэлдэг вэ?,numeric
+2022,hhold,q0926,9.26 Танай гэрийн халаалтын үндсэн эх үүсвэр юу вэ?,haven_labelled
+2022,hhold,q0927,9.27 Танай өрхийн халаалтандаа ихэвчлэн хэрэглэдэг түлш болон эрчим хүчний эх үү,haven_labelled
+2022,hhold,q0928,9.28 Танай сууцны гэрэлтүүлгийн үндсэн эх үүсвэр юу вэ?,haven_labelled
+2022,hhold,q0929,9.29 Танайх ундны усаа ихэвчлэн ямар эх үүсвэрээс авдаг вэ?,haven_labelled
+2022,hhold,q0930,9.30 Танай усны эх үүсвэр хаана байдаг вэ?,haven_labelled
+2022,hhold,q0931,9.31 Гэртээ ус авчрахад хэдэн минут зарцуулдаг вэ?,haven_labelled
+2022,hhold,q0932,9.32 Танайх усаа хэр холоос авдаг вэ?,haven_labelled
+2022,hhold,q0933,9.33 Танайх унд болон ахуйн хэрэглээндээ хоногт хэдэн литр ус хэрэглэдэг вэ?,numeric
+2022,hhold,q0934,9.34 Танайх ямар бие засах газар ашигладаг вэ?,haven_labelled
+2022,hhold,q0935,9.35 Танайх бие засах газраа бусадтай хамтарч ашигладаг уу?,haven_labelled
+2022,hhold,q0936,9.36 Бие засах газар чинь хаана байдаг вэ?,haven_labelled
+2022,hhold,q0937,9.37 Танайх ахуйн бохир усаа яаж зайлуулдаг вэ?,haven_labelled
+2022,hhold,q0938,"9.38 Танайх хатуу хог, хаягдлаа яаж зайлуулдаг вэ?",haven_labelled
+2022,hhold,q0939,"9.39 Танай өрхийн гишүүдийн гар, нүүрээ байнга угаадаг газрыг үзэж болох уу?",haven_labelled
+2022,hhold,q0940,9.40 ГАР УГААХ ГАЗАРТ УС БАЙГАА ЭСЭХИЙГ АЖИГЛАНА.,haven_labelled
+2022,hhold,q0941,"9.41 ГАР УГААХ ГАЗАРТ САВАН, УГААЛГЫН БОДИС БАЙГАА ЭСЭХИЙГ АЖИГЛАНА.",haven_labelled
+2022,hhold,q0942,"9.42 Танайд гараа угаахдаа хэрэглэдэг саван, угаалгын бодис одоо байна уу?",haven_labelled
+2022,hhold,q0943,9.43 Та надад түүнийгээ үзүүлж болох уу?,haven_labelled
+2022,hhold,q0944a,"A. Шахмал, шингэн саван",character
+2022,hhold,q0944b,B. Ариутгагч/Угаалгын нунтаг (нунтаг/шингэн/шахмал),character
+2022,hhold,q1001,10.01 Танайх харилцуур утастай юу?,haven_labelled
+2022,hhold,q1002,10.02 Танайх гэртээ интернеттэй юу?,haven_labelled
+2022,hhold,q1003,10.03 Танай өрхийн хэдэн гишүүд интернет ашигладаг вэ?,numeric
+2022,hhold,q1004,10.04 Танай өрхийн хэдэн гишүүн гар утсаараа интернет ашигладаг вэ?,numeric
+2022,hhold,q1005,"10.05 Танай өрх болон өрхийн хэн нэг гишүүн газар өмчилдөг үү, эзэмшдэг үү?",haven_labelled
+2022,hhold,q1006a,Өмчилсөн газар м2,numeric
+2022,hhold,q1006b,Эзэмшдэг газар м2,numeric
+2022,hhold,q1007a,"A Яаралтай тусламж, үйлчилгээ авах боломжтой эсэх",numeric
+2022,hhold,q1007b,Б Амбулаторийн үйлчилгээ авах боломжтой эсэх,numeric
+2022,hhold,q1007c,В Эмнэлэгт хэвтэн эмчлүүлэх боломжтой эсэх,numeric
+2022,hhold,q1007d,Г Эмчид үзүүлэх боломжтой эсэх,numeric
+2022,hhold,q1007e,Д Шинжилгээний лаборатори байгаа эсэх,numeric
+2022,hhold,q1007f,Е Рентген шинжилгээний үйлчилгээ байгаа эсэх,numeric
+2022,hhold,q1007g,Ё Эрүүл мэндийн урьдчилан сэргийлэх үйлчилгээгээр хангагдах боломжтой эсэх,numeric
+2022,hhold,q1008,"10.08 Та болон танай өрхийн гишүүдэд архи, согтууруулах ундаа ууж үзсэн хүн байд",haven_labelled
+2022,hhold,q1009,10.09 Та болон танай өрхийн хэн нэгэн гишүүн сүүлийн 30 хоногийн согтууруулах ун,haven_labelled
+2022,hhold,q1010a,А Өдрийн цагаар,haven_labelled
+2022,hhold,q1010b,Б Оройн цагаар,haven_labelled
+2022,hhold,q1011,"10.11 Таны амьдарч буй орчинд гэмт хэрэг/ дээрэм эсвэл хүчирхийлэл, халдлага хэр",haven_labelled
+2022,hhold,q1012,"10.12 Сүүлийн 30 хоногт танай гэр бүлийн хэн нэг гишүүн ажиллаж, амьдарч буй орч",haven_labelled
+2022,hhold,q1013a,A Үер,numeric
+2022,hhold,q1013b,Б Ган гачиг,numeric
+2022,hhold,q1013c,В Зуд,numeric
+2022,hhold,q1013d,Г Газар хөдлөлт,numeric
+2022,hhold,q1013e,Д Бичил уурхайн осол,numeric
+2022,hhold,q1013f,Е Усны осол,numeric
+2022,hhold,q1013g,Ё Тээврийн хэрэгслийн осол,numeric
+2022,hhold,q1013h,Ж Гал түймэр,numeric
+2022,hhold,q1013i,З Гоц халдварт өвчин (хүний),numeric
+2022,hhold,q1013j,Л Гоц халдварт өвчин (малын),numeric
+2022,hhold,visitor,Хоносон зочины тоо,numeric
+2022,hhold,ndays,Хоносон өдрийн тоо-хүн/өдөр,numeric
+2023,hhold,identif,group(identif),numeric
+2023,hhold,hh_no,12. Өрхийн дугаар,numeric
+2023,hhold,h15,15. Өрхийн түүврийн сонголт,haven_labelled
+2023,hhold,cover_visit_count,Очсон удаа,haven_labelled
+2023,hhold,v1_dd,Өдөр,numeric
+2023,hhold,v1_mm,Сар,numeric
+2023,hhold,v1_yy,Он,numeric
+2023,hhold,v1_res,Үр дүн,haven_labelled
+2023,hhold,v2_dd,Өдөр,numeric
+2023,hhold,v2_mm,Сар,numeric
+2023,hhold,v2_yy,Он,numeric
+2023,hhold,v2_res,Үр дүн,haven_labelled
+2023,hhold,v3_dd,Өдөр,numeric
+2023,hhold,v3_mm,Сар,numeric
+2023,hhold,v3_yy,Он,numeric
+2023,hhold,v3_res,Үр дүн,haven_labelled
+2023,hhold,q0301,3.01 Сүүлийн 12 сард танайх мал аж ахуй эрхэлсэн үү?/ Танай өрх малтай юу?,haven_labelled
+2023,hhold,q0306,"3.06 Сүүлийн 12 сард танай өрх ноос, ноолуур, арьс, шир, сүү болон бусад бүтээгд",haven_labelled
+2023,hhold,q0314,3.14 Та болон танай өрхийн гишүүдээс хэн нэг нь сүүлийн 12 сард тариалан эрхлэх,haven_labelled
+2023,hhold,q0315,3.15 Одоогийн байдлаар таны болон танай өрхийн тариалан эрхлэх газрын талбайн хэ,numeric
+2023,hhold,q0316,"3.16 Танайх сүүлийн 12 сард үр тариа, хүнсний ногоо, жимс тариалсан уу? Малын тэ",haven_labelled
+2023,hhold,q0317,3.17 Сүүлийн 12 сард танай өрхийн гишүүдийн тариалсан газрын нийт хэмжээ,numeric
+2023,hhold,q0401,"4.01 Сүүлийн 12 сард ХАА-н бус үйлдвэрлэл, худалдаа, үйлчилгээ эрхэлсэн үү?",haven_labelled
+2023,hhold,q0402,"4.02 Хэдэн төрлийн үйлдвэрлэл, худалдаа, үйлчилгээ эрхэлсэн бэ?",numeric
+2023,hhold,q0601,6.01 Та болон танай өрхийн гишүүд хадгаламжтай юу?,haven_labelled
+2023,hhold,q0602,6.02 Сүүлийн 12 сард хадгаламжиндаа хэдэн төгрөг хийсэн бэ?,numeric
+2023,hhold,q0603,6.03 Сүүлийн 12 сард танай өрх болон өрхийн гишүүдээс хэн нэг нь ямар нэг төрлий,haven_labelled
+2023,hhold,q0604,6.04 Танай өрх сүүлийн 12 сард нийт хэдэн зээл төлсөн бэ?,numeric
+2023,hhold,q0701,7.01 Сууцны төрөл,haven_labelled
+2023,hhold,q0702,7.02 Өрөөний тоо,numeric
+2023,hhold,q0703,7.03 Танай сууцны талбайн хэмжээ хэд вэ?,numeric
+2023,hhold,q0704,7.04 Танай өрхийн амьдарч байгаа сууцны талбайн хэмжээ хэд вэ?,numeric
+2023,hhold,q0705,7.05 Гэрийн ханын тоо,numeric
+2023,hhold,q0706,7.06 Танайх сууцаа түрээсэлдэг үү?,haven_labelled
+2023,hhold,q0707,7.07 Та сууцаа сард хэдэн төгрөгөөр түрээсэлдэг вэ?,numeric
+2023,hhold,q0708,7.08 Хэрвээ та сууцаа хүнд түрээслүүлбэл сарын хэдэн төгрөгөөр түрээслүүлэх вэ?,numeric
+2023,hhold,q0709,7.09 Танай ундны усны эх үүсвэр юу вэ?,haven_labelled
+2023,hhold,q0710,7.10 Танайх ундны усаа хэр холоос авдаг вэ?,haven_labelled
+2023,hhold,q0711,7.11 Танайх унд болон ахуйн хэрэглээндээ хоногт хэдэн литр ус хэрэглэдэг вэ?,numeric
+2023,hhold,q0712,7.12 Танайх ямар төрлийн бие засах газартай вэ?,haven_labelled
+2023,hhold,q0713,7.13 Танайх ахуйн бохир усаа яаж зайлуулдаг вэ?,haven_labelled
+2023,hhold,q0714,7.14 Танайх харилцуур утастай юу?,haven_labelled
+2023,hhold,q0715,7.15 Танайх гэртээ интернэттэй юу?,haven_labelled
+2023,hhold,q0716,7.16 Өрхийн хэдэн гишүүд интернэт ашигладаг вэ?,numeric
+2023,hhold,q0717,7.17 Танай өрхийн хэдэн гишүүн гар утсаараа интернэт ашигладаг вэ?,numeric
+2023,hhold,visitor,Хоносон зочины тоо,numeric
+2023,hhold,ndays,Хоносон өдрийн тоо-хүн/өдөр,numeric
+2024,hhold,identif,Household ID,numeric
+2024,hhold,years,Year,numeric
+2024,hhold,hh_no,Household number,numeric
+2024,hhold,h12,Household sample selection,haven_labelled
+2024,hhold,identif22,group(identif),numeric
+2024,hhold,cover_visit_count,Visited times,haven_labelled
+2024,hhold,v1_dd,First visited day,numeric
+2024,hhold,v1_mm,First visited month,numeric
+2024,hhold,v1_yy,First visited year,numeric
+2024,hhold,v1_res,Result,haven_labelled
+2024,hhold,v2_dd,Second visited day,numeric
+2024,hhold,v2_mm,Second visited month,numeric
+2024,hhold,v2_yy,Second visited year,numeric
+2024,hhold,v2_res,Result,haven_labelled
+2024,hhold,v3_dd,Third visited day,numeric
+2024,hhold,v3_mm,Third visited month,numeric
+2024,hhold,v3_yy,Third visited year,numeric
+2024,hhold,v3_res,Result,haven_labelled
+2024,hhold,q0547,"In the last 12 months, did any member of the household receive, in cash or in-ki",haven_labelled
+2024,hhold,q0601,Did your family have herding/animal farming in the last 12 months?,haven_labelled
+2024,hhold,q0607,"Did your household produce any wool, hair, cashmere, skins, hides, milk, and oth",haven_labelled
+2024,hhold,q0615,Did you and any member of your household have any land for farming in the past 1,haven_labelled
+2024,hhold,q0616,What is the size of the land that you and your household member use for farming?,numeric
+2024,hhold,q0617,"Did your household grow any grain, vegetable, and fruit in the last 12 months? D",haven_labelled
+2024,hhold,q0618,The total size of the land where your household grew crops in the last 12 months,numeric
+2024,hhold,q0701,"Did you run any non-agricultural production, trade, and service in the last 12 m",haven_labelled
+2024,hhold,q0702,"How many types of production, trade, and service did you run?",numeric
+2024,hhold,q0801,Do you or does any member of your household have savings?,haven_labelled
+2024,hhold,q0802,How much did you deposit in your savings during the last 12 months?,numeric
+2024,hhold,q0803,"Have you or members of your family approached financial organization, individual",haven_labelled
+2024,hhold,q0804,Has there been cases that you could not obtain loan when you needed because you,haven_labelled
+2024,hhold,q0805,How many such cases has there been?,numeric
+2024,hhold,q0806,Did your household or any member of your household receive or repay any loan dur,haven_labelled
+2024,hhold,q0807,How many loans did your household or any member of your household repay during t,numeric
+2024,hhold,q0901,Do you own any accommodation?,haven_labelled
+2024,hhold,q0902,How many dwellings does your household own?,numeric
+2024,hhold,q0903,Is this dwelling in which you are currently living your main dwelling?,haven_labelled
+2024,hhold,q0904,Type of this dwelling,haven_labelled
+2024,hhold,q0905,Number of rooms in the dwelling,numeric
+2024,hhold,q0906,Main material of the outside walls,haven_labelled
+2024,hhold,q0906other,Бусад,character
+2024,hhold,q0907,Polishing and facade material of the outside walls,haven_labelled
+2024,hhold,q0907other,Бусад,character
+2024,hhold,q0908,Main material of the roof,haven_labelled
+2024,hhold,q0908other,бусад,character
+2024,hhold,q0909,Main material of the floor,haven_labelled
+2024,hhold,q0909aother,Бусад,character
+2024,hhold,q0910,Covering material of the floor,haven_labelled
+2024,hhold,q0910other,Бусад,character
+2024,hhold,q0911,Number of segments/walls in the ger,numeric
+2024,hhold,q0912,Covering of the ceiling,haven_labelled
+2024,hhold,q0913,"During the cold season, what is the layer of your roof insulation?",haven_labelled
+2024,hhold,q0914,Covering of the frame,haven_labelled
+2024,hhold,q0915,"During the cold season, what is the layer of your wool insulation?",haven_labelled
+2024,hhold,q0916,Main material of the floor,haven_labelled
+2024,hhold,q0917,"During the cold season, what is the main material of the floor?",haven_labelled
+2024,hhold,q0918,How many years has it been since your dwelling was registered?,numeric
+2024,hhold,q0919,How long have you been living in this dwelling?,numeric
+2024,hhold,q0920,What is the legal status of this dwelling?,haven_labelled
+2024,hhold,q0921,How was this dwelling acquired?,haven_labelled
+2024,hhold,q0922,"If you wanted to sell this dwelling to someone else, how much would it sell for?",numeric
+2024,hhold,q0923,How many millions of tugrug do you spend when you bought this dwelling?,numeric
+2024,hhold,q0924,"If you wanted to rent this dwelling to someone else, how much would be the month",numeric
+2024,hhold,q0925,How many tugrugs a month do you pay to rent the dwelling?,numeric
+2024,hhold,q0926,"CHECK: WHETHER YOU HAVE INHERITED or, GIFT OR LIVE IN THE APARTMENT OF OTHERS (C",haven_labelled
+2024,hhold,q0927,Did you borrow any money to acquire this dwelling?,haven_labelled
+2024,hhold,q0928,CHECK: DETERMINE TYPE OF DWELLING OF THE HOUSEHOLD: APARTMENT OR PUBLIC ACCOMODA,haven_labelled
+2024,hhold,q0929,How did your household get the land on which this dwelling is located?,haven_labelled
+2024,hhold,q0930,"If you wanted to sell this land where this dwelling is located to someone else,",numeric
+2024,hhold,q0931,How many millions of tugrug does your family buy the land where this dwelling is,numeric
+2024,hhold,q0932,Living area of your dwelling,numeric
+2024,hhold,q0933,Total useful area of your dwelling,numeric
+2024,hhold,q0934,CHECK: DETERMINE TYPE OF DWELLING OF THE HOUSEHOLD: DETERMINE WHETHER THEY LIVE,haven_labelled
+2024,hhold,q0935,Non-living quarters: What is the useful area of the dwelling that your household,numeric
+2024,hhold,q0936,What is the main source of lighting for your dwelling?,haven_labelled
+2024,hhold,q0937,What does your household mainly use for space heating when needed?,haven_labelled
+2024,hhold,q0938,What type of fuel and energy source is used in this heater?,haven_labelled
+2024,hhold,q0939,What kind of electricity meter do you have?,haven_labelled
+2024,hhold,q0940,Has your household used any subsidized or free electricity in the last 12 months,haven_labelled
+2024,hhold,q0941,"In the last 12 months, did your household use electricity to heat the house at n",haven_labelled
+2024,hhold,q0942,How many tugrugs did your household spend on electricity in the last 1 month?,numeric
+2024,hhold,q0943,How many tugrugs did your household spend on electricity in the last 12 month?,numeric
+2024,hhold,q0944,What is the values/price of electricity that you received for free from others i,numeric
+2024,hhold,q0945,What is the main source of drinking water for members of your household?,haven_labelled
+2024,hhold,q0946,Where is the water source located?,haven_labelled
+2024,hhold,q0947,"How long does it take for members of your household to go there, get water, and",haven_labelled
+2024,hhold,q0948,From how far do you get your drinking water?,haven_labelled
+2024,hhold,q0949,How many liters of water per day do you use for drinking and household use?,numeric
+2024,hhold,q0950,What kind of toilet facility do members of your household usually use?,haven_labelled
+2024,hhold,q0951,Do you share your toilet with others?,haven_labelled
+2024,hhold,q0952,Where is this toilet facility located?,haven_labelled
+2024,hhold,q0953,Does the household use a sewage/drainage system?,haven_labelled
+2024,hhold,q0954,How does your household dispose of waste?,haven_labelled
+2024,hhold,q0955,Can you please show me where members of your household most often wash their han,haven_labelled
+2024,hhold,q0956,OBSERVE PRESENCE OF WATER AT THE PLACE FOR HANDWASHING.,haven_labelled
+2024,hhold,q0957,IS SOAP OR SANITIZER PRESENT AT THE PLACE FOR HANDWASHING?,haven_labelled
+2024,hhold,q0958,Do you have any soap or sanitizer in your house for washing hands?,haven_labelled
+2024,hhold,q0959,Can you please show it to me?,haven_labelled
+2024,hhold,q0960a,RECORD YOUR OBSERVATION: BAR OR LIQUID SOAP,character
+2024,hhold,q0960b,"RECORD YOUR OBSERVATION: DETERGENT (POWDER/LIQUID,PASTE)",character
+2024,hhold,q1001,Does your household have a telephone?,haven_labelled
+2024,hhold,q1002,Does your household have internet access at home?,haven_labelled
+2024,hhold,q1003,How many members of the household use Internet?,numeric
+2024,hhold,q1004,How many members of the household use internet through smartphone?,numeric
+2024,hhold,q1005,"Does you household or someone from your household own land, use land?",haven_labelled
+2024,hhold,q1006a,"Land owned: How big land does your household or someone from your household own,",numeric
+2024,hhold,q1006b,"Land used: How big land does your household or someone from your household own,",numeric
+2024,hhold,q1007a,in and out of area emergency service,numeric
+2024,hhold,q1007b,outpatient medical service,numeric
+2024,hhold,q1007c,inpatient medical service,numeric
+2024,hhold,q1007d,physician care,numeric
+2024,hhold,q1007e,Laboratory,numeric
+2024,hhold,q1007f,Radiology,numeric
+2024,hhold,q1007g,Preventive health service,numeric
+2024,hhold,q1008,Have you or anyone in your household ever consumed alcohol?,haven_labelled
+2024,hhold,q1009,How many days in the last 30 days have you consumed alcoholic drinks defined abo,haven_labelled
+2024,hhold,q1010a,Do you feel scared when you walk alone near your home?: During the day,haven_labelled
+2024,hhold,q1010b,Do you feel scared when you walk alone near your home?: In the evening,haven_labelled
+2024,hhold,q1011,How often do you think crime occurs in your living environment?,haven_labelled
+2024,hhold,q1012,Has a member of your family become victim of crime or violation I in the environ,haven_labelled
+2024,hhold,q1013a,FLOOD: Has your household encountered any of the following in the last 12 months,haven_labelled
+2024,hhold,q1013b,DROUGHT: Has your household encountered any of the following in the last 12 mont,haven_labelled
+2024,hhold,q1013c,ZUD: Has your household encountered any of the following in the last 12 months?,haven_labelled
+2024,hhold,q1013d,EARTHQUAKE: Has your household encountered any of the following in the last 12 m,haven_labelled
+2024,hhold,q1013e,MINING ACCISDENTS: Has your household encountered any of the following in the la,haven_labelled
+2024,hhold,q1013f,MINING ACCISDENTS: Has your household encountered any of the following in the la,haven_labelled
+2024,hhold,q1013g,VEHICLE ACCIDENTS:Has your household encountered any of the following in the las,haven_labelled
+2024,hhold,q1013h,FIRE: Has your household encountered any of the following in the last 12 months?,haven_labelled
+2024,hhold,q1013i,CONTAGIOUS DISEASE (HUMAN): Has your household encountered any of the following,haven_labelled
+2024,hhold,q1013j,CONTAGIOUS DISEASE (ANIMAL): Has your household encountered any of the following,haven_labelled
+2024,hhold,visitor,Visitor,numeric
+2024,hhold,ndays,ndays,numeric
+2020,indiv,identif,group(identif),numeric
+2020,indiv,ind_id,Хувийн дугаар,numeric
+2020,indiv,q0102,1.02 Өрхийн тэргүүлэгчтэй ямар хамааралтай в,haven_labelled
+2020,indiv,q0103,1.03 Хүйс,haven_labelled
+2020,indiv,q0105y,1.05 Нас /жил/,numeric
+2020,indiv,q0105m,1.05 Нас /сар/,numeric
+2020,indiv,q0106,1.06 Гэрлэлтийн байдал,haven_labelled
+2020,indiv,q0107,1.07 Эхнэр нөхрийн хувийн дугаар,numeric
+2020,indiv,q0108a,1.08 Хоног,numeric
+2020,indiv,q0108b,1.08 Сар,numeric
+2020,indiv,q0109,1.09 Асуултанд хамрагдах эсэх,haven_labelled
+2020,indiv,q0110,1.10 [НЭР] одоо энэ өрхөд хамт амьдарч байна у,haven_labelled
+2020,indiv,q0111,1.11 Одоо [НЭР] хаана амьдарч байна вэ? Монгол/,haven_labelled
+2020,indiv,q0111a,1.11 Одоо [НЭР] хаана амьдарч байна вэ? Аймаг/ ,haven_labelled
+2020,indiv,q0111b,1.11 Одоо [НЭР] хаана амьдарч байна вэ? Сум/ дү,numeric
+2020,indiv,q0112,1.12 [НЭР] яагаад хамт амьдрахгүй байгаа вэ?,haven_labelled
+2020,indiv,q0113,1.13 [НЭР] энэ нутагт төрсөн үү?,haven_labelled
+2020,indiv,q0114,1.14 [НЭР] хаана төрсөн бэ? Монгол/Гадаад,haven_labelled
+2020,indiv,q0114a,1.14 [НЭР] хаана төрсөн бэ? Аймаг/ Нийслэл,haven_labelled
+2020,indiv,q0114b,1.14 [НЭР] хаана төрсөн бэ? Сум/ дүүрэг,numeric
+2020,indiv,q0115,1.15 [НЭР] энд хэдэн жил амьдарч байгаа вэ?,numeric
+2020,indiv,q0116,1.16 [НЭР] ер нь шилжиж суурьшиж байсан уу?,haven_labelled
+2020,indiv,q0117,1.17 [НЭР] хамгийн сүүлд хаанаас шилжиж ирсэн,haven_labelled
+2020,indiv,q0118a,"1.18 [НЭР] хамгийн сүүлд аль аймаг, сумаас шил",haven_labelled
+2020,indiv,q0118b,"1.18 [НЭР] хамгийн сүүлд аль аймаг, сумаас шил",numeric
+2020,indiv,q0119,1.19 [НЭР] хамгийн сүүлд хэдэн онд шилжиж ирсэ,numeric
+2020,indiv,q0120,1.20 [НЭР]-ын/ийн хамгийн сүүлд шилжиж ирсэн г,haven_labelled
+2020,indiv,q0121,1.21 [НЭР] 5-н жилийн өмнө хаана амьдарч байсан,haven_labelled
+2020,indiv,q0121a,1.21 [НЭР] 5-н жилийн өмнө хаана амьдарч байсан,haven_labelled
+2020,indiv,q0121b,1.21 [НЭР] 5-н жилийн өмнө хаана амьдарч байсан,numeric
+2020,indiv,q0201,2.01 2-оос 6 настай эсэхийг шалга,haven_labelled
+2020,indiv,q0202,2.02 ХАРИУЛЖ БАЙГАА ХҮНИЙ ХУВИЙН ДУГААРЫГ  БИ,numeric
+2020,indiv,q0203,"2.03 Цэцэрлэг, яслид хамрагддаг уу?",haven_labelled
+2020,indiv,q0204,"2.04 Яагаад цэцэрлэг, яслид хамрагдаагүй вэ?",haven_labelled
+2020,indiv,q0205,"2.05 Явдаг цэцэрлэг, яслийн өмчийн хэлбэр яма",haven_labelled
+2020,indiv,q0206_1,2.06 Өрхөөс төлсөн цэцэрлэгийн төлбөр,numeric
+2020,indiv,q0206_2,"2.06 Бичгийн хэрэгсэл, сургалтын материал",numeric
+2020,indiv,q0206_3,"2.06 Цэцэрлэг, яслийн хоолны мөнгө",numeric
+2020,indiv,q0206_4,2.06 Бусад,numeric
+2020,indiv,q0206_5,2.06 Нийт,numeric
+2020,indiv,q0207,2.07 5 БА ТҮҮНЭЭС ДЭЭШ НАСТАЙ ЭСЭХИЙГ ШАЛГА.,haven_labelled
+2020,indiv,q0208,2.08 ЭНЭ ГИШҮҮН ӨӨРӨӨ ХАРИУЛЖ БАЙНА УУ?,haven_labelled
+2020,indiv,q0209,2.09 ХАРИУЛЖ БАЙГАА ХҮНИЙ ХУВИЙН ДУГААРЫГ БИ,numeric
+2020,indiv,q0210,2.10 [НЭР]-ын/ийн эзэмшсэн  боловсролын дээд т,haven_labelled
+2020,indiv,q0211,2.11 [НЭР] Монгол хэл эсвэл бусад хэл дээр энг,haven_labelled
+2020,indiv,q0212,"2.12 [НЭР] энгийн нэмэх, хасах тооцооллыг хийж",haven_labelled
+2020,indiv,q0213,2.13 [НЭР] нийт хэдэн жил сургуульд  суралцсан,numeric
+2020,indiv,q0214,2.14 [НЭР] одоо сургуульд сурдаг уу?,haven_labelled
+2020,indiv,q0215,2.15 [НЭР] ерөнхий боловсролын сургуулиас зав,haven_labelled
+2020,indiv,q0216,2.16 [НЭР] сургуулийн хэддүгээр ангиас гарсан,numeric
+2020,indiv,q0217,2.17 [НЭР] яагаад сургуулиас гарсан бэ?,haven_labelled
+2020,indiv,q0218,2.18 [НЭР] яагаад сургуульд суралцаагүй вэ?,haven_labelled
+2020,indiv,q0219a,2.19 [НЭР] одоо ямар сургуульд сурч байна вэ?,haven_labelled
+2020,indiv,q0219b,"2.19 [НЭР] одоо хэддүгээр анги, курсэд сурч ба",numeric
+2020,indiv,q0220,2.20 [НЭР]-ын/ийн сурдаг сургуулийн өмчийн хэл,haven_labelled
+2020,indiv,q0221,2.21 [НЭР]-ын/ийн суралцдаг сургууль хаана бай,haven_labelled
+2020,indiv,q0222,2.22 [НЭР] суралцах хугацаандаа хаана амьдард,haven_labelled
+2020,indiv,q0223,2.23 [НЭР] сургууль руу явахдаа ямар тээврийн,haven_labelled
+2020,indiv,q0224,2.24 [НЭР] сургалтын төлбөр төлдөг үү?,haven_labelled
+2020,indiv,q0225,2.25 [НЭР] сүүлийн 12 сард сургалтын төлбөрөө т,haven_labelled
+2020,indiv,q0226,2.26 [НЭР] хаанаас зээл авсан бэ?,haven_labelled
+2020,indiv,q0227,2.27 [НЭР] сүүлийн 12 сард сургалтын төлбөрт зо,numeric
+2020,indiv,q0228,2.28 [НЭР] сүүлийн 12 сард сургалтын төлбөртөө,haven_labelled
+2020,indiv,q0229,"2.29 [НЭР] хэнээс тусламж, хандив, хөнгөлөлт а",haven_labelled
+2020,indiv,q0230,2.30 [НЭР] сүүлийн 12 сард сургалтын төлбөрт зо,numeric
+2020,indiv,q0231,2.31 [НЭР] сүүлийн 12 сард дор хаяж нэг долоо хо,haven_labelled
+2020,indiv,q0232_1,2.32.1  Сууцны түрээс болон оюутны байрны хөлс,numeric
+2020,indiv,q0232_2,2.32.2 Өрхөөс төлсөн сургалтын төлбөр,numeric
+2020,indiv,q0232_3,"2.32.3 Сурах бичиг, бичгийн хэрэгсэл",numeric
+2020,indiv,q0232_4,2.32.4 Дүрэмт хувцас,numeric
+2020,indiv,q0232_5,2.32.5 Тээвэр,numeric
+2020,indiv,q0232_6,2.32.6 Бусад,numeric
+2020,indiv,q0232_7,2.32.7 Нийт,numeric
+2020,indiv,q0301,3.01 ЭНЭ ГИШҮҮН ӨӨРӨӨ ЯРИЛЦЛАГА ӨГЧ БАЙНА УУ?,haven_labelled
+2020,indiv,q0302,3.02 ХАРИУЛЖ БАЙГАА ХҮНИЙ ХУВИЙН ДУГААРЫГ БИ,numeric
+2020,indiv,q0303,3.03 [НЭР] эрүүл мэндийн даатгал (ЭМД)-д хамраг,haven_labelled
+2020,indiv,q0304,3.04 [НЭР] яагаад ЭМД-д хамрагдаагүй вэ?,haven_labelled
+2020,indiv,q0305,3.05 [НЭР] эрүүл мэндийн даатгалаа хаанаас тө,haven_labelled
+2020,indiv,q0306,"3.06 [НЭР] сүүлийн 30 хоногт өвдөж, гэмтсэн үү?",haven_labelled
+2020,indiv,q0307,3.07 [НЭР] сүүлийн 30 хоногт ер нь (өвдсөн эсвэл,haven_labelled
+2020,indiv,q0308,3.08 [НЭР] ӨВДСӨН ХЭДИЙ Ч ЭМНЭЛЭГТ ХАНДААГҮЙ Э,haven_labelled
+2020,indiv,q0309,3.09 [НЭР] яагаад эмнэлэгт хандаагүй вэ?,haven_labelled
+2020,indiv,q0310a,3.10 Сүүлийн 30 хоногт [НЭР] эмнэлэгт хандсан ш,haven_labelled
+2020,indiv,q0310b,3.10 Сүүлийн 30 хоногт [НЭР] эмнэлэгт хандсан ш,haven_labelled
+2020,indiv,q0311,3.11 [НЭР] ямар эмнэлэгт хандсан бэ?,haven_labelled
+2020,indiv,q0312a,3.12 АМБУЛАТОРИОР ҮЙЛЧЛҮҮЛСЭН ЗАРДАЛ Сүүлий,numeric
+2020,indiv,q0312b,3.12 АМБУЛАТОРИОР ҮЙЛЧЛҮҮЛСЭН ЗАРДАЛ Сүүлий,numeric
+2020,indiv,q0313a,3.13 [НЭР] эмчилгээний зардлыг хэрхэн төлсөн ,haven_labelled
+2020,indiv,q0313b,3.13 [НЭР] эмчилгээний зардлыг хэрхэн төлсөн ,haven_labelled
+2020,indiv,q0314,3.14 [НЭР] сүүлийн 30 хоногт эмчийн жоргүйгээр,haven_labelled
+2020,indiv,q0315,3.15 [НЭР] сүүлийн 30 хоногт эмчийн жоргүйгээр,numeric
+2020,indiv,q0316,3.16 [НЭР] сүүлийн 12 сард эмнэлэгт хэвтэж эмчл,haven_labelled
+2020,indiv,q0317,3.17 [НЭР] сүүлийн 12 сарын хугацаанд эмнэлэгт,numeric
+2020,indiv,q0318a,3.18 Сүүлийн 12 сарын хугацаанд [НЭР] ямар өвчн,haven_labelled
+2020,indiv,q0318b,3.18 Сүүлийн 12 сарын хугацаанд [НЭР] ямар өвчн,haven_labelled
+2020,indiv,q0319,3.19 [НЭР] ямар эмнэлэгт хэвтэн эмчлүүлсэн бэ?,haven_labelled
+2020,indiv,q0320,3.20 [НЭР] сүүлийн 12 сард эмнэлэгт хэвтэж эмчл,numeric
+2020,indiv,q0321,3.21 [НЭР] сүүлийн 12 сард тээврийн зардал боло,numeric
+2020,indiv,q0322a,3.22 [НЭР] эмчилгээний зардлыг хэрхэн төлсөн ,haven_labelled
+2020,indiv,q0322b,3.22 [НЭР] эмчилгээний зардлыг хэрхэн төлсөн ,haven_labelled
+2020,indiv,q0323,3.23 2-4 НАСТАЙ ЭСЭХИЙГ ШАЛГАНА УУ.,haven_labelled
+2020,indiv,q0324_1,3.24 ОДОО БИ ТАНААС [НЭР]-Д ТУЛГАРЧ БАЙЖ БОЛЗО,haven_labelled
+2020,indiv,q0324_2,3.24 2. [НЭР]-ын/ийн хувьд юм сонсоход хүндрэлт,haven_labelled
+2020,indiv,q0324_3,3.24 3. [НЭР]-ын/ийн хувьд дэмжлэг болох туслах,haven_labelled
+2020,indiv,q0324_4,3.24 4. [НЭР]-д та болон танай өрхийн гишүүдийн,haven_labelled
+2020,indiv,q0324_5,3.24 5. [НЭР]-ын/ийн хэл яриаг ойлгоход танд бол,haven_labelled
+2020,indiv,q0324_6,3.24 6. Үеийн хүүхдүүдтэй нь харьцуулахад [НЭР,haven_labelled
+2020,indiv,q0325,3.25 5-17 НАСТАЙ ЭСЭХИЙГ ШАЛГАНА УУ.,haven_labelled
+2020,indiv,q0326_1,3.26 ОДОО БИ ТАНААС [НЭР]-Д ТУЛГАРЧ БАЙЖ БОЛЗО,haven_labelled
+2020,indiv,q0326_2,3.26 2. [НЭР]-ын/ийн хувьд юм сонсоход хүндрэлт,haven_labelled
+2020,indiv,q0326_3,3.26 3. [НЭР]-ын/ийн хувьд алхахад хүндрэлтэй б,haven_labelled
+2020,indiv,q0326_4,"3.26 4. [НЭР]-д хоолоо идэх, хувцсаа өмсөх зэргэ",haven_labelled
+2020,indiv,q0326_5,3.26 5. [НЭР]-ын/ийн яриаг гэрийнхэн нь ойлгохо,haven_labelled
+2020,indiv,q0326_6,3.26 6. Үеийн хүүхдүүдтэй нь харьцуулахад [НЭР,haven_labelled
+2020,indiv,q0326_7,3.26 7. Үеийн хүүхдүүдтэй нь харьцуулахад [НЭР,haven_labelled
+2020,indiv,q0326_8,3.26 8. [НЭР] дуртай зүйлээ хийхдээ анхаарлаа т,haven_labelled
+2020,indiv,q0327,3.27 18 БА ТҮҮНЭЭС ДЭЭШ НАСТАЙ ЭСЭХИЙГ ШАЛГАНА,haven_labelled
+2020,indiv,q0328_1,3.28 ОДОО БИ ТАНААС [НЭР]-Д ТУЛГАРЧ БАЙЖ БОЛЗО,haven_labelled
+2020,indiv,q0328_2,3.28 2. [НЭР]-ын/ийн хувьд юм сонсоход хүндрэлт,haven_labelled
+2020,indiv,q0328_3,3.28 3. [НЭР]-ын/ийн хувьд алхах болон шатаар яв,haven_labelled
+2020,indiv,q0328_4,"3.28 4. [НЭР]-ын/ийн хувьд аливаа зүйлийг санах,",haven_labelled
+2020,indiv,q0328_5,"3.28 5. [НЭР]-ын/ийн хувьд хоолоо идэх, хувцсаа ",haven_labelled
+2020,indiv,q0328_6,3.28 6. [НЭР]-ын/ийн хувьд төрөлх хэлээрээ буса,haven_labelled
+2020,indiv,q0401,4.01 5 БОЛОН ТҮҮНЭЭС ДЭЭШ НАСТАЙ ЭСЭХИЙГ ШАЛГ,haven_labelled
+2020,indiv,q0402,4.02 ЭНЭ ГИШҮҮН ӨӨРӨӨ ХАРИУЛЖ БАЙНА УУ?,haven_labelled
+2020,indiv,q0403,4.03 ХАРИУЛЖ БАЙГАА ХҮНИЙ ХУВИЙН ДУГААРЫГ БИ,numeric
+2020,indiv,q0404,4.04 [НЭР] сүүлийн 7 хоногт наад зах нь 1 цаг ям,haven_labelled
+2020,indiv,q0405,4.05 [НЭР] сүүлийн 7 хоногт наад зах нь 1 цаг ор,haven_labelled
+2020,indiv,q0406,4.06 [НЭР] сүүлийн 7 хоногт өрхийн гишүүний би,haven_labelled
+2020,indiv,q0407,"4.07 4.05, 4.06 АСУУЛТУУДЫН ДОР ХАЯЖ НЭГЭНД НЬ 'ТИ",haven_labelled
+2020,indiv,q0408,4.08 [НЭР] сүүлийн 7 хоногт ажил эрхлээгүй ч [Н,haven_labelled
+2020,indiv,q0409,4.09 [НЭР] яагаад сүүлийн 7 хоногт ажилгүй бай,haven_labelled
+2020,indiv,q0410,4.10 Ажиллаагүй хугацаагаа оруулаад [НЭР] 3 са,haven_labelled
+2020,indiv,q0411,4.11 [НЭР] ажлаа хийгээгүй хугацаандаа ажлаас,haven_labelled
+2020,indiv,q0412,4.12 [НЭР]-ын/ийн сүүлийн 7 хоногийн үндсэн ажи,haven_labelled
+2020,indiv,q0413,4.13 [НЭР]-ын/ийн сүүлийн 7 хоногт эрхэлж буй ү,haven_labelled
+2020,indiv,q0414,4.14 Сүүлийн 12 сард энэ үйл ажиллагаанаас олс,haven_labelled
+2020,indiv,q0415,4.15 [НЭР] сүүлийн 30 хоногт цалин хөлстэй ажил,haven_labelled
+2020,indiv,q0416,4.16 [НЭР] сүүлийн 30 хоногт ямар аргаар ажил х,haven_labelled
+2020,indiv,q0417,4.17 [НЭР] сүүлийн 30 хоногт яагаад ажил хайгаа,haven_labelled
+2020,indiv,q0418,4.18 Хэрэв [НЭР]-д ямар нэгэн  цалинтай ажил/ б,haven_labelled
+2020,indiv,q0419,4.19 [НЭР] сүүлийн 7 хоногт ямар нэгэн цалинта,haven_labelled
+2020,indiv,q0420,"4.20 [НЭР]-т ирэх 14 хоногт ямар нэгэн ажил, биз",haven_labelled
+2020,indiv,q0421,"4.21 [НЭР] Хөдөлмөрийн хэлтэс, хөдөлмөрийн би",haven_labelled
+2020,indiv,q0422,4.22 [НЭР] нь сүүлийн 7 хоногт ажил эрхлээгүй ч,haven_labelled
+2020,indiv,q0423,4.23 [НЭР] сүүлийн 7 хоногт ямар ажил эрхэлсэн,haven_labelled
+2020,indiv,q0424,4.24 [НЭР] сүүлийн 7 хоногт ямар салбарт ажилл,haven_labelled
+2020,indiv,q0425,4.25 [НЭР]-ын/ийн сүүлийн 7 хоногт эрхэлсэн үнд,haven_labelled
+2020,indiv,q0426,4.26 [НЭР]-ын/ийн сүүлийн 7 хоногт ажилласан ба,haven_labelled
+2020,indiv,q0427,4.27 [НЭР] сүүлийн 7 хоногт үндсэн ажилдаа ний,numeric
+2020,indiv,q0428,4.28 [НЭР] сүүлийн 7 хоногт үндсэн ажлаасаа га,haven_labelled
+2020,indiv,q0429,4.29 [НЭР] сүүлийн 7 хоногт давхар ажилд хэдэн,numeric
+2020,indiv,q0430,4.30 [НЭР]-ын/ийн сүүлийн 12 сарын үндсэн ажил н,haven_labelled
+2020,indiv,q0431,4.31  [НЭР] сүүлийн 12 сард ямар ажил эрхэлсэн б,haven_labelled
+2020,indiv,q0432,4.32 [НЭР] сүүлийн 12 сард ямар салбарт ажиллас,haven_labelled
+2020,indiv,q0433,4.33 [НЭР]-ын/ийн сүүлийн 12 сард эрхэлсэн үндс,haven_labelled
+2020,indiv,q0434,4.34 [НЭР]-ын/ийн сүүлийн 12 сард эрхэлсэн үндс,haven_labelled
+2020,indiv,q0435,4.35 [НЭР] сүүлийн 12 сард ажиллаад мөнгөн ба м,haven_labelled
+2020,indiv,q0436a,4.36 [НЭР] нь сүүлийн 12 сард үндсэн ажлаасаа х,numeric
+2020,indiv,q0436b,4.36 [НЭР] нь сүүлийн 12 сард үндсэн ажлаасаа х,numeric
+2020,indiv,q0436c,4.36 [НЭР] нь сүүлийн 12 сард үндсэн ажлаасаа х,numeric
+2020,indiv,q0437,4.37 [НЭР] энэ ажлыг хэдэн сар хийсэн бэ?,numeric
+2020,indiv,q0438,4.38 [НЭР] ажилласан сарууддаа энэ ажилд сард,numeric
+2020,indiv,q0439,4.39 [НЭР] ажилласан саруудын өдрүүддээ энэ а,numeric
+2020,indiv,q0440,"4.40 [НЭР] сүүлийн 12 сард үндсэн ажил (4.31, 4.32-Т ",haven_labelled
+2020,indiv,q0441,4.41 [НЭР]-ын/ийн сүүлийн 12 сард эрхэлсэн нэмэ,haven_labelled
+2020,indiv,q0442,4.42 [НЭР]-ын/ийн сүүлийн 12 сарын хугацаанд эр,haven_labelled
+2020,indiv,q0443,4.43 [НЭР]-ын/ийн сүүлийн 12 сард эрхэлсэн хоёр,haven_labelled
+2020,indiv,q0444,4.44 [НЭР]-ын/ийн сүүлийн 12 сард эрхэлсэн хоёр,haven_labelled
+2020,indiv,q0445,4.45 [НЭР]-ын/ийн сүүлийн 12 сард эрхэлсэн хоёр,haven_labelled
+2020,indiv,q0446,4.46 [НЭР] энэ ажлыг хэдэн сар хийсэн бэ?,numeric
+2020,indiv,q0447,4.47 [НЭР] ажилласан сарууддаа энэ ажилд сард,numeric
+2020,indiv,q0448,4.48 [НЭР] ажилласан саруудын өдрүүддээ энэ а,numeric
+2020,indiv,q0449,4.49 [НЭР] түр болон давхар эрхэлсэн бүх ажлаа,haven_labelled
+2020,indiv,q0450a,4.50 Сүүлийн сард түр болон давхар эрхэлсэн б,numeric
+2020,indiv,q0450b,4.50 Сүүлийн 12 сард түр болон давхар эрхэлсэн,numeric
+2020,indiv,q0450c,4.50 Сүүлийн 12 сард түр болон давхар эрхэлсэн,numeric
+2021,indiv,identif,group(identif),numeric
+2021,indiv,ind_id,Хувийн дугаар,numeric
+2021,indiv,q0102,1.02 Өрхийн тэргүүлэгчтэй ямар хамааралтай вэ?,haven_labelled
+2021,indiv,q0103,1.03 Хүйс,haven_labelled
+2021,indiv,q0105y,1.05 Нас /жил/,numeric
+2021,indiv,q0105m,1.05 Нас /сар/,numeric
+2021,indiv,q0106,1.06 Гэрлэлтийн байдал,haven_labelled
+2021,indiv,q0107,1.07 Эхнэр нөхрийн хувийн дугаар,numeric
+2021,indiv,q0108a,1.08 Хоног,numeric
+2021,indiv,q0108b,1.08 Сар,numeric
+2021,indiv,q0109,1.09 Асуултанд хамрагдах эсэх,haven_labelled
+2021,indiv,q0110,1.10 [НЭР] одоо энэ өрхөд хамт амьдарч байна уу?,haven_labelled
+2021,indiv,q0111,1.11 Одоо [НЭР] хаана амьдарч байна вэ? Монгол/ Гадаад,haven_labelled
+2021,indiv,q0111a,1.11 Одоо [НЭР] хаана амьдарч байна вэ? Аймаг/ Нийслэл,haven_labelled
+2021,indiv,q0111b,1.11 Одоо [НЭР] хаана амьдарч байна вэ? Сум/ дүүрэг,numeric
+2021,indiv,q0112,1.12 [НЭР] яагаад хамт амьдрахгүй байгаа вэ?,haven_labelled
+2021,indiv,q0113,1.13 [НЭР] энэ нутагт төрсөн үү?,haven_labelled
+2021,indiv,q0114,1.14 [НЭР] хаана төрсөн бэ? Монгол/Гадаад,haven_labelled
+2021,indiv,q0114a,1.14 [НЭР] хаана төрсөн бэ? Аймаг/ Нийслэл,haven_labelled
+2021,indiv,q0114b,1.14 [НЭР] хаана төрсөн бэ? Сум/ дүүрэг,numeric
+2021,indiv,q0115,1.15 [НЭР] энд хэдэн жил амьдарч байгаа вэ?,numeric
+2021,indiv,q0116,1.16 [НЭР] ер нь шилжиж суурьшиж байсан уу?,haven_labelled
+2021,indiv,q0117,1.17 [НЭР] хамгийн сүүлд хаанаас шилжиж ирсэн бэ?,haven_labelled
+2021,indiv,q0118a,"1.18 [НЭР] хамгийн сүүлд аль аймаг, сумаас шилжиж ирсэн бэ? Аймаг/ Нийслэл",haven_labelled
+2021,indiv,q0118b,"1.18 [НЭР] хамгийн сүүлд аль аймаг, сумаас шилжиж ирсэн бэ? Сум/ дүүрэг",numeric
+2021,indiv,q0119,1.19 [НЭР] хамгийн сүүлд хэдэн онд шилжиж ирсэн бэ?,numeric
+2021,indiv,q0120,1.20 [НЭР]-ын/ийн хамгийн сүүлд шилжиж ирсэн гол шалтгаан юу вэ?,haven_labelled
+2021,indiv,q0121,1.21 [НЭР] 5-н жилийн өмнө хаана амьдарч байсан бэ? Аймаг/ Нийслэл,haven_labelled
+2021,indiv,q0121a,1.21 [НЭР] 5-н жилийн өмнө хаана амьдарч байсан бэ? Аймаг/ Нийслэл,haven_labelled
+2021,indiv,q0121b,1.21 [НЭР] 5-н жилийн өмнө хаана амьдарч байсан бэ? Сум/ дүүрэг,numeric
+2021,indiv,q0201,2.01 2-оос 6 настай эсэхийг шалга,haven_labelled
+2021,indiv,q0202,2.02 ХАРИУЛЖ БАЙГАА ХҮНИЙ ХУВИЙН ДУГААРЫГ  БИЧНЭ ҮҮ,numeric
+2021,indiv,q0203,"2.03 Цэцэрлэг, яслид хамрагддаг уу?",haven_labelled
+2021,indiv,q0204,"2.04 Яагаад цэцэрлэг, яслид хамрагдаагүй вэ?",haven_labelled
+2021,indiv,q0205,"2.05 Явдаг цэцэрлэг, яслийн өмчийн хэлбэр ямар вэ?",haven_labelled
+2021,indiv,q0206_1,2.06 Өрхөөс төлсөн цэцэрлэгийн төлбөр,numeric
+2021,indiv,q0206_2,"2.06 Бичгийн хэрэгсэл, сургалтын материал",numeric
+2021,indiv,q0206_3,"2.06 Цэцэрлэг, яслийн хоолны мөнгө",numeric
+2021,indiv,q0206_4,2.06 Бусад,numeric
+2021,indiv,q0206_5,2.06 Нийт,numeric
+2021,indiv,q0207,2.07 5 БА ТҮҮНЭЭС ДЭЭШ НАСТАЙ ЭСЭХИЙГ ШАЛГА.,haven_labelled
+2021,indiv,q0208,2.08 ЭНЭ ГИШҮҮН ӨӨРӨӨ ХАРИУЛЖ БАЙНА УУ?,haven_labelled
+2021,indiv,q0209,2.09 ХАРИУЛЖ БАЙГАА ХҮНИЙ ХУВИЙН ДУГААРЫГ БИЧНЭ ҮҮ.,numeric
+2021,indiv,q0210,2.10 [НЭР]-ын/ийн эзэмшсэн  боловсролын дээд түвшинг хэлнэ үү?,haven_labelled
+2021,indiv,q0211,"2.11 [НЭР] Монгол хэл эсвэл бусад хэл дээр энгийн өгүүлбэр уншиж, бичиж чадах уу",haven_labelled
+2021,indiv,q0212,"2.12 [НЭР] энгийн нэмэх, хасах тооцооллыг хийж чадах уу?",haven_labelled
+2021,indiv,q0213,2.13 [НЭР] нийт хэдэн жил сургуульд  суралцсан бэ?,numeric
+2021,indiv,q0214,2.14 [НЭР] одоо сургуульд сурдаг уу?,haven_labelled
+2021,indiv,q0215,2.15 [НЭР] ерөнхий боловсролын сургуулиас завсардсан уу?,haven_labelled
+2021,indiv,q0216,2.16 [НЭР] сургуулийн хэддүгээр ангиас гарсан бэ?,numeric
+2021,indiv,q0217,2.17 [НЭР] яагаад сургуулиас гарсан бэ?,haven_labelled
+2021,indiv,q0218,2.18 [НЭР] яагаад сургуульд суралцаагүй вэ?,haven_labelled
+2021,indiv,q0219a,2.19 [НЭР] одоо ямар сургуульд сурч байна вэ?,haven_labelled
+2021,indiv,q0219b,"2.19 [НЭР] одоо хэддүгээр анги, курсэд сурч байна вэ?",numeric
+2021,indiv,q0220,2.20 [НЭР]-ын/ийн сурдаг сургуулийн өмчийн хэлбэр ямар вэ?,haven_labelled
+2021,indiv,q0221,2.21 [НЭР]-ын/ийн суралцдаг сургууль хаана байдаг вэ?,haven_labelled
+2021,indiv,q0222,2.22 [НЭР] суралцах хугацаандаа хаана амьдардаг вэ?,haven_labelled
+2021,indiv,q0223,2.23 [НЭР] сургууль руу явахдаа ямар тээврийн хэрэгслээр явдаг вэ?,haven_labelled
+2021,indiv,q0224,2.24 [НЭР] сургалтын төлбөр төлдөг үү?,haven_labelled
+2021,indiv,q0225,2.25 [НЭР] сүүлийн 12 сард сургалтын төлбөрөө төлөхийн тулд зээл авсан уу?,haven_labelled
+2021,indiv,q0226,2.26 [НЭР] хаанаас зээл авсан бэ?,haven_labelled
+2021,indiv,q0227,2.27 [НЭР] сүүлийн 12 сард сургалтын төлбөрт зориулан нийт хэдэн төгрөгийн зээл,numeric
+2021,indiv,q0228,"2.28 [НЭР] сүүлийн 12 сард сургалтын төлбөртөө ямар нэг тусламж, хандив, хөнгөлө",haven_labelled
+2021,indiv,q0229,"2.29 [НЭР] хэнээс тусламж, хандив, хөнгөлөлт авсан бэ?",haven_labelled
+2021,indiv,q0230,"2.30 [НЭР] сүүлийн 12 сард сургалтын төлбөрт зориулан хичнээн төгрөгийн тусламж,",numeric
+2021,indiv,q0231,2.31 [НЭР] сүүлийн 12 сард дор хаяж нэг долоо хоног ямар нэгэн сургалтад хамрагд,haven_labelled
+2021,indiv,q0232_1,2.32.1  Сууцны түрээс болон оюутны байрны хөлс,numeric
+2021,indiv,q0232_2,2.32.2 Өрхөөс төлсөн сургалтын төлбөр,numeric
+2021,indiv,q0232_3,"2.32.3 Сурах бичиг, бичгийн хэрэгсэл",numeric
+2021,indiv,q0232_4,2.32.4 Дүрэмт хувцас,numeric
+2021,indiv,q0232_5,2.32.5 Тээвэр,numeric
+2021,indiv,q0232_6,2.32.6 Бусад,numeric
+2021,indiv,q0232_7,2.32.7 Нийт,numeric
+2021,indiv,q0301,3.01 ЭНЭ ГИШҮҮН ӨӨРӨӨ ЯРИЛЦЛАГА ӨГЧ БАЙНА УУ?,haven_labelled
+2021,indiv,q0302,3.02 ХАРИУЛЖ БАЙГАА ХҮНИЙ ХУВИЙН ДУГААРЫГ БИЧНЭ ҮҮ.,numeric
+2021,indiv,q0303,3.03 [НЭР] эрүүл мэндийн даатгал (ЭМД)-д хамрагдаж байгаа юу?,haven_labelled
+2021,indiv,q0304,3.04 [НЭР] яагаад ЭМД-д хамрагдаагүй вэ?,haven_labelled
+2021,indiv,q0305,3.05 [НЭР] эрүүл мэндийн даатгалаа хаанаас төлдөг вэ?,haven_labelled
+2021,indiv,q0306,"3.06 [НЭР] сүүлийн 30 хоногт өвдөж, гэмтсэн үү?",haven_labelled
+2021,indiv,q0307,3.07 [НЭР] сүүлийн 30 хоногт ер нь (өвдсөн эсвэл  урьдчилан сэргийлэх зорилгоор),haven_labelled
+2021,indiv,q0308,3.08 [НЭР] ӨВДСӨН ХЭДИЙ Ч ЭМНЭЛЭГТ ХАНДААГҮЙ ЭСЭХИЙГ ШАЛГА.,haven_labelled
+2021,indiv,q0309,3.09 [НЭР] яагаад эмнэлэгт хандаагүй вэ?,haven_labelled
+2021,indiv,q0310a,3.10 Сүүлийн 30 хоногт [НЭР] эмнэлэгт хандсан шалтгаан/ өвчин юу вэ? Анхны,haven_labelled
+2021,indiv,q0310b,3.10 Сүүлийн 30 хоногт [НЭР] эмнэлэгт хандсан шалтгаан/ өвчин юу вэ? Хоёрдахь,haven_labelled
+2021,indiv,q0311,3.11 [НЭР] ямар эмнэлэгт хандсан бэ?,haven_labelled
+2021,indiv,q0312a,3.12 АМБУЛАТОРИОР ҮЙЛЧЛҮҮЛСЭН ЗАРДАЛ Сүүлийн 30 хоногт эмнэлгээр үйлчлүүлэхэд хэ,numeric
+2021,indiv,q0312b,3.12 АМБУЛАТОРИОР ҮЙЛЧЛҮҮЛСЭН ЗАРДАЛ Сүүлийн 30 хоногт тээврийн зардал болон бус,numeric
+2021,indiv,q0313a,3.13 [НЭР] эмчилгээний зардлыг хэрхэн төлсөн бэ? 1-рт,haven_labelled
+2021,indiv,q0313b,3.13 [НЭР] эмчилгээний зардлыг хэрхэн төлсөн бэ? 2-рт,haven_labelled
+2021,indiv,q0314,"3.14 [НЭР] сүүлийн 30 хоногт эмчийн жоргүйгээр эм, тариа, дархлаа сэргээх витами",haven_labelled
+2021,indiv,q0315,"3.15 [НЭР] сүүлийн 30 хоногт эмчийн жоргүйгээр эм, тариа, витамин авахад хэдэн т",numeric
+2021,indiv,q0316,3.16 [НЭР] сүүлийн 12 сард эмнэлэгт хэвтэж эмчлүүлсэн үү?,haven_labelled
+2021,indiv,q0317,"3.17 [НЭР] сүүлийн 12 сарын хугацаанд эмнэлэгт хэд хоног хэвтэж, эмчлүүлсэн бэ?",numeric
+2021,indiv,q0318a,"3.18 Сүүлийн 12 сарын хугацаанд [НЭР] ямар өвчнөөр эмнэлэгт хэвтэн, эмчлүүлсэн в",haven_labelled
+2021,indiv,q0318b,"3.18 Сүүлийн 12 сарын хугацаанд [НЭР] ямар өвчнөөр эмнэлэгт хэвтэн, эмчлүүлсэн в",haven_labelled
+2021,indiv,q0319,3.19 [НЭР] ямар эмнэлэгт хэвтэн эмчлүүлсэн бэ?,haven_labelled
+2021,indiv,q0320,3.20 [НЭР] сүүлийн 12 сард эмнэлэгт хэвтэж эмчлүүлэхэд хэдэн төгрөг бэлэн болон,numeric
+2021,indiv,q0321,"3.21 [НЭР] сүүлийн 12 сард тээврийн зардал болон бусад зардал /байр, хоолны зард",numeric
+2021,indiv,q0322a,3.22 [НЭР] эмчилгээний зардлыг хэрхэн төлсөн бэ? 1-рт,haven_labelled
+2021,indiv,q0322b,3.22 [НЭР] эмчилгээний зардлыг хэрхэн төлсөн бэ? 2-рт,haven_labelled
+2021,indiv,q0323,3.23 2-4 НАСТАЙ ЭСЭХИЙГ ШАЛГАНА УУ.,haven_labelled
+2021,indiv,q0324_1,3.24 ОДОО БИ ТАНААС [НЭР]-Д ТУЛГАРЧ БАЙЖ БОЛЗОШГҮЙ ХҮНДРЭЛ БЭРХШЭЭЛИЙН ТАЛААР ХЭ,haven_labelled
+2021,indiv,q0324_2,3.24 2. [НЭР]-ын/ийн хувьд юм сонсоход хүндрэлтэй байдаг уу? ([НЭР]-д сонсголын,haven_labelled
+2021,indiv,q0324_3,3.24 3. [НЭР]-ын/ийн хувьд дэмжлэг болох туслах хэрэгсэл эсвэл бусдын тусламжгүй,haven_labelled
+2021,indiv,q0324_4,3.24 4. [НЭР]-д та болон танай өрхийн гишүүдийн хэлснийг ойлгоход хүндрэлтэй бай,haven_labelled
+2021,indiv,q0324_5,3.24 5. [НЭР]-ын/ийн хэл яриаг ойлгоход танд болон танай өрхийн гишүүдэд хүндрэл,haven_labelled
+2021,indiv,q0324_6,3.24 6. Үеийн хүүхдүүдтэй нь харьцуулахад [НЭР]-д ямар нэг зүйл сурахад хүндрэлт,haven_labelled
+2021,indiv,q0325,3.25 5-17 НАСТАЙ ЭСЭХИЙГ ШАЛГАНА УУ.,haven_labelled
+2021,indiv,q0326_1,3.26 ОДОО БИ ТАНААС [НЭР]-Д ТУЛГАРЧ БАЙЖ БОЛЗОШГҮЙ ХҮНДРЭЛ БЭРХШЭЭЛИЙН ТАЛААР ХЭ,haven_labelled
+2021,indiv,q0326_2,3.26 2. [НЭР]-ын/ийн хувьд юм сонсоход хүндрэлтэй байдаг уу? ([НЭР]-д сонсголын,haven_labelled
+2021,indiv,q0326_3,3.26 3. [НЭР]-ын/ийн хувьд алхахад хүндрэлтэй байдаг уу? ([НЭР]-д ямар нэгэн дэм,haven_labelled
+2021,indiv,q0326_4,"3.26 4. [НЭР]-д хоолоо идэх, хувцсаа өмсөх зэргээр өөрийгөө арчлахад хүндрэлтэй",haven_labelled
+2021,indiv,q0326_5,3.26 5. [НЭР]-ын/ийн яриаг гэрийнхэн нь ойлгоход хүндрэлтэй байдаг уу?,haven_labelled
+2021,indiv,q0326_6,3.26 6. Үеийн хүүхдүүдтэй нь харьцуулахад [НЭР]-д ямар нэг зүйл сурахад хүндрэлт,haven_labelled
+2021,indiv,q0326_7,3.26 7. Үеийн хүүхдүүдтэй нь харьцуулахад [НЭР]-д ямар нэг зүйл санахад хүндрэлт,haven_labelled
+2021,indiv,q0326_8,3.26 8. [НЭР] дуртай зүйлээ хийхдээ анхаарлаа төвлөрүүлэхэд хүндрэлтэй байдаг уу,haven_labelled
+2021,indiv,q0327,3.27 18 БА ТҮҮНЭЭС ДЭЭШ НАСТАЙ ЭСЭХИЙГ ШАЛГАНА УУ.,haven_labelled
+2021,indiv,q0328_1,3.28 ОДОО БИ ТАНААС [НЭР]-Д ТУЛГАРЧ БАЙЖ БОЛЗОШГҮЙ ХҮНДРЭЛ БЭРХШЭЭЛИЙН ТАЛААР ХЭ,haven_labelled
+2021,indiv,q0328_2,3.28 2. [НЭР]-ын/ийн хувьд юм сонсоход хүндрэлтэй байдаг уу? ([НЭР]-д сонсголын,haven_labelled
+2021,indiv,q0328_3,3.28 3. [НЭР]-ын/ийн хувьд алхах болон шатаар явахад хүндрэлтэй байдаг уу?,haven_labelled
+2021,indiv,q0328_4,"3.28 4. [НЭР]-ын/ийн хувьд аливаа зүйлийг санах, анхаарлаа төвлөрүүлэхэд хүндрэл",haven_labelled
+2021,indiv,q0328_5,"3.28 5. [НЭР]-ын/ийн хувьд хоолоо идэх, хувцсаа өмсөх, нүүр, гар, биеэ угаах зэр",haven_labelled
+2021,indiv,q0328_6,3.28 6. [НЭР]-ын/ийн хувьд төрөлх хэлээрээ бусадтай ярихад ямар нэгэн бэрхшээл г,haven_labelled
+2021,indiv,q0401,4.01 5 БОЛОН ТҮҮНЭЭС ДЭЭШ НАСТАЙ ЭСЭХИЙГ ШАЛГА.,haven_labelled
+2021,indiv,q0402,4.02 ЭНЭ ГИШҮҮН ӨӨРӨӨ ХАРИУЛЖ БАЙНА УУ?,haven_labelled
+2021,indiv,q0403,4.03 ХАРИУЛЖ БАЙГАА ХҮНИЙ ХУВИЙН ДУГААРЫГ БИЧНЭ ҮҮ.,numeric
+2021,indiv,q0404,"4.04 [НЭР] сүүлийн 7 хоногт наад зах нь 1 цаг ямар нэг цалин хөлс, төлбөртэй ажи",haven_labelled
+2021,indiv,q0405,4.05 [НЭР] сүүлийн 7 хоногт наад зах нь 1 цаг орлого олох зорилгоор ямар нэг төр,haven_labelled
+2021,indiv,q0406,4.06 [НЭР] сүүлийн 7 хоногт өрхийн гишүүний бизнес эсвэл цалин хөлстэй ажилд нь,haven_labelled
+2021,indiv,q0407,"4.07 4.05, 4.06 АСУУЛТУУДЫН ДОР ХАЯЖ НЭГЭНД НЬ 'ТИЙМ' ГЭЖ ХАРИУЛСАН ЭСЭХИЙГ ШАЛГ",haven_labelled
+2021,indiv,q0408,4.08 [НЭР] сүүлийн 7 хоногт ажил эрхлээгүй ч [НЭР]-д буцаж хийхээр хүлээгдэж бай,haven_labelled
+2021,indiv,q0409,4.09 [НЭР] яагаад сүүлийн 7 хоногт ажилгүй байсан бэ?,haven_labelled
+2021,indiv,q0410,4.10 Ажиллаагүй хугацаагаа оруулаад [НЭР] 3 сарын дотор өмнө нь хийж байсан ажил,haven_labelled
+2021,indiv,q0411,4.11 [НЭР] ажлаа хийгээгүй хугацаандаа ажлаасаа ямар нэг төрлийн орлого авч байс,haven_labelled
+2021,indiv,q0412,"4.12 [НЭР]-ын/ийн сүүлийн 7 хоногийн үндсэн ажил нь мал тэжээвэр амьтан, газар т",haven_labelled
+2021,indiv,q0413,4.13 [НЭР]-ын/ийн сүүлийн 7 хоногт эрхэлж буй үйл ажиллагааны бүтээгдэхүүнийг за,haven_labelled
+2021,indiv,q0414,4.14 Сүүлийн 12 сард энэ үйл ажиллагаанаас олсон орлого нь тухайн хугацаанд тана,haven_labelled
+2021,indiv,q0415,4.15 [НЭР] сүүлийн 30 хоногт цалин хөлстэй ажил хайх/ бизнес эрхлэх оролдлого хи,haven_labelled
+2021,indiv,q0416,4.16 [НЭР] сүүлийн 30 хоногт ямар аргаар ажил хайсан/ бизнес эрхлэх оролдлого хи,haven_labelled
+2021,indiv,q0417,4.17 [НЭР] сүүлийн 30 хоногт яагаад ажил хайгаагүй/ бизнес эрхлэх гэж оролдоогүй,haven_labelled
+2021,indiv,q0418,4.18 Хэрэв [НЭР]-д ямар нэгэн  цалинтай ажил/ бизнес эрхлэх боломж гарвал хийхий,haven_labelled
+2021,indiv,q0419,4.19 [НЭР] сүүлийн 7 хоногт ямар нэгэн цалинтай ажил/ бизнес эрхлэх боломж гарса,haven_labelled
+2021,indiv,q0420,"4.20 [НЭР]-т ирэх 14 хоногт ямар нэгэн ажил, бизнес эрхлэх боломж гарвал ажиллаж",haven_labelled
+2021,indiv,q0421,"4.21 [НЭР] Хөдөлмөрийн хэлтэс, хөдөлмөрийн биржд бүртгэлтэй юу?",haven_labelled
+2021,indiv,q0422,"4.22 [НЭР] нь сүүлийн 7 хоногт ажил эрхлээгүй ч, сүүлийн 12 сард цалин хөлстэй/",haven_labelled
+2021,indiv,q0423,4.23 [НЭР] сүүлийн 7 хоногт ямар ажил эрхэлсэн бэ?,haven_labelled
+2021,indiv,q0424,4.24 [НЭР] сүүлийн 7 хоногт ямар салбарт ажилласан бэ?,haven_labelled
+2021,indiv,q0425,4.25 [НЭР]-ын/ийн сүүлийн 7 хоногт эрхэлсэн үндсэн ажил юу вэ?,haven_labelled
+2021,indiv,q0426,4.26 [НЭР]-ын/ийн сүүлийн 7 хоногт ажилласан байгууллагын хариуцлагын хэлбэр юу,haven_labelled
+2021,indiv,q0427,4.27 [НЭР] сүүлийн 7 хоногт үндсэн ажилдаа нийтдээ хэдэн цаг зарцуулсан бэ?,numeric
+2021,indiv,q0428,4.28 [НЭР] сүүлийн 7 хоногт үндсэн ажлаасаа гадна давхар цалинтай ажил/ орлого о,haven_labelled
+2021,indiv,q0429,4.29 [НЭР] сүүлийн 7 хоногт давхар ажилд хэдэн цаг зарцуулсан бэ?,numeric
+2021,indiv,q0430,4.30 [НЭР]-ын/ийн сүүлийн 12 сарын үндсэн ажил нь сүүлийн 7 хоногийн үндсэн ажил,haven_labelled
+2021,indiv,q0431,4.31  [НЭР] сүүлийн 12 сард ямар ажил эрхэлсэн бэ?,haven_labelled
+2021,indiv,q0432,4.32 [НЭР] сүүлийн 12 сард ямар салбарт ажилласан бэ?,haven_labelled
+2021,indiv,q0433,4.33 [НЭР]-ын/ийн сүүлийн 12 сард эрхэлсэн үндсэн ажил юу вэ?,haven_labelled
+2021,indiv,q0434,4.34 [НЭР]-ын/ийн сүүлийн 12 сард эрхэлсэн үндсэн ажлын байгууллагын хариуцлагын,haven_labelled
+2021,indiv,q0435,4.35 [НЭР] сүүлийн 12 сард ажиллаад мөнгөн ба мөнгөн бус хэлбэрээр цалин хөлс ав,haven_labelled
+2021,indiv,q0436a,4.36 [НЭР] нь сүүлийн 12 сард үндсэн ажлаасаа хэдэн төгрөгийн цалин авсан бэ? Сү,numeric
+2021,indiv,q0436b,4.36 [НЭР] нь сүүлийн 12 сард үндсэн ажлаасаа хэдэн төгрөгийн цалин авсан бэ? Сү,numeric
+2021,indiv,q0436c,4.36 [НЭР] нь сүүлийн 12 сард үндсэн ажлаасаа хэдэн төгрөгийн цалин авсан бэ? Ур,numeric
+2021,indiv,q0437,4.37 [НЭР] энэ ажлыг хэдэн сар хийсэн бэ?,numeric
+2021,indiv,q0438,4.38 [НЭР] ажилласан сарууддаа энэ ажилд сард  дунджаар  хэдэн өдөр зарцуулсан б,numeric
+2021,indiv,q0439,4.39 [НЭР] ажилласан саруудын өдрүүддээ энэ ажилд өдөрт   дунджаар хэдэн цаг зар,numeric
+2021,indiv,q0440,"4.40 [НЭР] сүүлийн 12 сард үндсэн ажил (4.31, 4.32-Т БҮРТГЭСЭН АЖИЛ)-аасаа гадна",haven_labelled
+2021,indiv,q0441,4.41 [НЭР]-ын/ийн сүүлийн 12 сард эрхэлсэн нэмэлт/давхар ажил нь сүүлийн 7 хоног,haven_labelled
+2021,indiv,q0442,4.42 [НЭР]-ын/ийн сүүлийн 12 сарын хугацаанд эрхэлсэн хоёр дахь үндсэн ажил ямар,haven_labelled
+2021,indiv,q0443,4.43 [НЭР]-ын/ийн сүүлийн 12 сард эрхэлсэн хоёр дахь үндсэн ажил ямар салбар  вэ,haven_labelled
+2021,indiv,q0444,4.44 [НЭР]-ын/ийн сүүлийн 12 сард эрхэлсэн хоёр дахь үндсэн ажил юу вэ?,haven_labelled
+2021,indiv,q0445,4.45 [НЭР]-ын/ийн сүүлийн 12 сард эрхэлсэн хоёр дахь үндсэн ажлын байгууллагын х,haven_labelled
+2021,indiv,q0446,4.46 [НЭР] энэ ажлыг хэдэн сар хийсэн бэ?,numeric
+2021,indiv,q0447,4.47 [НЭР] ажилласан сарууддаа энэ ажилд сард  дунджаар  хэдэн өдөр зарцуулсан б,numeric
+2021,indiv,q0448,4.48 [НЭР] ажилласан саруудын өдрүүддээ энэ ажилд өдөрт   дунджаар хэдэн цаг зар,numeric
+2021,indiv,q0449,4.49 [НЭР] түр болон давхар эрхэлсэн бүх ажлаасаа сүүлийн 12 сард ажиллаад мөнгө,haven_labelled
+2021,indiv,q0450a,4.50 Сүүлийн сард түр болон давхар эрхэлсэн бүх ажлаасаа авсан цалин,numeric
+2021,indiv,q0450b,4.50 Сүүлийн 12 сард түр болон давхар эрхэлсэн бүх ажлаасаа авсан нийт цалин,numeric
+2021,indiv,q0450c,4.50 Сүүлийн 12 сард түр болон давхар эрхэлсэн бүх ажлаасаа авсан нийт урамшуула,numeric
+2022,indiv,identif,group(identif),numeric
+2022,indiv,ind_id,Хувийн дугаар,numeric
+2022,indiv,q0102,1.02 Өрхийн тэргүүлэгчтэй ямар хамааралтай вэ?,haven_labelled
+2022,indiv,q0103,1.03 Хүйс,haven_labelled
+2022,indiv,q0105y,1.05 Нас /жил/,numeric
+2022,indiv,q0105m,1.05 Нас /сар/,numeric
+2022,indiv,q0106,1.06 Гэрлэлтийн байдал,haven_labelled
+2022,indiv,q0107,1.07 Эхнэр нөхрийн хувийн дугаар,numeric
+2022,indiv,q0108a,1.08 Хоног,numeric
+2022,indiv,q0108b,1.08 Сар,numeric
+2022,indiv,q0109,1.09 Асуултанд хамрагдах эсэх,haven_labelled
+2022,indiv,q0110,1.10 [НЭР] одоо энэ өрхөд хамт амьдарч байна уу?,haven_labelled
+2022,indiv,q0111,1.11 Одоо [НЭР] хаана амьдарч байна вэ? Монгол/ Гадаад,haven_labelled
+2022,indiv,q0111a,1.11 Одоо [НЭР] хаана амьдарч байна вэ? Аймаг/ Нийслэл,haven_labelled
+2022,indiv,q0111b,1.11 Одоо [НЭР] хаана амьдарч байна вэ? Сум/ дүүрэг,numeric
+2022,indiv,q0112,1.12 [НЭР] яагаад хамт амьдрахгүй байгаа вэ?,haven_labelled
+2022,indiv,q0113,1.13 [НЭР] энэ нутагт төрсөн үү?,haven_labelled
+2022,indiv,q0114,1.14 [НЭР] хаана төрсөн бэ? Монгол/Гадаад,haven_labelled
+2022,indiv,q0114a,1.14 [НЭР] хаана төрсөн бэ? Аймаг/ Нийслэл,haven_labelled
+2022,indiv,q0114b,1.14 [НЭР] хаана төрсөн бэ? Сум/ дүүрэг,numeric
+2022,indiv,q0115,1.15 [НЭР] энд хэдэн жил амьдарч байгаа вэ?,numeric
+2022,indiv,q0116,1.16 [НЭР] ер нь шилжиж суурьшиж байсан уу?,haven_labelled
+2022,indiv,q0117,1.17 [НЭР] хамгийн сүүлд хаанаас шилжиж ирсэн бэ?,haven_labelled
+2022,indiv,q0118a,"1.18 [НЭР] хамгийн сүүлд аль аймаг, сумаас шилжиж ирсэн бэ? Аймаг/ Нийслэл",haven_labelled
+2022,indiv,q0118b,"1.18 [НЭР] хамгийн сүүлд аль аймаг, сумаас шилжиж ирсэн бэ? Сум/ дүүрэг",numeric
+2022,indiv,q0119,1.19 [НЭР] хамгийн сүүлд хэдэн онд шилжиж ирсэн бэ?,numeric
+2022,indiv,q0120,1.20 [НЭР]-ын/ийн хамгийн сүүлд шилжиж ирсэн гол шалтгаан юу вэ?,haven_labelled
+2022,indiv,q0121,1.21 [НЭР] 5-н жилийн өмнө хаана амьдарч байсан бэ? Аймаг/ Нийслэл,haven_labelled
+2022,indiv,q0121a,1.21 [НЭР] 5-н жилийн өмнө хаана амьдарч байсан бэ? Аймаг/ Нийслэл,haven_labelled
+2022,indiv,q0121b,1.21 [НЭР] 5-н жилийн өмнө хаана амьдарч байсан бэ? Сум/ дүүрэг,numeric
+2022,indiv,q0201,2.01 2-оос 6 настай эсэхийг шалга,haven_labelled
+2022,indiv,q0202,2.02 ХАРИУЛЖ БАЙГАА ХҮНИЙ ХУВИЙН ДУГААРЫГ  БИЧНЭ ҮҮ,numeric
+2022,indiv,q0203,"2.03 Цэцэрлэг, яслид хамрагддаг уу?",haven_labelled
+2022,indiv,q0204,"2.04 Яагаад цэцэрлэг, яслид хамрагдаагүй вэ?",haven_labelled
+2022,indiv,q0205,"2.05 Явдаг цэцэрлэг, яслийн өмчийн хэлбэр ямар вэ?",haven_labelled
+2022,indiv,q0206_1,2.06 Өрхөөс төлсөн цэцэрлэгийн төлбөр,numeric
+2022,indiv,q0206_2,"2.06 Бичгийн хэрэгсэл, сургалтын материал",numeric
+2022,indiv,q0206_3,"2.06 Цэцэрлэг, яслийн хоолны мөнгө",numeric
+2022,indiv,q0206_4,2.06 Бусад,numeric
+2022,indiv,q0206_5,2.06 Нийт,numeric
+2022,indiv,q0207,2.07 5 БА ТҮҮНЭЭС ДЭЭШ НАСТАЙ ЭСЭХИЙГ ШАЛГА.,haven_labelled
+2022,indiv,q0208,2.08 ЭНЭ ГИШҮҮН ӨӨРӨӨ ХАРИУЛЖ БАЙНА УУ?,haven_labelled
+2022,indiv,q0209,2.09 ХАРИУЛЖ БАЙГАА ХҮНИЙ ХУВИЙН ДУГААРЫГ БИЧНЭ ҮҮ.,numeric
+2022,indiv,q0210,2.10 [НЭР]-ын/ийн эзэмшсэн  боловсролын дээд түвшинг хэлнэ үү?,haven_labelled
+2022,indiv,q0211,"2.11 [НЭР] Монгол хэл эсвэл бусад хэл дээр энгийн өгүүлбэр уншиж, бичиж чадах уу",haven_labelled
+2022,indiv,q0212,"2.12 [НЭР] энгийн нэмэх, хасах тооцооллыг хийж чадах уу?",haven_labelled
+2022,indiv,q0213,2.13 [НЭР] нийт хэдэн жил сургуульд  суралцсан бэ?,numeric
+2022,indiv,q0214,2.14 [НЭР] одоо сургуульд сурдаг уу?,haven_labelled
+2022,indiv,q0215,2.15 [НЭР] ерөнхий боловсролын сургуулиас завсардсан уу?,haven_labelled
+2022,indiv,q0216,2.16 [НЭР] сургуулийн хэддүгээр ангиас гарсан бэ?,numeric
+2022,indiv,q0217,2.17 [НЭР] яагаад сургуулиас гарсан бэ?,haven_labelled
+2022,indiv,q0218,2.18 [НЭР] яагаад сургуульд суралцаагүй вэ?,haven_labelled
+2022,indiv,q0219a,2.19 [НЭР] одоо ямар сургуульд сурч байна вэ?,haven_labelled
+2022,indiv,q0219b,"2.19 [НЭР] одоо хэддүгээр анги, курсэд сурч байна вэ?",numeric
+2022,indiv,q0220,2.20 [НЭР]-ын/ийн сурдаг сургуулийн өмчийн хэлбэр ямар вэ?,haven_labelled
+2022,indiv,q0221,2.21 [НЭР]-ын/ийн суралцдаг сургууль хаана байдаг вэ?,haven_labelled
+2022,indiv,q0222,2.22 [НЭР] суралцах хугацаандаа хаана амьдардаг вэ?,haven_labelled
+2022,indiv,q0223,2.23 [НЭР] сургууль руу явахдаа ямар тээврийн хэрэгслээр явдаг вэ?,haven_labelled
+2022,indiv,q0224,2.24 [НЭР] сургалтын төлбөр төлдөг үү?,haven_labelled
+2022,indiv,q0225,2.25 [НЭР] сүүлийн 12 сард сургалтын төлбөрөө төлөхийн тулд зээл авсан уу?,haven_labelled
+2022,indiv,q0226,2.26 [НЭР] хаанаас зээл авсан бэ?,haven_labelled
+2022,indiv,q0227,2.27 [НЭР] сүүлийн 12 сард сургалтын төлбөрт зориулан нийт хэдэн төгрөгийн зээл,numeric
+2022,indiv,q0228,"2.28 [НЭР] сүүлийн 12 сард сургалтын төлбөртөө ямар нэг тусламж, хандив, хөнгөлө",haven_labelled
+2022,indiv,q0229,"2.29 [НЭР] хэнээс тусламж, хандив, хөнгөлөлт авсан бэ?",haven_labelled
+2022,indiv,q0230,"2.30 [НЭР] сүүлийн 12 сард сургалтын төлбөрт зориулан хичнээн төгрөгийн тусламж,",numeric
+2022,indiv,q0231,2.31 [НЭР] сүүлийн 12 сард дор хаяж нэг долоо хоног ямар нэгэн сургалтад хамрагд,haven_labelled
+2022,indiv,q0232_1,2.32.1  Сууцны түрээс болон оюутны байрны хөлс,numeric
+2022,indiv,q0232_2,2.32.2 Өрхөөс төлсөн сургалтын төлбөр,numeric
+2022,indiv,q0232_3,"2.32.3 Сурах бичиг, бичгийн хэрэгсэл",numeric
+2022,indiv,q0232_4,2.32.4 Дүрэмт хувцас,numeric
+2022,indiv,q0232_5,2.32.5 Тээвэр,numeric
+2022,indiv,q0232_6,2.32.6 Бусад,numeric
+2022,indiv,q0232_7,2.32.7 Нийт,numeric
+2022,indiv,q0301,3.01 ЭНЭ ГИШҮҮН ӨӨРӨӨ ЯРИЛЦЛАГА ӨГЧ БАЙНА УУ?,haven_labelled
+2022,indiv,q0302,3.02 ХАРИУЛЖ БАЙГАА ХҮНИЙ ХУВИЙН ДУГААРЫГ БИЧНЭ ҮҮ.,numeric
+2022,indiv,q0303,3.03 [НЭР] эрүүл мэндийн даатгал (ЭМД)-д хамрагдаж байгаа юу?,haven_labelled
+2022,indiv,q0304,3.04 [НЭР] яагаад ЭМД-д хамрагдаагүй вэ?,haven_labelled
+2022,indiv,q0305,3.05 [НЭР] эрүүл мэндийн даатгалаа хаанаас төлдөг вэ?,haven_labelled
+2022,indiv,q0306,"3.06 [НЭР] сүүлийн 30 хоногт өвдөж, гэмтсэн үү?",haven_labelled
+2022,indiv,q0307,3.07 [НЭР] сүүлийн 30 хоногт ер нь (өвдсөн эсвэл  урьдчилан сэргийлэх зорилгоор),haven_labelled
+2022,indiv,q0308,3.08 [НЭР] ӨВДСӨН ХЭДИЙ Ч ЭМНЭЛЭГТ ХАНДААГҮЙ ЭСЭХИЙГ ШАЛГА.,haven_labelled
+2022,indiv,q0309,3.09 [НЭР] яагаад эмнэлэгт хандаагүй вэ?,haven_labelled
+2022,indiv,q0310a,3.10 Сүүлийн 30 хоногт [НЭР] эмнэлэгт хандсан шалтгаан/ өвчин юу вэ? Анхны,haven_labelled
+2022,indiv,q0310b,3.10 Сүүлийн 30 хоногт [НЭР] эмнэлэгт хандсан шалтгаан/ өвчин юу вэ? Хоёрдахь,haven_labelled
+2022,indiv,q0311,3.11 [НЭР] ямар эмнэлэгт хандсан бэ?,haven_labelled
+2022,indiv,q0312a,3.12 АМБУЛАТОРИОР ҮЙЛЧЛҮҮЛСЭН ЗАРДАЛ Сүүлийн 30 хоногт эмнэлгээр үйлчлүүлэхэд хэ,numeric
+2022,indiv,q0312b,3.12 АМБУЛАТОРИОР ҮЙЛЧЛҮҮЛСЭН ЗАРДАЛ Сүүлийн 30 хоногт тээврийн зардал болон бус,numeric
+2022,indiv,q0313a,3.13 [НЭР] эмчилгээний зардлыг хэрхэн төлсөн бэ? 1-рт,haven_labelled
+2022,indiv,q0313b,3.13 [НЭР] эмчилгээний зардлыг хэрхэн төлсөн бэ? 2-рт,haven_labelled
+2022,indiv,q0314,"3.14 [НЭР] сүүлийн 30 хоногт эмчийн жоргүйгээр эм, тариа, дархлаа сэргээх витами",haven_labelled
+2022,indiv,q0315,"3.15 [НЭР] сүүлийн 30 хоногт эмчийн жоргүйгээр эм, тариа, витамин авахад хэдэн т",numeric
+2022,indiv,q0316,3.16 [НЭР] сүүлийн 12 сард эмнэлэгт хэвтэж эмчлүүлсэн үү?,haven_labelled
+2022,indiv,q0317,"3.17 [НЭР] сүүлийн 12 сарын хугацаанд эмнэлэгт хэд хоног хэвтэж, эмчлүүлсэн бэ?",numeric
+2022,indiv,q0318a,"3.18 Сүүлийн 12 сарын хугацаанд [НЭР] ямар өвчнөөр эмнэлэгт хэвтэн, эмчлүүлсэн в",haven_labelled
+2022,indiv,q0318b,"3.18 Сүүлийн 12 сарын хугацаанд [НЭР] ямар өвчнөөр эмнэлэгт хэвтэн, эмчлүүлсэн в",haven_labelled
+2022,indiv,q0319,3.19 [НЭР] ямар эмнэлэгт хэвтэн эмчлүүлсэн бэ?,haven_labelled
+2022,indiv,q0320,3.20 [НЭР] сүүлийн 12 сард эмнэлэгт хэвтэж эмчлүүлэхэд хэдэн төгрөг бэлэн болон,numeric
+2022,indiv,q0321,"3.21 [НЭР] сүүлийн 12 сард тээврийн зардал болон бусад зардал /байр, хоолны зард",numeric
+2022,indiv,q0322a,3.22 [НЭР] эмчилгээний зардлыг хэрхэн төлсөн бэ? 1-рт,haven_labelled
+2022,indiv,q0322b,3.22 [НЭР] эмчилгээний зардлыг хэрхэн төлсөн бэ? 2-рт,haven_labelled
+2022,indiv,q0323,3.23 2-4 НАСТАЙ ЭСЭХИЙГ ШАЛГАНА УУ.,haven_labelled
+2022,indiv,q0324_1,3.24 ОДОО БИ ТАНААС [НЭР]-Д ТУЛГАРЧ БАЙЖ БОЛЗОШГҮЙ ХҮНДРЭЛ БЭРХШЭЭЛИЙН ТАЛААР ХЭ,haven_labelled
+2022,indiv,q0324_2,3.24 2. [НЭР]-ын/ийн хувьд юм сонсоход хүндрэлтэй байдаг уу? ([НЭР]-д сонсголын,haven_labelled
+2022,indiv,q0324_3,3.24 3. [НЭР]-ын/ийн хувьд дэмжлэг болох туслах хэрэгсэл эсвэл бусдын тусламжгүй,haven_labelled
+2022,indiv,q0324_4,3.24 4. [НЭР]-д та болон танай өрхийн гишүүдийн хэлснийг ойлгоход хүндрэлтэй бай,haven_labelled
+2022,indiv,q0324_5,3.24 5. [НЭР]-ын/ийн хэл яриаг ойлгоход танд болон танай өрхийн гишүүдэд хүндрэл,haven_labelled
+2022,indiv,q0324_6,3.24 6. Үеийн хүүхдүүдтэй нь харьцуулахад [НЭР]-д ямар нэг зүйл сурахад хүндрэлт,haven_labelled
+2022,indiv,q0325,3.25 5-17 НАСТАЙ ЭСЭХИЙГ ШАЛГАНА УУ.,haven_labelled
+2022,indiv,q0326_1,3.26 ОДОО БИ ТАНААС [НЭР]-Д ТУЛГАРЧ БАЙЖ БОЛЗОШГҮЙ ХҮНДРЭЛ БЭРХШЭЭЛИЙН ТАЛААР ХЭ,haven_labelled
+2022,indiv,q0326_2,3.26 2. [НЭР]-ын/ийн хувьд юм сонсоход хүндрэлтэй байдаг уу? ([НЭР]-д сонсголын,haven_labelled
+2022,indiv,q0326_3,3.26 3. [НЭР]-ын/ийн хувьд алхахад хүндрэлтэй байдаг уу? ([НЭР]-д ямар нэгэн дэм,haven_labelled
+2022,indiv,q0326_4,"3.26 4. [НЭР]-д хоолоо идэх, хувцсаа өмсөх зэргээр өөрийгөө арчлахад хүндрэлтэй",haven_labelled
+2022,indiv,q0326_5,3.26 5. [НЭР]-ын/ийн яриаг гэрийнхэн нь ойлгоход хүндрэлтэй байдаг уу?,haven_labelled
+2022,indiv,q0326_6,3.26 6. Үеийн хүүхдүүдтэй нь харьцуулахад [НЭР]-д ямар нэг зүйл сурахад хүндрэлт,haven_labelled
+2022,indiv,q0326_7,3.26 7. Үеийн хүүхдүүдтэй нь харьцуулахад [НЭР]-д ямар нэг зүйл санахад хүндрэлт,haven_labelled
+2022,indiv,q0326_8,3.26 8. [НЭР] дуртай зүйлээ хийхдээ анхаарлаа төвлөрүүлэхэд хүндрэлтэй байдаг уу,haven_labelled
+2022,indiv,q0327,3.27 18 БА ТҮҮНЭЭС ДЭЭШ НАСТАЙ ЭСЭХИЙГ ШАЛГАНА УУ.,haven_labelled
+2022,indiv,q0328_1,3.28 ОДОО БИ ТАНААС [НЭР]-Д ТУЛГАРЧ БАЙЖ БОЛЗОШГҮЙ ХҮНДРЭЛ БЭРХШЭЭЛИЙН ТАЛААР ХЭ,haven_labelled
+2022,indiv,q0328_2,3.28 2. [НЭР]-ын/ийн хувьд юм сонсоход хүндрэлтэй байдаг уу? ([НЭР]-д сонсголын,haven_labelled
+2022,indiv,q0328_3,3.28 3. [НЭР]-ын/ийн хувьд алхах болон шатаар явахад хүндрэлтэй байдаг уу?,haven_labelled
+2022,indiv,q0328_4,"3.28 4. [НЭР]-ын/ийн хувьд аливаа зүйлийг санах, анхаарлаа төвлөрүүлэхэд хүндрэл",haven_labelled
+2022,indiv,q0328_5,"3.28 5. [НЭР]-ын/ийн хувьд хоолоо идэх, хувцсаа өмсөх, нүүр, гар, биеэ угаах зэр",haven_labelled
+2022,indiv,q0328_6,3.28 6. [НЭР]-ын/ийн хувьд төрөлх хэлээрээ бусадтай ярихад ямар нэгэн бэрхшээл г,haven_labelled
+2022,indiv,q0401,4.01 5 БОЛОН ТҮҮНЭЭС ДЭЭШ НАСТАЙ ЭСЭХИЙГ ШАЛГА.,haven_labelled
+2022,indiv,q0402,4.02 ЭНЭ ГИШҮҮН ӨӨРӨӨ ХАРИУЛЖ БАЙНА УУ?,haven_labelled
+2022,indiv,q0403,4.03 ХАРИУЛЖ БАЙГАА ХҮНИЙ ХУВИЙН ДУГААРЫГ БИЧНЭ ҮҮ.,numeric
+2022,indiv,q0404,"4.04 [НЭР] сүүлийн 7 хоногт наад зах нь 1 цаг ямар нэг цалин хөлс, төлбөртэй ажи",haven_labelled
+2022,indiv,q0405,4.05 [НЭР] сүүлийн 7 хоногт наад зах нь 1 цаг орлого олох зорилгоор ямар нэг төр,haven_labelled
+2022,indiv,q0406,4.06 [НЭР] сүүлийн 7 хоногт өрхийн гишүүний бизнес эсвэл цалин хөлстэй ажилд нь,haven_labelled
+2022,indiv,q0407,"4.07 4.05, 4.06 АСУУЛТУУДЫН ДОР ХАЯЖ НЭГЭНД НЬ 'ТИЙМ' ГЭЖ ХАРИУЛСАН ЭСЭХИЙГ ШАЛГ",haven_labelled
+2022,indiv,q0408,4.08 [НЭР] сүүлийн 7 хоногт ажил эрхлээгүй ч [НЭР]-д буцаж хийхээр хүлээгдэж бай,haven_labelled
+2022,indiv,q0409,4.09 [НЭР] яагаад сүүлийн 7 хоногт ажилгүй байсан бэ?,haven_labelled
+2022,indiv,q0410,4.10 Ажиллаагүй хугацаагаа оруулаад [НЭР] 3 сарын дотор өмнө нь хийж байсан ажил,haven_labelled
+2022,indiv,q0411,4.11 [НЭР] ажлаа хийгээгүй хугацаандаа ажлаасаа ямар нэг төрлийн орлого авч байс,haven_labelled
+2022,indiv,q0412,"4.12 [НЭР]-ын/ийн сүүлийн 7 хоногийн үндсэн ажил нь мал тэжээвэр амьтан, газар т",haven_labelled
+2022,indiv,q0413,4.13 [НЭР]-ын/ийн сүүлийн 7 хоногт эрхэлж буй үйл ажиллагааны бүтээгдэхүүнийг за,haven_labelled
+2022,indiv,q0414,4.14 Сүүлийн 12 сард энэ үйл ажиллагаанаас олсон орлого нь тухайн хугацаанд тана,haven_labelled
+2022,indiv,q0415,4.15 [НЭР] сүүлийн 30 хоногт цалин хөлстэй ажил хайх/ бизнес эрхлэх оролдлого хи,haven_labelled
+2022,indiv,q0416,4.16 [НЭР] сүүлийн 30 хоногт ямар аргаар ажил хайсан/ бизнес эрхлэх оролдлого хи,haven_labelled
+2022,indiv,q0417,4.17 [НЭР] сүүлийн 30 хоногт яагаад ажил хайгаагүй/ бизнес эрхлэх гэж оролдоогүй,haven_labelled
+2022,indiv,q0418,4.18 Хэрэв [НЭР]-д ямар нэгэн  цалинтай ажил/ бизнес эрхлэх боломж гарвал хийхий,haven_labelled
+2022,indiv,q0419,4.19 [НЭР] сүүлийн 7 хоногт ямар нэгэн цалинтай ажил/ бизнес эрхлэх боломж гарса,haven_labelled
+2022,indiv,q0420,"4.20 [НЭР]-т ирэх 14 хоногт ямар нэгэн ажил, бизнес эрхлэх боломж гарвал ажиллаж",haven_labelled
+2022,indiv,q0421,"4.21 [НЭР] Хөдөлмөрийн хэлтэс, хөдөлмөрийн биржд бүртгэлтэй юу?",haven_labelled
+2022,indiv,q0422,"4.22 [НЭР] нь сүүлийн 7 хоногт ажил эрхлээгүй ч, сүүлийн 12 сард цалин хөлстэй/",haven_labelled
+2022,indiv,q0423,4.23 [НЭР] сүүлийн 7 хоногт ямар ажил эрхэлсэн бэ?,haven_labelled
+2022,indiv,q0424,4.24 [НЭР] сүүлийн 7 хоногт ямар салбарт ажилласан бэ?,haven_labelled
+2022,indiv,q0425,4.25 [НЭР]-ын/ийн сүүлийн 7 хоногт эрхэлсэн үндсэн ажил юу вэ?,haven_labelled
+2022,indiv,q0426,4.26 [НЭР]-ын/ийн сүүлийн 7 хоногт ажилласан байгууллагын хариуцлагын хэлбэр юу,haven_labelled
+2022,indiv,q0427,4.27 [НЭР] сүүлийн 7 хоногт үндсэн ажилдаа нийтдээ хэдэн цаг зарцуулсан бэ?,numeric
+2022,indiv,q0428,4.28 [НЭР] сүүлийн 7 хоногт үндсэн ажлаасаа гадна давхар цалинтай ажил/ орлого о,haven_labelled
+2022,indiv,q0429,4.29 [НЭР] сүүлийн 7 хоногт давхар ажилд хэдэн цаг зарцуулсан бэ?,numeric
+2022,indiv,q0430,4.30 [НЭР]-ын/ийн сүүлийн 12 сарын үндсэн ажил нь сүүлийн 7 хоногийн үндсэн ажил,haven_labelled
+2022,indiv,q0431,4.31  [НЭР] сүүлийн 12 сард ямар ажил эрхэлсэн бэ?,haven_labelled
+2022,indiv,q0432,4.32 [НЭР] сүүлийн 12 сард ямар салбарт ажилласан бэ?,haven_labelled
+2022,indiv,q0433,4.33 [НЭР]-ын/ийн сүүлийн 12 сард эрхэлсэн үндсэн ажил юу вэ?,haven_labelled
+2022,indiv,q0434,4.34 [НЭР]-ын/ийн сүүлийн 12 сард эрхэлсэн үндсэн ажлын байгууллагын хариуцлагын,haven_labelled
+2022,indiv,q0435,4.35 [НЭР] сүүлийн 12 сард ажиллаад мөнгөн ба мөнгөн бус хэлбэрээр цалин хөлс ав,haven_labelled
+2022,indiv,q0436a,4.36 [НЭР] нь сүүлийн 12 сард үндсэн ажлаасаа хэдэн төгрөгийн цалин авсан бэ? Сү,numeric
+2022,indiv,q0436b,4.36 [НЭР] нь сүүлийн 12 сард үндсэн ажлаасаа хэдэн төгрөгийн цалин авсан бэ? Сү,numeric
+2022,indiv,q0436c,4.36 [НЭР] нь сүүлийн 12 сард үндсэн ажлаасаа хэдэн төгрөгийн цалин авсан бэ? Ур,numeric
+2022,indiv,q0437,4.37 [НЭР] энэ ажлыг хэдэн сар хийсэн бэ?,numeric
+2022,indiv,q0438,4.38 [НЭР] ажилласан сарууддаа энэ ажилд сард  дунджаар  хэдэн өдөр зарцуулсан б,numeric
+2022,indiv,q0439,4.39 [НЭР] ажилласан саруудын өдрүүддээ энэ ажилд өдөрт   дунджаар хэдэн цаг зар,numeric
+2022,indiv,q0440,"4.40 [НЭР] сүүлийн 12 сард үндсэн ажил (4.31, 4.32-Т БҮРТГЭСЭН АЖИЛ)-аасаа гадна",haven_labelled
+2022,indiv,q0441,4.41 [НЭР]-ын/ийн сүүлийн 12 сард эрхэлсэн нэмэлт/давхар ажил нь сүүлийн 7 хоног,haven_labelled
+2022,indiv,q0442,4.42 [НЭР]-ын/ийн сүүлийн 12 сарын хугацаанд эрхэлсэн хоёр дахь үндсэн ажил ямар,haven_labelled
+2022,indiv,q0443,4.43 [НЭР]-ын/ийн сүүлийн 12 сард эрхэлсэн хоёр дахь үндсэн ажил ямар салбар  вэ,haven_labelled
+2022,indiv,q0444,4.44 [НЭР]-ын/ийн сүүлийн 12 сард эрхэлсэн хоёр дахь үндсэн ажил юу вэ?,haven_labelled
+2022,indiv,q0445,4.45 [НЭР]-ын/ийн сүүлийн 12 сард эрхэлсэн хоёр дахь үндсэн ажлын байгууллагын х,haven_labelled
+2022,indiv,q0446,4.46 [НЭР] энэ ажлыг хэдэн сар хийсэн бэ?,numeric
+2022,indiv,q0447,4.47 [НЭР] ажилласан сарууддаа энэ ажилд сард  дунджаар  хэдэн өдөр зарцуулсан б,numeric
+2022,indiv,q0448,4.48 [НЭР] ажилласан саруудын өдрүүддээ энэ ажилд өдөрт   дунджаар хэдэн цаг зар,numeric
+2022,indiv,q0449,4.49 [НЭР] түр болон давхар эрхэлсэн бүх ажлаасаа сүүлийн 12 сард ажиллаад мөнгө,haven_labelled
+2022,indiv,q0450a,4.50 Сүүлийн сард түр болон давхар эрхэлсэн бүх ажлаасаа авсан цалин,numeric
+2022,indiv,q0450b,4.50 Сүүлийн 12 сард түр болон давхар эрхэлсэн бүх ажлаасаа авсан нийт цалин,numeric
+2022,indiv,q0450c,4.50 Сүүлийн 12 сард түр болон давхар эрхэлсэн бүх ажлаасаа авсан нийт урамшуула,numeric
+2023,indiv,identif,group(identif),numeric
+2023,indiv,ind_id,Хувийн дугаар,numeric
+2023,indiv,q0102,1.02 Өрхийн тэргүүлэгчтэй ямар хамааралтай вэ?,haven_labelled
+2023,indiv,q0103,1.03 Хүйс,haven_labelled
+2023,indiv,q0105y,1.05 Нас /жил/,numeric
+2023,indiv,q0105m,1.05 Нас /сар/,numeric
+2023,indiv,q0106,1.06 Гэрлэлтийн байдал,haven_labelled
+2023,indiv,q0107,1.07 Эхнэр нөхрийн хувийн дугаар,numeric
+2023,indiv,q0108a,1.08 Хоног,numeric
+2023,indiv,q0108b,1.08 Сар,numeric
+2023,indiv,q0109,1.09 Асуултанд хамрагдах эсэх,haven_labelled
+2023,indiv,q0201,2.01 15 болон түүнээс дээш настай эсэхийг шалга,haven_labelled
+2023,indiv,q0202,2.02 Энэ гишүүн өөрөө хариулж байна уу?,haven_labelled
+2023,indiv,q0203,2.03 Хариулж байгаа хүний хувийн дугаар бичнэ үү.,numeric
+2023,indiv,q0204,2.04 Та сүүлийн 12 сард наад зах нь 1 цаг орлого олох зорилгоор ямар нэг цалин х,haven_labelled
+2023,indiv,q0205,2.05 [НЭР]-ын/ийн сүүлийн 12 сард эрхэлсэн үндсэн ажил юу вэ?,haven_labelled
+2023,indiv,q0206,2.06 Та ямар ажил эрхэлсэн бэ?,haven_labelled
+2023,indiv,q0207,2.07 Та ямар салбарт ажилласан бэ?,haven_labelled
+2023,indiv,q0208,2.08 [НЭР] сүүлийн 12 сард ажилласан үндсэн ажлаасаа мөнгөн ба мөнгөн бус хэлбэр,haven_labelled
+2023,indiv,q0209a,2.09 А. Сүүлийн сард,numeric
+2023,indiv,q0209b,2.09 Б. Сүүлийн 12 сард,numeric
+2023,indiv,q0209c,"2.09 В. Сүүлийн 12 сарын нэмэгдэл хөлс, шагнал, урамшуулал",numeric
+2023,indiv,q0210,2.10 [НЭР] сүүлийн 12 сард үндсэн ажлаасаа гадна нэмэлт/давхар цалинтай ажил/орл,haven_labelled
+2023,indiv,q0211,2.11 [НЭР] нэмэлт/давхар эрхэлсэн бүх ажлаасаа сүүлийн 12 сард ажиллаад мөнгөн б,haven_labelled
+2023,indiv,q0212a,2.12 А. Сүүлийн сард,numeric
+2023,indiv,q0212b,2.12 Б. Сүүлийн 12 сард,numeric
+2023,indiv,q0212c,"2.12 В. Сүүлийн 12 сарын нэмэгдэл хөлс, шагнал, урамшуулал",numeric
+2024,indiv,identif,group(identif),numeric
+2024,indiv,ind_id,Хувийн дугаар,numeric
+2024,indiv,q0102,1.02 Өрхийн тэргүүлэгчтэй ямар хамааралтай вэ?,haven_labelled
+2024,indiv,q0103,1.03 Хүйс,haven_labelled
+2024,indiv,q0105y,1.05 Нас /жил/,numeric
+2024,indiv,q0105m,1.05 Нас /сар/,numeric
+2024,indiv,q0106,1.06 Гэрлэлтийн байдал,haven_labelled
+2024,indiv,q0107,1.07 Эхнэр нөхрийн хувийн дугаар,numeric
+2024,indiv,q0108,1.08 НЭР]-ын/ийн аав хамт амьдардаг уу? Хэрэв амьдардаг бол хэн гэдэг вэ?,numeric
+2024,indiv,q0109,1.09 [НЭР]-ын/ийн аав хаана амьдардаг вэ?,haven_labelled
+2024,indiv,q0110,1.10 [НЭР]-ын/ийн ээж хамт амьдардаг уу? Хэрэв амьдардаг бол хэн гэдэг вэ?,numeric
+2024,indiv,q0111,1.11 [НЭР]-ын/ийн ээж хаана амьдардаг вэ?,haven_labelled
+2024,indiv,q0112a,1.12 Хоног,numeric
+2024,indiv,q0112b,1.12 Сар,numeric
+2024,indiv,q0113,1.13 Асуултанд хамрагдах эсэх,haven_labelled
+2024,indiv,q0114,1.14 [НЭР] одоо энэ өрхөд хамт амьдарч байна уу?,haven_labelled
+2024,indiv,q0115,1.15 Одоо [НЭР] хаана амьдарч байна вэ? Монгол/ Гадаад,haven_labelled
+2024,indiv,q0115a,1.15 Одоо [НЭР] хаана амьдарч байна вэ? Аймаг/ Нийслэл,haven_labelled
+2024,indiv,q0115b,1.15 Одоо [НЭР] хаана амьдарч байна вэ? Сум/ дүүрэг,haven_labelled
+2024,indiv,q0116,1.16 [НЭР] яагаад хамт амьдрахгүй байгаа вэ?,haven_labelled
+2024,indiv,q0117,1.17 [НЭР] энэ нутаг буюу [АЙМАГ]-ын/ийн [СУМ]-нд төрсөн үү?,haven_labelled
+2024,indiv,q0118,1.18 [НЭР] хаана төрсөн бэ? Монгол/Гадаад,haven_labelled
+2024,indiv,q0118a,1.18 [НЭР] хаана төрсөн бэ? Аймаг/ Нийслэл,haven_labelled
+2024,indiv,q0118b,1.18 [НЭР] хаана төрсөн бэ? Сум/ дүүрэг,haven_labelled
+2024,indiv,q0119,1.19 [НЭР] энд хэдэн оноос хойш амьдарч байгаа вэ?,numeric
+2024,indiv,q0120,1.20 [НЭР] ер нь шилжиж суурьшиж байсан уу?,haven_labelled
+2024,indiv,q0121,1.21 [НЭР] хамгийн сүүлд хаанаас шилжиж ирсэн бэ?,haven_labelled
+2024,indiv,q0122a,"1.22 [НЭР] хамгийн сүүлд аль аймаг, сумаас шилжиж ирсэн бэ? Аймаг/ Нийслэл",haven_labelled
+2024,indiv,q0122b,"1.22 [НЭР] хамгийн сүүлд аль аймаг, сумаас шилжиж ирсэн бэ? Сум/ дүүрэг",haven_labelled
+2024,indiv,q0123,1.23 [НЭР] хамгийн сүүлд хэдэн онд шилжиж ирсэн бэ?,numeric
+2024,indiv,q0124,1.24 [НЭР]-ын/ийн хамгийн сүүлд шилжиж ирсэн гол шалтгаан юу вэ?,haven_labelled
+2024,indiv,q0125,1.25 [НЭР] 5-н жилийн өмнө хаана амьдарч байсан бэ? Аймаг/ Нийслэл,haven_labelled
+2024,indiv,q0125a,1.25 [НЭР] 5-н жилийн өмнө хаана амьдарч байсан бэ? Аймаг/ Нийслэл,haven_labelled
+2024,indiv,q0125b,1.25 [НЭР] 5-н жилийн өмнө хаана амьдарч байсан бэ? Сум/ дүүрэг,haven_labelled
+2024,indiv,q0201,2.01 2-оос 6 настай эсэхийг шалга,haven_labelled
+2024,indiv,q0202,2.02 ХАРИУЛЖ БАЙГАА ХҮНИЙ ХУВИЙН ДУГААРЫГ  БИЧНЭ ҮҮ,numeric
+2024,indiv,q0203,"2.03 Цэцэрлэг, яслид хамрагддаг уу?",haven_labelled
+2024,indiv,q0204,"2.04 Яагаад цэцэрлэг, яслид хамрагдаагүй вэ?",haven_labelled
+2024,indiv,q0205,"2.05 Явдаг цэцэрлэг, яслийн өмчийн хэлбэр ямар вэ?",haven_labelled
+2024,indiv,q0206_1,2.06 Өрхөөс төлсөн цэцэрлэгийн төлбөр,numeric
+2024,indiv,q0206_2,"2.06 Бичгийн хэрэгсэл, сургалтын материал",numeric
+2024,indiv,q0206_3,"2.06 Цэцэрлэг, яслийн хоолны мөнгө",numeric
+2024,indiv,q0206_4,2.06 Бусад,numeric
+2024,indiv,q0206_5,2.06 Нийт,numeric
+2024,indiv,q0207,2.07 5 БА ТҮҮНЭЭС ДЭЭШ НАСТАЙ ЭСЭХИЙГ ШАЛГА.,haven_labelled
+2024,indiv,q0208,2.08 ЭНЭ ГИШҮҮН ӨӨРӨӨ ХАРИУЛЖ БАЙНА УУ?,haven_labelled
+2024,indiv,q0209,2.09 ХАРИУЛЖ БАЙГАА ХҮНИЙ ХУВИЙН ДУГААРЫГ БИЧНЭ ҮҮ.,numeric
+2024,indiv,q0210,2.10 [НЭР]-ын/ийн эзэмшсэн  боловсролын дээд түвшинг хэлнэ үү?,haven_labelled
+2024,indiv,q0211,"2.11 [НЭР] Монгол хэл эсвэл бусад хэл дээр энгийн өгүүлбэр уншиж, бичиж чадах уу",haven_labelled
+2024,indiv,q0212,"2.12 [НЭР] энгийн нэмэх, хасах тооцооллыг хийж чадах уу?",haven_labelled
+2024,indiv,q0213,2.13 [НЭР] нийт хэдэн жил сургуульд  суралцсан бэ?,numeric
+2024,indiv,q0214,2.14 [НЭР] одоо сургуульд сурдаг уу?,haven_labelled
+2024,indiv,q0215,2.15 [НЭР] ерөнхий боловсролын сургуулиас завсардсан уу?,haven_labelled
+2024,indiv,q0216,2.16 [НЭР] сургуулийн хэддүгээр ангиас гарсан бэ?,numeric
+2024,indiv,q0217,2.17 [НЭР] яагаад сургуулиас гарсан бэ?,haven_labelled
+2024,indiv,q0218,2.18 [НЭР] яагаад сургуульд суралцаагүй вэ?,haven_labelled
+2024,indiv,q0219a,2.19 [НЭР] одоо ямар сургуульд сурч байна вэ?,haven_labelled
+2024,indiv,q0219b,"2.19 [НЭР] одоо хэддүгээр анги, курсэд сурч байна вэ?",numeric
+2024,indiv,q0220,2.20 [НЭР]-ын/ийн сурдаг сургуулийн өмчийн хэлбэр ямар вэ?,haven_labelled
+2024,indiv,q0221,2.21 [НЭР]-ын/ийн суралцдаг сургууль хаана байдаг вэ?,haven_labelled
+2024,indiv,q0222,2.22 [НЭР] суралцах хугацаандаа хаана амьдардаг вэ?,haven_labelled
+2024,indiv,q0223,2.23 [НЭР] сургууль руу явахдаа ямар тээврийн хэрэгслээр явдаг вэ?,haven_labelled
+2024,indiv,q0224,2.24 [НЭР] сургалтын төлбөр төлдөг үү?,haven_labelled
+2024,indiv,q0225,2.25 [НЭР] сүүлийн 12 сард сургалтын төлбөрөө төлөхийн тулд зээл авсан уу?,haven_labelled
+2024,indiv,q0226,2.26 [НЭР] хаанаас зээл авсан бэ?,haven_labelled
+2024,indiv,q0227,2.27 [НЭР] сүүлийн 12 сард сургалтын төлбөрт зориулан нийт хэдэн төгрөгийн зээл,numeric
+2024,indiv,q0228,"2.28 [НЭР] сүүлийн 12 сард сургалтын төлбөртөө ямар нэг тусламж, хандив, хөнгөлө",haven_labelled
+2024,indiv,q0229,"2.29 [НЭР] хэнээс тусламж, хандив, хөнгөлөлт авсан бэ?",haven_labelled
+2024,indiv,q0230,"2.30 [НЭР] сүүлийн 12 сард сургалтын төлбөрт зориулан хичнээн төгрөгийн тусламж,",numeric
+2024,indiv,q0231,2.31 [НЭР] сүүлийн 12 сард дор хаяж нэг долоо хоног ямар нэгэн сургалтад хамрагд,haven_labelled
+2024,indiv,q0232_1,2.32.1  Сууцны түрээс болон оюутны байрны хөлс,numeric
+2024,indiv,q0232_2,2.32.2 Өрхөөс төлсөн сургалтын төлбөр,numeric
+2024,indiv,q0232_3,"2.32.3 Сурах бичиг, бичгийн хэрэгсэл",numeric
+2024,indiv,q0232_4,2.32.4 Дүрэмт хувцас,numeric
+2024,indiv,q0232_5,2.32.5 Тээвэр,numeric
+2024,indiv,q0232_6,2.32.6 Бусад,numeric
+2024,indiv,q0232_7,2.32.7 Нийт,numeric
+2024,indiv,q0301,3.01 ЭНЭ ГИШҮҮН ӨӨРӨӨ ЯРИЛЦЛАГА ӨГЧ БАЙНА УУ?,haven_labelled
+2024,indiv,q0302,3.02 ХАРИУЛЖ БАЙГАА ХҮНИЙ ХУВИЙН ДУГААРЫГ БИЧНЭ ҮҮ.,numeric
+2024,indiv,q0303,3.03 [НЭР] эрүүл мэндийн даатгал (ЭМД)-д хамрагдаж байгаа юу?,haven_labelled
+2024,indiv,q0304,3.04 [НЭР] яагаад ЭМД-д хамрагдаагүй вэ?,haven_labelled
+2024,indiv,q0305,3.05 [НЭР] эрүүл мэндийн даатгалаа хаанаас төлдөг вэ?,haven_labelled
+2024,indiv,q0306,"3.06 [НЭР] сүүлийн 30 хоногт өвдөж, гэмтсэн үү?",haven_labelled
+2024,indiv,q0307,3.07 [НЭР] сүүлийн 30 хоногт ер нь (өвдсөн эсвэл  урьдчилан сэргийлэх зорилгоор),haven_labelled
+2024,indiv,q0308,3.08 [НЭР] ӨВДСӨН ХЭДИЙ Ч ЭМНЭЛЭГТ ХАНДААГҮЙ ЭСЭХИЙГ ШАЛГА.,haven_labelled
+2024,indiv,q0309,3.09 [НЭР] яагаад эмнэлэгт хандаагүй вэ?,haven_labelled
+2024,indiv,q0310a,3.10 Сүүлийн 30 хоногт [НЭР] эмнэлэгт хандсан шалтгаан/ өвчин юу вэ? Анхны,haven_labelled
+2024,indiv,q0310b,3.10 Сүүлийн 30 хоногт [НЭР] эмнэлэгт хандсан шалтгаан/ өвчин юу вэ? Хоёрдахь,haven_labelled
+2024,indiv,q0311,3.11 [НЭР] ямар эмнэлэгт хандсан бэ?,haven_labelled
+2024,indiv,q0312a,3.12 АМБУЛАТОРИОР ҮЙЛЧЛҮҮЛСЭН ЗАРДАЛ Сүүлийн 30 хоногт эмнэлгээр үйлчлүүлэхэд хэ,numeric
+2024,indiv,q0312b,3.12 АМБУЛАТОРИОР ҮЙЛЧЛҮҮЛСЭН ЗАРДАЛ Сүүлийн 30 хоногт тээврийн зардал болон бус,numeric
+2024,indiv,q0313a,3.13 [НЭР] эмчилгээний зардлыг хэрхэн төлсөн бэ? 1-рт,haven_labelled
+2024,indiv,q0313b,3.13 [НЭР] эмчилгээний зардлыг хэрхэн төлсөн бэ? 2-рт,haven_labelled
+2024,indiv,q0314,"3.14 [НЭР] сүүлийн 30 хоногт эмчийн жоргүйгээр эм, тариа, дархлаа сэргээх витами",haven_labelled
+2024,indiv,q0315,"3.15 [НЭР] сүүлийн 30 хоногт эмчийн жоргүйгээр эм, тариа, витамин авахад хэдэн т",numeric
+2024,indiv,q0316,3.16 [НЭР] сүүлийн 12 сард эмнэлэгт хэвтэж эмчлүүлсэн үү?,haven_labelled
+2024,indiv,q0317,"3.17 [НЭР] сүүлийн 12 сарын хугацаанд эмнэлэгт хэд хоног хэвтэж, эмчлүүлсэн бэ?",numeric
+2024,indiv,q0318a,"3.18 Сүүлийн 12 сарын хугацаанд [НЭР] ямар өвчнөөр эмнэлэгт хэвтэн, эмчлүүлсэн в",haven_labelled
+2024,indiv,q0318b,"3.18 Сүүлийн 12 сарын хугацаанд [НЭР] ямар өвчнөөр эмнэлэгт хэвтэн, эмчлүүлсэн в",haven_labelled
+2024,indiv,q0319,3.19 [НЭР] ямар эмнэлэгт хэвтэн эмчлүүлсэн бэ?,haven_labelled
+2024,indiv,q0320,3.20 [НЭР] сүүлийн 12 сард эмнэлэгт хэвтэж эмчлүүлэхэд хэдэн төгрөг бэлэн болон,numeric
+2024,indiv,q0321,"3.21 [НЭР] сүүлийн 12 сард тээврийн зардал болон бусад зардал /байр, хоолны зард",numeric
+2024,indiv,q0322a,3.22 [НЭР] эмчилгээний зардлыг хэрхэн төлсөн бэ? 1-рт,haven_labelled
+2024,indiv,q0322b,3.22 [НЭР] эмчилгээний зардлыг хэрхэн төлсөн бэ? 2-рт,haven_labelled
+2024,indiv,q0323,3.23 2-4 НАСТАЙ ЭСЭХИЙГ ШАЛГАНА УУ.,haven_labelled
+2024,indiv,q0324_1,3.24 ОДОО БИ ТАНААС [НЭР]-Д ТУЛГАРЧ БАЙЖ БОЛЗОШГҮЙ ХҮНДРЭЛ БЭРХШЭЭЛИЙН ТАЛААР ХЭ,haven_labelled
+2024,indiv,q0324_2,3.24 2. [НЭР]-ын/ийн хувьд юм сонсоход хүндрэлтэй байдаг уу? ([НЭР]-д сонсголын,haven_labelled
+2024,indiv,q0324_3,3.24 3. [НЭР]-ын/ийн хувьд дэмжлэг болох туслах хэрэгсэл эсвэл бусдын тусламжгүй,haven_labelled
+2024,indiv,q0324_4,3.24 4. [НЭР]-д та болон танай өрхийн гишүүдийн хэлснийг ойлгоход хүндрэлтэй бай,haven_labelled
+2024,indiv,q0324_5,3.24 5. [НЭР]-ын/ийн хэл яриаг ойлгоход танд болон танай өрхийн гишүүдэд хүндрэл,haven_labelled
+2024,indiv,q0324_6,3.24 6. Үеийн хүүхдүүдтэй нь харьцуулахад [НЭР]-д ямар нэг зүйл сурахад хүндрэлт,haven_labelled
+2024,indiv,q0325,3.25 5-17 НАСТАЙ ЭСЭХИЙГ ШАЛГАНА УУ.,haven_labelled
+2024,indiv,q0326_1,3.26 ОДОО БИ ТАНААС [НЭР]-Д ТУЛГАРЧ БАЙЖ БОЛЗОШГҮЙ ХҮНДРЭЛ БЭРХШЭЭЛИЙН ТАЛААР ХЭ,haven_labelled
+2024,indiv,q0326_2,3.26 2. [НЭР]-ын/ийн хувьд юм сонсоход хүндрэлтэй байдаг уу? ([НЭР]-д сонсголын,haven_labelled
+2024,indiv,q0326_3,3.26 3. [НЭР]-ын/ийн хувьд алхахад хүндрэлтэй байдаг уу? ([НЭР]-д ямар нэгэн дэм,haven_labelled
+2024,indiv,q0326_4,"3.26 4. [НЭР]-д хоолоо идэх, хувцсаа өмсөх зэргээр өөрийгөө арчлахад хүндрэлтэй",haven_labelled
+2024,indiv,q0326_5,3.26 5. [НЭР]-ын/ийн яриаг гэрийнхэн нь ойлгоход хүндрэлтэй байдаг уу?,haven_labelled
+2024,indiv,q0326_6,3.26 6. Үеийн хүүхдүүдтэй нь харьцуулахад [НЭР]-д ямар нэг зүйл сурахад хүндрэлт,haven_labelled
+2024,indiv,q0326_7,3.26 7. Үеийн хүүхдүүдтэй нь харьцуулахад [НЭР]-д ямар нэг зүйл санахад хүндрэлт,haven_labelled
+2024,indiv,q0326_8,3.26 8. [НЭР] дуртай зүйлээ хийхдээ анхаарлаа төвлөрүүлэхэд хүндрэлтэй байдаг уу,haven_labelled
+2024,indiv,q0327,3.27 18 БА ТҮҮНЭЭС ДЭЭШ НАСТАЙ ЭСЭХИЙГ ШАЛГАНА УУ.,haven_labelled
+2024,indiv,q0328_1,3.28 ОДОО БИ ТАНААС [НЭР]-Д ТУЛГАРЧ БАЙЖ БОЛЗОШГҮЙ ХҮНДРЭЛ БЭРХШЭЭЛИЙН ТАЛААР ХЭ,haven_labelled
+2024,indiv,q0328_2,3.28 2. [НЭР]-ын/ийн хувьд юм сонсоход хүндрэлтэй байдаг уу? ([НЭР]-д сонсголын,haven_labelled
+2024,indiv,q0328_3,3.28 3. [НЭР]-ын/ийн хувьд алхах болон шатаар явахад хүндрэлтэй байдаг уу?,haven_labelled
+2024,indiv,q0328_4,"3.28 4. [НЭР]-ын/ийн хувьд аливаа зүйлийг санах, анхаарлаа төвлөрүүлэхэд хүндрэл",haven_labelled
+2024,indiv,q0328_5,"3.28 5. [НЭР]-ын/ийн хувьд хоолоо идэх, хувцсаа өмсөх, нүүр, гар, биеэ угаах зэр",haven_labelled
+2024,indiv,q0328_6,3.28 6. [НЭР]-ын/ийн хувьд төрөлх хэлээрээ бусадтай ярихад ямар нэгэн бэрхшээл г,haven_labelled
+2024,indiv,q0401,4.01 5 БОЛОН ТҮҮНЭЭС ДЭЭШ НАСТАЙ ЭСЭХИЙГ ШАЛГА.,haven_labelled
+2024,indiv,q0402,4.02 ЭНЭ ГИШҮҮН ӨӨРӨӨ ХАРИУЛЖ БАЙНА УУ?,haven_labelled
+2024,indiv,q0403,4.03 ХАРИУЛЖ БАЙГАА ХҮНИЙ ХУВИЙН ДУГААРЫГ БИЧНЭ ҮҮ.,numeric
+2024,indiv,q0404,"4.04 [НЭР] сүүлийн 7 хоногт наад зах нь 1 цаг ямар нэг цалин хөлс, төлбөртэй ажи",haven_labelled
+2024,indiv,q0405,4.05 [НЭР] сүүлийн 7 хоногт наад зах нь 1 цаг орлого олох зорилгоор ямар нэг төр,haven_labelled
+2024,indiv,q0406,4.06 [НЭР] сүүлийн 7 хоногт өрхийн гишүүний бизнес эсвэл цалин хөлстэй ажилд нь,haven_labelled
+2024,indiv,q0407,"4.07 4.05, 4.06 АСУУЛТУУДЫН ДОР ХАЯЖ НЭГЭНД НЬ 'ТИЙМ' ГЭЖ ХАРИУЛСАН ЭСЭХИЙГ ШАЛГ",haven_labelled
+2024,indiv,q0408,4.08 [НЭР] сүүлийн 7 хоногт ажил эрхлээгүй ч [НЭР]-д буцаж хийхээр хүлээгдэж бай,haven_labelled
+2024,indiv,q0409,4.09 [НЭР] яагаад сүүлийн 7 хоногт ажилгүй байсан бэ?,haven_labelled
+2024,indiv,q0410,4.10 Ажиллаагүй хугацаагаа оруулаад [НЭР] 3 сарын дотор өмнө нь хийж байсан ажил,haven_labelled
+2024,indiv,q0411,4.11 [НЭР] ажлаа хийгээгүй хугацаандаа ажлаасаа ямар нэг төрлийн орлого авч байс,haven_labelled
+2024,indiv,q0412,"4.12 [НЭР]-ын/ийн сүүлийн 7 хоногийн үндсэн ажил нь мал тэжээвэр амьтан, газар т",haven_labelled
+2024,indiv,q0413,4.13 [НЭР]-ын/ийн сүүлийн 7 хоногт эрхэлж буй үйл ажиллагааны бүтээгдэхүүнийг за,haven_labelled
+2024,indiv,q0414,4.14 Сүүлийн 12 сард энэ үйл ажиллагаанаас олсон орлого нь тухайн хугацаанд тана,haven_labelled
+2024,indiv,q0415,4.15 [НЭР] сүүлийн 30 хоногт цалин хөлстэй ажил хайх/ бизнес эрхлэх оролдлого хи,haven_labelled
+2024,indiv,q0416,4.16 [НЭР] сүүлийн 30 хоногт ямар аргаар ажил хайсан/ бизнес эрхлэх оролдлого хи,haven_labelled
+2024,indiv,q0417,4.17 [НЭР] сүүлийн 30 хоногт яагаад ажил хайгаагүй/ бизнес эрхлэх гэж оролдоогүй,haven_labelled
+2024,indiv,q0418,4.18 Хэрэв [НЭР]-д ямар нэгэн  цалинтай ажил/ бизнес эрхлэх боломж гарвал хийхий,haven_labelled
+2024,indiv,q0419,4.19 [НЭР] сүүлийн 7 хоногт ямар нэгэн цалинтай ажил/ бизнес эрхлэх боломж гарса,haven_labelled
+2024,indiv,q0420,"4.20 [НЭР]-т ирэх 14 хоногт ямар нэгэн ажил, бизнес эрхлэх боломж гарвал ажиллаж",haven_labelled
+2024,indiv,q0421,"4.21 [НЭР] Хөдөлмөрийн хэлтэс, хөдөлмөрийн биржд бүртгэлтэй юу?",haven_labelled
+2024,indiv,q0422,"4.22 [НЭР] нь сүүлийн 7 хоногт ажил эрхлээгүй ч, сүүлийн 12 сард цалин хөлстэй/",haven_labelled
+2024,indiv,q0423,4.23 [НЭР] сүүлийн 7 хоногт ямар ажил эрхэлсэн бэ?,haven_labelled
+2024,indiv,q0424,4.24 [НЭР] сүүлийн 7 хоногт ямар салбарт ажилласан бэ?,haven_labelled
+2024,indiv,q0425,4.25 [НЭР]-ын/ийн сүүлийн 7 хоногт эрхэлсэн үндсэн ажил юу вэ?,haven_labelled
+2024,indiv,q0426,4.26 [НЭР]-ын/ийн сүүлийн 7 хоногт ажилласан байгууллагын хариуцлагын хэлбэр юу,haven_labelled
+2024,indiv,q0427,4.27 [НЭР] сүүлийн 7 хоногт үндсэн ажилдаа нийтдээ хэдэн цаг зарцуулсан бэ?,numeric
+2024,indiv,q0428,4.28 [НЭР] сүүлийн 7 хоногт үндсэн ажлаасаа гадна давхар цалинтай ажил/ орлого о,haven_labelled
+2024,indiv,q0429,4.29 [НЭР] сүүлийн 7 хоногт давхар ажилд хэдэн цаг зарцуулсан бэ?,numeric
+2024,indiv,q0430,4.30 [НЭР]-ын/ийн сүүлийн 12 сарын үндсэн ажил нь сүүлийн 7 хоногийн үндсэн ажил,haven_labelled
+2024,indiv,q0431,4.31  [НЭР] сүүлийн 12 сард ямар ажил эрхэлсэн бэ?,haven_labelled
+2024,indiv,q0432,4.32 [НЭР] сүүлийн 12 сард ямар салбарт ажилласан бэ?,haven_labelled
+2024,indiv,q0433,4.33 [НЭР]-ын/ийн сүүлийн 12 сард эрхэлсэн үндсэн ажил юу вэ?,haven_labelled
+2024,indiv,q0434,4.34 [НЭР]-ын/ийн сүүлийн 12 сард эрхэлсэн үндсэн ажлын байгууллагын хариуцлагын,haven_labelled
+2024,indiv,q0435,4.35 [НЭР] сүүлийн 12 сард ажиллаад мөнгөн ба мөнгөн бус хэлбэрээр цалин хөлс ав,haven_labelled
+2024,indiv,q0436a,4.36 [НЭР] нь сүүлийн 12 сард үндсэн ажлаасаа хэдэн төгрөгийн цалин авсан бэ? Сү,numeric
+2024,indiv,q0436b,4.36 [НЭР] нь сүүлийн 12 сард үндсэн ажлаасаа хэдэн төгрөгийн цалин авсан бэ? Сү,numeric
+2024,indiv,q0436c,4.36 [НЭР] нь сүүлийн 12 сард үндсэн ажлаасаа хэдэн төгрөгийн цалин авсан бэ? Ур,numeric
+2024,indiv,q0437,4.37 [НЭР] энэ ажлыг хэдэн сар хийсэн бэ?,numeric
+2024,indiv,q0438,4.38 [НЭР] ажилласан сарууддаа энэ ажилд сард  дунджаар  хэдэн өдөр зарцуулсан б,numeric
+2024,indiv,q0439,4.39 [НЭР] ажилласан саруудын өдрүүддээ энэ ажилд өдөрт   дунджаар хэдэн цаг зар,numeric
+2024,indiv,q0440,"4.40 [НЭР] сүүлийн 12 сард үндсэн ажил (4.31, 4.32-Т БҮРТГЭСЭН АЖИЛ)-аасаа гадна",haven_labelled
+2024,indiv,q0441,4.41 [НЭР]-ын/ийн сүүлийн 12 сард эрхэлсэн нэмэлт/давхар ажил нь сүүлийн 7 хоног,haven_labelled
+2024,indiv,q0442,4.42 [НЭР]-ын/ийн сүүлийн 12 сарын хугацаанд эрхэлсэн хоёр дахь үндсэн ажил ямар,haven_labelled
+2024,indiv,q0443,4.43 [НЭР]-ын/ийн сүүлийн 12 сард эрхэлсэн хоёр дахь үндсэн ажил ямар салбар  вэ,haven_labelled
+2024,indiv,q0444,4.44 [НЭР]-ын/ийн сүүлийн 12 сард эрхэлсэн хоёр дахь үндсэн ажил юу вэ?,haven_labelled
+2024,indiv,q0445,4.45 [НЭР]-ын/ийн сүүлийн 12 сард эрхэлсэн хоёр дахь үндсэн ажлын байгууллагын х,haven_labelled
+2024,indiv,q0446,4.46 [НЭР] энэ ажлыг хэдэн сар хийсэн бэ?,numeric
+2024,indiv,q0447,4.47 [НЭР] ажилласан сарууддаа энэ ажилд сард  дунджаар  хэдэн өдөр зарцуулсан б,numeric
+2024,indiv,q0448,4.48 [НЭР] ажилласан саруудын өдрүүддээ энэ ажилд өдөрт   дунджаар хэдэн цаг зар,numeric
+2024,indiv,q0449,4.49 [НЭР] түр болон давхар эрхэлсэн бүх ажлаасаа сүүлийн 12 сард ажиллаад мөнгө,haven_labelled
+2024,indiv,q0450a,4.50 Сүүлийн сард түр болон давхар эрхэлсэн бүх ажлаасаа авсан цалин,numeric
+2024,indiv,q0450b,4.50 Сүүлийн 12 сард түр болон давхар эрхэлсэн бүх ажлаасаа авсан нийт цалин,numeric
+2024,indiv,q0450c,4.50 Сүүлийн 12 сард түр болон давхар эрхэлсэн бүх ажлаасаа авсан нийт урамшуула,numeric
+2024,indiv,panel_ind22_24,NA,numeric
+2024,indiv,identif22,group(identif),numeric
+2024,indiv,ind_id22,NA,numeric
