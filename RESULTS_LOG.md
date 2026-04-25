@@ -108,16 +108,128 @@ Tier 1 (annual decomposition) бараг бүгдэд хэрэгжсэн — q04
 
 ---
 
-## Долоо хоног 2 — Diagnostics ба OLS-IV (TBD)
-[Хэрэглэгчийн "ok, долоо хоног 2 руу" зөвшөөрлийг хүлээж байна]
+## Долоо хоног 2 — Diagnostics ба OLS-IV — 🛑 **CHECKPOINT 2 (Weak-IV trigger)**
 
-| # | Скрипт | Статус |
+### Скриптийн статус
+
+| # | Скрипт | Статус | Хугацаа | Гарц | Тэмдэглэл |
+|---|---|---|---|---|---|
+| 2.1 | R/08_descriptive.R | ✅ ОК | 1.1 сек | T1_descriptive.csv | MAIN home_aimag n=9,077; treated only 171 |
+| 2.2 | R/09_balance_check.R | ✅ ОК | 3.1 сек | F1_cohort_balance.png + pretrend.csv | Pre-trend OK (educ_years 13.2→13.6→13.8); cohort 1996-97 donut visible |
+| 2.3 | R/10_ols_baseline.R | ✅ ОК | 0.6 сек | T2_ols_baseline.csv | **β_OLS = 0.059** (Main A & B); R²_adj = 0.27; F=355 |
+| 2.4 | R/11_iv_2sls.R | ⚠️ TRIGGER | 15 сек | T2_iv_2sls.csv | **First-stage F = 0.118-0.544 (VERY WEAK)**; AR CI unbounded |
+| 2.5 | R/12_iv_robustness.R | ⚠️ TRIGGER | 1.1 сек | T3_iv_robustness.csv | **All 8 specs F < 0.5** — alt cutoffs + alt_sample don't help |
+
+### CHECKPOINT 1 шийдвэр баталгаажсан
+
+✅ **MAIN SAMPLE = home_aimag (n=9,077)** — Card/Duflo cleanest identification (CLAUDE.md updated).
+
+### T1 Descriptive (MAIN home_aimag, 25-60 нас, n=9,077)
+
+| Variable | Mean | SD | p25 | p50 | p75 |
+|---|---|---|---|---|---|
+| educ_years | 13.0 | 2.81 | 10 | 14 | 14 |
+| lwage (real) | 8.49 | 0.51 | 8.08 | 8.40 | 8.74 |
+| real_hourly (MNT) | 5,540 | 3,100 | 3,240 | 4,450 | 6,220 |
+| age | 32.7 | 4.13 | 29 | 33 | 36 |
+| q_home (school_access) | 1.51 | 0.39 | 1.27 | 1.52 | 1.87 |
+| % female | 46.1 | — | — | — | — |
+| % married | 79.9 | — | — | — | — |
+
+Cohort breakdown (MAIN home_aimag):
+- control (≤1995): 8,404 (92.6%)
+- donut (1996-97): 502 (5.5%)
+- **treated (≥1998): 171 (1.9%)** ← бүгд 2024 wave-д
+
+### T2 OLS baseline (Mincer + Main A/B + sensitivity)
+
+| Spec | N | β_educ | SE_2way | SE_1way | SE_HC1 | F | R²_adj |
+|---|---|---|---|---|---|---|---|
+| Main A (no loc FE) | 9,077 | **0.0594** | 0.00222 | 0.00192 | 0.00198 | 355 | 0.269 |
+| Main B (+ loc FE) | 9,077 | **0.0592** | 0.00231 | 0.00207 | 0.00198 | 352 | 0.269 |
+| Sens. drop urban | 1,661 | 0.0600 | 0.00571 | 0.00538 | 0.00479 | 56.7 | 0.203 |
+| Sens. drop UB | 4,508 | 0.0540 | 0.00525 | 0.00316 | 0.00280 | 175 | 0.235 |
+
+OLS урт зүгээр амжилттай: **5.9-6.0% return per year of schooling** (Mongolia-д тохиромжтой). β_educ specification-ууд хооронд тогтвортой (0.054-0.060). SE 2way/1way ratio: 1.06-1.66 (UB-drop spec-д 1.66, бусад 1.1-1.2). 4-cluster bias caveat нэмэх шаардлагатай.
+
+### T2 IV 2SLS — 🛑 WEAK-IV TRIGGER
+
+| Spec | N | β_IV | SE_2way | SE_1way | SE_HC1 | KP_F | ivf1_F | wald_1st_F | DWH_p | AR CI |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Main A 2SLS | 8,575 | 0.891 | 0.799 | 1.30 | 2.94 | NA | **0.118** | 0.544 | 0.073 | **unbounded** |
+| Main B 2SLS | 8,575 | 0.827 | 0.658 | 1.05 | 2.49 | NA | **0.141** | 0.660 | 0.070 | **unbounded** |
+
+⚠️ **First-stage F = 0.118-0.544** — PLAN §1.2 caveat баталгаажсан. Anderson-Rubin CI grid (±2.0 around β̂) edge hit → essentially unbounded. β_IV (0.83-0.89) нь interpretable биш — кодын алдаа биш, identification дутуу.
+
+### T3 IV robustness — alt cutoffs + alt_sample (БҮГД WEAK)
+
+| Spec | N | treated_n | β_IV | SE | F |
+|---|---|---|---|---|---|
+| MAIN 25-60 / reform_main | 8,575 | 171 | 0.891 | 0.799 | **0.12** |
+| MAIN 25-60 / reform_alt_1997 | 8,320 | 382 | -8.21 | 99.1 | **0.001** |
+| MAIN 25-60 / reform_alt_1999 | 8,772 | 77 | 0.593 | 0.806 | **0.06** |
+| MAIN 25-60 / reform_fuzzy | 9,077 | 171 | -7.20 | 24.2 | **0.001** |
+| ALT 22-60 / reform_main | 9,140 | 736 | 1.55 | 8.41 | **0.03** |
+| ALT 22-60 / reform_alt_1997 | 9,000 | 1,062 | 0.527 | 0.721 | **0.22** |
+| ALT 22-60 / reform_alt_1999 | 9,232 | 445 | -0.433 | 0.629 | **0.43** |
+| ALT 22-60 / reform_fuzzy | 9,849 | 736 | -1.57 | 8.83 | **0.02** |
+
+🚨 **Бүх 8 specification-д F < 0.5** (max F=0.43). Alt cutoffs + alt_sample IV-ийг дорхгүй strengthen. Identification дутагдалтай.
+
+### Cohort balance + pre-trend (R/09)
+
+5-year bin-аар (MAIN home_aimag, hhweight-аар жинлэсэн):
+
+| Cohort bin | N | %female | mean_age | mean_educ | %married | mean_q_home |
+|---|---|---|---|---|---|---|
+| 1990-1995 (control late) | 3,549 | 46.8 | 29.7 | 13.2 | 79.1 | 1.54 |
+| 1996-1997 (donut) | 502 | 50.2 | 26.3 | 13.6 | 65.1 | 1.58 |
+| 1998-2003 (treated) | 171 | 43.3 | 25.6 | 13.8 | 57.9 | 1.58 |
+
+Pre-trend educ_years smooth (13.2 → 13.8), no anomalous bunching at 1996-97. F1_cohort_balance.png-д 2 panel: (A) histogram with donut vlines, (B) LOESS pre-trend.
+
+---
+
+## 🛑 CHECKPOINT 2 — STOP & ASK
+
+### IDENTIFICATION ASSESSMENT
+
+**Гол асуудал:** Reform IV-аар identification бүтэхгүй. Энэ нь:
+
+1. **Treated cohort жижиг** (main_sample 171, alt_sample 736)
+2. **Reform's effect on educ_years бага** (control 13.2 vs treated 13.8 — only 0.6y зөрөө)
+3. **Mongolia-ийн baseline education нь өндөр** — 2004 reform (10→11 жил) ихэнх хүмүүст binding биш байсан
+
+PLAN §4 эрсдэлийн хүснэгтэд урьдчилан тэмдэглэгдсэн "First-stage F < 10 ӨНДӨР" risk бодит болж. PLAN-ийн санал:
+> "(5) KP-F нийтэд < 5 бол **IVTR-ийг exploratory гэж тооцож OLS-Quantile heterogeneity-ыг гол үр дүн руу шилжих**"
+
+### STRATEGY OPTIONS — хэрэглэгчээс шийдвэр шаардлагатай
+
+| Option | Тайлбар | Үр дагавар |
 |---|---|---|
-| 2.1 | R/08_descriptive.R | ⏳ pending |
-| 2.2 | R/09_balance_check.R | ⏳ pending |
-| 2.3 | R/10_ols_baseline.R | ⏳ pending |
-| 2.4 | R/11_iv_2sls.R | ⏳ pending |
-| 2.5 | R/12_iv_robustness.R | ⏳ pending |
+| **A) PIVOT — OLS-Quantile MAIN, IV exploratory** | OLS β = 0.059 (хүчтэй, F=355) → main result. Caner-Hansen IVTR-ыг exploratory. Threshold-ийн heterogeneity story-г Hansen (2000) **OLS threshold regression**-аар хийнэ (IV-гүй). Paper нь "Heterogeneous returns to schooling in Mongolia" framework-д шилжинэ | ✅ Identification clean (OLS); ✅ Threshold story хадгалагдана; ⚠️ Causal claim soft-болно ("conditional on observables") |
+| **B) ALTERNATIVE IV хайх** | Parental education / siblings count / pre-reform regional variation зэрэг өөр IV дизайныг шалгах. Жишээ: HSES roster-аас father's/mother's educ_years extract хийж IV болгох (Card 1995-аас) | ⚠️ Цаг хугацаа (1+ долоо хоног); ⚠️ Үр дүн баталгаагүй; identification claim шинээр |
+| **C) Continue IV with full caveats** | Одоогийн IV-г "exploratory illustration" гэж framing-ээр хадгалаад OLS-ийг ahead тайлагнах | ⚠️ Reviewer-уудад weak-IV нь main concern болно; paper-ийн positioning эмзэг |
+| **D) Restructure topic completely** | IV-Threshold approach-ыг бүхэлд нь орхиод өөр research question руу шилжих (жишээ: heterogeneity by gender × region OLS) | ❌ Time-сан тооцоогоор хүндрэлтэй; PLAN-ийн ноэр-аас хол |
+
+### МИНИЙ САНАЛ: Option A (PIVOT)
+
+**Шалтгаан:**
+1. PLAN §4-д аль хэдийн pre-committed pivot strategy
+2. OLS β = 0.059 нь well-identified, defensible result Mongolia-д (literature 5-10% range)
+3. Threshold heterogeneity story-г OLS-base-ээр (Hansen 2000) хадгалж болно — IVTR-ийн оронд OLS-TR
+4. Paper-ийн narrative: "Returns to schooling in Mongolia: OLS estimates with school-access threshold heterogeneity" — academically defensible
+5. IV-ийг robustness section-д "exploratory weak-IV exercise" гэж хадгална
+
+### Хүлээж байна
+
+🟡 **Хэрэглэгчийн зөвшөөрөл хэрэгтэй:**
+- **A** (PIVOT, recommended) → R/13-ыг OLS threshold regression болгож шинэчилнэ; IVTR exploratory section болно
+- **B** (alt IV) → R/06b нэмж parental education extract хийнэ; шинэ IV дизайны үр дүн шалгана
+- **C** (continue with caveats) → R/13-аас үргэлжлүүлж IVTR-ыг "exploratory" framing-ээр гүйцэтгэнэ
+- **D** (restructure) → бид цоо шинэ план хэрэгтэй
+
+Долоо хоног 3 эхлэхээс өмнө шийдвэр зайлшгүй.
 
 ---
 

@@ -1,0 +1,23 @@
+==========================================================
+11_iv_2sls.R — IV diagnostics   2026-04-26 06:08:44.0241 
+==========================================================
+MAIN sample (post-donut, complete cases): 8575 rows
+  reform_main treated: 171
+  reform_main control: 8404
+
+T2 IV 2SLS results:
+# A tibble: 2 × 12
+  spec           N beta_iv se_2way se_1way se_HC1  KP_F ivf1_F wald_1st_F  DWH_p
+  <chr>      <int>   <dbl>   <dbl>   <dbl>  <dbl> <dbl>  <dbl>      <dbl>  <dbl>
+1 Main A 2S…  8575   0.891   0.799    1.30   2.94    NA  0.118      0.544 0.0731
+2 Main B 2S…  8575   0.827   0.658    1.05   2.49    NA  0.141      0.660 0.0699
+# ℹ 2 more variables: AR_CI_low <dbl>, AR_CI_high <dbl>
+
+First-stage strength: VERY WEAK (F < 5) — exploratory; OLS/OLS-Quantile-руу шилжих санал
+
+--- Methodology notes ---
+- Main inference: Anderson-Rubin (AR) weak-IV-robust CI (gird search, α=0.05)
+- KP rk Wald F (cluster-robust two-way, ~aimag+wave) reported as first-stage strength
+- Stock-Yogo critical values NOT reported (invalid for cluster-robust SE)
+- DWH endogeneity test: H0 = OLS consistent (educ exogenous)
+- 3 SE columns: 2-way cluster (main), 1-way ~aimag, HC1 robust

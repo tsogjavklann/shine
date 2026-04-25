@@ -1,0 +1,46 @@
+==========================================================
+09_balance_check.R лог   2026-04-26 06:04:10.576887 
+==========================================================
+MAIN sample (home_aimag, 25-60): 9077 rows
+Birth year range: [1983, 1999]
+
+Pre-trend balance (5-year bins):
+# A tibble: 3 × 7
+  cohort_bin             n pct_female mean_age mean_educ pct_married mean_q_home
+  <chr>              <int>      <dbl>    <dbl>     <dbl>       <dbl>       <dbl>
+1 1990-1995 (contro…  3549       46.8     29.7      13.2        79.1        1.54
+2 1996-1997 (donut)    502       50.2     26.3      13.6        65.1        1.58
+3 1998-2003 (treate…   171       43.3     25.6      13.8        57.9        1.58
+
+Wave × cohort cross-tab:
+# A tibble: 4 × 4
+   wave `≤1995 control` `1996-97 donut` `≥1998 treated`
+  <int>           <int>           <int>           <int>
+1  2020            2163               0               0
+2  2021            1374              49               0
+3  2022            2869             254               0
+4  2024            1998             199             171
+
+Cohort distribution (full range):
+# A tibble: 17 × 2
+   birth_year     n
+        <int> <int>
+ 1       1983   578
+ 2       1984   637
+ 3       1985   717
+ 4       1986   771
+ 5       1987   733
+ 6       1988   731
+ 7       1989   688
+ 8       1990   767
+ 9       1991   723
+10       1992   637
+11       1993   518
+12       1994   438
+13       1995   466
+14       1996   291
+15       1997   211
+16       1998    94
+17       1999    77
+
+F1 figure saved: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/output/figures/F1_cohort_balance.png

@@ -17,7 +17,7 @@
 
 | Хэсэг | Утга |
 |---|---|
-| Sample | HSES **2020, 2021, 2022, 2024** (4 wave; **2023 хасагдсан** — labour-force-only sub-sample, education/birth_aimag/wage decomp дутуу). Pooled, 22-60 (alt) / 25-60 (main) — `sample_flag` |
+| Sample | HSES **2020, 2021, 2022, 2024** (4 wave; **2023 хасагдсан**). Pooled, 22-60 (alt) / 25-60 (main) — `sample_flag`. **MAIN ANALYSIS SAMPLE = home_aimag subsample (N=9,849; q_home valid)** — Card/Duflo cleanest identification (CHECKPOINT 1 шийдвэр). Newaimag full-sample (N=23,331) → T6 col (7) robustness only |
 | Y | ln(real hourly wage), CPI base 2020 = 100 |
 | Endogenous | educ_years |
 | **Үндсэн IV** | `reform_main` — donut: Z=1 if birth ≥ 1998, Z=0 if ≤ 1995, NA if 1996-1997 |

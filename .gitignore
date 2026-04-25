@@ -43,6 +43,11 @@ output/logs/04b_run*.log
 output/logs/05_run*.log
 output/logs/06_run.log
 output/logs/07_run*.log
+output/logs/08_run.log
+output/logs/09_run.log
+output/logs/10_run.log
+output/logs/11_run.log
+output/logs/12_run.log
 output/logs/_nso_test.log
 # Үлдэгдэл: setup.log, NN_<scriptname>.log (per-script structured logs), all *.csv
 

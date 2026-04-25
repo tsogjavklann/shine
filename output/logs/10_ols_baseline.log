@@ -1,0 +1,25 @@
+==========================================================
+10_ols_baseline.R лог   2026-04-26 06:05:05.891484 
+==========================================================
+MAIN sample (complete cases, home_aimag, 25-60): 9077 rows
+
+T2 OLS baseline + sensitivity:
+# A tibble: 4 × 8
+  spec                         N beta_educ se_2way se_1way  se_HC1 F_test R2_adj
+  <chr>                    <int>     <dbl>   <dbl>   <dbl>   <dbl>  <dbl>  <dbl>
+1 Main A (no location FE)   9077    0.0594 0.00222 0.00192 0.00198  355.   0.269
+2 Main B (+ location FE)    9077    0.0592 0.00231 0.00207 0.00198  352.   0.269
+3 Sens. drop urban (rural…  1661    0.0600 0.00571 0.00538 0.00479   56.7  0.203
+4 Sens. drop UB (non-UB o…  4508    0.0540 0.00525 0.00316 0.0028   175.   0.235
+
+SE ratios (2way vs 1way vs HC1):
+# A tibble: 4 × 10
+  spec         N beta_educ se_2way se_1way  se_HC1 F_test R2_adj ratio_2way_1way
+  <chr>    <int>     <dbl>   <dbl>   <dbl>   <dbl>  <dbl>  <dbl>           <dbl>
+1 Main A …  9077    0.0594 0.00222 0.00192 0.00198  355.   0.269            1.16
+2 Main B …  9077    0.0592 0.00231 0.00207 0.00198  352.   0.269            1.12
+3 Sens. d…  1661    0.0600 0.00571 0.00538 0.00479   56.7  0.203            1.06
+4 Sens. d…  4508    0.0540 0.00525 0.00316 0.0028   175.   0.235            1.66
+# ℹ 1 more variable: ratio_2way_HC1 <dbl>
+
+Note: SE ratio > 2 → few-cluster bias caveat нэмж бичих
