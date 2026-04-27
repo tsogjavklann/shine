@@ -1,0 +1,44 @@
+15_main_ivtr_qhome_parent_mean.R
+Started: 2026-04-26 21:54:04.755923 
+
+Exact Caner-Hansen implementation found: FALSE 
+Method: Caner-Hansen-inspired IV threshold approximation 
+
+Threshold candidates: 200 
+Sample diagnostics:
+# A tibble: 1 × 14
+      N q_home_min q_home_p10 q_home_p25 q_home_p50 q_home_p75 q_home_p90
+  <int>      <dbl>      <dbl>      <dbl>      <dbl>      <dbl>      <dbl>
+1  3188      0.782      0.948       1.05       1.46       1.74       1.96
+# ℹ 7 more variables: q_home_max <dbl>, q_home_unique_values <int>,
+#   corr_q_home_educ_years <dbl>, corr_q_home_parent_educ_mean <dbl>,
+#   n_birth_aimag_clusters <int>, n_birth_cohort_groups <int>, n_waves <int>
+
+Baseline:
+# A tibble: 2 × 9
+  model                N beta_educ_years      se  p_value accepted_first_stage…¹
+  <chr>            <int>           <dbl>   <dbl>    <dbl>                  <dbl>
+1 OLS               3188          0.0472 0.00341 4.95e-12                    NA 
+2 2SLS_parent_edu…  3188          0.103  0.0118  1.99e- 8                   558.
+# ℹ abbreviated name: ¹​accepted_first_stage_clustered_wald_F
+# ℹ 3 more variables: weak_iv_flag <lgl>, cluster <chr>, weights <chr>
+
+Gamma hat: 1.394187 
+
+Final IVTR:
+# A tibble: 1 × 14
+  threshold_variable gamma_hat     N N_low N_high beta_low  se_low    p_low
+  <chr>                  <dbl> <int> <int>  <int>    <dbl>   <dbl>    <dbl>
+1 q_home                  1.39  3188  1495   1693    0.107 0.00969 3.16e-10
+# ℹ 6 more variables: beta_high <dbl>, se_high <dbl>, p_high <dbl>,
+#   beta_difference_high_minus_low <dbl>, method_note <chr>, warning_note <chr>
+
+Threshold effect test:
+# A tibble: 1 × 9
+  test    beta_difference_high…¹ se_difference t_stat wald_F   df1   df2 p_value
+  <chr>                    <dbl>         <dbl>  <dbl>  <dbl> <dbl> <dbl>   <dbl>
+1 beta_l…                -0.0135        0.0113  -1.20   1.43     1    21   0.245
+# ℹ abbreviated name: ¹​beta_difference_high_minus_low
+# ℹ 1 more variable: method <chr>
+
+Completed: 2026-04-26 21:54:13.900586 

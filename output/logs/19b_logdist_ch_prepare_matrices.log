@@ -1,0 +1,44 @@
+19b_logdist_ch_prepare_matrices.R
+Started: 2026-04-27 00:08:28.701292 
+
+Sample diagnostics:
+# A tibble: 1 × 23
+      N n_birth_aimag_clusters n_birth_cohort_groups n_waves
+  <int>                  <int>                 <int>   <int>
+1  3188                     22                     4       4
+# ℹ 19 more variables: log_distance_to_ub_min <dbl>,
+#   log_distance_to_ub_p10 <dbl>, log_distance_to_ub_p25 <dbl>,
+#   log_distance_to_ub_p50 <dbl>, log_distance_to_ub_p75 <dbl>,
+#   log_distance_to_ub_p90 <dbl>, log_distance_to_ub_max <dbl>,
+#   log_distance_to_ub_unique_values <int>, distance_to_ub_min <dbl>,
+#   distance_to_ub_p10 <dbl>, distance_to_ub_p25 <dbl>,
+#   distance_to_ub_p50 <dbl>, distance_to_ub_p75 <dbl>, …
+
+Residualization diagnostics:
+# A tibble: 8 × 8
+  variable  residualized_variable     mean     sd      min     max missing_count
+  <chr>     <chr>                    <dbl>  <dbl>    <dbl>   <dbl>         <int>
+1 lwage     lwage_r               -2.82e-2  0.458   -1.64    1.74              0
+2 educ_yea… educ_years_r          -4.94e-2  2.78   -14.3     7.22              0
+3 parent_e… parent_educ_mean_r    -1.98e-1  2.73   -11.6    11.4               0
+4 age       age_r                 -2.05e-2  1.29    -2.72    2.91              0
+5 age2      age2_r                -1.29e+0 79.8   -158.    222.                0
+6 female    female_r              -6.17e-4  0.490   -0.897   0.889             0
+7 married   married_r             -7.87e-3  0.391   -0.664   0.997             0
+8 urban     urban_r                5.85e-2  0.399   -0.501   1.06              0
+# ℹ 1 more variable: correlation_with_original <dbl>
+
+Matrix diagnostics:
+# A tibble: 1 × 16
+  gamma_example     N N_low N_high ncol_X_gamma ncol_Z_gamma rank_X_gamma
+          <dbl> <int> <int>  <int>        <int>        <int>        <int>
+1          5.89  3188  1604   1584            7            7            7
+# ℹ 9 more variables: rank_Z_gamma <int>, ZtZ_rank <int>, ZtZ_invertible <lgl>,
+#   XPZX_rank <int>, XPZX_invertible <lgl>, XPZX_condition_number <dbl>,
+#   full_rank_X <lgl>, full_rank_Z <lgl>, safe_for_stage19c_example <lgl>
+
+Birth-aimag-level threshold with FE caused matrix problems: FALSE 
+
+Decision: Proceed to Stage 19C threshold grid search. 
+
+Completed: 2026-04-27 00:08:29.070246 

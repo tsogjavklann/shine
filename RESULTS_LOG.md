@@ -533,3 +533,79 @@ Alternative: **B'4** (teacher_supply alone) for simpler paper structure.
 
 1. **Home_aimag vs Newaimag MAIN сонголт:** N_home = 9,849 (just under 10K threshold). Минийгээ recommend **A: home_aimag MAIN, newaimag T6 col (7) robustness**.
 2. **"ok, долоо хоног 2 руу"** зөвшөөрөл — R/08-R/12 (Diagnostics + OLS/2SLS baseline) эхлүүлэх.
+
+
+## CHECKPOINT 2.7 — HSES Deep Variable Exploration
+
+Discovered variables (newly explored):
+- ever_migrated (HSES migration; nonmissing=43070)
+- years_since_migration (HSES migration; nonmissing=16260)
+- migrated_before_18 (HSES migration; nonmissing=42704)
+- migrated_school_age_6_17 (HSES migration; nonmissing=42704)
+- migration_reason_education_self (HSES migration; nonmissing=43070)
+- migration_reason_children_school (HSES migration; nonmissing=43070)
+- migration_reason_natural_disaster (HSES migration 2024 only; nonmissing=3475)
+- lived_5y_ago_diff_aimag (HSES migration; nonmissing=16626)
+- born_foreign (HSES birthplace; nonmissing=19041)
+- birth_aimag_matches_raw (HSES validation; nonmissing=19041)
+- birth_soum_available (HSES birthplace; nonmissing=43070)
+- rural_birth_x_birth_year_c (Cohort x geography; nonmissing=19041)
+- born_ub_x_birth_year_c (Cohort x geography; nonmissing=19041)
+- herder_household_current (HSES household; nonmissing=43070)
+- herder_current_x_birth_year_c (Cohort x household; nonmissing=43070)
+- ever_migrated_x_birth_year_c (Cohort x migration; nonmissing=43070)
+- migrated_school_age_x_rural_birth (Migration x geography; nonmissing=18680)
+- diff_5y_aimag_x_birth_year_c (Migration x cohort; nonmissing=16626)
+- ever_dropout (HSES schooling; nonmissing=1212)
+- dropout_grade (HSES schooling; nonmissing=1139)
+- dropout_reason_parent (HSES schooling; nonmissing=1139)
+- dropout_reason_finance (HSES schooling; nonmissing=1139)
+- dropout_reason_work (HSES schooling; nonmissing=1139)
+- dropout_reason_health (HSES schooling; nonmissing=1139)
+- dropout_reason_distance (HSES schooling; nonmissing=1139)
+- dropout_reason_migration (HSES schooling; nonmissing=1139)
+- never_school_reason_finance (HSES schooling; nonmissing=166)
+- never_school_reason_distance (HSES schooling; nonmissing=166)
+- never_school_reason_dorm_shortage (HSES schooling; nonmissing=166)
+- current_school_public (HSES current school; nonmissing=328)
+- current_school_private (HSES current school; nonmissing=328)
+- current_school_soum_center (HSES current school; nonmissing=328)
+- dormitory_current_student (HSES current school; nonmissing=328)
+- school_transport_walk (HSES current school; nonmissing=328)
+- school_transport_boarding (HSES current school; nonmissing=328)
+- health_insured (HSES health; nonmissing=43070)
+- severe_vision_difficulty (HSES disability; nonmissing=43070)
+- severe_hearing_difficulty (HSES disability; nonmissing=43070)
+- severe_mobility_difficulty (HSES disability; nonmissing=43070)
+- severe_cognitive_difficulty (HSES disability; nonmissing=43070)
+- severe_language_difficulty (HSES language/disability; nonmissing=43070)
+- any_severe_disability (HSES disability; nonmissing=43070)
+- any_mildplus_disability (HSES disability; nonmissing=43070)
+- father_educ_years (Family roster; nonmissing=3307)
+- mother_educ_years (Family roster; nonmissing=4773)
+- parent_educ_mean (Family roster; nonmissing=5155)
+- n_siblings (Family roster; nonmissing=5155)
+- birth_order (Family roster; nonmissing=5155)
+- large_sibship_ge4 (Family roster; nonmissing=5155)
+- firstborn (Family roster; nonmissing=5155)
+
+Tested as IV:
+- dropout_grade: F=2567.5, pi=0.9393, verdict=STRONG, N=406
+- health_insured: F=439.6, pi=2.0166, verdict=STRONG, N=18259
+- parent_educ_mean: F=135.96, pi=0.3819, verdict=STRONG, N=1221
+- ever_dropout: F=119.45, pi=-7.7314, verdict=STRONG, N=429
+- migration_reason_education_self: F=117.37, pi=1.2455, verdict=STRONG, N=18259
+- mother_educ_years: F=113.64, pi=0.3586, verdict=STRONG, N=1129
+- father_educ_years: F=98.75, pi=0.3431, verdict=STRONG, N=729
+- rural_birth_x_birth_year_c: F=45.76, pi=0.0273, verdict=STRONG, N=18259
+- born_ub_x_birth_year_c: F=45.76, pi=-0.0273, verdict=STRONG, N=18259
+- years_since_migration: F=39.32, pi=-0.0222, verdict=STRONG, N=14200
+
+New candidates (final):
+- Strong (F >= 10): dropout_grade, health_insured, parent_educ_mean, ever_dropout, migration_reason_education_self, mother_educ_years, father_educ_years, rural_birth_x_birth_year_c, born_ub_x_birth_year_c, years_since_migration, severe_cognitive_difficulty, any_mildplus_disability, any_severe_disability, migration_reason_children_school, migrated_school_age_6_17, severe_language_difficulty
+- Marginal (5 <= F < 10): migrated_before_18, severe_hearing_difficulty, current_school_public, migrated_school_age_x_rural_birth
+- Failed (F < 5 / wrong sign / collinear): current_school_private, ever_migrated_x_birth_year_c, severe_mobility_difficulty, dropout_reason_distance, lived_5y_ago_diff_aimag, dropout_reason_parent, large_sibship_ge4, severe_vision_difficulty, dropout_reason_health, n_siblings, herder_household_current, ever_migrated, dropout_reason_work, current_school_soum_center, firstborn, dropout_reason_finance, herder_current_x_birth_year_c, dormitory_current_student, birth_order, dropout_reason_migration, school_transport_walk, diff_5y_aimag_x_birth_year_c, birth_aimag_matches_raw, birth_soum_available, born_foreign, migration_reason_natural_disaster, never_school_reason_distance, never_school_reason_dorm_shortage, never_school_reason_finance, school_transport_boarding
+
+Conclusion:
+- No HSES-only candidate is accepted as a clean primary IV without an exclusion-restriction caveat.
+

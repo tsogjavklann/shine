@@ -1,38 +1,38 @@
 ==========================================================
-12b_iv_search.R — Comprehensive IV survey   2026-04-26 07:09:14.862225 
+12b_iv_search.R — Comprehensive IV survey   2026-04-26 20:21:44.117972 
 ==========================================================
-MAIN sample (home_aimag, 25-60, complete cases): 9077 rows
+MAIN sample (home_aimag, 25-60, complete cases): 21009 rows
 
 T2b — IV search results (ranked by first-stage F descending):
 # A tibble: 12 × 12
-   spec    family     N iv      pi_hat   se_pi    t_pi  F_first beta_iv  se_beta
-   <chr>   <chr>  <int> <chr>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>    <dbl>
- 1 06 mot… Family   966 moth…  0.512    0.0472 10.8     1.17e+2  0.118   0.00717
- 2 05 fat… Family   658 fath…  0.476    0.0469 10.1     1.03e+2  0.0672  0.0113 
- 3 08 n_s… Family  1032 n_si… -0.177    0.0193 -9.19    8.44e+1  0.102   0.0155 
- 4 07 par… Family   592 fath… NA       NA      NA       6.35e+1  0.0898  0.0140 
- 5 11 bir… Geogr…  9077 as.f… NA       NA      NA       5.90e+0  0.0791  0.0151 
- 6 04 dis… Geogr…  9077 dist… -0.00015  0.0001 -1.47    2.17e+0  0.409   0.127  
- 7 12 dis… Combo   8575 dist… NA       NA      NA       1.18e+0  0.426   0.141  
- 8 01 ref… Cohort  8575 refo…  0.0740   0.100   0.738   5.44e-1  0.891   0.799  
- 9 09 bir… Family  1032 birt… -0.0179   0.0275 -0.648   4.20e-1  1.86    0.00292
-10 03 ref… Cohort  8772 refo…  0.0723   0.134   0.538   2.89e-1  0.593   0.806  
-11 02 ref… Cohort  8320 refo… -0.00633  0.104  -0.0608  3.69e-3 -8.21   99.1    
-12 10 qua… Time    9077 as.f… NA       NA      NA      NA       NA      NA      
+   spec    family     N iv      pi_hat    se_pi   t_pi  F_first beta_iv  se_beta
+   <chr>   <chr>  <int> <chr>    <dbl>    <dbl>  <dbl>    <dbl>   <dbl>    <dbl>
+ 1 06 mot… Family  2949 moth…  0.501    0.0259  19.3   374.      0.115   0.0125 
+ 2 05 fat… Family  2041 fath…  0.436    0.0303  14.4   207.      0.0812  0.00885
+ 3 07 par… Family  1802 fath… NA       NA       NA      43.3     0.100   0.0124 
+ 4 08 n_s… Family  3188 n_si… -0.255    0.0554  -4.60   21.1     0.203   0.0367 
+ 5 11 bir… Geogr… 21009 as.f… NA       NA       NA       8.16    0.100   0.0414 
+ 6 09 bir… Family  3188 birt… -0.271    0.111   -2.45    5.99    0.260   0.118  
+ 7 01 ref… Cohort 19688 refo…  0.171    0.0941   1.81    3.29    0.330   0.241  
+ 8 12 dis… Combo  19688 dist… NA       NA       NA       2.64    0.186   0.0781 
+ 9 04 dis… Geogr… 21009 dist… -0.00014  0.00009 -1.58    2.49    0.190   0.0842 
+10 03 ref… Cohort 20223 refo…  0.218    0.146    1.50    2.24    0.222   0.150  
+11 02 ref… Cohort 19101 refo…  0.0140   0.0725   0.193   0.0374  3.64   17.1    
+12 10 qua… Time   21009 as.f… NA       NA       NA      NA      NA      NA      
 # ℹ 2 more variables: sargan_p <dbl>, verdict <chr>
 
 --- VERDICT SUMMARY ---
 
       ✅ STRONG (F≥10)          ❌ FIT FAILED          ❌ WEAK (F<5) 
-                     4                      1                      2 
+                     4                      1                      4 
       🚨 USELESS (F<1) 🟡 MARGINAL (F∈[5,10)) 
-                     4                      1 
+                     1                      2 
 
 Strongest IV:
 # A tibble: 3 × 12
-  spec   family     N iv    pi_hat  se_pi  t_pi F_first beta_iv se_beta sargan_p
-  <chr>  <chr>  <int> <chr>  <dbl>  <dbl> <dbl>   <dbl>   <dbl>   <dbl>    <dbl>
-1 06 mo… Family   966 moth…  0.512 0.0472 10.8    117.   0.118  0.00717       NA
-2 05 fa… Family   658 fath…  0.476 0.0469 10.1    103.   0.0672 0.0113        NA
-3 08 n_… Family  1032 n_si… -0.177 0.0193 -9.19    84.4  0.102  0.0155        NA
+  spec  family     N iv    pi_hat   se_pi  t_pi F_first beta_iv se_beta sargan_p
+  <chr> <chr>  <int> <chr>  <dbl>   <dbl> <dbl>   <dbl>   <dbl>   <dbl>    <dbl>
+1 06 m… Family  2949 moth…  0.501  0.0259  19.3   374.   0.115  0.0125        NA
+2 05 f… Family  2041 fath…  0.436  0.0303  14.4   207.   0.0812 0.00885       NA
+3 07 p… Family  1802 fath… NA     NA       NA      43.3  0.100  0.0124         1
 # ℹ 1 more variable: verdict <chr>

@@ -1,0 +1,2 @@
+gamma_hat,N_low_recomputed,N_high_recomputed,N_low_table,N_high_table,low_high_counts_match,mean_threshold_low,mean_threshold_high,max_threshold_low,min_threshold_high
+19.61182193062687,1007,2106,1007,2106,TRUE,17.18428719802888,24.17269584784774,19.61182193062687,19.717515194153428

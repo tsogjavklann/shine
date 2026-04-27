@@ -1,0 +1,2 @@
+threshold_variable,gamma_hat,threshold_interpretation,N,N_low,N_high,beta_low_2sls,beta_high_2sls,min_SSR_2SLS,rank_X,rank_Z,rank_XPZX,condition_number_XPZX,warning_flag,warning_note,n_candidates,n_valid_grid_points,n_skipped_or_invalid,n_warning_flagged,safe_for_gmm
+student_teacher_ratio_avg_16_18,19.61182193062687,students per teacher at ages 16-18; higher means more crowded/lower teacher intensity,3113,1007,2106,0.08737979247774434,0.10978597272147422,44990.011277471625,7,7,7,202491.4384410974,FALSE,,252,252,0,0,TRUE

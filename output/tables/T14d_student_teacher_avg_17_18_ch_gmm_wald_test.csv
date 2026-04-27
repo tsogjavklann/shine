@@ -1,0 +1,2 @@
+gamma_hat,test,beta_difference_high_minus_low,se_difference,t_stat,wald_statistic,p_value,df1,df2,inference_reference,weighting_matrix_used
+19.53062264661216,beta_low_GMM = beta_high_GMM,0.03100958442284489,0.018140741074708876,1.7093890649306087,2.9220109753043406,0.10211678005150096,1,21,"F(1, G-1)",cluster-robust S by birth_aimag

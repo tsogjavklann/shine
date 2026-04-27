@@ -70,7 +70,10 @@ haversine_km <- function(lat1, lon1, lat2 = UB_LAT, lon2 = UB_LON) {
 }
 
 aimag_coords <- aimag_coords |>
-  mutate(distance_to_ub = haversine_km(lat, lon))
+  mutate(
+    distance_to_ub = haversine_km(lat, lon),
+    log_distance_to_ub = log(pmax(distance_to_ub, 1))
+  )
 
 cli::cli_h2("Aimag distance to UB (km)")
 print(aimag_coords |> arrange(distance_to_ub) |>
@@ -87,11 +90,11 @@ df <- readRDS(file.path(PATHS$data_proc, "analysis_sample.rds")) |> as_tibble()
 home <- df |>
   filter(main_flag_25_60 == 1L,
          !is.na(birth_aimag),
-         !is.na(q_home), is.finite(q_home),
+         !is.na(q_school_access), is.finite(q_school_access),
          !is.na(educ_years), !is.na(lwage),
          !is.na(age), !is.na(is_female), !is.na(is_married),
          !is.na(region), !is.na(wave), !is.na(aimag), !is.na(hhweight)) |>
-  left_join(aimag_coords |> select(aimag, distance_to_ub),
+  left_join(aimag_coords |> select(aimag, distance_to_ub, log_distance_to_ub),
             by = c("birth_aimag" = "aimag"))
 
 n_with_dist <- sum(!is.na(home$distance_to_ub))
@@ -133,6 +136,26 @@ run_fs <- function(formula_str, data, label) {
   )
 }
 
+run_fs_log <- function(formula_str, data, label) {
+  f <- as.formula(formula_str)
+  m <- feols(f, data = data, weights = ~hhweight, cluster = ~aimag + wave)
+  coefs <- coef(m)
+  ses   <- se(m, cluster = ~aimag + wave)
+  tval  <- coefs["log_distance_to_ub"] / ses["log_distance_to_ub"]
+  pval  <- 2 * (1 - pnorm(abs(tval)))
+  F_log_dist <- tval^2
+  tibble(
+    spec    = label,
+    N       = nobs(m),
+    pi_log_dist = unname(coefs["log_distance_to_ub"]),
+    se_2way = unname(ses["log_distance_to_ub"]),
+    t_stat  = unname(tval),
+    p_value = unname(pval),
+    F_log_dist = unname(F_log_dist),
+    R2_adj  = fitstat(m, "ar2")$ar2
+  )
+}
+
 cli::cli_alert("First stage 1: distance only, no FE...")
 fs1 <- run_fs(
   paste("educ_years ~ distance_to_ub +", CTRLS, "| wave"),
@@ -157,8 +180,33 @@ T_2_5 <- bind_rows(fs1, fs2, fs3) |>
 cli::cli_h2("CHECKPOINT 2.5 — First-stage F (distance_to_ub)")
 print(T_2_5)
 
+cli::cli_alert("Log-distance first stage 1: log distance only, wave FE...")
+fs1_log <- run_fs_log(
+  paste("educ_years ~ log_distance_to_ub +", CTRLS, "| wave"),
+  home, "1) log distance only, wave FE"
+)
+
+cli::cli_alert("Log-distance first stage 2: log distance + region FE + wave FE...")
+fs2_log <- run_fs_log(
+  paste("educ_years ~ log_distance_to_ub +", CTRLS, "| region + wave"),
+  home, "2) log distance + region FE + wave FE"
+)
+
+cli::cli_alert("Log-distance first stage 3: log distance + region + location + wave FE...")
+fs3_log <- run_fs_log(
+  paste("educ_years ~ log_distance_to_ub +", CTRLS, "| region + location_f + wave"),
+  home, "3) log distance + location FE"
+)
+
+T_2_5_log <- bind_rows(fs1_log, fs2_log, fs3_log) |>
+  mutate(across(c(pi_log_dist, se_2way, t_stat, p_value, F_log_dist, R2_adj), ~ round(.x, 5)))
+
+cli::cli_h2("CHECKPOINT 2.5b - First-stage F (log_distance_to_ub)")
+print(T_2_5_log)
+
 # Sign + strength interpretation
 F_main <- fs2$F_dist  # use Spec 2 (Main A-style with region FE) as canonical
+F_main_log <- fs2_log$F_log_dist
 strength <- case_when(
   is.na(F_main) ~ "F NA",
   F_main >= 10  ~ "🎉 STRONG (F ≥ 10) → IVTR full implementation OK",
@@ -171,7 +219,21 @@ sign_dir <- if (!is.na(fs2$pi_dist) && fs2$pi_dist < 0) {
   "Wrong sign (хол → их сурах) — concerning"
 }
 
+strength_log <- case_when(
+  is.na(F_main_log) ~ "F NA",
+  F_main_log >= 10  ~ "STRONG (F >= 10) -> log-distance IV first stage OK",
+  F_main_log >= 5   ~ "WEAK (F in [5, 10)) -> AR-robust CI caveat",
+  TRUE              ~ "VERY WEAK (F < 5) -> diagnostic only"
+)
+sign_dir_log <- if (!is.na(fs2_log$pi_log_dist) && fs2_log$pi_log_dist < 0) {
+  "Card-style sign (farther -> less schooling)"
+} else {
+  "Wrong sign (farther -> more schooling) -- concerning"
+}
+
 cli::cli_alert_info("Spec 2 (canonical) F = {round(F_main, 2)}: {strength}")
+cli::cli_alert_info("Spec 2 log-distance F = {round(F_main_log, 2)}: {strength_log}")
+cli::cli_alert_info("pi_log_distance = {round(fs2_log$pi_log_dist, 5)} ({sign_dir_log})")
 cli::cli_alert_info("π̂_distance = {round(fs2$pi_dist, 5)} ({sign_dir})")
 
 # ---- 5. Coverage by aimag in home subsample --------------------------------
@@ -185,6 +247,7 @@ print(aimag_dist_panel, n = Inf)
 
 # ---- 6. Хадгалах + лог ------------------------------------------------------
 write_csv(T_2_5, file.path(PATHS$out_tables, "T_2_5_distance_iv_first_stage.csv"))
+write_csv(T_2_5_log, file.path(PATHS$out_tables, "T_2_5_log_distance_iv_first_stage.csv"))
 write_csv(aimag_dist_panel, file.path(PATHS$out_logs, "05c_aimag_panel_sizes.csv"))
 
 log_path <- file.path(PATHS$out_logs, "05c_distance_iv.log")
@@ -195,6 +258,7 @@ cat("==========================================================\n")
 cat(sprintf("MAIN home_aimag sample (with distance): %d rows\n", n_total))
 cat("\nAimag distances to UB (km):\n"); print(aimag_coords |> arrange(distance_to_ub), n = Inf)
 cat("\nFirst-stage results:\n"); print(T_2_5)
+cat("\nLog-distance first-stage results:\n"); print(T_2_5_log)
 cat(sprintf("\nCanonical F (Spec 2): %.3f → %s\n", F_main, strength))
 cat(sprintf("π̂_distance = %.5f → %s\n", fs2$pi_dist, sign_dir))
 cat("\nBirth-aimag panel sizes (home_aimag MAIN, sorted by distance):\n")

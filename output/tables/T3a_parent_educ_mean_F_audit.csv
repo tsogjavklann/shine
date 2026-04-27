@@ -1,0 +1,20 @@
+section,item,value
+construction,parent_educ_mean,"rowMeans(cbind(father_educ_years, mother_educ_years), na.rm = TRUE); NaN -> NA"
+construction,uses_educ_years,FALSE
+construction,source_variables,"father_educ_years, mother_educ_years"
+construction,source_file,C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/processed/family_structure.rds
+construction,ivtr_ready_parent_values_match_reconstruction,TRUE
+sample,audit_sample_N,3188
+sample,ivtr_ready_N,3188
+correlation,"corr(educ_years, parent_educ_mean)",0.346674078330642
+correlation,"corr(educ_years, mother_educ_years)",0.33556065804214
+correlation,"corr(educ_years, father_educ_years)",0.294877206421353
+correlation,"corr(mother_educ_years, father_educ_years)",0.524636180885869
+summary,educ_years,n=3188; min=0; p10=10; p25=11; p50=14; p75=15; p90=16; max=20
+summary,parent_educ_mean,n=3188; min=0; p10=8; p25=9; p50=10; p75=12; p90=14; max=22
+summary,mother_educ_years,n=2949; min=0; p10=8; p25=10; p50=10; p75=12; p90=14; max=22
+summary,father_educ_years,n=2041; min=0; p10=8; p25=8; p50=10; p75=12; p90=14; max=24
+first_stage_F,"no weights, robust SE",coef=0.34770688891728; se=0.0185641221531511; t=18.7300474565268; t2=350.814677723746; fixest_ivf1_F=NA
+first_stage_F,"weights, robust SE",coef=0.362253523672327; se=0.0211224422877845; t=17.1501722545515; t2=294.128408360787; fixest_ivf1_F=NA
+first_stage_F,"weights, birth_aimag cluster",coef=0.362253523672327; se=0.0153292277426587; t=23.6315572939292; t2=558.450500136257; fixest_ivf1_F=477.903255289446
+verdict,final,"F is genuine; proceed to IVTR, but keep exclusion caveat."

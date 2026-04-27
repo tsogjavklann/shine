@@ -23,7 +23,7 @@ tic("Total")
 df <- readRDS(file.path(PATHS$data_proc, "analysis_sample.rds")) |> as_tibble()
 
 main <- df |>
-  filter(main_flag_25_60 == 1L, !is.na(q_home), is.finite(q_home),
+  filter(main_flag_25_60 == 1L, !is.na(q_school_access), is.finite(q_school_access),
          !is.na(birth_year))
 
 cli::cli_alert_info("MAIN home_aimag, 25-60: {nrow(main)} rows")
@@ -54,7 +54,7 @@ pretrend <- main |>
     mean_age       = round(mean(age, na.rm = TRUE), 2),
     mean_educ      = round(mean(educ_years, na.rm = TRUE), 2),
     pct_married    = round(100 * mean(is_married, na.rm = TRUE), 2),
-    mean_q_home    = round(mean(q_home, na.rm = TRUE), 3),
+    mean_q_school_access    = round(mean(q_school_access, na.rm = TRUE), 3),
     .groups = "drop"
   )
 

@@ -1,0 +1,2 @@
+n_success,n_failed,n_warning,beta_diff_observed,beta_diff_boot_mean,beta_diff_q025,beta_diff_q975,percentile_ci_contains_zero,centered_bootstrap_p_value_table,centered_bootstrap_p_value_recomputed,sign_based_two_sided_p_value,note
+1999,0,1,0.02240618024372835,0.026555872555000616,-7.779638778029808e-4,0.058424805262013255,TRUE,0.11405702851425711,0.11405702851425713,0.05302651325662831,The table p-value is the centered bootstrap-tail p-value used in earlier project stages; the percentile CI is a separate percentile interval.

@@ -1,0 +1,80 @@
+- The project is out-of-sync -- use `renv::status()` for details.
+
+── STEP 1: Load dzud_panel + add year-specific severe_p75 ────────────────────────────────────────────────────────────────────────
+Panel: 748 rows × 11 cols, years 1991-2024
+dzud_5pct events: 172, dzud_10pct: 70, severe_p75: 198
+
+── STEP 2: Childhood exposure (12-17 main / 15-17 narrow / 6-17 broad) ───────────────────────────────────────────────────────────
+Exposure cells: 1232 (each window)
+
+── STEP 3: Merge to HSES analysis sample ─────────────────────────────────────────────────────────────────────────────────────────
+Main sample: N=9077
+Cells with FULL 12-17 window (n_obs=6):  9077 (100.0%)
+Cells with FULL 6-17 window (n_obs=12):  7145 (78.7%)
+After full-coverage filter: N=7145
+
+── STEP 4: First-stage F (5 IVs × 3 windows) ─────────────────────────────────────────────────────────────────────────────────────
+There were 45 warnings (use warnings() to see them)
+
+--- Үр дүн ---
+# A tibble: 15 × 12
+   window         iv                    iv_var         pi_hat    pi_p F_first  beta_iv se_beta ar_ci_lo ar_ci_hi     N verdict    
+   <chr>          <chr>                 <chr>           <dbl>   <dbl>   <dbl>    <dbl>   <dbl>    <dbl>    <dbl> <int> <chr>      
+ 1 12-17 (MAIN)   >=year-p75 loss count cntp75_12_17  0.0592  0.328   3.31     0.0611   0.0252       NA       NA  7145 ❌ WEAK (F<…
+ 2 12-17 (MAIN)   cumulative loss rate  cum_12_17     0.368   0.415   1.61    -0.105    0.216        NA       NA  7145 ❌ WEAK (F<…
+ 3 12-17 (MAIN)   maximum loss rate     maxv_12_17    0.457   0.277   1.56    -0.185    0.229        NA       NA  7145 ❌ WEAK (F<…
+ 4 12-17 (MAIN)   >=10% loss count      cnt10_12_17   0.0582  0.438   0.933    0.112    0.0908       NA       NA  7145 ❌ WEAK (F<…
+ 5 12-17 (MAIN)   >=5% loss count       cnt5_12_17    0.0451  0.572   0.758    0.0450   0.0934       NA       NA  7145 ❌ WEAK (F<…
+ 6 15-17 (narrow) maximum loss rate     maxv_15_17    0.360   0.279   1.38    -0.0187   0.102        NA       NA  7145 ❌ WEAK (F<…
+ 7 15-17 (narrow) cumulative loss rate  cum_15_17     0.218   0.415   0.707   -0.00316  0.158        NA       NA  7145 ❌ WEAK (F<…
+ 8 15-17 (narrow) >=5% loss count       cnt5_15_17   -0.0309  0.562   0.376    0.172    0.183        NA       NA  7145 ❌ WEAK (F<…
+ 9 15-17 (narrow) >=10% loss count      cnt10_15_17  -0.0251  0.638   0.178    0.0244   0.341        NA       NA  7145 ❌ WEAK (F<…
+10 15-17 (narrow) >=year-p75 loss count cntp75_15_17 -0.00421 0.952   0.00967 -1.41    21.0          NA       NA  7145 ❌ WEAK (F<…
+11 6-17 (broad)   >=10% loss count      cnt10_6_17    0.0854  0.243   1.74     0.192    0.0263       NA       NA  7145 ❌ WEAK (F<…
+12 6-17 (broad)   >=5% loss count       cnt5_6_17     0.0498  0.409   1.58    -0.00227  0.0753       NA       NA  7145 ❌ WEAK (F<…
+13 6-17 (broad)   cumulative loss rate  cum_6_17      0.331   0.319   1.30    -0.0856   0.169        NA       NA  7145 ❌ WEAK (F<…
+14 6-17 (broad)   maximum loss rate     maxv_6_17     0.828   0.00828 1.05    -0.0470   0.102        NA       NA  7145 ❌ WEAK (F<…
+15 6-17 (broad)   >=year-p75 loss count cntp75_6_17   0.0144  0.815   0.255   -0.0517   0.357        NA       NA  7145 ❌ WEAK (F<…
+
+── STEP 5: Animal-type robustness (large vs small stock) ─────────────────────────────────────────────────────────────────────────
+Animal-type loss_rate correlation matrix (across aimag-years):
+       Адуу  Үхэр Тэмээ  Хонь  Ямаа
+Адуу  1.000 0.906 0.329 0.900 0.878
+Үхэр  0.906 1.000 0.276 0.879 0.854
+Тэмээ 0.329 0.276 1.000 0.284 0.273
+Хонь  0.900 0.879 0.284 1.000 0.968
+Ямаа  0.878 0.854 0.273 0.968 1.000
+
+Max pairwise cor: 0.968 → DO NOT use as separate IVs
+
+Animal-type sample: N=9077
+  cum_lr_large    F=  0.21  π̂=+0.1122  β_IV=-0.5607 (SE 1.2419)
+  cum_lr_small    F=  1.21  π̂=+0.2983  β_IV=-0.2531 (SE 0.3455)
+  cnt5_large      F=  0.46  π̂=+0.0271  β_IV=-0.0885 (SE 0.2489)
+  cnt5_small      F=  0.46  π̂=+0.0312  β_IV=-0.1427 (SE 0.3109)
+There were 12 warnings (use warnings() to see them)
+
+── STEP 6: Heterogeneity — rural birth × dzud (Groppo-K hypothesis) ──────────────────────────────────────────────────────────────
+Rural birth distribution: 6205 rural, 940 UB
+Warning message:
+The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+First stage (educ ~ cum_12_17 × rural_birth):
+                        Estimate   Std. Error       t value   Pr(>|t|)
+cum_12_17              2.1027514 9.063326e-01  2.320066e+00 0.10307797
+rural_birth           -0.1477079 1.008819e+05 -1.464166e-06 0.99999892
+cum_12_17:rural_birth -1.7823212 4.988363e-01 -3.572958e+00 0.03747323
+
+── STEP 7: Save output T2c_dzud_iv_v2.csv ────────────────────────────────────────────────────────────────────────────────────────
+Saved: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/output/tables/T2c_dzud_iv_v2.csv (15 rows)
+
+── DZUD IV V2 ANALYSIS COMPLETE ──────────────────────────────────────────────────────────────────────────────────────────────────
+
+Summary (12-17 main window):
+# A tibble: 5 × 7
+  iv_var       F_first beta_iv se_beta ar_ci_lo ar_ci_hi verdict      
+  <chr>          <dbl>   <dbl>   <dbl>    <dbl>    <dbl> <chr>        
+1 cntp75_12_17   3.31   0.0611  0.0252       NA       NA ❌ WEAK (F<5)
+2 cum_12_17      1.61  -0.105   0.216        NA       NA ❌ WEAK (F<5)
+3 maxv_12_17     1.56  -0.185   0.229        NA       NA ❌ WEAK (F<5)
+4 cnt10_12_17    0.933  0.112   0.0908       NA       NA ❌ WEAK (F<5)
+5 cnt5_12_17     0.758  0.0450  0.0934       NA       NA ❌ WEAK (F<5)

@@ -1,0 +1,62 @@
+13d_unexplored_variables.R
+Started: 2026-04-26 18:41:24.48166 
+
+Raw individual extract rows: 264974 
+Raw household extract rows: 74717 
+Merged family_structure rows: 234690 
+Candidate variables: 50 
+# A tibble: 50 × 5
+   iv_var                         expected_sign n_nonmissing n_unique hidden_gem
+   <chr>                          <chr>                <int>    <int> <lgl>     
+ 1 birth_soum_available           unknown              43070        2 TRUE      
+ 2 migrated_school_age_6_17       unknown              42704        2 TRUE      
+ 3 migration_reason_natural_disa… negative              3475        1 TRUE      
+ 4 dropout_reason_distance        negative              1139        2 TRUE      
+ 5 dormitory_current_student      positive               328        2 TRUE      
+ 6 never_school_reason_dorm_shor… negative               166        1 TRUE      
+ 7 ever_migrated                  unknown              43070        2 FALSE     
+ 8 migration_reason_education_se… positive             43070        2 FALSE     
+ 9 migration_reason_children_sch… unknown              43070        2 FALSE     
+10 herder_household_current       negative             43070        2 FALSE     
+11 herder_current_x_birth_year_c  negative             43070       43 FALSE     
+12 ever_migrated_x_birth_year_c   unknown              43070       43 FALSE     
+13 health_insured                 positive             43070        2 FALSE     
+14 severe_vision_difficulty       negative             43070        2 FALSE     
+15 severe_hearing_difficulty      negative             43070        2 FALSE     
+16 severe_mobility_difficulty     negative             43070        2 FALSE     
+17 severe_cognitive_difficulty    negative             43070        2 FALSE     
+18 severe_language_difficulty     negative             43070        2 FALSE     
+19 any_severe_disability          negative             43070        2 FALSE     
+20 any_mildplus_disability        negative             43070        2 FALSE     
+21 migrated_before_18             unknown              42704        2 FALSE     
+22 born_foreign                   unknown              19041        2 FALSE     
+23 birth_aimag_matches_raw        unknown              19041        1 FALSE     
+24 rural_birth_x_birth_year_c     unknown              19041       43 FALSE     
+25 born_ub_x_birth_year_c         unknown              19041       43 FALSE     
+26 migrated_school_age_x_rural_b… unknown              18680        2 FALSE     
+27 lived_5y_ago_diff_aimag        unknown              16626        2 FALSE     
+28 diff_5y_aimag_x_birth_year_c   unknown              16626       42 FALSE     
+29 years_since_migration          unknown              16260       59 FALSE     
+30 parent_educ_mean               positive              5155       42 FALSE     
+31 n_siblings                     negative              5155        8 FALSE     
+32 birth_order                    negative              5155        6 FALSE     
+33 large_sibship_ge4              negative              5155        2 FALSE     
+34 firstborn                      positive              5155        2 FALSE     
+35 mother_educ_years              positive              4773       23 FALSE     
+36 father_educ_years              positive              3307       23 FALSE     
+37 ever_dropout                   negative              1212        2 FALSE     
+38 dropout_grade                  positive              1139       10 FALSE     
+39 dropout_reason_parent          negative              1139        2 FALSE     
+40 dropout_reason_finance         negative              1139        2 FALSE     
+41 dropout_reason_work            negative              1139        2 FALSE     
+42 dropout_reason_health          negative              1139        2 FALSE     
+43 dropout_reason_migration       negative              1139        2 FALSE     
+44 current_school_public          unknown                328        2 FALSE     
+45 current_school_private         positive               328        2 FALSE     
+46 current_school_soum_center     unknown                328        2 FALSE     
+47 school_transport_walk          unknown                328        2 FALSE     
+48 school_transport_boarding      positive               328        2 FALSE     
+49 never_school_reason_finance    negative               166        2 FALSE     
+50 never_school_reason_distance   negative               166        2 FALSE     
+
+13d complete.

@@ -1,0 +1,26 @@
+- The project is out-of-sync -- use `renv::status()` for details.
+V1 (partial coverage): N = 9077
+V2 (full coverage):    N = 7145
+
+=================================================================
+6-17 WINDOW — V1 (region+wave) vs V2 (birth_aimag+cohort+wave)
+=================================================================
+
+IV                        | V1: region+wave (N=9077) | V2: birth_aimag+cohort+wave (N=7145)
+                          | F          π̂        sign | F          π̂        sign
+-------------------------------------------------------------------------------- 
+cum_loss_rate             | F=  4.50  π̂=-0.231 -   | F=  1.42  π̂=+0.331 +
+log_cum_loss              | F=  8.33  π̂=-0.412 -   | F=  1.57  π̂=+0.534 +
+max_loss_rate             | F= 89.78  π̂=-0.779 -   | F= 39.02  π̂=+0.828 +
+cnt5 (>=5% count)         | F= 13.63  π̂=-0.086 -   | F=  0.92  π̂=+0.050 +
+cnt10 (>=10% count)       | F= 10.84  π̂=+0.062 +   | F=  2.10  π̂=+0.085 +
+cntp75 (year-p75 count)   | F= 11.08  π̂=-0.041 -   | F=  0.07  π̂=+0.014 +
+intensity (cnt5/12)       | F= 20.57  π̂=-1.028 -   | F=  1.05  π̂=+0.597 +
+There were 14 warnings (use warnings() to see them)
+
+=================================================================
+ИНТЕРПРЕТАЦИ
+=================================================================
+V1: бараг бүгд STRONG (F>10) — between-aimag chronic ялгаанаас
+V2: бүгд WEAK (F<5) — within-aimag shock variation null
+Sign flip: V1 өс vs V2 нь эерэг → confounding-н тодорхой шинж

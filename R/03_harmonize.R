@@ -56,10 +56,13 @@ process_wave <- function(w) {
   # Wave-specific birth aimag/soum source columns
   if (w %in% c(2020L, 2021L, 2022L)) {
     bcol_a <- "q0114a"; bcol_b <- "q0114b"
+    born_current_col <- "q0113"
   } else if (w == 2024L) {
     bcol_a <- "q0118a"; bcol_b <- "q0118b"
+    born_current_col <- "q0117"
   } else {
     bcol_a <- NA_character_; bcol_b <- NA_character_
+    born_current_col <- NA_character_
   }
 
   # Strip haven_labelled to plain numeric for downstream regression safety
@@ -92,8 +95,9 @@ process_wave <- function(w) {
     q0438         = grab(ind, "q0438"),
     q0439         = grab(ind, "q0439"),
     q0427         = grab(ind, "q0427"),
-    birth_aimag   = if (!is.na(bcol_a)) grab(ind, bcol_a) else NA_real_,
-    birth_soum    = if (!is.na(bcol_b)) grab(ind, bcol_b) else NA_real_
+    born_in_current = if (!is.na(born_current_col)) grab(ind, born_current_col) else NA_real_,
+    birth_aimag_raw = if (!is.na(bcol_a)) grab(ind, bcol_a) else NA_real_,
+    birth_soum_raw  = if (!is.na(bcol_b)) grab(ind, bcol_b) else NA_real_
   )
 
   # working_for_wage: 1 → 1, 2 → 0, NA → NA
@@ -122,6 +126,13 @@ process_wave <- function(w) {
   out <- ind_std |>
     left_join(bv_std, by = "identif") |>
     mutate(
+      birth_aimag = case_when(
+        born_in_current == 1 ~ newaimag_proxy,
+        born_in_current == 2 ~ birth_aimag_raw,
+        TRUE                 ~ birth_aimag_raw
+      ),
+      birth_soum = birth_soum_raw,
+      birth_aimag_from_current = as.integer(born_in_current == 1 & !is.na(newaimag_proxy)),
       wave            = w,
       year_month      = sprintf("%d-%02d", w, as.integer(month_interview)),
       birth_year      = wave - as.integer(age),

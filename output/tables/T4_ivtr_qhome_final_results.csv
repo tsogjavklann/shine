@@ -1,0 +1,2 @@
+threshold_variable,gamma_hat,N,N_low,N_high,beta_low,se_low,p_low,beta_high,se_high,p_high,beta_difference_high_minus_low,method_note,warning_note
+q_school_access,1.3941868155987382,3188,1495,1693,0.10735078390038846,0.009694676099053863,3.158724549137129e-10,0.09389060133699677,0.01497218985574239,3.213836736654097e-6,-0.013460182563391695,Caner-Hansen-inspired IV threshold approximation,

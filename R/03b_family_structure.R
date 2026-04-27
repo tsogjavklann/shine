@@ -163,7 +163,7 @@ print(coverage)
 # ---- 5. Cross with analysis_sample to get effective wage-panel coverage ----
 analysis <- readRDS(file.path(PATHS$data_proc, "analysis_sample.rds")) |> as_tibble()
 joined <- analysis |>
-  filter(main_flag_25_60 == 1L, !is.na(q_home), is.finite(q_home)) |>
+  filter(main_flag_25_60 == 1L, !is.na(q_school_access), is.finite(q_school_access)) |>
   select(id, age, lwage, educ_years, hhweight) |>
   left_join(fam |> select(id, father_educ_level, mother_educ_level,
                           father_educ_years, mother_educ_years,

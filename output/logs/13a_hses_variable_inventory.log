@@ -1,0 +1,38 @@
+13a_hses_variable_inventory.R
+Started: 2026-04-26 18:39:52.784679 
+
+Reading 2020 hhold data/hses_2020/01_hhold (11).dta 
+Reading 2020 indiv data/hses_2020/02_indiv (12).dta 
+Reading 2020 basicvars data/hses_2020/basicvars (11).dta 
+Reading 2021 hhold data/hses_2021/01_hhold (12).dta 
+Reading 2021 indiv data/hses_2021/02_indiv (13).dta 
+Reading 2021 basicvars data/hses_2021/basicvars (12).dta 
+Reading 2022 hhold data/hses_2022/01_hhold (13).dta 
+Reading 2022 indiv data/hses_2022/02_indiv (14).dta 
+Reading 2022 basicvars data/hses_2022/basicvars (13).dta 
+Reading 2023 hhold data/hses_2023/01_hhold (14).dta 
+Reading 2023 indiv data/hses_2023/02_indiv (15).dta 
+Reading 2023 basicvars data/hses_2023/basicvars (14).dta 
+Reading 2024 hhold data/hses_2024/01_hhold.dta 
+Reading 2024 indiv data/hses_2024/02_indiv.dta 
+Reading 2024 basicvars data/hses_2024/basicvars.dta 
+
+Inventory variables: 369 
+Preview rows: 1272 
+Category summary:
+# A tibble: 11 × 2
+   category            n
+   <chr>           <int>
+ 1 other             130
+ 2 labor              55
+ 3 household          53
+ 4 education          48
+ 5 childhood          29
+ 6 geography          21
+ 7 health             12
+ 8 demographics       10
+ 9 ethnic_cultural     4
+10 migration           4
+11 economic            3
+
+13a complete.

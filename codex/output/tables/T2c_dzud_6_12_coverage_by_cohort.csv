@@ -1,0 +1,15 @@
+sample,birth_cohort,N,complete_6_12_N,complete_6_12_share
+all_adults,pre1970,7922,0,0
+all_adults,1970-74,5134,0,0
+all_adults,1975-79,5668,0,0
+all_adults,1980-84,5874,0,0
+all_adults,1985-89,6812,6807,0.9992660011743981
+all_adults,1990-94,5745,5745,1
+all_adults,post1995,2201,2201,1
+wage,pre1970,2198,0,0
+wage,1970-74,2378,0,0
+wage,1975-79,2842,0,0
+wage,1980-84,2936,0,0
+wage,1985-89,3640,3637,0.9991758241758242
+wage,1990-94,3083,3083,1
+wage,post1995,1139,1139,1

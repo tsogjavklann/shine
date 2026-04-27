@@ -1,0 +1,44 @@
+14a_audit_parent_educ_mean_F.R
+Started: 2026-04-26 21:47:30.12627 
+
+Construction trace:
+# A tibble: 1 × 7
+  constructed_variable source_variable_1 source_variable_2 formula              
+  <chr>                <chr>             <chr>             <chr>                
+1 parent_educ_mean     father_educ_years mother_educ_years rowMeans(cbind(fathe…
+# ℹ 3 more variables: uses_educ_years <lgl>, source_file <chr>,
+#   compared_to_ivtr_ready <lgl>
+
+Correlations:
+# A tibble: 4 × 2
+  metric                                     value
+  <chr>                                      <dbl>
+1 corr(educ_years, parent_educ_mean)         0.347
+2 corr(educ_years, mother_educ_years)        0.336
+3 corr(educ_years, father_educ_years)        0.295
+4 corr(mother_educ_years, father_educ_years) 0.525
+
+Summary diagnostics:
+# A tibble: 4 × 9
+  variable          n_nonmissing   min   p10   p25   p50   p75   p90   max
+  <chr>                    <int> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl>
+1 educ_years                3188     0    10    11    14    15    16    20
+2 parent_educ_mean          3188     0     8     9    10    12    14    22
+3 mother_educ_years         2949     0     8    10    10    12    14    22
+4 father_educ_years         2041     0     8     8    10    12    14    24
+
+First-stage F audit:
+# A tibble: 3 × 11
+  spec        estimate     se t_stat t2_manual_F wald_F_for_parent_ed…¹  p_value
+  <chr>          <dbl>  <dbl>  <dbl>       <dbl>                  <dbl>    <dbl>
+1 no weights…    0.348 0.0186   18.7        351.                   351. 2.62e-74
+2 weights, r…    0.362 0.0211   17.2        294.                   294. 4.18e-63
+3 weights, b…    0.362 0.0153   23.6        558.                   558. 1.30e-16
+# ℹ abbreviated name: ¹​wald_F_for_parent_educ_mean
+# ℹ 4 more variables: fixest_ivf1_F <dbl>, fixest_ivf1_p_value <dbl>,
+#   reported_F_602_23_matches_manual_t2 <lgl>,
+#   reported_F_602_23_matches_fixest_ivf1 <lgl>
+
+Verdict: F is genuine; proceed to IVTR, but keep exclusion caveat. 
+
+Completed: 2026-04-26 21:47:30.78687 

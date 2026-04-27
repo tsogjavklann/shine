@@ -1,0 +1,43 @@
+02_dzud_iv_audit.R
+Project root: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine 
+Output root: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/codex 
+
+Loaded HSES clean rows: 18216 
+Loaded dzud panel rows: 1180 
+
+Exposure completion by window:
+  12-17 : complete rows = 11418 of 18216 
+  15-17 : complete rows = 13064 of 18216 
+  6-17 : complete rows = 7859 of 18216 
+
+Controls used: age, age2, female, married, urban 
+Weights used: hhweight 
+
+Running first-stage and 2SLS audit models...
+Saved audit table: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/codex/output/tables/T2c_dzud_iv_audit.csv rows: 72 
+
+Saved variance decomposition: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/codex/output/tables/T2c_dzud_variance_decomposition.csv rows: 9 
+Saved sign flip diagnostic: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/codex/output/tables/T2c_dzud_sign_flip.csv rows: 9 
+Saved animal correlation matrix: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/codex/output/tables/T2c_dzud_animal_cor.csv 
+Max pairwise animal loss-rate correlation: 0.967 
+Animal-specific IVs are not suitable as separate IVs due to multicollinearity.
+Saved animal robustness: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/codex/output/tables/T2c_dzud_animal_robustness.csv rows: 6 
+Saved heterogeneity: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/codex/output/tables/T2c_dzud_heterogeneity.csv rows: 4 
+
+Saved markdown summary: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/codex/output/reports/dzud_iv_audit_summary.md 
+
+Main corrected FE rows:
+# A tibble: 6 × 14
+  window iv_name iv_var fe_design  pi_hat   pi_p F_first beta_2sls se_2sls     N
+  <chr>  <chr>   <chr>  <chr>       <dbl>  <dbl>   <dbl>     <dbl>   <dbl> <int>
+1 12-17  cumula… dzud_… birth_ai… 0.00493 0.0366   4.98   -0.0515   0.0940 11418
+2 12-17  count … dzud_… birth_ai… 0.0597  0.0536   4.18   -0.00888  0.0632 11418
+3 12-17  maximu… dzud_… birth_ai… 0.00459 0.183    1.90   -0.109    0.172  11418
+4 12-17  count … dzud_… birth_ai… 0.0510  0.248    1.41   -0.0223   0.116  11418
+5 12-17  any lo… dzud_… birth_ai… 0.0789  0.310    1.08    0.184    0.250  11418
+6 12-17  count … dzud_… birth_ai… 0.0260  0.602    0.281   0.128    0.427  11418
+# ℹ 4 more variables: expected_sign_ok <lgl>, sign_comment <chr>,
+#   verdict <chr>, identification_source <chr>
+
+Final verdict: Reject as IV 
+02_dzud_iv_audit.R complete.

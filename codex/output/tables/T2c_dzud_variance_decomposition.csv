@@ -1,0 +1,10 @@
+iv_var,absorbed_by,N,r2_absorbed
+dzud_count5_12_17,birth_aimag + birth_cohort FE,11418,0.4452461775574704
+dzud_count5_12_17,birth_aimag FE,11418,0.1506471561053092
+dzud_count5_12_17,region + wave FE,11418,0.08083070426120187
+dzud_count5_6_17,birth_aimag + birth_cohort FE,7859,0.5841225864959314
+dzud_count5_6_17,birth_aimag FE,7859,0.4894385797024441
+dzud_count5_6_17,region + wave FE,7859,0.28784087523037694
+dzud_cum_12_17,birth_aimag + birth_cohort FE,11418,0.45755214124458066
+dzud_cum_12_17,birth_aimag FE,11418,0.1905064114638838
+dzud_cum_12_17,region + wave FE,11418,0.07903178269140732

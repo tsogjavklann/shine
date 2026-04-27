@@ -7,7 +7,7 @@
 #           бол 22-24 насныхдад caveat log нэмнэ.
 #
 # Орц     : data/processed/wage_real.rds          (43,070 wage panel + lwage)
-#           data/processed/school_access.rds      (id × q_home + q_new)
+#           data/processed/school_access.rds      (id × q_school_access + q_new)
 #           data/processed/iv_assignment.rds      (id × 4 IV)
 #           data/processed/hses_harmonized.rds    (full panel — additional vars
 #                                                   like educ_years, marital,
@@ -46,7 +46,7 @@ extra2 <- extra |> select(-all_of(overlap_drop))
 
 analysis <- wage |>
   left_join(extra2, by = "id") |>
-  left_join(sa |> select(id, q_home, n_years_home, q_new, n_years_new),
+  left_join(sa |> select(id, q_school_access, n_years_school_access, q_new, n_years_new),
             by = "id") |>
   left_join(iv |> select(id, reform_main, reform_fuzzy, reform_alt_1997,
                          reform_alt_1999, exposure_intensity),
@@ -119,9 +119,9 @@ print(iv_alt_dist)
 q_coverage <- analysis |>
   summarise(
     n           = n(),
-    n_q_home    = sum(!is.na(q_home) & is.finite(q_home)),
+    n_q_school_access    = sum(!is.na(q_school_access) & is.finite(q_school_access)),
     n_q_new     = sum(!is.na(q_new)  & is.finite(q_new)),
-    pct_q_home  = round(100 * n_q_home / n, 1),
+    pct_q_school_access  = round(100 * n_q_school_access / n, 1),
     pct_q_new   = round(100 * n_q_new  / n, 1)
   )
 cli::cli_h2("school_access coverage in analysis_sample")
@@ -132,7 +132,7 @@ out_path <- file.path(PATHS$data_proc, "analysis_sample.rds")
 saveRDS(analysis, out_path)
 write_csv(analysis |> select(id, wave, age, sample_flag, main_flag_25_60,
                              reform_main, reform_alt_1997, reform_alt_1999,
-                             q_home, q_new, lwage, educ_years) |> head(20),
+                             q_school_access, q_new, lwage, educ_years) |> head(20),
           file.path(PATHS$out_logs, "07_analysis_sample_head.csv"))
 
 log_path <- file.path(PATHS$out_logs, "07_merge_final.log")

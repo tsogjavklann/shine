@@ -24,7 +24,7 @@ tic("Total")
 df <- readRDS(file.path(PATHS$data_proc, "analysis_sample.rds")) |> as_tibble()
 main <- df |>
   filter(main_flag_25_60 == 1L,
-         !is.na(q_home), is.finite(q_home),
+         !is.na(q_school_access), is.finite(q_school_access),
          !is.na(educ_years), !is.na(lwage),
          !is.na(age), !is.na(is_female), !is.na(is_married),
          !is.na(region), !is.na(wave), !is.na(aimag), !is.na(hhweight))

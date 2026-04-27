@@ -1,0 +1,2 @@
+has_parent_iv_formula,gmm_instrument_uses_parent_educ_mean_r,threshold_used_as_instrument_string_present,log_distance_used_as_iv_string_present,father_mother_overid_iv_string_present
+TRUE,TRUE,FALSE,FALSE,FALSE

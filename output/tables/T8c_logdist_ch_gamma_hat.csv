@@ -1,0 +1,2 @@
+gamma_hat,distance_cutoff_km,N,N_low,N_high,beta_low_2sls,beta_high_2sls,min_SSR_2SLS,rank_X,rank_Z,rank_XPZX,condition_number_XPZX,warning_flag,warning_note,n_candidates,n_valid_grid_points,n_skipped_or_invalid,n_warning_flagged,p10_p25_zero_note,coarse_birth_aimag_grid_note,safe_for_stage19d
+6.228819337004976,507.15634914338665,3188,2086,1102,0.11005308746939053,0.07946997904687268,45632.90863846936,7,7,7,182644.44053008533,FALSE,,21,21,0,0,TRUE,log_distance_to_ub has only 22 unique birth-aimag-level values,TRUE

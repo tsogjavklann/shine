@@ -1,0 +1,14 @@
+13b_childhood_shocks.R
+Started: 2026-04-26 18:40:27.904883 
+
+Hits: 173 
+# A tibble: 5 × 2
+  section                   n_hits
+  <chr>                      <int>
+1 A_migration_history           16
+2 B_ethnicity_religion           5
+3 C_parental_occupation         49
+4 D_early_health_disability     34
+5 E_household_young_age         69
+
+13b complete.

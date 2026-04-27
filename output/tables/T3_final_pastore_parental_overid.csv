@@ -1,0 +1,2 @@
+test,source,statistic,df,p_value,result,caveat
+Sargan overidentification test,ivreg weighted FE-factor Sargan,5.422851206396549,1,0.01987487857009443,The overidentifying restrictions are rejected.,"Parental education may affect wages through family background, networks, and unobserved ability channels."

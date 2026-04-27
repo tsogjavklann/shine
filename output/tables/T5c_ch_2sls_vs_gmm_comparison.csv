@@ -1,0 +1,2 @@
+gamma_hat,beta_low_2sls,beta_high_2sls,beta_low_GMM,beta_high_GMM,beta_diff_GMM_high_minus_low,inference_method
+1.0380060250036154,0.12045404562121192,0.0908767457867139,0.12045404562121279,0.09087674578671212,-0.029577299834500664,"two-step GMM, cluster-robust S by birth_aimag, t distribution with df=21"

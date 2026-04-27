@@ -1,0 +1,59 @@
+- The project is out-of-sync -- use `renv::status()` for details.
+Sample N = 9077
+
+=================================================================
+VARIANCE DECOMPOSITION: cum_12_17 (cumulative dzud loss-rate)
+=================================================================
+  birth_aimag FE only                      R² = 0.2972
+  birth_year FE only                       R² = 0.3982
+  birth_aimag + birth_year FE              R² = 0.6994
+  birth_aimag + birth_cohort (5y) FE       R² = 0.5387
+  region FE only                           R² = 0.0151
+  region + wave FE (V1 spec)               R² = 0.0174
+
+Интерпретация:
+  Хэрэв birth_aimag FE-р R² ≈ 1: бүх variation aimag-аас (chronic, time-invariant)
+  Хэрэв birth_aimag+cohort R² << 1: жинхэнэ within-aimag time variation байна
+
+=================================================================
+FIRST-STAGE F (educ ~ cum_12_17 + ctrls): различные FE
+=================================================================
+
+--- IV1: cum_12_17 (cumulative loss rate, 12-17 window) ---
+  V1: region + wave                                  π̂=-0.2106  SE=0.1676  t=-1.26  F=1.58  p=0.2980
+Warning message:
+The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+  birth_aimag + wave                                 π̂=+0.1915  SE=0.2095  t=+0.91  F=0.84  p=0.4281
+Warning message:
+The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+  V2: birth_aimag + birth_cohort + wave              π̂=+0.2464  SE=0.2690  t=+0.92  F=0.84  p=0.4272
+Warning message:
+The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+
+--- IV2: cnt5_6_17 (count of >=5% dzud-years, age 6-17) ---
+  V1: region + wave                                  π̂=-0.0440  SE=0.0186  t=-2.37  F=5.60  p=0.0988
+Warning message:
+The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+  birth_aimag + wave                                 π̂=+0.0429  SE=0.0528  t=+0.81  F=0.66  p=0.4753
+Warning message:
+The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+  V2: birth_aimag + birth_cohort + wave              π̂=+0.0498  SE=0.0520  t=+0.96  F=0.92  p=0.4087
+Warning message:
+The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+The variable 'age' has been removed because of collinearity (see $collin.var).
+  birth_aimag + birth_year + wave                    π̂=+0.0442  SE=0.0713  t=+0.62  F=0.38  p=0.5797
+Warning message:
+The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+
+--- VARIANCE DECOMPOSITION of cnt5_6_17 ---
+  birth_aimag FE only:                R² = 0.5027
+  birth_aimag + birth_cohort FE:      R² = 0.5782
+  region + wave FE (V1):              R² = 0.0779
+
+=================================================================
+ДҮГНЭЛТ — ИДЕНТИФИКАЦИЙН ЭХ СУРВАЛЖ
+=================================================================
+Хэрэв 'birth_aimag + wave' F<5 БОЛОВЧ 'region + wave' F=12.5 БОЛ:
+→ V1 нь aimag-level chronic ялгаа (Завхан vs УБ)-аас identification ирсэн
+→ Бенин: dzud-prone aimags урт хугацаандаа нэг л education + wage хослолтой
+→ Exclusion violated: dzud дамжуулагч биш, харин 'remoteness' дамжуулагч

@@ -1,0 +1,43 @@
+18_threshold_variable_audit_from_data.R
+Started: 2026-04-26 23:11:02.323813 
+
+Full audit rows: 69 
+Shortlist rows: 5 
+Rejected rows: 64 
+
+Best continuous:
+# A tibble: 1 × 33
+  variable_name family source_file type  N_nonmissing missing_rate unique_values
+  <chr>         <chr>  <chr>       <chr>        <int>        <dbl>         <int>
+1 q_home        Schoo… C:/tsogoo/… cont…         3188        0.141           356
+# ℹ 26 more variables: min <dbl>, p10 <dbl>, p25 <dbl>, p50 <dbl>, p75 <dbl>,
+#   p90 <dbl>, max <dbl>, correlation_with_lwage <dbl>,
+#   correlation_with_educ_years <dbl>, correlation_with_parent_educ_mean <dbl>,
+#   likely_pre_determined_yes_no <chr>, post_treatment_risk_yes_no <chr>,
+#   same_as_or_too_close_to_IV_yes_no <chr>,
+#   usable_for_Caner_Hansen_continuous_threshold_yes_no <chr>,
+#   usable_as_binary_split_yes_no <chr>, expected_mechanism <chr>, …
+
+Best binary:
+# A tibble: 1 × 33
+  variable_name family source_file type  N_nonmissing missing_rate unique_values
+  <chr>         <chr>  <chr>       <chr>        <int>        <dbl>         <int>
+1 born_ub       Local… C:/tsogoo/… bina…         3705      0.00135             2
+# ℹ 26 more variables: min <dbl>, p10 <dbl>, p25 <dbl>, p50 <dbl>, p75 <dbl>,
+#   p90 <dbl>, max <dbl>, correlation_with_lwage <dbl>,
+#   correlation_with_educ_years <dbl>, correlation_with_parent_educ_mean <dbl>,
+#   likely_pre_determined_yes_no <chr>, post_treatment_risk_yes_no <chr>,
+#   same_as_or_too_close_to_IV_yes_no <chr>,
+#   usable_for_Caner_Hansen_continuous_threshold_yes_no <chr>,
+#   usable_as_binary_split_yes_no <chr>, expected_mechanism <chr>, …
+
+Family availability:
+# A tibble: 4 × 5
+  family          n_candidates n_usable_continuous n_usable_binary top_candidate
+  <chr>                  <int>               <int>           <int> <chr>        
+1 Cognitive abil…            7                   0               0 q0211        
+2 Credit constra…           17                   0               0 birth_order  
+3 Local labor ma…            6                   2               2 distance_to_…
+4 School quality…           39                   2               0 q_home       
+
+Completed: 2026-04-26 23:11:06.194565 

@@ -1,0 +1,70 @@
+24a_audit_student_teacher_avg_16_18.R
+Started: 2026-04-27 10:19:03.446402 
+
+Panel formula check:
+# A tibble: 1 × 4
+  n_panel_rows n_finite_student_teacher_ratio max_abs_str_minus_students_over_…¹
+         <int>                          <int>                              <dbl>
+1          792                            572                                  0
+# ℹ abbreviated name: ¹​max_abs_str_minus_students_over_teachers
+# ℹ 1 more variable: max_abs_tps_minus_teachers_over_students <dbl>
+
+Construction check:
+# A tibble: 1 × 7
+  N_saved n_all_three_years_saved n_all_three_years_reb…¹ max_abs_saved_vs_reb…²
+    <int>                   <int>                   <int>                  <dbl>
+1    3113                    3113                    3113                      0
+# ℹ abbreviated names: ¹​n_all_three_years_rebuilt,
+#   ²​max_abs_saved_vs_rebuilt_threshold
+# ℹ 3 more variables: max_abs_parent_educ_saved_vs_rebuilt <dbl>,
+#   any_threshold_missing_in_saved <lgl>, any_parent_missing_in_saved <lgl>
+
+Sample filter check:
+# A tibble: 1 × 13
+      N age_min age_max nonfinite_lwage missing_educ_years
+  <int>   <dbl>   <dbl>           <int>              <int>
+1  3113      25      40               0                  0
+# ℹ 8 more variables: missing_parent_educ_mean <int>, missing_threshold <int>,
+#   missing_controls <int>, missing_fe <int>, nonpositive_weight <int>,
+#   n_clusters <int>, n_birth_cohorts <int>, n_waves <int>
+
+Grid check:
+# A tibble: 1 × 7
+  gamma_hat_table gamma_min_from_grid gamma_matches_grid_min n_grid_rows
+            <dbl>               <dbl> <lgl>                        <int>
+1            19.6                19.6 TRUE                           252
+# ℹ 3 more variables: n_valid_grid_rows <int>, n_warning_flagged <int>,
+#   min_SSR <dbl>
+
+Regime check:
+# A tibble: 1 × 10
+  gamma_hat N_low_recomputed N_high_recomputed N_low_table N_high_table
+      <dbl>            <int>             <int>       <dbl>        <dbl>
+1      19.6             1007              2106        1007         2106
+# ℹ 5 more variables: low_high_counts_match <lgl>, mean_threshold_low <dbl>,
+#   mean_threshold_high <dbl>, max_threshold_low <dbl>,
+#   min_threshold_high <dbl>
+
+Script role check:
+# A tibble: 1 × 5
+  has_parent_iv_formula gmm_instrument_uses_parent_educ…¹ threshold_used_as_in…²
+  <lgl>                 <lgl>                             <lgl>                 
+1 TRUE                  TRUE                              FALSE                 
+# ℹ abbreviated names: ¹​gmm_instrument_uses_parent_educ_mean_r,
+#   ²​threshold_used_as_instrument_string_present
+# ℹ 2 more variables: log_distance_used_as_iv_string_present <lgl>,
+#   father_mother_overid_iv_string_present <lgl>
+
+Bootstrap check:
+# A tibble: 1 × 12
+  n_success n_failed n_warning beta_diff_observed beta_diff_boot_mean
+      <int>    <int>     <int>              <dbl>               <dbl>
+1      1999        0         1             0.0224              0.0266
+# ℹ 7 more variables: beta_diff_q025 <dbl>, beta_diff_q975 <dbl>,
+#   percentile_ci_contains_zero <lgl>, centered_bootstrap_p_value_table <dbl>,
+#   centered_bootstrap_p_value_recomputed <dbl>,
+#   sign_based_two_sided_p_value <dbl>, note <chr>
+
+Decision: PASS: no construction, IV-role, grid, regime-coding, or rank error was found. 
+
+Completed: 2026-04-27 10:19:04.696358 

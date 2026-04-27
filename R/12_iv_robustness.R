@@ -21,13 +21,13 @@ set.seed(2026)
 cli::cli_h1("12_iv_robustness.R — alt IV + LIML/Fuller-1 + alt_sample")
 tic("Total")
 
-# ---- 1. Load + restrict (home_aimag valid required for q_home in IVTR later) -
+# ---- 1. Load + restrict (home_aimag valid required for q_school_access in IVTR later) -
 df <- readRDS(file.path(PATHS$data_proc, "analysis_sample.rds")) |> as_tibble()
 
 prep_sample <- function(d, age_low, iv_var) {
   d |>
     filter(age >= age_low, age <= 60L,
-           !is.na(q_home), is.finite(q_home),
+           !is.na(q_school_access), is.finite(q_school_access),
            !is.na(educ_years), !is.na(lwage),
            !is.na(age), !is.na(is_female), !is.na(is_married),
            !is.na(region), !is.na(wave), !is.na(aimag), !is.na(hhweight),

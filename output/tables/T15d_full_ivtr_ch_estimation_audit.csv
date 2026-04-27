@@ -1,0 +1,7 @@
+q_variable,residualized_dataset_exists,residualized_variables_present,threshold_q_not_residualized,grid_search_over_q,trimming_rule_detected,gamma_minimum_objective_ok,N_low_matches,N_high_matches,endogenous_regime_regressors_ok,regime_instruments_ok,rank_X,rank_Z,rank_XZ_W_ZX,condition_number_main,warnings,status
+q_school_access,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,7,7,NA,449660.2692839875,high condition number,WARNING
+log_distance_to_ub,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,7,7,7,378623.7018295715,high condition number,WARNING
+student_teacher_ratio_at_17,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,7,7,7,216974.9247595138,high condition number,WARNING
+student_teacher_ratio_avg_16_17,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,7,7,7,724275.5323230341,high condition number,WARNING
+student_teacher_ratio_avg_16_18,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,7,7,7,616882.0982226033,high condition number,WARNING
+student_teacher_ratio_avg_17_18,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,7,7,7,472491.46716565074,high condition number,WARNING

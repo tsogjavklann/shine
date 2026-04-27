@@ -1,0 +1,6 @@
+sex,age_group,year,population,px_value,abs_diff,values_match,aimag_name,raw_value
+Бүгд,5-9,2005,273818,273818,0,TRUE,NA,273818
+Бүгд,10-14,2013,234216,234216,0,TRUE,NA,234216
+Бүгд,5-9,2007,246879,246879,0,TRUE,NA,246879
+Бүгд,5-9,2018,358379,358379,0,TRUE,NA,358379
+Бүгд,15-19,1963,70888,70888,0,TRUE,NA,70888

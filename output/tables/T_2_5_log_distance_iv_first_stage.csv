@@ -1,0 +1,4 @@
+spec,N,pi_log_dist,se_2way,t_stat,p_value,F_log_dist,R2_adj
+"1) log distance only, wave FE",21009,-0.07757,0.02658,-2.91799,0.00352,8.51467,0.06936
+2) log distance + region FE + wave FE,21009,-0.03674,0.00981,-3.74491,1.8e-4,14.02439,0.08221
+3) log distance + location FE,21009,-0.03686,0.00982,-3.75249,1.8e-4,14.08118,0.08808

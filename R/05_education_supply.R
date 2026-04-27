@@ -12,7 +12,7 @@
 # Орц     : data/processed/wage_real.rds
 # Гарц    : data/aux/school_density_by_aimag.rds (long: aimag × year × density)
 #           data/aux/aimag_lookup.csv             (NSO valueText → HSES newaimag)
-#           data/processed/school_access.rds      (id × q_home × q_new)
+#           data/processed/school_access.rds      (id × q_school_access × q_new)
 #           output/logs/05_aimag_coverage.log     (DECISION + diagnostics)
 # =============================================================================
 
@@ -222,8 +222,8 @@ compute_qi <- function(panel, aimag_col, supply) {
 }
 
 cli::cli_alert("Computing q for home_aimag (q0114a/q0118a)...")
-q_home <- compute_qi(wage, "birth_aimag", ed_supply) |>
-  rename(q_home = q_value, n_years_home = n_years_obs)
+q_school_access <- compute_qi(wage, "birth_aimag", ed_supply) |>
+  rename(q_school_access = q_value, n_years_school_access = n_years_obs)
 
 cli::cli_alert("Computing q for newaimag_proxy (current residence)...")
 q_new <- compute_qi(wage, "newaimag_proxy", ed_supply) |>
@@ -231,16 +231,16 @@ q_new <- compute_qi(wage, "newaimag_proxy", ed_supply) |>
 
 school_access <- wage |>
   select(id, wave, birth_year, birth_aimag, newaimag_proxy) |>
-  left_join(q_home, by = "id") |>
+  left_join(q_school_access, by = "id") |>
   left_join(q_new,  by = "id")
 
 # Coverage on the wage panel
 n_total       <- nrow(school_access)
-n_home_valid  <- sum(!is.na(school_access$q_home) & is.finite(school_access$q_home))
+n_home_valid  <- sum(!is.na(school_access$q_school_access) & is.finite(school_access$q_school_access))
 n_new_valid   <- sum(!is.na(school_access$q_new)  & is.finite(school_access$q_new))
 
 cli::cli_h2("school_access coverage in wage panel ({n_total} obs)")
-cli::cli_alert_info("Home_aimag valid (q_home not NaN): {n_home_valid} ({round(100*n_home_valid/n_total,1)}%)")
+cli::cli_alert_info("Home_aimag valid (q_school_access not NaN): {n_home_valid} ({round(100*n_home_valid/n_total,1)}%)")
 cli::cli_alert_info("Newaimag valid (q_new not NaN):   {n_new_valid} ({round(100*n_new_valid/n_total,1)}%)")
 
 # Distribution sumamary
@@ -252,7 +252,7 @@ qsum <- function(x, label) {
          p5 = q[1], p25 = q[2], median = q[3], p75 = q[4], p95 = q[5])
 }
 sa_summary <- bind_rows(
-  qsum(school_access$q_home, "q_home"),
+  qsum(school_access$q_school_access, "q_school_access"),
   qsum(school_access$q_new,  "q_new")
 )
 print(sa_summary)
@@ -289,7 +289,7 @@ cat("==========================================================\n")
 cat("05_education_supply.R лог  ", as.character(Sys.time()), "\n")
 cat("==========================================================\n")
 cat(sprintf("Wage panel rows:           %d\n", n_total))
-cat(sprintf("home_aimag valid q_home:   %d (%.2f%%)\n", n_home_valid, 100*n_home_valid/n_total))
+cat(sprintf("home_aimag valid q_school_access:   %d (%.2f%%)\n", n_home_valid, 100*n_home_valid/n_total))
 cat(sprintf("newaimag valid q_new:      %d (%.2f%%)\n", n_new_valid,  100*n_new_valid/n_total))
 cat(sprintf("\nDecision: %s\n", decision))
 cat("\nschool_access distribution:\n"); print(sa_summary)

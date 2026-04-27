@@ -1,0 +1,2 @@
+gamma_hat,N,N_low,N_high,beta_low_2sls,beta_high_2sls,min_SSR_2SLS,rank_X,rank_Z,rank_XPZX,condition_number_XPZX,warning_flag,warning_note,n_candidates,n_valid_grid_points,n_skipped_or_invalid,safe_for_stage16c
+1.0380060250036154,3188,793,2395,0.12045404562121192,0.0908767457867139,45607.5815177232,7,7,7,183728.98508614162,FALSE,,279,279,0,TRUE

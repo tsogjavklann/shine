@@ -23,9 +23,9 @@ tic("Total")
 df <- readRDS(file.path(PATHS$data_proc, "analysis_sample.rds")) |> as_tibble()
 cli::cli_alert_info("analysis_sample: {nrow(df)} rows × {ncol(df)} cols")
 
-# MAIN: 25-60 нас + home_aimag (q_home valid)
+# MAIN: 25-60 нас + home_aimag (q_school_access valid)
 main <- df |>
-  filter(main_flag_25_60 == 1L, !is.na(q_home), is.finite(q_home))
+  filter(main_flag_25_60 == 1L, !is.na(q_school_access), is.finite(q_school_access))
 
 # ALT (robustness ref): 25-60 + newaimag valid (q_new valid; broader)
 alt  <- df |>
@@ -97,7 +97,7 @@ VARS <- list(
   list("real_hourly",    "Real hourly wage (MNT, 2020 base)"),
   list("nominal_hourly", "Nominal hourly wage (MNT)"),
   list("age",            "Age"),
-  list("q_home",         "school_access (q_home, MAIN)"),
+  list("q_school_access",         "school_access (q_school_access, MAIN)"),
   list("q_new",          "school_access (q_new, robustness)"),
   list("is_female",      "Female (1=Эм)"),
   list("is_married",     "Married (q0106 ∈ 2:3)"),

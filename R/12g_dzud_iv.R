@@ -1,13 +1,11 @@
 # =============================================================================
 # R/12g_dzud_iv.R — Dzud IV approach (Mongolia-specific extreme weather shock)
 #
-# Эх сурвалж: NSO 1212.mn (Regional development > Livestock — АЙМАГ-түвшний)
-#   - DT_NSO_1001_136V1: Том малын зүй бус хорогдол, аймаг/нийслэл, жилээр (1991-2024)
-#   - DT_NSO_1001_109V1: Малын тоо, аймаг/нийслэл, жилээр (1989-2024)
+# Эх сурвалж: NSO 1212.mn гар татсан xlsx → R/02b_clean_nso_xlsx.R-аар цэвэрлэсэн
+#   data/aux/dzud_panel.csv  (loss + livestock + loss_rate + dzud thresholds)
 #
-# Тэмдэглэл: Хуучин 029V1/021V1 (Industry/service > Livestock, баг/хороо түвшний)-аас
-#   шилжсэн — учир нь тэдгээр нь aimag-түвшинд буруу/дутуу бичигдсэн
-#   (1999-2002 dzud-д 17/22 аймаг "0" гэж бүртгэгдсэн).
+# (Originally fetched via PXWeb API — DT_NSO_1001_136V1 + 109V1; one-to-one match
+#  verified by R/_scratch_verify_csv_source.R)
 #
 # Аргачлал: aimag-year хорогдлын хувь = loss / (lagged_count) > threshold => dzud
 # Childhood exposure: dzud_count_6_17 = sum(dzud_severe[birth_aimag, birth_year+6 .. birth_year+17])
@@ -71,86 +69,23 @@ match_aimag <- function(label_vec) {
 }
 
 # -----------------------------------------------------------------------------
-# 1. FETCH livestock LOSS (Том малын зүй бус хорогдол) — DT_NSO_1001_136V1
+# 1-3. LOAD pre-built dzud_panel from data/aux/ (R/02b_clean_nso_xlsx.R-аас)
 # -----------------------------------------------------------------------------
-cli_h1("STEP 1: Том малын зүй бус хорогдол, аймаг/нийслэл, жилээр (1991-2024)")
+cli_h1("STEP 1: dzud_panel.csv ачааллах (R/02b_clean_nso_xlsx.R-ийн гарц)")
 
-url_loss <- "https://data.1212.mn/api/v1/mn/NSO/Regional%20development/Livestock/DT_NSO_1001_136V1.px"
-body_loss <- '{"query":[],"response":{"format":"json-stat2"}}'
-js_loss <- fetch_pxweb(url_loss, body_loss)
-loss_raw <- parse_jsonstat(js_loss)
-cat(sprintf("Loss raw rows: %d\n", nrow(loss_raw)))
+panel <- readRDS(here("data", "aux", "dzud_panel.rds")) |> as_tibble()
+cat(sprintf("dzud_panel: %d мөр × %d багана\n", nrow(panel), ncol(panel)))
+cat(sprintf("Жилийн хүрээ: %d-%d, аймаг: %d\n",
+            min(panel$year), max(panel$year), length(unique(panel$hses_code))))
 
-# species: filter to "Бүгд"
-loss_total <- loss_raw |> filter(`Малын төрөл_label` == "Бүгд")
-cat(sprintf("After filtering to Бүгд (total): %d rows\n", nrow(loss_total)))
-
-# Match by aimag label (regional aggregates have non-aimag labels and won't match lookup)
-loss_aimag <- loss_total |>
-  mutate(year = suppressWarnings(as.integer(Он_label)),
-         hses_code = match_aimag(str_trim(Бүс_label))) |>
-  filter(!is.na(hses_code), !is.na(year), !is.na(value)) |>
-  rename(loss = value) |>
-  group_by(hses_code, year) |>
-  summarise(loss = first(loss), .groups = "drop")
-
-cat(sprintf("Loss aimag-year cells: %d\n", nrow(loss_aimag)))
-cat(sprintf("Year range: %d-%d, Aimags matched: %d\n",
-            min(loss_aimag$year), max(loss_aimag$year), length(unique(loss_aimag$hses_code))))
-
-# -----------------------------------------------------------------------------
-# 2. FETCH livestock COUNT (Малын тоо) — DT_NSO_1001_109V1
-# -----------------------------------------------------------------------------
-cli_h1("STEP 2: Малын тоо, аймаг/нийслэл, жилээр (1989-2024)")
-
-url_cnt <- "https://data.1212.mn/api/v1/mn/NSO/Regional%20development/Livestock/DT_NSO_1001_109V1.px"
-body_cnt <- '{"query":[],"response":{"format":"json-stat2"}}'
-js_cnt <- fetch_pxweb(url_cnt, body_cnt)
-cnt_raw <- parse_jsonstat(js_cnt)
-cat(sprintf("Livestock count raw rows: %d\n", nrow(cnt_raw)))
-
-cnt_aimag <- cnt_raw |>
-  filter(`Малын төрөл_label` == "Бүгд") |>
-  mutate(year = suppressWarnings(as.integer(Он_label)),
-         hses_code = match_aimag(str_trim(Бүс_label))) |>
-  filter(!is.na(hses_code), !is.na(year), !is.na(value)) |>
-  rename(livestock = value) |>
-  group_by(hses_code, year) |>
-  summarise(livestock = first(livestock), .groups = "drop")
-cat(sprintf("Livestock count aimag-year cells: %d\n", nrow(cnt_aimag)))
-
-# -----------------------------------------------------------------------------
-# 3. BUILD DZUD INDEX
-# -----------------------------------------------------------------------------
-cli_h1("STEP 3: dzud_severe index")
-
-# Loss-rate = loss(t) / livestock_count(t-1)  [denominator = animals at risk at start]
-panel <- loss_aimag |>
-  inner_join(cnt_aimag, by = c("hses_code", "year")) |>
-  arrange(hses_code, year) |>
-  group_by(hses_code) |>
-  mutate(livestock_lag = lag(livestock),
-         loss_rate = if_else(!is.na(livestock_lag) & livestock_lag > 0,
-                             loss / livestock_lag, NA_real_)) |>
-  ungroup()
-
-cat("Loss rate distribution:\n")
-print(summary(panel$loss_rate))
-cat(sprintf("\nQuantiles:\n"))
+cat("\nloss_rate quantiles:\n")
 print(quantile(panel$loss_rate, c(0.5, 0.75, 0.9, 0.95, 0.99), na.rm = TRUE))
-
-# Define dzud thresholds (3 alternatives)
-panel <- panel |>
-  mutate(dzud_5pct  = as.integer(loss_rate >= 0.05),
-         dzud_10pct = as.integer(loss_rate >= 0.10),
-         dzud_top10 = as.integer(loss_rate >= quantile(panel$loss_rate, 0.90, na.rm = TRUE)))
 
 cat(sprintf("\nDzud-years counted (any aimag, any year):\n"))
 cat(sprintf("  >=5%%  loss rate: %d aimag-years\n", sum(panel$dzud_5pct, na.rm = TRUE)))
 cat(sprintf("  >=10%% loss rate: %d aimag-years\n", sum(panel$dzud_10pct, na.rm = TRUE)))
 cat(sprintf("  Top 10%%: %d aimag-years\n", sum(panel$dzud_top10, na.rm = TRUE)))
 
-# Show worst dzud years (national-level by counting affected aimags)
 worst <- panel |>
   group_by(year) |>
   summarise(n_aimags_dzud5 = sum(dzud_5pct, na.rm = TRUE),
@@ -158,12 +93,8 @@ worst <- panel |>
             mean_loss_rate = mean(loss_rate, na.rm = TRUE),
             .groups = "drop") |>
   arrange(desc(n_aimags_dzud5))
-cat("\nTop 15 dzud-years (most aimags with >=5% loss):\n")
+cat("\nTop 15 dzud-years:\n")
 print(worst, n = 15)
-
-saveRDS(panel, here("data", "aux", "dzud_panel.rds"))
-write_csv(panel, here("data", "aux", "dzud_panel.csv"))
-cat(sprintf("\nSaved dzud_panel.rds (%d rows)\n", nrow(panel)))
 
 # -----------------------------------------------------------------------------
 # 4. CHILDHOOD EXPOSURE — dzud_count_6_17 by (birth_aimag, birth_year)
@@ -214,7 +145,7 @@ cli_h1("STEP 5: First-stage F-statistic")
 df <- readRDS(here("data", "processed", "analysis_sample.rds")) |> as_tibble()
 main <- df |>
   filter(main_flag_25_60 == 1L,
-         !is.na(q_home), is.finite(q_home),
+         !is.na(q_school_access), is.finite(q_school_access),
          !is.na(birth_year), !is.na(educ_years), !is.na(lwage),
          !is.na(birth_aimag), !is.na(hhweight)) |>
   left_join(exposure, by = c("birth_aimag" = "birth_aimag", "birth_year" = "birth_year"))
@@ -240,16 +171,20 @@ print(fitstat(iv1, "ivf1"))
 cat("\n2SLS β (educ_years):\n")
 print(coeftable(iv1)["fit_educ_years", , drop = FALSE])
 
-# First stage: any_dzud (binary)
+# First stage: any_dzud (binary) — may be collinear if all observations have any_dzud=1
 fs2 <- feols(educ_years ~ any_dzud5_6_17 + age + age2 + is_female + is_married | region + wave,
              data = iv_data, weights = ~hhweight, cluster = ~aimag + wave)
 cat("\n--- First stage: educ_years ~ any_dzud5_6_17 (binary) ---\n")
-print(coeftable(fs2)["any_dzud5_6_17", , drop = FALSE])
-
-iv2 <- feols(lwage ~ age + age2 + is_female + is_married | region + wave |
-               educ_years ~ any_dzud5_6_17,
-             data = iv_data, weights = ~hhweight, cluster = ~aimag + wave)
-cat("IV F-stat:\n"); print(fitstat(iv2, "ivf1"))
+if ("any_dzud5_6_17" %in% rownames(coeftable(fs2))) {
+  print(coeftable(fs2)["any_dzud5_6_17", , drop = FALSE])
+  iv2 <- feols(lwage ~ age + age2 + is_female + is_married | region + wave |
+                 educ_years ~ any_dzud5_6_17,
+               data = iv_data, weights = ~hhweight, cluster = ~aimag + wave)
+  cat("IV F-stat:\n"); print(fitstat(iv2, "ivf1"))
+} else {
+  cat(sprintf("any_dzud5_6_17 collinear (mean = %.3f); skipping\n", mean(iv_data$any_dzud5_6_17)))
+  iv2 <- NULL
+}
 
 # First stage: intensity (share)
 fs3 <- feols(educ_years ~ dzud5_intensity + age + age2 + is_female + is_married | region + wave,
@@ -316,18 +251,18 @@ if ("urban" %in% names(iv_data)) {
 }
 
 # -----------------------------------------------------------------------------
-# 7. COLLINEARITY with q_home
+# 7. COLLINEARITY with q_school_access
 # -----------------------------------------------------------------------------
-cli_h1("STEP 7: Collinearity with q_home (threshold variable)")
+cli_h1("STEP 7: Collinearity with q_school_access (threshold variable)")
 
-cor_check <- iv_data |> filter(!is.na(q_home))
+cor_check <- iv_data |> filter(!is.na(q_school_access))
 cat(sprintf("N: %d\n", nrow(cor_check)))
-cat(sprintf("cor(dzud5_6_17, q_home)      = %.4f\n",
-            cor(cor_check$dzud5_6_17, cor_check$q_home)))
-cat(sprintf("cor(any_dzud5_6_17, q_home)  = %.4f\n",
-            cor(cor_check$any_dzud5_6_17, cor_check$q_home)))
-cat(sprintf("cor(dzud5_intensity, q_home) = %.4f\n",
-            cor(cor_check$dzud5_intensity, cor_check$q_home, use = "complete.obs")))
+cat(sprintf("cor(dzud5_6_17, q_school_access)      = %.4f\n",
+            cor(cor_check$dzud5_6_17, cor_check$q_school_access)))
+cat(sprintf("cor(any_dzud5_6_17, q_school_access)  = %.4f\n",
+            cor(cor_check$any_dzud5_6_17, cor_check$q_school_access)))
+cat(sprintf("cor(dzud5_intensity, q_school_access) = %.4f\n",
+            cor(cor_check$dzud5_intensity, cor_check$q_school_access, use = "complete.obs")))
 cat("(|cor| < 0.5 → IVTR-д ашиглах боломжтой)\n")
 
 # -----------------------------------------------------------------------------
@@ -335,9 +270,9 @@ cat("(|cor| < 0.5 → IVTR-д ашиглах боломжтой)\n")
 # -----------------------------------------------------------------------------
 cli_h1("STEP 8: Summary table")
 
-extract_F <- function(iv) tryCatch(fitstat(iv, "ivf1")$ivf1$stat, error = function(e) NA_real_)
-extract_b <- function(iv) tryCatch(coeftable(iv)["fit_educ_years", "Estimate"], error = function(e) NA_real_)
-extract_se <- function(iv) tryCatch(coeftable(iv)["fit_educ_years", "Std. Error"], error = function(e) NA_real_)
+extract_F <- function(iv) tryCatch(if (is.null(iv)) NA_real_ else fitstat(iv, "ivf1")$ivf1$stat, error = function(e) NA_real_)
+extract_b <- function(iv) tryCatch(if (is.null(iv)) NA_real_ else coeftable(iv)["fit_educ_years", "Estimate"], error = function(e) NA_real_)
+extract_se <- function(iv) tryCatch(if (is.null(iv)) NA_real_ else coeftable(iv)["fit_educ_years", "Std. Error"], error = function(e) NA_real_)
 extract_pi <- function(fs, var) tryCatch(coeftable(fs)[var, "Estimate"], error = function(e) NA_real_)
 
 summary_tbl <- tibble(
@@ -358,18 +293,18 @@ summary_tbl <- tibble(
               extract_b(iv4), extract_b(iv5), extract_b(iv6), extract_b(iv7)),
   se_beta = c(extract_se(iv1), extract_se(iv2), extract_se(iv3),
               extract_se(iv4), extract_se(iv5), extract_se(iv6), extract_se(iv7)),
-  cor_qhome = c(cor(cor_check$dzud5_6_17, cor_check$q_home),
-                cor(cor_check$any_dzud5_6_17, cor_check$q_home),
-                cor(cor_check$dzud5_intensity, cor_check$q_home, use = "complete.obs"),
-                cor(cor_check$cum_loss_rate_6_17, cor_check$q_home),
-                cor(cor_check$log_cum_loss, cor_check$q_home),
-                cor(cor_check$dzud_top10_6_17, cor_check$q_home),
-                cor(cor_check$max_loss_rate_6_17, cor_check$q_home, use = "complete.obs")),
+  cor_qschool_access = c(cor(cor_check$dzud5_6_17, cor_check$q_school_access),
+                cor(cor_check$any_dzud5_6_17, cor_check$q_school_access),
+                cor(cor_check$dzud5_intensity, cor_check$q_school_access, use = "complete.obs"),
+                cor(cor_check$cum_loss_rate_6_17, cor_check$q_school_access),
+                cor(cor_check$log_cum_loss, cor_check$q_school_access),
+                cor(cor_check$dzud_top10_6_17, cor_check$q_school_access),
+                cor(cor_check$max_loss_rate_6_17, cor_check$q_school_access, use = "complete.obs")),
   verdict = NA_character_
 ) |>
   mutate(verdict = case_when(
-    F_first >= 10 & abs(cor_qhome) < 0.5 ~ "✅ STRONG (F>=10, low cor)",
-    F_first >= 10                        ~ "⚠️ STRONG but high cor q_home",
+    F_first >= 10 & abs(cor_qschool_access) < 0.5 ~ "✅ STRONG (F>=10, low cor)",
+    F_first >= 10                        ~ "⚠️ STRONG but high cor q_school_access",
     F_first >= 5                         ~ "🟡 MARGINAL (F in [5,10))",
     F_first >= 1                         ~ "❌ WEAK (F<5)",
     TRUE                                 ~ "🚨 USELESS (F<1)"

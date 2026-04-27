@@ -1,0 +1,33 @@
+19c_logdist_ch_2sls_threshold_grid.R
+Started: 2026-04-27 00:12:17.673052 
+
+Candidate thresholds: 21 
+log_distance_to_ub p10: 0  p25: 0  p90: 7.034999 
+p10 and p25 are zero: TRUE 
+
+Grid diagnostics:
+Candidates: 21 
+Valid: 21 
+Skipped/invalid: 0 
+Warning-flagged: 0 
+p10 and p25 are zero: TRUE 
+
+Gamma hat table:
+# A tibble: 1 × 21
+  gamma_hat distance_cutoff_km     N N_low N_high beta_low_2sls beta_high_2sls
+      <dbl>              <dbl> <int> <int>  <int>         <dbl>          <dbl>
+1      6.23               507.  3188  2086   1102         0.110         0.0795
+# ℹ 14 more variables: min_SSR_2SLS <dbl>, rank_X <int>, rank_Z <int>,
+#   rank_XPZX <int>, condition_number_XPZX <dbl>, warning_flag <lgl>,
+#   warning_note <chr>, n_candidates <int>, n_valid_grid_points <int>,
+#   n_skipped_or_invalid <int>, n_warning_flagged <int>,
+#   p10_p25_zero_note <lgl>, coarse_birth_aimag_grid_note <chr>,
+#   safe_for_stage19d <lgl>
+
+Warning summary:
+# A tibble: 0 × 2
+# ℹ 2 variables: warning_note <chr>, n <int>
+
+Decision: Proceed to Stage 19D GMM slope estimation. 
+
+Completed: 2026-04-27 00:12:18.686713 

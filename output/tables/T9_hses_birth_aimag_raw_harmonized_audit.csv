@@ -1,0 +1,5 @@
+wave,raw_N,birth_aimag_nonmissing,birth_aimag_missing,born_current_yes,born_current_no,born_current_missing,raw_birth_aimag_nonmissing,raw_birth_aimag_missing,filled_from_current,filled_from_raw,processed_equals_expected,processed_differs_expected,birth_equals_current,birth_differs_current,unique_birth_aimag
+2020,59737,58162,1575,40728,17434,1575,17434,42303,40728,17434,58162,0,47190,10972,37
+2021,40129,39290,839,28333,10957,839,10957,29172,28333,10957,39290,0,32074,7216,38
+2022,80926,78299,2627,56595,21704,2627,21704,59222,56595,21704,78299,0,65199,13100,44
+2024,53898,51471,2427,37368,14103,2427,14103,39795,37368,14103,51471,0,42915,8556,39

@@ -1,0 +1,8 @@
+question,answer,label
+Is the pipeline technically correct?,READY WITH CAVEATS,READY WITH CAVEATS
+Is it defensible as Caner-Hansen-style IVTR?,READY WITH CAVEATS,READY WITH CAVEATS
+Is it a full exact Caner-Hansen (2004) replication?,NOT READY,NOT READY
+Best main threshold candidate,"student_teacher_ratio_avg_17_18, conditional on B=1999 confirmation",READY WITH CAVEATS
+Robustness-only thresholds,"q_school_access, log_distance_to_ub, student_teacher_ratio_at_17, student_teacher_ratio_avg_16_17, student_teacher_ratio_avg_16_18",READY FOR FINAL REPORT
+Safe claim,Education returns appear higher in the high student-teacher-ratio regime for ages 17-18 in B=399 bootstrap; final claim requires B=1999 confirmation.,READY WITH CAVEATS
+Overclaim,"Claiming exact Caner-Hansen replication, causal effect of q, or definitive 5% heterogeneity before B=1999.",FAIL

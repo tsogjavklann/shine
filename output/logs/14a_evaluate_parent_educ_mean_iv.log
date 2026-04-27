@@ -1,0 +1,50 @@
+14a_evaluate_parent_educ_mean_iv.R
+Started: 2026-04-26 21:36:49.551504 
+
+Input sample: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/processed/analysis_sample.rds 
+Family source: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/processed/family_structure.rds 
+Parent IV basis: years-based 
+M1 sample N: 3710 
+q_home available: TRUE 
+Weights used: TRUE 
+Birth aimag clusters: 24 
+
+OLS result:
+# A tibble: 1 × 13
+  model  iv_basis        N beta_educ_years      se  p_value first_stage_F
+  <chr>  <chr>       <int>           <dbl>   <dbl>    <dbl>         <dbl>
+1 M0_OLS years-based  3710          0.0487 0.00343 7.36e-13            NA
+# ℹ 6 more variables: first_stage_p_value <dbl>, weak_iv_flag <lgl>,
+#   just_identified <lgl>, interpretation_note <chr>, cluster <chr>,
+#   weights <chr>
+
+parent_educ_mean IV result:
+# A tibble: 1 × 13
+  model              iv_basis     N beta_educ_years     se p_value first_stage_F
+  <chr>              <chr>    <int>           <dbl>  <dbl>   <dbl>         <dbl>
+1 M1_parent_educ_me… years-b…  3710           0.100 0.0117 1.26e-8          602.
+# ℹ 6 more variables: first_stage_p_value <dbl>, weak_iv_flag <lgl>,
+#   just_identified <lgl>, interpretation_note <chr>, cluster <chr>,
+#   weights <chr>
+
+First stage:
+# A tibble: 1 × 12
+  model              iv    iv_basis     N estimate     se  p_value first_stage_F
+  <chr>              <chr> <chr>    <int>    <dbl>  <dbl>    <dbl>         <dbl>
+1 First stage: educ… pare… years-b…  3710    0.365 0.0157 1.85e-17          602.
+# ℹ 4 more variables: first_stage_p_value <dbl>, weak_iv_flag <lgl>,
+#   cluster <chr>, weights <chr>
+
+q_home diagnostics:
+# A tibble: 1 × 13
+  N_nonmissing  mean    sd   min   p10   p25   p50   p75   p90   max
+         <int> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl>
+1         3188  1.44 0.390 0.782 0.948  1.05  1.46  1.74  1.96  2.30
+# ℹ 3 more variables: unique_values <int>, cor_q_home_educ_years <dbl>,
+#   cor_q_home_parent_educ_mean <dbl>
+
+Decision: Proceed to IVTR with parent_educ_mean and q_home. 
+IVTR-ready dataset created: TRUE 
+Saved IVTR-ready dataset: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/processed/ivtr_ready_parent_educ_mean_qhome.rds 
+
+Completed: 2026-04-26 21:36:50.295327 

@@ -1,0 +1,46 @@
+16d_ch_bootstrap_inference_qhome.R
+Started: 2026-04-26 22:17:42.347106 
+
+Bootstrap replications: 399 
+Observed gamma: 1.038006 
+Observed beta diff: -0.0295773 
+
+Bootstrap draw 25 of 399 
+Bootstrap draw 50 of 399 
+Bootstrap draw 75 of 399 
+Bootstrap draw 100 of 399 
+Bootstrap draw 125 of 399 
+Bootstrap draw 150 of 399 
+Bootstrap draw 175 of 399 
+Bootstrap draw 200 of 399 
+Bootstrap draw 225 of 399 
+Bootstrap draw 250 of 399 
+Bootstrap draw 275 of 399 
+Bootstrap draw 300 of 399 
+Bootstrap draw 325 of 399 
+Bootstrap draw 350 of 399 
+Bootstrap draw 375 of 399 
+Bootstrap inference:
+# A tibble: 1 × 22
+  B_requested n_success n_failed n_warning n_clusters gamma_observed gamma_q025
+        <int>     <int>    <int>     <int>      <int>          <dbl>      <dbl>
+1         399       399        0        21         22           1.04       1.02
+# ℹ 15 more variables: gamma_q05 <dbl>, gamma_q50 <dbl>, gamma_q95 <dbl>,
+#   gamma_q975 <dbl>, beta_low_observed <dbl>, beta_low_q025 <dbl>,
+#   beta_low_q975 <dbl>, beta_high_observed <dbl>, beta_high_q025 <dbl>,
+#   beta_high_q975 <dbl>, beta_diff_observed <dbl>, beta_diff_q025 <dbl>,
+#   beta_diff_q975 <dbl>, beta_diff_ci_contains_zero <lgl>,
+#   bootstrap_p_value <dbl>
+
+Asymptotic vs bootstrap:
+# A tibble: 1 × 7
+  beta_diff_observed asymptotic_wald_p_value bootstrap_p_value
+               <dbl>                   <dbl>             <dbl>
+1            -0.0296                  0.0704             0.108
+# ℹ 4 more variables: beta_diff_boot_ci_low <dbl>,
+#   beta_diff_boot_ci_high <dbl>, beta_diff_ci_contains_zero <lgl>,
+#   conclusion <chr>
+
+Conclusion: Bootstrap inference does not strongly support threshold heterogeneity in education returns across q_home regimes at the 5% level. 
+
+Completed: 2026-04-26 22:26:29.182506 

@@ -1,0 +1,2 @@
+test,beta_difference_high_minus_low,se_difference,t_stat,wald_F,df1,df2,p_value,method
+beta_low = beta_high,-0.013460182563391695,0.011262243254005015,-1.1951599925356844,1.4284074077578972,1,21,0.2453477092518225,manual Wald test from clustered VCOV

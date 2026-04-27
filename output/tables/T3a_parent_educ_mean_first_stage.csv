@@ -1,0 +1,2 @@
+model,iv,iv_basis,N,estimate,se,p_value,first_stage_F,first_stage_p_value,weak_iv_flag,cluster,weights
+First stage: educ_years,parent_educ_mean,years-based,3710,0.36467401155914547,0.015713215330272666,1.8450645920864853e-17,602.2311168710968,2.5003469352819195e-123,FALSE,birth_aimag,hhweight

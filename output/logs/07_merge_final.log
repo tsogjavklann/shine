@@ -1,5 +1,5 @@
 ==========================================================
-07_merge_final.R лог   2026-04-26 05:50:57.514035 
+07_merge_final.R лог   2026-04-26 20:20:51.144275 
 ==========================================================
 Total alt_sample (22-60): 43070
 main_sample (25-60):      40779
@@ -23,7 +23,7 @@ school_access coverage:
 # A tibble: 1 × 5
       n n_q_home n_q_new pct_q_home pct_q_new
   <int>    <int>   <int>      <dbl>     <dbl>
-1 43070     9849   23331       22.9      54.2
+1 43070    23295   23331       54.1      54.2
 
-Final columns (64):
-  identif, ind_id, age, sex, marital, relation_head, educ_level, educ_years, work7d_pay, q0436a, q0436b, q0436c, q0437, q0438, q0439, q0427, birth_aimag, birth_soum, working_for_wage, aimag, newaimag_proxy, region, urban, location, hhsize, hhweight, month_interview, wave, year_month, birth_year, id, main_flag, annual_hours_t1, hourly_t1, hourly_t2, nominal_hourly, wage_method, ln_nominal_hourly, cpi_year_t1, cpi_year_t2, cpi_month_t2, cpi_ym_t2, cpi_t1, cpi_t2, cpi_used, real_hourly, lwage, cpi_source, q_home, n_years_home, q_new, n_years_new, reform_main, reform_fuzzy, reform_alt_1997, reform_alt_1999, exposure_intensity, age2, main_flag_25_60, sample_flag, is_female, is_married, region_f, location_f
+Final columns (68):
+  identif, ind_id, age, sex, marital, relation_head, educ_level, educ_years, work7d_pay, q0436a, q0436b, q0436c, q0437, q0438, q0439, q0427, born_in_current, birth_aimag_raw, birth_soum_raw, working_for_wage, aimag, newaimag_proxy, region, urban, location, hhsize, hhweight, month_interview, birth_aimag, birth_soum, birth_aimag_from_current, wave, year_month, birth_year, id, main_flag, annual_hours_t1, hourly_t1, hourly_t2, nominal_hourly, wage_method, ln_nominal_hourly, cpi_year_t1, cpi_year_t2, cpi_month_t2, cpi_ym_t2, cpi_t1, cpi_t2, cpi_used, real_hourly, lwage, cpi_source, q_home, n_years_home, q_new, n_years_new, reform_main, reform_fuzzy, reform_alt_1997, reform_alt_1999, exposure_intensity, age2, main_flag_25_60, sample_flag, is_female, is_married, region_f, location_f

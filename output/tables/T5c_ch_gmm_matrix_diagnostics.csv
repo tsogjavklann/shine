@@ -1,0 +1,2 @@
+gamma_hat,N,N_low,N_high,rank_X,rank_Z,rank_ZtZ,rank_XZ,rank_XZWZX,condition_number_ZtZ,condition_number_S_robust,condition_number_S_cluster,condition_number_XZ_W_ZX,S_cluster_invertible,S_robust_invertible,near_singular_warning,warning_note
+1.0380060250036154,3188,793,2395,7,7,7,7,7,181749.0532445278,160461.1439582152,180375.51924849057,449660.2692839875,TRUE,TRUE,FALSE,
