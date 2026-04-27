@@ -1,4 +1,4 @@
-# Test newly discovered HSES IV candidates with corrected fixed effects.
+﻿# Test newly discovered HSES IV candidates with corrected fixed effects.
 
 options(warn = 1, encoding = "UTF-8")
 
@@ -25,8 +25,8 @@ on.exit(sink(), add = TRUE)
 cat("13e_new_iv_test.R\n")
 cat("Started:", as.character(Sys.time()), "\n\n")
 
-data_path <- "data/aux/new_iv_candidate_data.rds"
-list_path <- "data/aux/new_iv_candidate_list.csv"
+data_path <- "data/auxiliary/new_iv_candidate_data.rds"
+list_path <- "data/auxiliary/new_iv_candidate_list.csv"
 if (!file.exists(data_path)) stop("Missing ", data_path, ". Run R/13d_unexplored_variables.R first.")
 if (!file.exists(list_path)) stop("Missing ", list_path, ". Run R/13d_unexplored_variables.R first.")
 
@@ -253,3 +253,5 @@ writeLines(c(old, "", checkpoint), log_path, useBytes = TRUE)
 cat("Results rows:", nrow(results), "\n")
 print(top10, n = Inf)
 cat("\n13e complete.\n")
+
+

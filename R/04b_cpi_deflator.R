@@ -1,4 +1,4 @@
-# =============================================================================
+﻿# =============================================================================
 # 04b_cpi_deflator.R
 # -----------------------------------------------------------------------------
 # Зорилго : NSO PXWeb API (data.1212.mn) -аас Хэрэглээний үнийн улсын суурь
@@ -7,13 +7,13 @@
 #             cpi_monthly — year-month тус бүрд (Tier 2, q0436a prev-month)
 #           Wage panel-той tier-аас хамаарч merge → real_hourly + lwage.
 # Орц     : data/processed/wage_nominal.rds
-# Гарц    : data/aux/cpi_annual_2020base.rds
-#           data/aux/cpi_monthly_2020base.rds
+# Гарц    : data/auxiliary/cpi_annual_2020base.rds
+#           data/auxiliary/cpi_monthly_2020base.rds
 #           data/processed/wage_real.rds
 # -----------------------------------------------------------------------------
 # CPI source-ийн дараалал:
 #   1) NSO PXWeb API (national, monthly, 2020=100)              ← primary
-#   2) data/aux/cpi_manual.csv                                  ← fallback
+#   2) data/auxiliary/cpi_manual.csv                                  ← fallback
 # =============================================================================
 
 source(here::here("R", "paths.R"))
@@ -213,3 +213,5 @@ sink()
 toc()
 cli::cli_alert_success("Гарц: {out_path}  ({nrow(wage_real)} мөр)")
 cli::cli_alert_info("Дараагийн алхам: R/05_education_supply.R")
+
+

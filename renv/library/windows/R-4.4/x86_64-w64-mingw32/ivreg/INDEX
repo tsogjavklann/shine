@@ -1,0 +1,12 @@
+CigaretteDemand         U.S. Cigarette Demand Data
+Kmenta                  Partly Artificial Data on the U.S. Economy
+SchoolingReturns        U.S. Returns to Schooling Data
+coef.ivreg              Methods for '"ivreg"' Objects
+confint.ivreg           Summary and Inference Methods for '"ivreg"'
+                        Objects
+influence.ivreg         Deletion and Other Diagnostic Methods for
+                        '"ivreg"' Objects
+ivreg                   Instrumental-Variable Regression by 2SLS, 2SM,
+                        or 2SMM Estimation
+ivreg.fit               Fitting Instrumental-Variable Regressions by
+                        2SLS, 2SM, or 2SMM Estimation

@@ -1,4 +1,4 @@
-# CLAUDE.md — Төслийн контекст ба гол заалт
+﻿# CLAUDE.md — Төслийн контекст ба гол заалт
 
 ## Төсөл
 
@@ -112,7 +112,7 @@ shine/
 │   ├── hses_2020 ... hses_2024/   ← .dta файлууд (read-only)
 │   ├── raw/            ← R/02 гарц
 │   ├── processed/      ← R/03-07 гарцууд
-│   └── aux/            ← NSO API + manual fallback
+│   └── auxiliary/            ← NSO API + manual fallback
 ├── R/                  ← скриптүүд (01-23 + paths.R)
 └── output/
     ├── tables/         ← T1-T8 CSV
@@ -125,3 +125,4 @@ shine/
 - Долоо хоног тус бүрд checkpoint → RESULTS_LOG.md-д бичиж STOP
 - Гацвал 2 удаа автомат retry; 3 дахь алдаанд хэрэглэгчийн оролцоог хүлээх
 - DESTRUCTIVE үйлдэлд (rm, file.remove) **зөвшөөрөл** заавал хүлээх
+

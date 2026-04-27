@@ -1,0 +1,17 @@
+Installing package into 'C:/Users/NewTech/AppData/Local/R/win-library/4.4'
+(as 'lib' is unspecified)
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/here_1.0.2.zip'
+Content type 'application/zip' length 65313 bytes (63 KB)
+==================================================
+downloaded 63 KB
+
+package 'here' successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\NewTech\AppData\Local\Temp\RtmpqSmszP\downloaded_packages
+Warning in file(filename, "r", encoding = encoding) :
+  cannot open file 'C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/R/paths.R': No such file or directory
+Error in file(filename, "r", encoding = encoding) : 
+  cannot open the connection
+Calls: source -> file
+Execution halted

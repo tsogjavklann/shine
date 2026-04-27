@@ -1,0 +1,8 @@
+NSO1212                 National Statistical Office of Mongolia's Open
+                        Data API Handler
+all_tables              Brief Information about All Database Tables
+get_sector_info         Detailed Information about All Main Sectors
+get_subsector_info      Detailed Information about a Sub-Sector
+get_table               Download a Database Table
+get_table_info          Detailed Information about a Database Table and
+                        Its Classification

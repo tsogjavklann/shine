@@ -1,4 +1,4 @@
-# HSES 2020-2024 childhood shock variable scan.
+﻿# HSES 2020-2024 childhood shock variable scan.
 
 options(warn = 1, encoding = "UTF-8")
 
@@ -14,7 +14,7 @@ suppressPackageStartupMessages({
   library(purrr)
 })
 
-dir.create("data/aux", recursive = TRUE, showWarnings = FALSE)
+dir.create("data/auxiliary", recursive = TRUE, showWarnings = FALSE)
 dir.create("output/tables", recursive = TRUE, showWarnings = FALSE)
 dir.create("output/reports", recursive = TRUE, showWarnings = FALSE)
 dir.create("output/logs", recursive = TRUE, showWarnings = FALSE)
@@ -25,8 +25,8 @@ on.exit(sink(), add = TRUE)
 cat("13b_childhood_shocks.R\n")
 cat("Started:", as.character(Sys.time()), "\n\n")
 
-inventory_path <- "data/aux/hses_variable_inventory.csv"
-preview_path <- "data/aux/hses_variable_preview.csv"
+inventory_path <- "data/auxiliary/hses_variable_inventory.csv"
+preview_path <- "data/auxiliary/hses_variable_preview.csv"
 if (!file.exists(inventory_path)) stop("Missing ", inventory_path, ". Run R/13a_hses_variable_inventory.R first.")
 if (!file.exists(preview_path)) stop("Missing ", preview_path, ". Run R/13a_hses_variable_inventory.R first.")
 
@@ -123,7 +123,7 @@ empty_sections <- sections$section[!sections$section %in% unique(hits$section)]
 
 write_csv(hits, "output/tables/T2e_childhood_shock_variable_hits.csv")
 write_csv(hits %>% filter(hidden_gem | section %in% c("A_migration_history", "B_ethnicity_religion", "C_parental_occupation", "D_early_health_disability")),
-          "data/aux/hses_childhood_shock_candidates.csv")
+          "data/auxiliary/hses_childhood_shock_candidates.csv")
 
 section_counts <- hits %>% count(section, name = "n_hits")
 write_csv(section_counts, "output/tables/T2e_childhood_shock_section_counts.csv")
@@ -172,3 +172,5 @@ writeLines(report_lines, "output/reports/childhood_shocks_detection.md", useByte
 cat("Hits:", nrow(hits), "\n")
 print(section_counts, n = Inf)
 cat("\n13b complete.\n")
+
+

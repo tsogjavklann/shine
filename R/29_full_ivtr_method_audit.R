@@ -1,4 +1,4 @@
-# =============================================================================
+﻿# =============================================================================
 # 29_full_ivtr_method_audit.R
 # -----------------------------------------------------------------------------
 # Strict audit of the Mongolia HSES returns-to-education IV-threshold pipeline.
@@ -102,7 +102,7 @@ max_abs_diff <- function(a, b) {
 analysis <- read_rds_if(file.path(PATHS$data_proc, "analysis_sample.rds"))
 family <- read_rds_if(file.path(PATHS$data_proc, "family_structure.rds"))
 school_panel <- read_rds_if(file.path(PATHS$data_root, "cleaned", "school_supply_panel.rds"))
-dist_aux <- read_csv_if(file.path(PATHS$data_root, "aux", "aimag_distance_to_ub.csv"))
+dist_aux <- read_csv_if(file.path(PATHS$data_root, "auxiliary", "aimag_distance_to_ub.csv"))
 
 q_specs <- tibble(
   q_variable = c(
@@ -302,7 +302,7 @@ data_construction <- bind_rows(
   make_var_row("parent_educ_mean", "R/14a_evaluate_parent_educ_mean_iv.R; R/23/R24/R27/R28 pipelines", "father_educ_years, mother_educ_years", "rowMeans(cbind(father_educ_years, mother_educ_years), na.rm=TRUE); NaN -> NA", TRUE, FALSE, FALSE, paste0("Max abs difference vs rebuild in main audit sample: ", fmt(formula_err_parent, 8)), fail = is.finite(formula_err_parent) && formula_err_parent > 1e-8),
   make_var_row("age2", "analysis construction / pipeline fallback", "age", "age^2", TRUE, FALSE, FALSE, paste0("Max abs difference vs age^2: ", fmt(formula_err_age2, 8)), fail = is.finite(formula_err_age2) && formula_err_age2 > 1e-8),
   make_var_row("birth_cohort", "R/03_harmonize.R or pipeline fallback", "birth_year", "cohort bands from birth_year", TRUE, FALSE, FALSE, "Used as fixed effect; not used as q.", warn = is.na(nonmissing_rate(main_df, "birth_cohort"))),
-  make_var_row("log_distance_to_ub", "R/19a_prepare_logdist_threshold_sample.R", "birth_aimag, distance_to_ub from data/aux/aimag_distance_to_ub.csv", "log(pmax(distance_to_ub, 1))", TRUE, FALSE, FALSE, paste0("Max abs formula difference where distance exists: ", fmt(err_logdist, 8)), fail = is.finite(err_logdist) && err_logdist > 1e-8, df = df_log),
+  make_var_row("log_distance_to_ub", "R/19a_prepare_logdist_threshold_sample.R", "birth_aimag, distance_to_ub from data/auxiliary/aimag_distance_to_ub.csv", "log(pmax(distance_to_ub, 1))", TRUE, FALSE, FALSE, paste0("Max abs formula difference where distance exists: ", fmt(err_logdist, 8)), fail = is.finite(err_logdist) && err_logdist > 1e-8, df = df_log),
   make_var_row("q_school_access", "R/05_education_supply.R; R/21_rename_q_home_to_q_school_access.R", "birth_aimag, school access/supply history", "computed school-access proxy, renamed from q_home", TRUE, FALSE, FALSE, "Not a home-environment variable; interpretation corrected to school access.", warn = TRUE, df = df_qschool),
   make_var_row("student_teacher_ratio_at_17", "R/23_student_teacher17_ch_full_pipeline.R", "school_supply_panel: students/teachers by birth_aimag and birth_year+17", "student_teacher_ratio at age 17", TRUE, FALSE, FALSE, "Higher means more students per teacher / more crowding.", warn = is.na(formula_err_st17), df = df_st17),
   make_var_row("student_teacher_ratio_avg_16_17", "R/27_student_teacher_avg_16_17_ch_parallel_bootstrap.R", "student_teacher_ratio_at_16, student_teacher_ratio_at_17", "mean(at_16, at_17), complete cases only", TRUE, FALSE, FALSE, paste0("Max abs formula difference: ", fmt(err_avg(df_1617, "student_teacher_ratio_avg_16_17", c("student_teacher_ratio_at_16", "student_teacher_ratio_at_17")), 8)), fail = is.finite(err_avg(df_1617, "student_teacher_ratio_avg_16_17", c("student_teacher_ratio_at_16", "student_teacher_ratio_at_17"))) && err_avg(df_1617, "student_teacher_ratio_avg_16_17", c("student_teacher_ratio_at_16", "student_teacher_ratio_at_17")) > 1e-8, df = df_1617),
@@ -688,3 +688,5 @@ cat("- ", file.path(PATHS$out_tables, "T15f_full_ivtr_threshold_comparison.csv")
 cat("- ", file.path(PATHS$out_tables, "T15g_full_ivtr_final_methodology_verdict.csv"), "\n", sep = "")
 cat("Report:", report_path, "\n")
 cat("Completed:", as.character(Sys.time()), "\n")
+
+

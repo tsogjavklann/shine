@@ -1,0 +1,55 @@
+- The project is out-of-sync -- use `renv::status()` for details.
+
+── 05c_geographic_iv.R — Card 1995 distance-to-UB IV ───────────────────────────
+
+── Aimag distance to UB (km) ──
+
+# A tibble: 22 × 3
+   aimag aimag_name            distance_to_ub
+   <int> <chr>                          <dbl>
+ 1    11 Улаанбаатар                      0  
+ 2    41 Төв/Зуунмод                     23.7
+ 3    45 Дархан-Уул/Дархан              189. 
+ 4    42 Говьсүмбэр/Чойр                205. 
+ 5    61 Орхон/Эрдэнэт                  243  
+ 6    48 Дундговь/Мандалгов             244. 
+ 7    43 Сэлэнгэ/Сүхбаатар              263. 
+ 8    63 Булган/Булган                  269. 
+ 9    23 Хэнтий/Чингис                  288. 
+10    62 Өвөрхангай/Арвайхээр           363. 
+11    65 Архангай/Цэцэрлэг              412. 
+12    44 Дорноговь/Сайншанд             416. 
+13    22 Сүхбаатар/Баруун-Урт           499. 
+14    64 Баянхонгор/Баянхонгор          507. 
+15    46 Өмнөговь/Даланзадгад           520. 
+16    67 Хөвсгөл/Мөрөн                  530. 
+17    21 Дорнод/Чойбалсан               566. 
+18    81 Завхан/Улиастай                752. 
+19    82 Говь-Алтай/Алтай               823. 
+20    85 Увс/Улаангом                  1107. 
+21    84 Ховд/Ховд                     1136. 
+22    83 Баян-Өлгий/Өлгий              1253. 
+ℹ MAIN home_aimag: 9077 rows; distance_to_ub valid: 9077
+→ First stage 1: distance only, no FE...
+Warning messages:
+1: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+2: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+→ First stage 2: distance + region FE + wave FE...
+Warning messages:
+1: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+2: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+→ First stage 3: distance + region + location + wave FE...
+Warning messages:
+1: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+2: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+
+── CHECKPOINT 2.5 — First-stage F (distance_to_ub) ──
+
+# A tibble: 3 × 8
+  spec                            N pi_dist se_2way t_stat p_value F_dist R2_adj
+  <chr>                       <int>   <dbl>   <dbl>  <dbl>   <dbl>  <dbl>  <dbl>
+1 1) distance only, wave FE    9077 -1.9e-4 0.00009  -1.96  0.0502   3.84 0.0598
+2 2) distance + region FE + …  9077 -1.5e-4 0.0001   -1.47  0.141    2.17 0.0671
+3 3) + location FE (Main B-s…  9077 -1.5e-4 0.0001   -1.53  0.127    2.33 0.0694
+Error: unexpected 'else' in "            else"
+Execution halted

@@ -1,4 +1,4 @@
-# HSES 2020-2024 institutional variation scan.
+﻿# HSES 2020-2024 institutional variation scan.
 
 options(warn = 1, encoding = "UTF-8")
 
@@ -24,8 +24,8 @@ on.exit(sink(), add = TRUE)
 cat("13c_institutional_variation.R\n")
 cat("Started:", as.character(Sys.time()), "\n\n")
 
-inventory_path <- "data/aux/hses_variable_inventory.csv"
-preview_path <- "data/aux/hses_variable_preview.csv"
+inventory_path <- "data/auxiliary/hses_variable_inventory.csv"
+preview_path <- "data/auxiliary/hses_variable_preview.csv"
 if (!file.exists(inventory_path)) stop("Missing ", inventory_path, ". Run R/13a_hses_variable_inventory.R first.")
 if (!file.exists(preview_path)) stop("Missing ", preview_path, ". Run R/13a_hses_variable_inventory.R first.")
 
@@ -148,3 +148,5 @@ writeLines(report_lines, "output/reports/institutional_variation_scan.md", useBy
 cat("Hits:", nrow(hits), "\n")
 print(hits %>% count(section, name = "n_hits"), n = Inf)
 cat("\n13c complete.\n")
+
+

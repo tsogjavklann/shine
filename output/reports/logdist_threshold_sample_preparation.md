@@ -1,4 +1,4 @@
-# log_distance_to_ub Threshold Sample Preparation
+﻿# log_distance_to_ub Threshold Sample Preparation
 
 Generated: 2026-04-26 23:54:25.139956
 
@@ -13,7 +13,7 @@ Generated: 2026-04-26 23:54:25.139956
 - Cluster: birth_aimag.
 
 ## Source
-- log_distance_to_ub reconstructed from data/aux/aimag_distance_to_ub.csv using birth_aimag
+- log_distance_to_ub reconstructed from data/auxiliary/aimag_distance_to_ub.csv using birth_aimag
 - `log_distance_to_ub` is a threshold variable only; it is not used as an IV.
 
 ## Sample Diagnostics
@@ -42,3 +42,5 @@ Safe to proceed to Stage 19B log_distance_to_ub threshold preparation/estimation
 - It has limited unique values relative to individual-level q_school_access.
 - It may capture broad regional/remoteness differences rather than a narrow school-access channel.
 - It must not be used as an instrument in this design.
+
+

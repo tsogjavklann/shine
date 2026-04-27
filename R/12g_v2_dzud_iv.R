@@ -1,4 +1,4 @@
-# =============================================================================
+﻿# =============================================================================
 # R/12g_v2_dzud_iv.R — DZUD IV (CORRECTED V2)
 #
 # Phase 2 corrections (vs v1 R/12g_dzud_iv.R):
@@ -12,8 +12,8 @@
 #   absorbed). Dzud variation = idiosyncratic year shocks differentially experienced
 #   by adjacent birth cohorts.
 #
-# Эх сурвалж: data/aux/livestock_loss_by_aimag.{csv,rds} +
-#             data/aux/livestock_count_by_aimag.{csv,rds}
+# Эх сурвалж: data/auxiliary/livestock_loss_by_aimag.{csv,rds} +
+#             data/auxiliary/livestock_count_by_aimag.{csv,rds}
 #             (R/02b_clean_nso_xlsx.R-аар цэвэрлэсэн)
 # =============================================================================
 suppressPackageStartupMessages({
@@ -24,7 +24,7 @@ setFixest_estimation(panel.id = NULL)
 set.seed(2026)
 options(width = 130)
 
-AUX <- here("data", "aux")
+AUX <- here("data", "auxiliary")
 
 # -----------------------------------------------------------------------------
 # 1. Load cleaned panel + compute year-specific top quartile threshold
@@ -339,3 +339,5 @@ cli_h1("DZUD IV V2 ANALYSIS COMPLETE")
 cat("\nSummary (12-17 main window):\n")
 print(res |> filter(window == "12-17 (MAIN)") |>
         select(iv_var, F_first, beta_iv, se_beta, ar_ci_lo, ar_ci_hi, verdict))
+
+

@@ -1,4 +1,4 @@
-# =============================================================================
+﻿# =============================================================================
 # 05_education_supply.R
 # -----------------------------------------------------------------------------
 # Зорилго : NSO PXWeb API-аас аймаг × жилийн ЕБС тоо + сурагчдын тоог татаж
@@ -10,8 +10,8 @@
 #           Empirical decision rule: home_aimag wage-panel N-аас хамаарч MAIN
 #           vs ROBUSTNESS aimag сонголтыг тогтоо.
 # Орц     : data/processed/wage_real.rds
-# Гарц    : data/aux/school_density_by_aimag.rds (long: aimag × year × density)
-#           data/aux/aimag_lookup.csv             (NSO valueText → HSES newaimag)
+# Гарц    : data/auxiliary/school_density_by_aimag.rds (long: aimag × year × density)
+#           data/auxiliary/aimag_lookup.csv             (NSO valueText → HSES newaimag)
 #           data/processed/school_access.rds      (id × q_school_access × q_new)
 #           output/logs/05_aimag_coverage.log     (DECISION + diagnostics)
 # =============================================================================
@@ -301,3 +301,5 @@ sink()
 toc()
 cli::cli_alert_success("Гарцууд: school_density_by_aimag.rds, school_access.rds, 05_aimag_coverage.log")
 cli::cli_alert_info("Дараагийн алхам: R/06_iv_construction.R")
+
+

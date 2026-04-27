@@ -1,8 +1,8 @@
-# =============================================================================
+﻿# =============================================================================
 # R/02b_clean_nso_xlsx.R — NSO 1212.mn-аас гараар татсан xlsx-уудыг цэвэрлэх
 #
 # Оролт: data/*.xlsx (5 файл — гар татсан)
-# Гарц : data/aux/*.csv + *.rds (analysis-д шууд бэлэн)
+# Гарц : data/auxiliary/*.csv + *.rds (analysis-д шууд бэлэн)
 #
 # Pipeline:
 #   1. ЕБС сургууль (DT_NSO_2001_002V1)         → school_count_by_aimag.csv
@@ -26,7 +26,7 @@ setFixest_quiet <- function(...) invisible(NULL)
 options(width = 130)
 
 DATA_DIR  <- here("data")
-AUX_DIR   <- here("data", "aux")
+AUX_DIR   <- here("data", "auxiliary")
 LOOKUP    <- read_csv(file.path(AUX_DIR, "aimag_lookup.csv"), show_col_types = FALSE)
 
 # Common: NSO Бүс label → HSES hses_code
@@ -277,7 +277,7 @@ write_csv(dzud, file.path(AUX_DIR, "dzud_panel.csv"))
 saveRDS(dzud, file.path(AUX_DIR, "dzud_panel.rds"))
 
 cli_h1("ЦЭВЭРЛЭЛТ ДУУСЛАА")
-cat("\nГарц файлууд (data/aux/):\n")
+cat("\nГарц файлууд (data/auxiliary/):\n")
 cat("  school_count_by_aimag.{csv,rds}\n")
 cat("  student_count_by_aimag.{csv,rds}\n")
 cat("  livestock_count_by_aimag.{csv,rds}\n")
@@ -286,3 +286,5 @@ cat("  cpi_monthly_2020base.{csv,rds}  (245 сар?)\n")
 cat("  cpi_annual_2020base.{csv,rds}\n")
 cat("  school_density_by_aimag.{csv,rds}\n")
 cat("  dzud_panel.{csv,rds}\n")
+
+

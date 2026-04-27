@@ -1,4 +1,4 @@
-# Clean manually downloaded 1212.mn education-supply Excel files and verify
+﻿# Clean manually downloaded 1212.mn education-supply Excel files and verify
 # against PXWeb when the API is reachable.
 
 options(warn = 1)
@@ -22,7 +22,7 @@ suppressPackageStartupMessages({
 root <- normalizePath(getwd(), winslash = "/", mustWork = TRUE)
 dir.create("R", showWarnings = FALSE, recursive = TRUE)
 dir.create("data/cleaned", showWarnings = FALSE, recursive = TRUE)
-dir.create("data/aux", showWarnings = FALSE, recursive = TRUE)
+dir.create("data/auxiliary", showWarnings = FALSE, recursive = TRUE)
 dir.create("output/tables", showWarnings = FALSE, recursive = TRUE)
 dir.create("output/reports", showWarnings = FALSE, recursive = TRUE)
 dir.create("output/logs", showWarnings = FALSE, recursive = TRUE)
@@ -181,9 +181,9 @@ school_age_population_national <- population_age %>%
   summarise(national_school_age_population = sum(population, na.rm = TRUE), .groups = "drop") %>%
   mutate(note = "National-only age groups 5-9, 10-14, 15-19; not usable for aimag-level IV normalization.")
 
-readr::write_csv(population_age, "data/aux/population_by_sex_age_year_manual.csv")
-readr::write_csv(school_age_population_national, "data/aux/national_school_age_population_manual.csv")
-readr::write_csv(annual_pop, "data/aux/annual_average_population_by_aimag_manual.csv")
+readr::write_csv(population_age, "data/auxiliary/population_by_sex_age_year_manual.csv")
+readr::write_csv(school_age_population_national, "data/auxiliary/national_school_age_population_manual.csv")
+readr::write_csv(annual_pop, "data/auxiliary/annual_average_population_by_aimag_manual.csv")
 
 unmatched <- bind_rows(
   schools_raw %>% filter(is.na(aimag_code)) %>% distinct(source = "schools", aimag_name_raw, aimag_name),
@@ -404,3 +404,5 @@ cat("Saved data/cleaned/school_supply_panel.rds/csv\n")
 cat("Saved output/reports/manual_1212_excel_verification.md\n")
 cat("Saved output/tables/unmatched_aimag_names_school_supply.csv rows:", nrow(unmatched), "\n")
 cat("03a complete.\n")
+
+

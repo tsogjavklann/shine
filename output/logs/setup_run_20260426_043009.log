@@ -1,0 +1,1116 @@
+renv.lock байна — `renv::restore()` шаардлагатай эсэхийг шалгана уу.
+CRAN-аас 24 багц суулгаж эхэлж байна: tidyverse, haven, data.table, janitor, labelled, fs, glue, readr, writexl, fixest, ivreg, AER, sandwich, lmtest, car, sampleSelection, strucchange, broom, modelsummary, kableExtra, ggplot2, scales, rlang, tictoc
+Installing package into 'C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/renv/library/windows/R-4.4/x86_64-w64-mingw32'
+(as 'lib' is unspecified)
+also installing the dependencies 'fastmap', 'bit', 'ps', 'sass', 'digest', 'cachem', 'farver', 'labeling', 'RColorBrewer', 'viridisLite', 'rappdirs', 'rematch', 'base64enc', 'bit64', 'prettyunits', 'processx', 'evaluate', 'highr', 'xfun', 'yaml', 'bslib', 'fontawesome', 'htmltools', 'jquerylib', 'tinytex', 'backports', 'generics', 'glue', 'lifecycle', 'memoise', 'blob', 'DBI', 'tidyselect', 'vctrs', 'withr', 'data.table', 'gtable', 'isoband', 'S7', 'scales', 'gargle', 'uuid', 'cellranger', 'ids', 'rematch2', 'cpp11', 'pkgconfig', 'timechange', 'utf8', 'systemfonts', 'textshaping', 'clipr', 'crayon', 'vroom', 'tzdb', 'progress', 'callr', 'fs', 'knitr', 'rmarkdown', 'selectr', 'stringi', 'broom', 'conflicted', 'dbplyr', 'dplyr', 'dtplyr', 'forcats', 'ggplot2', 'googledrive', 'googlesheets4', 'haven', 'hms', 'lubridate', 'magrittr', 'modelr', 'pillar', 'purrr', 'ragg', 'readr', 'readxl', 'reprex', 'rlang', 'rstudioapi', 'rvest', 'stringr', 'tibble', 'tidyr', 'xml2'
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/fastmap_1.2.0.zip'
+Content type 'application/zip' length 135597 bytes (132 KB)
+==================================================
+downloaded 132 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/bit_4.6.0.zip'
+Content type 'application/zip' length 636706 bytes (621 KB)
+==================================================
+downloaded 621 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/ps_1.9.3.zip'
+Content type 'application/zip' length 665125 bytes (649 KB)
+==================================================
+downloaded 649 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/sass_0.4.10.zip'
+Content type 'application/zip' length 2615089 bytes (2.5 MB)
+==================================================
+downloaded 2.5 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/digest_0.6.39.zip'
+Content type 'application/zip' length 227511 bytes (222 KB)
+==================================================
+downloaded 222 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/cachem_1.1.0.zip'
+Content type 'application/zip' length 74087 bytes (72 KB)
+==================================================
+downloaded 72 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/farver_2.1.2.zip'
+Content type 'application/zip' length 1520132 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/labeling_0.4.3.zip'
+Content type 'application/zip' length 63169 bytes (61 KB)
+==================================================
+downloaded 61 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/RColorBrewer_1.1-3.zip'
+Content type 'application/zip' length 54471 bytes (53 KB)
+==================================================
+downloaded 53 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/viridisLite_0.4.3.zip'
+Content type 'application/zip' length 1300754 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/rappdirs_0.3.4.zip'
+Content type 'application/zip' length 53211 bytes (51 KB)
+==================================================
+downloaded 51 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/rematch_2.0.0.zip'
+Content type 'application/zip' length 19454 bytes (18 KB)
+==================================================
+downloaded 18 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/base64enc_0.1-6.zip'
+Content type 'application/zip' length 35204 bytes (34 KB)
+==================================================
+downloaded 34 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/bit64_4.8.0.zip'
+Content type 'application/zip' length 579190 bytes (565 KB)
+==================================================
+downloaded 565 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/prettyunits_1.2.0.zip'
+Content type 'application/zip' length 156212 bytes (152 KB)
+==================================================
+downloaded 152 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/processx_3.9.0.zip'
+Content type 'application/zip' length 770886 bytes (752 KB)
+==================================================
+downloaded 752 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/evaluate_1.0.5.zip'
+Content type 'application/zip' length 105299 bytes (102 KB)
+==================================================
+downloaded 102 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/highr_0.12.zip'
+Content type 'application/zip' length 44562 bytes (43 KB)
+==================================================
+downloaded 43 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/xfun_0.57.zip'
+Content type 'application/zip' length 612792 bytes (598 KB)
+==================================================
+downloaded 598 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/yaml_2.3.12.zip'
+Content type 'application/zip' length 124729 bytes (121 KB)
+==================================================
+downloaded 121 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/bslib_0.10.0.zip'
+Content type 'application/zip' length 6367839 bytes (6.1 MB)
+==================================================
+downloaded 6.1 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/fontawesome_0.5.3.zip'
+Content type 'application/zip' length 1391121 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/htmltools_0.5.9.zip'
+Content type 'application/zip' length 364445 bytes (355 KB)
+==================================================
+downloaded 355 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/jquerylib_0.1.4.zip'
+Content type 'application/zip' length 526144 bytes (513 KB)
+==================================================
+downloaded 513 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/tinytex_0.59.zip'
+Content type 'application/zip' length 150527 bytes (146 KB)
+==================================================
+downloaded 146 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/backports_1.5.1.zip'
+Content type 'application/zip' length 124453 bytes (121 KB)
+==================================================
+downloaded 121 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/generics_0.1.4.zip'
+Content type 'application/zip' length 84731 bytes (82 KB)
+==================================================
+downloaded 82 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/glue_1.8.1.zip'
+Content type 'application/zip' length 189633 bytes (185 KB)
+==================================================
+downloaded 185 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/lifecycle_1.0.5.zip'
+Content type 'application/zip' length 149738 bytes (146 KB)
+==================================================
+downloaded 146 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/memoise_2.0.1.zip'
+Content type 'application/zip' length 51602 bytes (50 KB)
+==================================================
+downloaded 50 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/blob_1.3.0.zip'
+Content type 'application/zip' length 52428 bytes (51 KB)
+==================================================
+downloaded 51 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/DBI_1.3.0.zip'
+Content type 'application/zip' length 963152 bytes (940 KB)
+==================================================
+downloaded 940 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/tidyselect_1.2.1.zip'
+Content type 'application/zip' length 229329 bytes (223 KB)
+==================================================
+downloaded 223 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/vctrs_0.7.3.zip'
+Content type 'application/zip' length 1919178 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/withr_3.0.2.zip'
+Content type 'application/zip' length 232901 bytes (227 KB)
+==================================================
+downloaded 227 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/data.table_1.18.2.1.zip'
+Content type 'application/zip' length 3188635 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/gtable_0.3.6.zip'
+Content type 'application/zip' length 250852 bytes (244 KB)
+==================================================
+downloaded 244 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/isoband_0.3.0.zip'
+Content type 'application/zip' length 1961964 bytes (1.9 MB)
+==================================================
+downloaded 1.9 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/S7_0.2.2.zip'
+Content type 'application/zip' length 349803 bytes (341 KB)
+==================================================
+downloaded 341 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/scales_1.4.0.zip'
+Content type 'application/zip' length 882995 bytes (862 KB)
+==================================================
+downloaded 862 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/gargle_1.6.1.zip'
+Content type 'application/zip' length 815917 bytes (796 KB)
+==================================================
+downloaded 796 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/uuid_1.2-2.zip'
+Content type 'application/zip' length 54010 bytes (52 KB)
+==================================================
+downloaded 52 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/cellranger_1.1.0.zip'
+Content type 'application/zip' length 107375 bytes (104 KB)
+==================================================
+downloaded 104 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/ids_1.0.1.zip'
+Content type 'application/zip' length 126453 bytes (123 KB)
+==================================================
+downloaded 123 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/rematch2_2.1.2.zip'
+Content type 'application/zip' length 48948 bytes (47 KB)
+==================================================
+downloaded 47 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/cpp11_0.5.4.zip'
+Content type 'application/zip' length 322488 bytes (314 KB)
+==================================================
+downloaded 314 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/pkgconfig_2.0.3.zip'
+Content type 'application/zip' length 23024 bytes (22 KB)
+==================================================
+downloaded 22 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/timechange_0.4.0.zip'
+Content type 'application/zip' length 516508 bytes (504 KB)
+==================================================
+downloaded 504 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/utf8_1.2.6.zip'
+Content type 'application/zip' length 154703 bytes (151 KB)
+==================================================
+downloaded 151 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/systemfonts_1.3.2.zip'
+Content type 'application/zip' length 2086045 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/textshaping_1.0.5.zip'
+Content type 'application/zip' length 1472075 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/clipr_0.8.0.zip'
+Content type 'application/zip' length 55822 bytes (54 KB)
+==================================================
+downloaded 54 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/crayon_1.5.3.zip'
+Content type 'application/zip' length 166425 bytes (162 KB)
+==================================================
+downloaded 162 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/vroom_1.7.1.zip'
+Content type 'application/zip' length 1409908 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/tzdb_0.5.0.zip'
+Content type 'application/zip' length 1038702 bytes (1014 KB)
+==================================================
+downloaded 1014 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/progress_1.2.3.zip'
+Content type 'application/zip' length 89401 bytes (87 KB)
+==================================================
+downloaded 87 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/callr_3.7.6.zip'
+Content type 'application/zip' length 479492 bytes (468 KB)
+==================================================
+downloaded 468 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/fs_2.1.0.zip'
+Content type 'application/zip' length 419063 bytes (409 KB)
+==================================================
+downloaded 409 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/knitr_1.51.zip'
+Content type 'application/zip' length 1110847 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/rmarkdown_2.31.zip'
+Content type 'application/zip' length 2699705 bytes (2.6 MB)
+==================================================
+downloaded 2.6 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/selectr_0.5-1.zip'
+Content type 'application/zip' length 591037 bytes (577 KB)
+==================================================
+downloaded 577 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/stringi_1.8.7.zip'
+Content type 'application/zip' length 15033853 bytes (14.3 MB)
+==================================================
+downloaded 14.3 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/broom_1.0.12.zip'
+Content type 'application/zip' length 1796801 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/conflicted_1.2.0.zip'
+Content type 'application/zip' length 57785 bytes (56 KB)
+==================================================
+downloaded 56 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/dbplyr_2.5.2.zip'
+Content type 'application/zip' length 1269733 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/dplyr_1.2.1.zip'
+Content type 'application/zip' length 1618178 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/dtplyr_1.3.3.zip'
+Content type 'application/zip' length 410731 bytes (401 KB)
+==================================================
+downloaded 401 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/forcats_1.0.1.zip'
+Content type 'application/zip' length 430344 bytes (420 KB)
+==================================================
+downloaded 420 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/ggplot2_4.0.3.zip'
+Content type 'application/zip' length 8464184 bytes (8.1 MB)
+==================================================
+downloaded 8.1 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/googledrive_2.1.2.zip'
+Content type 'application/zip' length 1928861 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/googlesheets4_1.1.2.zip'
+Content type 'application/zip' length 525545 bytes (513 KB)
+==================================================
+downloaded 513 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/haven_2.5.5.zip'
+Content type 'application/zip' length 786202 bytes (767 KB)
+==================================================
+downloaded 767 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/hms_1.1.4.zip'
+Content type 'application/zip' length 109575 bytes (107 KB)
+==================================================
+downloaded 107 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/lubridate_1.9.5.zip'
+Content type 'application/zip' length 991003 bytes (967 KB)
+==================================================
+downloaded 967 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/magrittr_2.0.5.zip'
+Content type 'application/zip' length 229127 bytes (223 KB)
+==================================================
+downloaded 223 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/modelr_0.1.11.zip'
+Content type 'application/zip' length 204126 bytes (199 KB)
+==================================================
+downloaded 199 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/pillar_1.11.1.zip'
+Content type 'application/zip' length 673372 bytes (657 KB)
+==================================================
+downloaded 657 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/purrr_1.2.2.zip'
+Content type 'application/zip' length 571272 bytes (557 KB)
+==================================================
+downloaded 557 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/ragg_1.5.2.zip'
+Content type 'application/zip' length 3225388 bytes (3.1 MB)
+==================================================
+downloaded 3.1 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/readr_2.2.0.zip'
+Content type 'application/zip' length 1194020 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/readxl_1.4.5.zip'
+Content type 'application/zip' length 749935 bytes (732 KB)
+==================================================
+downloaded 732 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/reprex_2.1.1.zip'
+Content type 'application/zip' length 505383 bytes (493 KB)
+==================================================
+downloaded 493 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/rlang_1.2.0.zip'
+Content type 'application/zip' length 1646746 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/rstudioapi_0.18.0.zip'
+Content type 'application/zip' length 373742 bytes (364 KB)
+==================================================
+downloaded 364 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/rvest_1.0.5.zip'
+Content type 'application/zip' length 318808 bytes (311 KB)
+==================================================
+downloaded 311 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/stringr_1.6.0.zip'
+Content type 'application/zip' length 349676 bytes (341 KB)
+==================================================
+downloaded 341 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/tibble_3.3.1.zip'
+Content type 'application/zip' length 666890 bytes (651 KB)
+==================================================
+downloaded 651 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/tidyr_1.3.2.zip'
+Content type 'application/zip' length 1273297 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/xml2_1.5.2.zip'
+Content type 'application/zip' length 1610796 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/tidyverse_2.0.0.zip'
+Content type 'application/zip' length 431707 bytes (421 KB)
+==================================================
+downloaded 421 KB
+
+package 'fastmap' successfully unpacked and MD5 sums checked
+package 'bit' successfully unpacked and MD5 sums checked
+package 'ps' successfully unpacked and MD5 sums checked
+package 'sass' successfully unpacked and MD5 sums checked
+package 'digest' successfully unpacked and MD5 sums checked
+package 'cachem' successfully unpacked and MD5 sums checked
+package 'farver' successfully unpacked and MD5 sums checked
+package 'labeling' successfully unpacked and MD5 sums checked
+package 'RColorBrewer' successfully unpacked and MD5 sums checked
+package 'viridisLite' successfully unpacked and MD5 sums checked
+package 'rappdirs' successfully unpacked and MD5 sums checked
+package 'rematch' successfully unpacked and MD5 sums checked
+package 'base64enc' successfully unpacked and MD5 sums checked
+package 'bit64' successfully unpacked and MD5 sums checked
+package 'prettyunits' successfully unpacked and MD5 sums checked
+package 'processx' successfully unpacked and MD5 sums checked
+package 'evaluate' successfully unpacked and MD5 sums checked
+package 'highr' successfully unpacked and MD5 sums checked
+package 'xfun' successfully unpacked and MD5 sums checked
+package 'yaml' successfully unpacked and MD5 sums checked
+package 'bslib' successfully unpacked and MD5 sums checked
+package 'fontawesome' successfully unpacked and MD5 sums checked
+package 'htmltools' successfully unpacked and MD5 sums checked
+package 'jquerylib' successfully unpacked and MD5 sums checked
+package 'tinytex' successfully unpacked and MD5 sums checked
+package 'backports' successfully unpacked and MD5 sums checked
+package 'generics' successfully unpacked and MD5 sums checked
+package 'glue' successfully unpacked and MD5 sums checked
+package 'lifecycle' successfully unpacked and MD5 sums checked
+package 'memoise' successfully unpacked and MD5 sums checked
+package 'blob' successfully unpacked and MD5 sums checked
+package 'DBI' successfully unpacked and MD5 sums checked
+package 'tidyselect' successfully unpacked and MD5 sums checked
+package 'vctrs' successfully unpacked and MD5 sums checked
+package 'withr' successfully unpacked and MD5 sums checked
+package 'data.table' successfully unpacked and MD5 sums checked
+package 'gtable' successfully unpacked and MD5 sums checked
+package 'isoband' successfully unpacked and MD5 sums checked
+package 'S7' successfully unpacked and MD5 sums checked
+package 'scales' successfully unpacked and MD5 sums checked
+package 'gargle' successfully unpacked and MD5 sums checked
+package 'uuid' successfully unpacked and MD5 sums checked
+package 'cellranger' successfully unpacked and MD5 sums checked
+package 'ids' successfully unpacked and MD5 sums checked
+package 'rematch2' successfully unpacked and MD5 sums checked
+package 'cpp11' successfully unpacked and MD5 sums checked
+package 'pkgconfig' successfully unpacked and MD5 sums checked
+package 'timechange' successfully unpacked and MD5 sums checked
+package 'utf8' successfully unpacked and MD5 sums checked
+package 'systemfonts' successfully unpacked and MD5 sums checked
+package 'textshaping' successfully unpacked and MD5 sums checked
+package 'clipr' successfully unpacked and MD5 sums checked
+package 'crayon' successfully unpacked and MD5 sums checked
+package 'vroom' successfully unpacked and MD5 sums checked
+package 'tzdb' successfully unpacked and MD5 sums checked
+package 'progress' successfully unpacked and MD5 sums checked
+package 'callr' successfully unpacked and MD5 sums checked
+package 'fs' successfully unpacked and MD5 sums checked
+package 'knitr' successfully unpacked and MD5 sums checked
+package 'rmarkdown' successfully unpacked and MD5 sums checked
+package 'selectr' successfully unpacked and MD5 sums checked
+package 'stringi' successfully unpacked and MD5 sums checked
+package 'broom' successfully unpacked and MD5 sums checked
+package 'conflicted' successfully unpacked and MD5 sums checked
+package 'dbplyr' successfully unpacked and MD5 sums checked
+package 'dplyr' successfully unpacked and MD5 sums checked
+package 'dtplyr' successfully unpacked and MD5 sums checked
+package 'forcats' successfully unpacked and MD5 sums checked
+package 'ggplot2' successfully unpacked and MD5 sums checked
+package 'googledrive' successfully unpacked and MD5 sums checked
+package 'googlesheets4' successfully unpacked and MD5 sums checked
+package 'haven' successfully unpacked and MD5 sums checked
+package 'hms' successfully unpacked and MD5 sums checked
+package 'lubridate' successfully unpacked and MD5 sums checked
+package 'magrittr' successfully unpacked and MD5 sums checked
+package 'modelr' successfully unpacked and MD5 sums checked
+package 'pillar' successfully unpacked and MD5 sums checked
+package 'purrr' successfully unpacked and MD5 sums checked
+package 'ragg' successfully unpacked and MD5 sums checked
+package 'readr' successfully unpacked and MD5 sums checked
+package 'readxl' successfully unpacked and MD5 sums checked
+package 'reprex' successfully unpacked and MD5 sums checked
+package 'rlang' successfully unpacked and MD5 sums checked
+package 'rstudioapi' successfully unpacked and MD5 sums checked
+package 'rvest' successfully unpacked and MD5 sums checked
+package 'stringr' successfully unpacked and MD5 sums checked
+package 'tibble' successfully unpacked and MD5 sums checked
+package 'tidyr' successfully unpacked and MD5 sums checked
+package 'xml2' successfully unpacked and MD5 sums checked
+package 'tidyverse' successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\NewTech\AppData\Local\Temp\RtmpQZLEq0\downloaded_packages
+Installing package into 'C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/renv/library/windows/R-4.4/x86_64-w64-mingw32'
+(as 'lib' is unspecified)
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/haven_2.5.5.zip'
+Content type 'application/zip' length 786202 bytes (767 KB)
+==================================================
+downloaded 767 KB
+
+package 'haven' successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\NewTech\AppData\Local\Temp\RtmpQZLEq0\downloaded_packages
+Installing package into 'C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/renv/library/windows/R-4.4/x86_64-w64-mingw32'
+(as 'lib' is unspecified)
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/data.table_1.18.2.1.zip'
+Content type 'application/zip' length 3188635 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+package 'data.table' successfully unpacked and MD5 sums checked
+Warning in file.rename(tmpInstPath, instPath) :
+  cannot rename file 'C:\tsogoo\Hicheel\erdem shinjilgeenii hural\ecnometric\shine\renv\library\windows\R-4.4\x86_64-w64-mingw32\file2d283b777ff/data.table' to 'C:\tsogoo\Hicheel\erdem shinjilgeenii hural\ecnometric\shine\renv\library\windows\R-4.4\x86_64-w64-mingw32/data.table', reason 'Access is denied'
+Warning: unable to move temporary installation 'C:\tsogoo\Hicheel\erdem shinjilgeenii hural\ecnometric\shine\renv\library\windows\R-4.4\x86_64-w64-mingw32\file2d283b777ff\data.table' to 'C:\tsogoo\Hicheel\erdem shinjilgeenii hural\ecnometric\shine\renv\library\windows\R-4.4\x86_64-w64-mingw32\data.table', copying instead
+
+The downloaded binary packages are in
+	C:\Users\NewTech\AppData\Local\Temp\RtmpQZLEq0\downloaded_packages
+Installing package into 'C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/renv/library/windows/R-4.4/x86_64-w64-mingw32'
+(as 'lib' is unspecified)
+also installing the dependency 'snakecase'
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/snakecase_0.11.1.zip'
+Content type 'application/zip' length 169403 bytes (165 KB)
+==================================================
+downloaded 165 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/janitor_2.2.1.zip'
+Content type 'application/zip' length 292988 bytes (286 KB)
+==================================================
+downloaded 286 KB
+
+package 'snakecase' successfully unpacked and MD5 sums checked
+package 'janitor' successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\NewTech\AppData\Local\Temp\RtmpQZLEq0\downloaded_packages
+Installing package into 'C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/renv/library/windows/R-4.4/x86_64-w64-mingw32'
+(as 'lib' is unspecified)
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/labelled_2.16.0.zip'
+Content type 'application/zip' length 393780 bytes (384 KB)
+==================================================
+downloaded 384 KB
+
+package 'labelled' successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\NewTech\AppData\Local\Temp\RtmpQZLEq0\downloaded_packages
+Installing package into 'C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/renv/library/windows/R-4.4/x86_64-w64-mingw32'
+(as 'lib' is unspecified)
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/fs_2.1.0.zip'
+Content type 'application/zip' length 419063 bytes (409 KB)
+==================================================
+downloaded 409 KB
+
+package 'fs' successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\NewTech\AppData\Local\Temp\RtmpQZLEq0\downloaded_packages
+Installing package into 'C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/renv/library/windows/R-4.4/x86_64-w64-mingw32'
+(as 'lib' is unspecified)
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/glue_1.8.1.zip'
+Content type 'application/zip' length 189633 bytes (185 KB)
+==================================================
+downloaded 185 KB
+
+package 'glue' successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\NewTech\AppData\Local\Temp\RtmpQZLEq0\downloaded_packages
+Installing package into 'C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/renv/library/windows/R-4.4/x86_64-w64-mingw32'
+(as 'lib' is unspecified)
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/readr_2.2.0.zip'
+Content type 'application/zip' length 1194020 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+package 'readr' successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\NewTech\AppData\Local\Temp\RtmpQZLEq0\downloaded_packages
+Installing package into 'C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/renv/library/windows/R-4.4/x86_64-w64-mingw32'
+(as 'lib' is unspecified)
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/writexl_1.5.4.zip'
+Content type 'application/zip' length 204255 bytes (199 KB)
+==================================================
+downloaded 199 KB
+
+package 'writexl' successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\NewTech\AppData\Local\Temp\RtmpQZLEq0\downloaded_packages
+Installing package into 'C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/renv/library/windows/R-4.4/x86_64-w64-mingw32'
+(as 'lib' is unspecified)
+also installing the dependencies 'zoo', 'Formula', 'numDeriv', 'sandwich', 'Rcpp', 'dreamerr', 'stringmagic'
+
+
+  There is a binary version available but the source version is later:
+     binary    source needs_compilation
+Rcpp  1.1.1 1.1.1-1.1              TRUE
+
+  Binaries will be installed
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/zoo_1.8-15.zip'
+Content type 'application/zip' length 1064787 bytes (1.0 MB)
+==================================================
+downloaded 1.0 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/Formula_1.2-5.zip'
+Content type 'application/zip' length 161370 bytes (157 KB)
+==================================================
+downloaded 157 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/numDeriv_2016.8-1.1.zip'
+Content type 'application/zip' length 117304 bytes (114 KB)
+==================================================
+downloaded 114 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/sandwich_3.1-1.zip'
+Content type 'application/zip' length 1505888 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/Rcpp_1.1.1.zip'
+Content type 'application/zip' length 2927503 bytes (2.8 MB)
+==================================================
+downloaded 2.8 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/dreamerr_1.5.0.zip'
+Content type 'application/zip' length 988461 bytes (965 KB)
+==================================================
+downloaded 965 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/stringmagic_1.2.0.zip'
+Content type 'application/zip' length 3738124 bytes (3.6 MB)
+==================================================
+downloaded 3.6 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/fixest_0.14.0.zip'
+Content type 'application/zip' length 5006680 bytes (4.8 MB)
+==================================================
+downloaded 4.8 MB
+
+package 'zoo' successfully unpacked and MD5 sums checked
+package 'Formula' successfully unpacked and MD5 sums checked
+package 'numDeriv' successfully unpacked and MD5 sums checked
+package 'sandwich' successfully unpacked and MD5 sums checked
+package 'Rcpp' successfully unpacked and MD5 sums checked
+package 'dreamerr' successfully unpacked and MD5 sums checked
+package 'stringmagic' successfully unpacked and MD5 sums checked
+package 'fixest' successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\NewTech\AppData\Local\Temp\RtmpQZLEq0\downloaded_packages
+Installing package into 'C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/renv/library/windows/R-4.4/x86_64-w64-mingw32'
+(as 'lib' is unspecified)
+also installing the dependencies 'colorspace', 'fracdiff', 'timeDate', 'urca', 'RcppArmadillo', 'cowplot', 'Deriv', 'forecast', 'microbenchmark', 'rbibutils', 'doBy', 'SparseM', 'MatrixModels', 'Rdpack', 'minqa', 'nloptr', 'reformulas', 'RcppEigen', 'carData', 'abind', 'pbkrtest', 'quantreg', 'lme4', 'car', 'lmtest'
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/colorspace_2.1-2.zip'
+Content type 'application/zip' length 2673357 bytes (2.5 MB)
+==================================================
+downloaded 2.5 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/fracdiff_1.5-3.zip'
+Content type 'application/zip' length 106898 bytes (104 KB)
+==================================================
+downloaded 104 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/timeDate_4052.112.zip'
+Content type 'application/zip' length 1491970 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/urca_1.3-4.zip'
+Content type 'application/zip' length 1075506 bytes (1.0 MB)
+==================================================
+downloaded 1.0 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/RcppArmadillo_15.2.6-1.zip'
+Content type 'application/zip' length 2037843 bytes (1.9 MB)
+==================================================
+downloaded 1.9 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/cowplot_1.2.0.zip'
+Content type 'application/zip' length 1386365 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/Deriv_4.2.0.zip'
+Content type 'application/zip' length 154599 bytes (150 KB)
+==================================================
+downloaded 150 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/forecast_9.0.2.zip'
+Content type 'application/zip' length 1965798 bytes (1.9 MB)
+==================================================
+downloaded 1.9 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/microbenchmark_1.5.0.zip'
+Content type 'application/zip' length 73460 bytes (71 KB)
+==================================================
+downloaded 71 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/rbibutils_2.4.1.zip'
+Content type 'application/zip' length 1035530 bytes (1011 KB)
+==================================================
+downloaded 1011 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/doBy_4.7.1.zip'
+Content type 'application/zip' length 4825018 bytes (4.6 MB)
+==================================================
+downloaded 4.6 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/SparseM_1.84-2.zip'
+Content type 'application/zip' length 887027 bytes (866 KB)
+==================================================
+downloaded 866 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/MatrixModels_0.5-4.zip'
+Content type 'application/zip' length 408223 bytes (398 KB)
+==================================================
+downloaded 398 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/Rdpack_2.6.6.zip'
+Content type 'application/zip' length 641878 bytes (626 KB)
+==================================================
+downloaded 626 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/minqa_1.2.8.zip'
+Content type 'application/zip' length 441940 bytes (431 KB)
+==================================================
+downloaded 431 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/nloptr_2.2.1.zip'
+Content type 'application/zip' length 886738 bytes (865 KB)
+==================================================
+downloaded 865 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/reformulas_0.4.4.zip'
+Content type 'application/zip' length 160738 bytes (156 KB)
+==================================================
+downloaded 156 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/RcppEigen_0.3.4.0.2.zip'
+Content type 'application/zip' length 2592443 bytes (2.5 MB)
+==================================================
+downloaded 2.5 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/carData_3.0-6.zip'
+Content type 'application/zip' length 1706974 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/abind_1.4-8.zip'
+Content type 'application/zip' length 67211 bytes (65 KB)
+==================================================
+downloaded 65 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/pbkrtest_0.5.5.zip'
+Content type 'application/zip' length 227839 bytes (222 KB)
+==================================================
+downloaded 222 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/quantreg_6.1.zip'
+Content type 'application/zip' length 1472541 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/lme4_2.0-1.zip'
+Content type 'application/zip' length 4819355 bytes (4.6 MB)
+==================================================
+downloaded 4.6 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/car_3.1-5.zip'
+Content type 'application/zip' length 1542973 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/lmtest_0.9-40.zip'
+Content type 'application/zip' length 411612 bytes (401 KB)
+==================================================
+downloaded 401 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/ivreg_0.6-7.zip'
+Content type 'application/zip' length 960663 bytes (938 KB)
+==================================================
+downloaded 938 KB
+
+package 'colorspace' successfully unpacked and MD5 sums checked
+package 'fracdiff' successfully unpacked and MD5 sums checked
+package 'timeDate' successfully unpacked and MD5 sums checked
+package 'urca' successfully unpacked and MD5 sums checked
+package 'RcppArmadillo' successfully unpacked and MD5 sums checked
+package 'cowplot' successfully unpacked and MD5 sums checked
+package 'Deriv' successfully unpacked and MD5 sums checked
+package 'forecast' successfully unpacked and MD5 sums checked
+package 'microbenchmark' successfully unpacked and MD5 sums checked
+package 'rbibutils' successfully unpacked and MD5 sums checked
+package 'doBy' successfully unpacked and MD5 sums checked
+package 'SparseM' successfully unpacked and MD5 sums checked
+package 'MatrixModels' successfully unpacked and MD5 sums checked
+package 'Rdpack' successfully unpacked and MD5 sums checked
+package 'minqa' successfully unpacked and MD5 sums checked
+package 'nloptr' successfully unpacked and MD5 sums checked
+package 'reformulas' successfully unpacked and MD5 sums checked
+package 'RcppEigen' successfully unpacked and MD5 sums checked
+package 'carData' successfully unpacked and MD5 sums checked
+package 'abind' successfully unpacked and MD5 sums checked
+package 'pbkrtest' successfully unpacked and MD5 sums checked
+package 'quantreg' successfully unpacked and MD5 sums checked
+package 'lme4' successfully unpacked and MD5 sums checked
+package 'car' successfully unpacked and MD5 sums checked
+package 'lmtest' successfully unpacked and MD5 sums checked
+package 'ivreg' successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\NewTech\AppData\Local\Temp\RtmpQZLEq0\downloaded_packages
+Installing package into 'C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/renv/library/windows/R-4.4/x86_64-w64-mingw32'
+(as 'lib' is unspecified)
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/AER_1.2-16.zip'
+Content type 'application/zip' length 2590038 bytes (2.5 MB)
+==================================================
+downloaded 2.5 MB
+
+package 'AER' successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\NewTech\AppData\Local\Temp\RtmpQZLEq0\downloaded_packages
+Installing package into 'C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/renv/library/windows/R-4.4/x86_64-w64-mingw32'
+(as 'lib' is unspecified)
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/sandwich_3.1-1.zip'
+Content type 'application/zip' length 1505888 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+package 'sandwich' successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\NewTech\AppData\Local\Temp\RtmpQZLEq0\downloaded_packages
+Installing package into 'C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/renv/library/windows/R-4.4/x86_64-w64-mingw32'
+(as 'lib' is unspecified)
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/lmtest_0.9-40.zip'
+Content type 'application/zip' length 411612 bytes (401 KB)
+==================================================
+downloaded 401 KB
+
+package 'lmtest' successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\NewTech\AppData\Local\Temp\RtmpQZLEq0\downloaded_packages
+Installing package into 'C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/renv/library/windows/R-4.4/x86_64-w64-mingw32'
+(as 'lib' is unspecified)
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/car_3.1-5.zip'
+Content type 'application/zip' length 1542973 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+package 'car' successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\NewTech\AppData\Local\Temp\RtmpQZLEq0\downloaded_packages
+Installing package into 'C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/renv/library/windows/R-4.4/x86_64-w64-mingw32'
+(as 'lib' is unspecified)
+also installing the dependencies 'maxLik', 'miscTools', 'systemfit', 'VGAM', 'mvtnorm'
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/maxLik_1.5-2.2.zip'
+Content type 'application/zip' length 1133137 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/miscTools_0.6-30.zip'
+Content type 'application/zip' length 92094 bytes (89 KB)
+==================================================
+downloaded 89 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/systemfit_1.1-30.zip'
+Content type 'application/zip' length 610059 bytes (595 KB)
+==================================================
+downloaded 595 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/VGAM_1.1-14.zip'
+Content type 'application/zip' length 7983252 bytes (7.6 MB)
+==================================================
+downloaded 7.6 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/mvtnorm_1.3-7.zip'
+Content type 'application/zip' length 1056294 bytes (1.0 MB)
+==================================================
+downloaded 1.0 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/sampleSelection_1.2-14.zip'
+Content type 'application/zip' length 1609839 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+package 'maxLik' successfully unpacked and MD5 sums checked
+package 'miscTools' successfully unpacked and MD5 sums checked
+package 'systemfit' successfully unpacked and MD5 sums checked
+package 'VGAM' successfully unpacked and MD5 sums checked
+package 'mvtnorm' successfully unpacked and MD5 sums checked
+package 'sampleSelection' successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\NewTech\AppData\Local\Temp\RtmpQZLEq0\downloaded_packages
+Installing package into 'C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/renv/library/windows/R-4.4/x86_64-w64-mingw32'
+(as 'lib' is unspecified)
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/strucchange_1.5-4.zip'
+Content type 'application/zip' length 959782 bytes (937 KB)
+==================================================
+downloaded 937 KB
+
+package 'strucchange' successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\NewTech\AppData\Local\Temp\RtmpQZLEq0\downloaded_packages
+Installing package into 'C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/renv/library/windows/R-4.4/x86_64-w64-mingw32'
+(as 'lib' is unspecified)
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/broom_1.0.12.zip'
+Content type 'application/zip' length 1796801 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+package 'broom' successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\NewTech\AppData\Local\Temp\RtmpQZLEq0\downloaded_packages
+Installing package into 'C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/renv/library/windows/R-4.4/x86_64-w64-mingw32'
+(as 'lib' is unspecified)
+also installing the dependencies 'bayestestR', 'datawizard', 'checkmate', 'insight', 'parameters', 'performance', 'tables', 'tinytable'
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/bayestestR_0.17.0.zip'
+Content type 'application/zip' length 1177562 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/datawizard_1.3.0.zip'
+Content type 'application/zip' length 1173475 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/checkmate_2.3.4.zip'
+Content type 'application/zip' length 775076 bytes (756 KB)
+==================================================
+downloaded 756 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/insight_1.5.0.zip'
+Content type 'application/zip' length 2569175 bytes (2.5 MB)
+==================================================
+downloaded 2.5 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/parameters_0.28.3.zip'
+Content type 'application/zip' length 2202919 bytes (2.1 MB)
+==================================================
+downloaded 2.1 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/performance_0.16.0.zip'
+Content type 'application/zip' length 3251660 bytes (3.1 MB)
+==================================================
+downloaded 3.1 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/tables_0.9.33.zip'
+Content type 'application/zip' length 879330 bytes (858 KB)
+==================================================
+downloaded 858 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/tinytable_0.16.0.zip'
+Content type 'application/zip' length 1127897 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/modelsummary_2.6.0.zip'
+Content type 'application/zip' length 3267227 bytes (3.1 MB)
+==================================================
+downloaded 3.1 MB
+
+package 'bayestestR' successfully unpacked and MD5 sums checked
+package 'datawizard' successfully unpacked and MD5 sums checked
+package 'checkmate' successfully unpacked and MD5 sums checked
+package 'insight' successfully unpacked and MD5 sums checked
+package 'parameters' successfully unpacked and MD5 sums checked
+package 'performance' successfully unpacked and MD5 sums checked
+package 'tables' successfully unpacked and MD5 sums checked
+package 'tinytable' successfully unpacked and MD5 sums checked
+package 'modelsummary' successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\NewTech\AppData\Local\Temp\RtmpQZLEq0\downloaded_packages
+Installing package into 'C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/renv/library/windows/R-4.4/x86_64-w64-mingw32'
+(as 'lib' is unspecified)
+also installing the dependency 'svglite'
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/svglite_2.2.2.zip'
+Content type 'application/zip' length 714804 bytes (698 KB)
+==================================================
+downloaded 698 KB
+
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/kableExtra_1.4.0.zip'
+Content type 'application/zip' length 2051934 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+package 'svglite' successfully unpacked and MD5 sums checked
+package 'kableExtra' successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\NewTech\AppData\Local\Temp\RtmpQZLEq0\downloaded_packages
+Installing package into 'C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/renv/library/windows/R-4.4/x86_64-w64-mingw32'
+(as 'lib' is unspecified)
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/ggplot2_4.0.3.zip'
+Content type 'application/zip' length 8464184 bytes (8.1 MB)
+==================================================
+downloaded 8.1 MB
+
+package 'ggplot2' successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\NewTech\AppData\Local\Temp\RtmpQZLEq0\downloaded_packages
+Installing package into 'C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/renv/library/windows/R-4.4/x86_64-w64-mingw32'
+(as 'lib' is unspecified)
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/scales_1.4.0.zip'
+Content type 'application/zip' length 882995 bytes (862 KB)
+==================================================
+downloaded 862 KB
+
+package 'scales' successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\NewTech\AppData\Local\Temp\RtmpQZLEq0\downloaded_packages
+Installing package into 'C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/renv/library/windows/R-4.4/x86_64-w64-mingw32'
+(as 'lib' is unspecified)
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/rlang_1.2.0.zip'
+Content type 'application/zip' length 1646746 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+package 'rlang' successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\NewTech\AppData\Local\Temp\RtmpQZLEq0\downloaded_packages
+Installing package into 'C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/renv/library/windows/R-4.4/x86_64-w64-mingw32'
+(as 'lib' is unspecified)
+trying URL 'https://cloud.r-project.org/bin/windows/contrib/4.4/tictoc_1.2.1.zip'
+Content type 'application/zip' length 558211 bytes (545 KB)
+==================================================
+downloaded 545 KB
+
+package 'tictoc' successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\NewTech\AppData\Local\Temp\RtmpQZLEq0\downloaded_packages
+GitHub-аас mongolstats (soyolgerel/mongolstats) суулгаж байна...
+Warning in value[[3L]](cond) :
+  [mongolstats] суулгахад алдаа: Failed to install 'unknown package' from GitHub:
+  HTTP error 404.
+  Not Found
+
+  Did you spell the repo owner (`soyolgerel`) and repo name (`mongolstats`) correctly?
+  - If spelling is correct, check that you have the required permissions to access the repo.
+Error in setFixest_se(no_FE = "hetero") : 
+  could not find function "setFixest_se"
+Execution halted

@@ -1,0 +1,27 @@
+- The project is out-of-sync -- use `renv::status()` for details.
+
+── 07_merge_final.R — final analysis_sample ────────────────────────────────────
+ℹ Inputs loaded — wage:43070  sa:43070  iv:43070  harm:234690
+Error in `select()`:
+! Selections can't have negative values.
+Backtrace:
+     ▆
+  1. ├─dplyr::left_join(...)
+  2. ├─dplyr::left_join(...)
+  3. ├─dplyr::left_join(...)
+  4. ├─dplyr:::left_join.data.frame(...)
+  5. │ └─dplyr::auto_copy(x, y, copy = copy)
+  6. │   ├─dplyr::same_src(x, y)
+  7. │   └─dplyr:::same_src.data.frame(x, y)
+  8. │     └─base::is.data.frame(y)
+  9. ├─dplyr::select(...)
+ 10. └─dplyr:::select.data.frame(...)
+ 11.   └─tidyselect::eval_select(expr(c(...)), data = .data, error_call = error_call)
+ 12.     └─tidyselect:::eval_select_impl(...)
+ 13.       ├─tidyselect:::with_subscript_errors(...)
+ 14.       │ └─base::withCallingHandlers(...)
+ 15.       └─tidyselect:::vars_select_eval(...)
+ 16.         └─tidyselect:::loc_validate(pos, vars, call = error_call)
+ 17.           └─tidyselect:::check_negative(pos, call = call)
+ 18.             └─rlang::abort("Selections can't have negative values.", call = call)
+Execution halted

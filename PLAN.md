@@ -1,4 +1,4 @@
-# PLAN.md — IV-Threshold шинжилгээний 4 долоо хоногийн ажлын төлөвлөгөө
+﻿# PLAN.md — IV-Threshold шинжилгээний 4 долоо хоногийн ажлын төлөвлөгөө
 
 **Сэдэв:** Монгол Улсад боловсролын бодит өгөөжийн босготой үнэлгээ — HSES 2020-2024 микро өгөгдөл, Caner & Hansen (2004) IVTR арга
 
@@ -34,7 +34,7 @@ ln(w_it) = α + β · educ_it + γ · X_it + μ_r + δ_t + ε_it      [1]
 3. lwage = ln(real_hourly)
 4. β-ийг "real return per year of schooling" гэж тайлбарлана
 
-**CPI эх үүсвэрийн дараалал:** (1) NSO1212 API-аас аймаг × сар түвшний CPI series; (2) олдохгүй бол улсын нийт CPI сар тус бүрд (downgrade 1); (3) улсын CPI жилийн дундаж (downgrade 2); (4) бүгд бүтэхгүй бол гарын CSV fallback (`data/aux/cpi_manual.csv`).
+**CPI эх үүсвэрийн дараалал:** (1) NSO1212 API-аас аймаг × сар түвшний CPI series; (2) олдохгүй бол улсын нийт CPI сар тус бүрд (downgrade 1); (3) улсын CPI жилийн дундаж (downgrade 2); (4) бүгд бүтэхгүй бол гарын CSV fallback (`data/auxiliary/cpi_manual.csv`).
 
 ### 1.2 Endogeneity ба IV
 
@@ -210,8 +210,8 @@ hourly_nominal = q0436a / (q0427 × 4.33)      [4b]
 | 1.2 | `R/02_import_hses.R` | 5 wave × 3 файл (basicvars, hhold, indiv) → raw_list | `data/raw/hses_raw.rds` |
 | 1.3 | `R/03_harmonize.R` | Хувьсагчийн нэр, кодлогдсон утгыг waves хооронд нэгтгэх (educ, age, sex, marital, location, aimag, urban_rural, region) | `data/processed/hses_harmonized.rds` |
 | 1.4 | `R/04_wage_construction.R` | **Nominal hourly wage** 2-tier тооцоо: Tier 1 = q0436b (annual) / (q0437×q0438×q0439); Tier 2 (fallback) = q0436a (monthly) / (q0427 × 4.33); `wage_method` багана нэмэх; filter (working_for_wage=1, 22-60 нас — main_flag=1 if 25-60); ln(nominal_hourly) | `data/processed/wage_nominal.rds` |
-| 1.4b | `R/04b_cpi_deflator.R` | NSO1212 API-аас CPI series татах (тэргүүн: аймаг × сар; fallback: улсын сар; downgrade улсын жил; manual CSV); **суурь 2020 = 100**-аар rebase; **ХОЁР CPI series үүсгэнэ:** (a) `cpi_annual` — aimag × year (Tier 1 q0436b annual deflation-д); (b) `cpi_monthly` — aimag × (year, month-1) (Tier 2 q0436a previous-month deflation-д). Tier-аар сонголт: `wage_method == "tier1"` бол cpi_annual, `tier2` бол cpi_monthly | `data/aux/cpi_annual_2020base.rds`, `data/aux/cpi_monthly_2020base.rds`, `data/processed/wage_real.rds` |
-| 1.5 | `R/05_education_supply.R` | NSO1212/mongolstats API-аас аймаг × жилийн ЕБС тоо, сурагчийн тоо, багшийн тоо татах; **home_aimag**-ийг q0118a-аар тэргүүн авах, NA бол newaimag-аар нөхөх; q_i = (1/12) × Σ school_density_{home_aimag, t}, t ∈ [birth_year+6, birth_year+17] | `data/aux/school_density_by_cohort.rds` |
+| 1.4b | `R/04b_cpi_deflator.R` | NSO1212 API-аас CPI series татах (тэргүүн: аймаг × сар; fallback: улсын сар; downgrade улсын жил; manual CSV); **суурь 2020 = 100**-аар rebase; **ХОЁР CPI series үүсгэнэ:** (a) `cpi_annual` — aimag × year (Tier 1 q0436b annual deflation-д); (b) `cpi_monthly` — aimag × (year, month-1) (Tier 2 q0436a previous-month deflation-д). Tier-аар сонголт: `wage_method == "tier1"` бол cpi_annual, `tier2` бол cpi_monthly | `data/auxiliary/cpi_annual_2020base.rds`, `data/auxiliary/cpi_monthly_2020base.rds`, `data/processed/wage_real.rds` |
+| 1.5 | `R/05_education_supply.R` | NSO1212/mongolstats API-аас аймаг × жилийн ЕБС тоо, сурагчийн тоо, багшийн тоо татах; **home_aimag**-ийг q0118a-аар тэргүүн авах, NA бол newaimag-аар нөхөх; q_i = (1/12) × Σ school_density_{home_aimag, t}, t ∈ [birth_year+6, birth_year+17] | `data/auxiliary/school_density_by_cohort.rds` |
 | 1.6 | `R/06_iv_construction.R` | **4 IV хувилбар:** (a) `reform_main` (donut: Z=1 if birth ≥ 1998, Z=0 if ≤ 1995, NA if 1996-1997); (b) `reform_fuzzy` (0/0.5/1 partial); (c) `reform_alt_1997` (1997 cutoff); (d) `reform_alt_1999` (1999 cutoff); exposure_intensity (8-р анги хэдэн жилд хүрэх) | `data/processed/iv_assignment.rds` |
 | 1.7 | `R/07_merge_final.R` | Бүх файл merge → **ХОЁР sample**: (a) `main_sample` age 25-60 (стандарт Mincer); (b) `alt_sample` age 22-60 (treated cohort-ыг өргөтгөх — first-stage strength sensitivity-д) | `data/processed/analysis_sample.rds` (нэг файл, `sample_flag` баганатай) |
 
@@ -342,3 +342,5 @@ output/
 - Card, D. (2001). Estimating the Return to Schooling: Progress on Some Persistent Econometric Problems. *Econometrica*, 69(5), 1127-1160.
 - Hansen, B. E. (2000). Sample Splitting and Threshold Estimation. *Econometrica*, 68(3), 575-603.
 - Heckman, J. J., Lochner, L. J., & Todd, P. E. (2006). Earnings Functions, Rates of Return and Treatment Effects. In *Handbook of the Economics of Education*, Vol. 1, 307-458.
+
+

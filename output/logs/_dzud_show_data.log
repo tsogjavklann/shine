@@ -1,11 +1,11 @@
-- The project is out-of-sync -- use `renv::status()` for details.
+﻿- The project is out-of-sync -- use `renv::status()` for details.
 ================================================================
 ӨГӨГДЛИЙН БАЙРШИЛ
 ================================================================
 
 Локал хадгалсан файлууд:
-  C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/aux/dzud_panel.rds
-  C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/aux/dzud_panel.csv
+  C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/auxiliary/dzud_panel.rds
+  C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/auxiliary/dzud_panel.csv
 
 NSO эх үүсвэр (1212.mn):
   https://data.1212.mn/api/v1/mn/NSO/Industry,%20service/Livestock/DT_NSO_1001_029V1.px
@@ -270,3 +270,5 @@ Note: Энэ хүснэгт нь 2011 оноос л эхэлдэг тул 1999-2
 29 1840171 11-р баг, Хайрхан        0.1
 30 1840173 12-р баг, Цамбагарав     0.8
 # ℹ 79 more rows
+
+

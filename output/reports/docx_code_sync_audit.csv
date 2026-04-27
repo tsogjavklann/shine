@@ -1,0 +1,58 @@
+﻿item,expected_from_code,found_in_docx
+OLS N,"3,188",True
+OLS beta,0.0472,True
+OLS se,0.0034,True
+OLS return,4.8%,True
+2SLS N,"3,188",True
+2SLS beta,0.1033,True
+2SLS se,0.0118,True
+2SLS return,10.9%,True
+first stage coef,0.3623,True
+first stage se,0.0153,True
+first stage t,23.63,True
+first stage F,558.45,True
+gamma,19.53,True
+N low,"1,051",True
+N high,"2,137",True
+beta low,0.0784,True
+se low,0.0191,True
+return low,8.2%,True
+beta high,0.1094,True
+se high,0.0095,True
+return high,11.6%,True
+beta diff,0.0310,True
+beta diff pp,3.1,True
+wald p,0.102,True
+bootstrap p,0.0451,True
+boot B,399,True
+boot success,399,True
+boot failed,0,True
+gamma q025,18.48,True
+gamma q50,19.56,True
+gamma q975,25.53,True
+beta diff ci low,0.0044,True
+beta diff ci high,0.0608,True
+sample clusters,22,True
+sample cohorts,4,True
+sample waves,4,True
+age min,25,True
+age max,41,True
+birth year min,1983,True
+birth year max,1999,True
+year at 17/18 min,2001,True
+year at 17/18 max,2017,True
+q min,3.79,True
+q median,20.51,True
+q max,70.06,True
+corr educ,−0.049,True
+corr parent,0.006,True
+corr lwage,0.023,True
+forbidden_or_codeish_term::ТН,absent,False
+forbidden_or_codeish_term:: PE ,absent,False
+forbidden_or_codeish_term::B=399,absent,False
+forbidden_or_codeish_term::B=1999,absent,False
+forbidden_or_codeish_term::0 failed,absent,False
+forbidden_or_codeish_term::Weak-IV flag,absent,False
+forbidden_or_codeish_term::IV-THRESHOLD РЕГРЕССИЙН ШИНЖИЛГЭЭ,absent,False
+forbidden_or_codeish_term::15–85,absent,False
+forbidden_or_codeish_term::15-85,absent,False

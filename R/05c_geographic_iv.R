@@ -1,4 +1,4 @@
-# =============================================================================
+﻿# =============================================================================
 # 05c_geographic_iv.R
 # -----------------------------------------------------------------------------
 # Зорилго : Aimag-center coordinate hand-code → Haversine distance to UB →
@@ -9,7 +9,7 @@
 #             5 ≤ F < 10: AR-robust CI хэлбэрээр caveat-тай үргэлжилнэ
 #             F < 5:    PIVOT (Option A) руу буцна
 # Орц     : data/processed/analysis_sample.rds
-# Гарц    : data/aux/aimag_distance_to_ub.csv
+# Гарц    : data/auxiliary/aimag_distance_to_ub.csv
 #           output/tables/T_2_5_distance_iv_first_stage.csv
 #           output/logs/05c_distance_iv.log
 # =============================================================================
@@ -267,3 +267,5 @@ sink()
 
 toc()
 cli::cli_alert_success("Гарц: T_2_5_distance_iv_first_stage.csv + 05c_distance_iv.log")
+
+

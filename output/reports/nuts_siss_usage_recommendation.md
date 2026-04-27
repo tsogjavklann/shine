@@ -1,4 +1,4 @@
-# НҮТС өгөгдлийг энэ судалгаанд ашиглах боломжийн дүгнэлт
+﻿# НҮТС өгөгдлийг энэ судалгаанд ашиглах боломжийн дүгнэлт
 
 Generated: 2026-04-27
 
@@ -119,7 +119,7 @@ Responsibilities:
    - child labour/time burden from `CL*`;
    - parental involvement from `PR*`.
 4. Aggregate to `aimag/province x area x survey_year` when possible; otherwise `region x area x survey_year`.
-5. Merge with `data/cleaned/school_supply_panel.rds` or `data/aux/school_density_by_aimag.csv`.
+5. Merge with `data/cleaned/school_supply_panel.rds` or `data/auxiliary/school_density_by_aimag.csv`.
 6. Export:
    - `output/tables/T12_siss_external_validation.csv`;
    - `output/figures/siss_school_environment_validation.png`;
@@ -149,3 +149,5 @@ Use wording like:
 - Local metadata: `data/НҮТС-2023/DDI-MNG-NSO-MN-SISS-2023-v1.0.xml`.
 - UNICEF Mongolia, “Нийгмийн үзүүлэлтийн түүвэр судалгаа - 2023”: https://www.unicef.org/mongolia/mn/reports/нийгмийн-үзүүлэлтийн-түүвэр-судалгаа-2023
 - NSO NADA metadata, “НҮТС - 2023”: https://nada.nso.mn/mn/index.php/catalog/121
+
+

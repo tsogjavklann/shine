@@ -1,4 +1,4 @@
-# RESULTS_LOG.md — Скрипт ажиллах прогресс ба үр дүн
+﻿# RESULTS_LOG.md — Скрипт ажиллах прогресс ба үр дүн
 
 ---
 
@@ -297,7 +297,7 @@ Mongolia-specific reasons distance IV fails:
 ### Гарц
 
 - [output/tables/T_2_5_distance_iv_first_stage.csv](output/tables/T_2_5_distance_iv_first_stage.csv)
-- [data/aux/aimag_distance_to_ub.csv](data/aux/aimag_distance_to_ub.csv)
+- [data/auxiliary/aimag_distance_to_ub.csv](data/auxiliary/aimag_distance_to_ub.csv)
 - [output/logs/05c_distance_iv.log](output/logs/05c_distance_iv.log)
 
 ### Хүлээж байна
@@ -608,4 +608,6 @@ New candidates (final):
 
 Conclusion:
 - No HSES-only candidate is accepted as a clean primary IV without an exclusion-restriction caveat.
+
+
 

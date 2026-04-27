@@ -1,4 +1,4 @@
-# =============================================================================
+﻿# =============================================================================
 # 12b_iv_search.R
 # -----------------------------------------------------------------------------
 # Зорилго : Comprehensive IV survey — empirical first-stage F + 2SLS β + Sargan
@@ -6,7 +6,7 @@
 #           Гарц: T2b_iv_search.csv ranked by F descending; verdict per spec.
 # Орц     : data/processed/analysis_sample.rds
 #           data/processed/family_structure.rds (R/03b)
-#           data/aux/aimag_distance_to_ub.csv (R/05c)
+#           data/auxiliary/aimag_distance_to_ub.csv (R/05c)
 # Гарц    : output/tables/T2b_iv_search.csv
 #           output/logs/12b_iv_search.log
 # =============================================================================
@@ -230,3 +230,5 @@ sink()
 
 toc()
 cli::cli_alert_success("Гарц: T2b_iv_search.csv")
+
+

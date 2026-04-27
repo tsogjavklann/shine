@@ -1,9 +1,9 @@
-# =============================================================================
+﻿# =============================================================================
 # 12e_iv_remaining.R
 # -----------------------------------------------------------------------------
 # Зорилго : Үлдсэн 6 IV-ийг empirical-аар шалгаж 14-row T2b table-ыг нэмэх.
 # Орц     : data/processed/analysis_sample.rds
-#           data/aux/school_density_by_aimag.rds (R/05)
+#           data/auxiliary/school_density_by_aimag.rds (R/05)
 # Гарц    : output/tables/T2b_iv_search.csv (FULL UPDATE — 14 row)
 #           output/logs/12e_iv_remaining.log
 # =============================================================================
@@ -350,3 +350,5 @@ sink()
 
 toc()
 cli::cli_alert_success("Гарц: T2b_iv_search.csv (FULL 14 row); 12e_iv_remaining.log")
+
+

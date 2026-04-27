@@ -1,4 +1,4 @@
-- The project is out-of-sync -- use `renv::status()` for details.
+﻿- The project is out-of-sync -- use `renv::status()` for details.
 
 ── STEP 1: Бүх wave-ийн бүх variable-ийг inventory хийх ──────────────────────────────────────────────────────────────────────────
   hses_2020 / 01_hhold: 01_hhold (11).dta
@@ -20,7 +20,7 @@
 Unique (var × file): 736
 All-4-waves: 9, 3-waves: 156, 2-waves: 111, 1-wave: 460
 
-Saved: data/aux/hses_variable_inventory.csv (736 мөр)
+Saved: data/auxiliary/hses_variable_inventory.csv (736 мөр)
 
 ── STEP 3: Variable categorization by label keywords ─────────────────────────────────────────────────────────────────────────────
 Variable distribution by category:
@@ -32,3 +32,5 @@ Variable distribution by category:
 3 basicvars        0      0         1     0     9      2      3         0            0         0         4
 
 ── INVENTORY COMPLETE — 13b/13c-д ашиглахад бэлэн ────────────────────────────────────────────────────────────────────────────────
+
+

@@ -1,4 +1,4 @@
-- The project is out-of-sync -- use `renv::status()` for details.
+﻿- The project is out-of-sync -- use `renv::status()` for details.
 Total rows: 6120
 After species filter (Бүгд): 1020 rows
 
@@ -188,4 +188,6 @@ Year range: 1991-2024, unique aimags: 22
 43  2010 Орхон         30  
 44  2010 Говьсүмбэр    15.3
 
-Saved: data/aux/livestock_loss_aimag_136.{rds,csv}
+Saved: data/auxiliary/livestock_loss_aimag_136.{rds,csv}
+
+

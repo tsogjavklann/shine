@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head><title>R: Instrumental-Variables Regression by '2SLS', '2SM', or '2SMM',
+with Diagnostics</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+<h1> Instrumental-Variables Regression by '2SLS', '2SM', or '2SMM',
+with Diagnostics
+<img class="toplogo" src="../../../doc/html/Rlogo.svg" alt="[R logo]" />
+</h1>
+<hr/>
+<div style="text-align: center;">
+<a href="../../../doc/html/packages.html"><img class="arrow" src="../../../doc/html/left.jpg" alt="[Up]" /></a>
+<a href="../../../doc/html/index.html"><img class="arrow" src="../../../doc/html/up.jpg" alt="[Top]" /></a>
+</div><h2>Documentation for package &lsquo;ivreg&rsquo; version 0.6-7</h2>
+
+<ul><li><a href="../DESCRIPTION">DESCRIPTION file</a>.</li>
+<li><a href="../doc/index.html">User guides, package vignettes and other documentation.</a></li>
+<li><a href="../NEWS.md">Package NEWS</a>.</li>
+</ul>
+
+<h2>Help Pages</h2>
+
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="ivregMethods.html">alias.ivreg</a></td>
+<td>Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="summary.ivreg.html">Anova.ivreg</a></td>
+<td>Summary and Inference Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="summary.ivreg.html">anova.ivreg</a></td>
+<td>Summary and Inference Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregDiagnostics.html">avPlot.ivreg</a></td>
+<td>Deletion and Other Diagnostic Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregDiagnostics.html">avPlots.ivreg</a></td>
+<td>Deletion and Other Diagnostic Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregDiagnostics.html">Boot.ivreg</a></td>
+<td>Deletion and Other Diagnostic Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregMethods.html">bread.ivreg</a></td>
+<td>Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregDiagnostics.html">ceresPlot.ivreg</a></td>
+<td>Deletion and Other Diagnostic Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregDiagnostics.html">ceresPlots.ivreg</a></td>
+<td>Deletion and Other Diagnostic Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="CigaretteDemand.html">CigaretteDemand</a></td>
+<td>U.S. Cigarette Demand Data</td></tr>
+<tr><td style="width: 25%;"><a href="ivregMethods.html">coef.ivreg</a></td>
+<td>Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="summary.ivreg.html">confint.ivreg</a></td>
+<td>Summary and Inference Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregDiagnostics.html">cooks.distance.influence.ivreg</a></td>
+<td>Deletion and Other Diagnostic Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregDiagnostics.html">cooks.distance.ivreg</a></td>
+<td>Deletion and Other Diagnostic Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregDiagnostics.html">crPlot.ivreg</a></td>
+<td>Deletion and Other Diagnostic Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregDiagnostics.html">crPlots.ivreg</a></td>
+<td>Deletion and Other Diagnostic Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregDiagnostics.html">deviance.ivreg</a></td>
+<td>Deletion and Other Diagnostic Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregDiagnostics.html">dfbeta.influence.ivreg</a></td>
+<td>Deletion and Other Diagnostic Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregDiagnostics.html">dfbeta.ivreg</a></td>
+<td>Deletion and Other Diagnostic Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregMethods.html">Effect.ivreg</a></td>
+<td>Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregMethods.html">estfun.ivreg</a></td>
+<td>Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregMethods.html">find_formula.ivreg</a></td>
+<td>Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregMethods.html">formula.ivreg</a></td>
+<td>Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregDiagnostics.html">hatvalues.influence.ivreg</a></td>
+<td>Deletion and Other Diagnostic Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregDiagnostics.html">hatvalues.ivreg</a></td>
+<td>Deletion and Other Diagnostic Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregDiagnostics.html">infIndexPlot.influence.ivreg</a></td>
+<td>Deletion and Other Diagnostic Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregDiagnostics.html">infIndexPlot.ivreg</a></td>
+<td>Deletion and Other Diagnostic Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregDiagnostics.html">influence.ivreg</a></td>
+<td>Deletion and Other Diagnostic Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregDiagnostics.html">influence.rivreg</a></td>
+<td>Deletion and Other Diagnostic Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregDiagnostics.html">influencePlot.influence.ivreg</a></td>
+<td>Deletion and Other Diagnostic Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregDiagnostics.html">influencePlot.ivreg</a></td>
+<td>Deletion and Other Diagnostic Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivreg.html">ivreg</a></td>
+<td>Instrumental-Variable Regression by 2SLS, 2SM, or 2SMM Estimation</td></tr>
+<tr><td style="width: 25%;"><a href="ivreg.fit.html">ivreg.fit</a></td>
+<td>Fitting Instrumental-Variable Regressions by 2SLS, 2SM, or 2SMM Estimation</td></tr>
+<tr><td style="width: 25%;"><a href="ivregDiagnostics.html">ivregDiagnostics</a></td>
+<td>Deletion and Other Diagnostic Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregMethods.html">ivregMethods</a></td>
+<td>Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="Kmenta.html">Kmenta</a></td>
+<td>Partly Artificial Data on the U.S. Economy</td></tr>
+<tr><td style="width: 25%;"><a href="summary.ivreg.html">linearHypothesis.ivreg</a></td>
+<td>Summary and Inference Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregDiagnostics.html">mcPlot.ivreg</a></td>
+<td>Deletion and Other Diagnostic Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregDiagnostics.html">mcPlots.ivreg</a></td>
+<td>Deletion and Other Diagnostic Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregDiagnostics.html">model.matrix.influence.ivreg</a></td>
+<td>Deletion and Other Diagnostic Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregMethods.html">model.matrix.ivreg</a></td>
+<td>Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregMethods.html">model.matrix.ivreg_projected</a></td>
+<td>Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregDiagnostics.html">ncvTest.ivreg</a></td>
+<td>Deletion and Other Diagnostic Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregDiagnostics.html">outlierTest.ivreg</a></td>
+<td>Deletion and Other Diagnostic Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregDiagnostics.html">plot.ivreg</a></td>
+<td>Deletion and Other Diagnostic Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregMethods.html">predict.ivreg</a></td>
+<td>Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregMethods.html">print.ivreg</a></td>
+<td>Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="summary.ivreg.html">print.summary.ivreg</a></td>
+<td>Summary and Inference Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregDiagnostics.html">qqPlot.influence.ivreg</a></td>
+<td>Deletion and Other Diagnostic Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregDiagnostics.html">qqPlot.ivreg</a></td>
+<td>Deletion and Other Diagnostic Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregMethods.html">qr.ivreg</a></td>
+<td>Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregMethods.html">residuals.ivreg</a></td>
+<td>Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregDiagnostics.html">rstudent.influence.ivreg</a></td>
+<td>Deletion and Other Diagnostic Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregDiagnostics.html">rstudent.ivreg</a></td>
+<td>Deletion and Other Diagnostic Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="SchoolingReturns.html">SchoolingReturns</a></td>
+<td>U.S. Returns to Schooling Data</td></tr>
+<tr><td style="width: 25%;"><a href="ivregDiagnostics.html">spreadLevelPlot.ivreg</a></td>
+<td>Deletion and Other Diagnostic Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="summary.ivreg.html">summary.ivreg</a></td>
+<td>Summary and Inference Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregMethods.html">terms.ivreg</a></td>
+<td>Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregMethods.html">update.ivreg</a></td>
+<td>Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregMethods.html">vcov.ivreg</a></td>
+<td>Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregMethods.html">vcovHC.ivreg</a></td>
+<td>Methods for '"ivreg"' Objects</td></tr>
+<tr><td style="width: 25%;"><a href="ivregMethods.html">weights.ivreg</a></td>
+<td>Methods for '"ivreg"' Objects</td></tr>
+</table>
+</div></body></html>

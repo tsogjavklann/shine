@@ -1,0 +1,29 @@
+- The project is out-of-sync -- use `renv::status()` for details.
+
+── 05_education_supply.R — school_access threshold variable ────────────────────
+ℹ Wage panel: 43070 мөр; columns include birth_aimag, newaimag_proxy, birth_year
+→ PXWeb fetch [DT_NSO_2001_002V1] attempt 1/3...
+→ PXWeb fetch [DT_NSO_2001_004V1] attempt 1/3...
+! Grid 754 != values 745 — using min
+✔ Fetched schools: 745 rows; students: 754 rows
+ℹ After mapping + dedup: schools 572, students 572
+✔ ed_supply: 572 rows; year range [2000, 2025]
+→ Computing q for home_aimag (q0114a/q0118a)...
+→ Computing q for newaimag_proxy (current residence)...
+
+── school_access coverage in wage panel (43070 obs) ──
+
+ℹ Home_aimag valid (q_home not NaN): 9849 (22.9%)
+ℹ Newaimag valid (q_new not NaN):   23331 (54.2%)
+# A tibble: 2 × 9
+  label      n  mean    sd    p5   p25 median   p75   p95
+  <chr>  <int> <dbl> <dbl> <dbl> <dbl>  <dbl> <dbl> <dbl>
+1 q_home  9849  1.55 0.379 0.898  1.27   1.52  1.87  2.13
+2 q_new  23331  1.39 0.408 0.890  1.00   1.38  1.74  2.06
+
+── DECISION RULE ──
+
+! N_home=9849 ∈ [5K, 10K) → **CHECKPOINT: ask user**. RESULTS_LOG.md-д бичээд STOP
+Total: 1.49 sec elapsed
+✔ Гарцууд: school_density_by_aimag.rds, school_access.rds, 05_aimag_coverage.log
+ℹ Дараагийн алхам: R/06_iv_construction.R

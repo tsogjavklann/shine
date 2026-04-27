@@ -1,0 +1,52 @@
+- The project is out-of-sync -- use `renv::status()` for details.
+
+── 08_descriptive.R — T1 descriptive table ─────────────────────────────────────
+ℹ analysis_sample: 43070 rows × 64 cols
+ℹ MAIN (home_aimag): 9077 rows; ALT (newaimag): 21040 rows
+
+── T1 descriptive (head; ALL rows = both samples × all cohorts × all vars) ──
+
+# A tibble: 22 × 9
+   sample          cohort variable       n    mean      sd     p25    p50    p75
+   <chr>           <chr>  <chr>      <int>   <dbl>   <dbl>   <dbl>  <dbl>  <dbl>
+ 1 MAIN_home_aimag ALL    Schooling…  9077 1.30e+1 2.81e+0 1   e+1 1.4 e1 1.4 e1
+ 2 MAIN_home_aimag ALL    ln(real h…  9077 8.49e+0 5.09e-1 8.08e+0 8.40e0 8.74e0
+ 3 MAIN_home_aimag ALL    Real hour…  9077 5.54e+3 3.10e+3 3.24e+3 4.45e3 6.22e3
+ 4 MAIN_home_aimag ALL    Nominal h…  9077 6.96e+3 4.36e+3 3.70e+3 5.21e3 7.81e3
+ 5 MAIN_home_aimag ALL    Age         9077 3.27e+1 4.13e+0 2.9 e+1 3.3 e1 3.6 e1
+ 6 MAIN_home_aimag ALL    school_ac…  9077 1.51e+0 3.92e-1 1.27e+0 1.52e0 1.87e0
+ 7 MAIN_home_aimag ALL    school_ac…  9077 1.06e+0 2.77e-1 9.26e-1 1.02e0 1.54e0
+ 8 MAIN_home_aimag ALL    Female (1…  9077 4.61e-1 4.98e-1 0       0      1   e0
+ 9 MAIN_home_aimag ALL    Married (…  9077 7.99e-1 4   e-1 1   e+0 1   e0 1   e0
+10 MAIN_home_aimag ALL    Household…  9077 4.28e+0 1.41e+0 4   e+0 4   e0 5   e0
+11 MAIN_home_aimag ALL    Sampling …  9077 1.19e+2 6.09e+1 3.44e+1 9.09e1 1.15e2
+12 ALT_newaimag    ALL    Schooling… 21040 1.29e+1 2.85e+0 1   e+1 1.4 e1 1.4 e1
+13 ALT_newaimag    ALL    ln(real h… 21040 8.43e+0 5.15e-1 8.04e+0 8.35e0 8.67e0
+14 ALT_newaimag    ALL    Real hour… 21040 5.24e+3 2.98e+3 3.09e+3 4.22e3 5.85e3
+15 ALT_newaimag    ALL    Nominal h… 21040 6.53e+3 4.15e+3 3.52e+3 5   e3 7.39e3
+16 ALT_newaimag    ALL    Age        21040 3.25e+1 4.19e+0 2.9 e+1 3.3 e1 3.6 e1
+17 ALT_newaimag    ALL    school_ac…  9077 1.51e+0 3.92e-1 1.27e+0 1.52e0 1.87e0
+18 ALT_newaimag    ALL    school_ac… 21040 1.18e+0 3.57e-1 9.88e-1 1.37e0 1.73e0
+19 ALT_newaimag    ALL    Female (1… 21040 4.56e-1 4.98e-1 0       0      1   e0
+20 ALT_newaimag    ALL    Married (… 21040 7.66e-1 4.23e-1 1   e+0 1   e0 1   e0
+21 ALT_newaimag    ALL    Household… 21040 4.30e+0 1.49e+0 3   e+0 4   e0 5   e0
+22 ALT_newaimag    ALL    Sampling … 21040 1.04e+2 6.99e+1 2.71e+1 4.36e1 9.09e1
+── Cohort N by sample ──
+
+# A tibble: 2 × 4
+  sample          control_le1995 donut_1996_97 treated_ge1998
+  <chr>                    <int>         <int>          <int>
+1 MAIN_home_aimag           8404           502            171
+2 ALT_newaimag             19279          1323            438
+── MAIN sample wave breakdown (treated cohort distribution) ──
+
+# A tibble: 4 × 6
+   wave     n n_treated pct_treated n_donut n_control
+  <int> <int>     <int>       <dbl>   <int>     <int>
+1  2020  2163         0        0          0      2163
+2  2021  1423         0        0         49      1374
+3  2022  3123         0        0        254      2869
+4  2024  2368       171        7.22     199      1998
+Total: 1.08 sec elapsed
+✔ Гарц: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/output/tables/T1_descriptive.csv
+ℹ Дараагийн алхам: R/09_balance_check.R

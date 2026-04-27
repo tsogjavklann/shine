@@ -1,59 +1,15 @@
 # =============================================================================
-# .gitignore — IV-Threshold Mongolia (HSES 2020-2024)
+# .gitignore - IV-Threshold Mongolia (HSES 2020-2024)
 # =============================================================================
-
-# ---- HSES microdata (НУУЦ — публиш хийхгүй) -----------------------------------
-data/hses_2020/
-data/hses_2021/
-data/hses_2022/
-data/hses_2023/
-data/hses_2024/
-data/raw/
-data/processed/
-
-# Том auxiliary CSV-уудыг хасах (manual_csv, aimag_lookup-аас бусад)
-data/aux/*.rds
-# Үлдэгдэл: cpi_manual.csv, cpi_annual_2020base.csv, cpi_monthly_2020base.csv,
-# aimag_lookup.csv, school_density_by_aimag.csv (бүгд жижиг)
-
-# ---- renv ---------------------------------------------------------------------
-renv/library/
-renv/staging/
-renv/python/
-renv/local/
-renv/cellar/
-renv/sandbox/
-# Үлдэгдэл: renv.lock, renv/activate.R, renv/settings.json
+#
+# Project data, outputs, logs, reports, and renv/library are intentionally tracked
+# for a complete GitHub handoff.
 
 # ---- R session/runtime files --------------------------------------------------
 .Rhistory
 .RData
 .Ruserdata
 .Rproj.user/
-
-# ---- Scratch/dev files --------------------------------------------------------
-R/_scratch_*.R
-
-# ---- Verbose run logs (huge stdout dumps) ------------------------------------
-output/logs/setup_run_*.log
-output/logs/02_run.log
-output/logs/03_run.log
-output/logs/04_run.log
-output/logs/04b_run*.log
-output/logs/03b_run.log
-output/logs/05_run*.log
-output/logs/05c_run.log
-output/logs/06_run.log
-output/logs/07_run*.log
-output/logs/08_run.log
-output/logs/09_run.log
-output/logs/10_run.log
-output/logs/11_run.log
-output/logs/12_run.log
-output/logs/12b_run.log
-output/logs/12e_run.log
-output/logs/_nso_test.log
-# Үлдэгдэл: setup.log, NN_<scriptname>.log (per-script structured logs), all *.csv
 
 # ---- OS/IDE -------------------------------------------------------------------
 .DS_Store
@@ -63,10 +19,7 @@ Thumbs.db
 .vscode/
 .idea/
 
-# ---- Уралдааны PDF-ийг хасах --------------------------------------------------
-Удирдамж_II phase_2026.pdf
-
-# ---- Пacкагe build artifacts --------------------------------------------------
+# ---- Package/archive artifacts ------------------------------------------------
 *.tar.gz
 *.zip
 *.rds.bak

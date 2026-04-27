@@ -1,4 +1,4 @@
-# Prepare parent_educ_mean IV-ready sample with log_distance_to_ub as threshold.
+﻿# Prepare parent_educ_mean IV-ready sample with log_distance_to_ub as threshold.
 # This script does not run IVTR and does not use log_distance_to_ub as an IV.
 
 options(warn = 1, encoding = "UTF-8")
@@ -36,7 +36,7 @@ if (!logdist_existed) dat$log_distance_to_ub <- NA_real_
 source_note <- if (logdist_existed) {
   "log_distance_to_ub existed in IV-ready sample"
 } else {
-  "log_distance_to_ub reconstructed from data/aux/aimag_distance_to_ub.csv using birth_aimag"
+  "log_distance_to_ub reconstructed from data/auxiliary/aimag_distance_to_ub.csv using birth_aimag"
 }
 
 if (!logdist_existed || !distance_existed) {
@@ -253,3 +253,5 @@ print(by_aimag, n = Inf)
 cat("\nDecision:", decision, "\n")
 cat("\nSaved:", out_path, "\n")
 cat("\nCompleted:", as.character(Sys.time()), "\n")
+
+

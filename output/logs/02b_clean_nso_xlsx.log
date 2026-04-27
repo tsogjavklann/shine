@@ -1,4 +1,4 @@
-- The project is out-of-sync -- use `renv::status()` for details.
+﻿- The project is out-of-sync -- use `renv::status()` for details.
 
 ── STEP 1: ЕБС сургуулийн тоо ────────────────────────────────────────────────────────────────────────────────────────────────────
 Schools: 572 мөр (22 аймаг × 26 жил)
@@ -57,7 +57,7 @@ Dzud-аар бүртгэгдсэн (any aimag, any year):
 
 ── ЦЭВЭРЛЭЛТ ДУУСЛАА ─────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
-Гарц файлууд (data/aux/):
+Гарц файлууд (data/auxiliary/):
   school_count_by_aimag.{csv,rds}
   student_count_by_aimag.{csv,rds}
   livestock_count_by_aimag.{csv,rds}
@@ -66,3 +66,5 @@ Dzud-аар бүртгэгдсэн (any aimag, any year):
   cpi_annual_2020base.{csv,rds}
   school_density_by_aimag.{csv,rds}
   dzud_panel.{csv,rds}
+
+

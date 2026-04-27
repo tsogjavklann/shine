@@ -1,4 +1,4 @@
-# HSES 2020-2024 full variable inventory and preview.
+﻿# HSES 2020-2024 full variable inventory and preview.
 
 options(warn = 1)
 
@@ -16,7 +16,7 @@ suppressPackageStartupMessages({
   library(purrr)
 })
 
-dir.create("data/aux", recursive = TRUE, showWarnings = FALSE)
+dir.create("data/auxiliary", recursive = TRUE, showWarnings = FALSE)
 dir.create("output/logs", recursive = TRUE, showWarnings = FALSE)
 dir.create("output/tables", recursive = TRUE, showWarnings = FALSE)
 dir.create("output/reports", recursive = TRUE, showWarnings = FALSE)
@@ -185,8 +185,8 @@ preview <- preview_long %>%
   ) %>%
   arrange(var_name, wave, source_type)
 
-readr::write_csv(inventory, "data/aux/hses_variable_inventory.csv")
-readr::write_csv(preview, "data/aux/hses_variable_preview.csv")
+readr::write_csv(inventory, "data/auxiliary/hses_variable_inventory.csv")
+readr::write_csv(preview, "data/auxiliary/hses_variable_preview.csv")
 
 category_summary <- inventory %>% count(category, sort = TRUE)
 readr::write_csv(category_summary, "output/tables/hses_variable_category_summary.csv")
@@ -196,3 +196,5 @@ cat("Preview rows:", nrow(preview), "\n")
 cat("Category summary:\n")
 print(category_summary, n = Inf)
 cat("\n13a complete.\n")
+
+

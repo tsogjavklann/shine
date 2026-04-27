@@ -1,4 +1,4 @@
-# Unexplored HSES Variable Candidates
+﻿# Unexplored HSES Variable Candidates
 
 Generated: 2026-04-26 18:41:35.669712
 
@@ -68,4 +68,6 @@ Candidate variables created: 50
 
 ## NSO API Candidate Scan
 Rows saved: 885
-See data/aux/nso_candidate_tables.csv.
+See data/auxiliary/nso_candidate_tables.csv.
+
+

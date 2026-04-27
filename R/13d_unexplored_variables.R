@@ -1,4 +1,4 @@
-# Build analysis-ready HSES hidden-variable candidate dataset.
+﻿# Build analysis-ready HSES hidden-variable candidate dataset.
 
 options(warn = 1, encoding = "UTF-8")
 
@@ -15,7 +15,7 @@ suppressPackageStartupMessages({
   library(purrr)
 })
 
-dir.create("data/aux", recursive = TRUE, showWarnings = FALSE)
+dir.create("data/auxiliary", recursive = TRUE, showWarnings = FALSE)
 dir.create("output/tables", recursive = TRUE, showWarnings = FALSE)
 dir.create("output/reports", recursive = TRUE, showWarnings = FALSE)
 dir.create("output/logs", recursive = TRUE, showWarnings = FALSE)
@@ -347,8 +347,8 @@ candidate_list <- tribble(
                                "dormitory_current_student", "birth_soum_available")
   )
 
-saveRDS(dat, "data/aux/new_iv_candidate_data.rds")
-write_csv(candidate_list, "data/aux/new_iv_candidate_list.csv")
+saveRDS(dat, "data/auxiliary/new_iv_candidate_data.rds")
+write_csv(candidate_list, "data/auxiliary/new_iv_candidate_list.csv")
 write_csv(candidate_list, "output/tables/T2e_unexplored_variable_candidates.csv")
 
 scan_nso_candidates <- function() {
@@ -394,7 +394,7 @@ scan_nso_candidates <- function() {
 }
 
 nso_candidates <- scan_nso_candidates()
-write_csv(nso_candidates, "data/aux/nso_candidate_tables.csv")
+write_csv(nso_candidates, "data/auxiliary/nso_candidate_tables.csv")
 
 report_lines <- c(
   "# Unexplored HSES Variable Candidates",
@@ -421,10 +421,12 @@ report_lines <- c(
   "",
   "## NSO API Candidate Scan",
   paste0("Rows saved: ", nrow(nso_candidates)),
-  "See data/aux/nso_candidate_tables.csv."
+  "See data/auxiliary/nso_candidate_tables.csv."
 )
 writeLines(report_lines, "output/reports/unexplored_variables_scan.md", useBytes = TRUE)
 
 cat("Candidate variables:", nrow(candidate_list), "\n")
 print(candidate_list %>% arrange(desc(hidden_gem), desc(n_nonmissing)) %>% select(iv_var, expected_sign, n_nonmissing, n_unique, hidden_gem), n = Inf)
 cat("\n13d complete.\n")
+
+

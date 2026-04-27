@@ -1,8 +1,8 @@
-# =============================================================================
+﻿# =============================================================================
 # R/12g_dzud_iv.R — Dzud IV approach (Mongolia-specific extreme weather shock)
 #
 # Эх сурвалж: NSO 1212.mn гар татсан xlsx → R/02b_clean_nso_xlsx.R-аар цэвэрлэсэн
-#   data/aux/dzud_panel.csv  (loss + livestock + loss_rate + dzud thresholds)
+#   data/auxiliary/dzud_panel.csv  (loss + livestock + loss_rate + dzud thresholds)
 #
 # (Originally fetched via PXWeb API — DT_NSO_1001_136V1 + 109V1; one-to-one match
 #  verified by R/_scratch_verify_csv_source.R)
@@ -62,18 +62,18 @@ parse_jsonstat <- function(js) {
 }
 
 # Map NSO Бүс label → HSES hses_code
-aimag_lookup <- read_csv(here("data", "aux", "aimag_lookup.csv"), show_col_types = FALSE)
+aimag_lookup <- read_csv(here("data", "auxiliary", "aimag_lookup.csv"), show_col_types = FALSE)
 match_aimag <- function(label_vec) {
   trimmed <- str_trim(label_vec)
   aimag_lookup$hses_code[match(trimmed, aimag_lookup$aimag_mn)]
 }
 
 # -----------------------------------------------------------------------------
-# 1-3. LOAD pre-built dzud_panel from data/aux/ (R/02b_clean_nso_xlsx.R-аас)
+# 1-3. LOAD pre-built dzud_panel from data/auxiliary/ (R/02b_clean_nso_xlsx.R-аас)
 # -----------------------------------------------------------------------------
 cli_h1("STEP 1: dzud_panel.csv ачааллах (R/02b_clean_nso_xlsx.R-ийн гарц)")
 
-panel <- readRDS(here("data", "aux", "dzud_panel.rds")) |> as_tibble()
+panel <- readRDS(here("data", "auxiliary", "dzud_panel.rds")) |> as_tibble()
 cat(sprintf("dzud_panel: %d мөр × %d багана\n", nrow(panel), ncol(panel)))
 cat(sprintf("Жилийн хүрээ: %d-%d, аймаг: %d\n",
             min(panel$year), max(panel$year), length(unique(panel$hses_code))))
@@ -135,7 +135,7 @@ exposure <- expand_grid(
 cat(sprintf("Exposure cells (aimag × birth_year): %d\n", nrow(exposure)))
 cat(sprintf("Cells with at least 6 obs in childhood window: %d\n", sum(exposure$n_obs_6_17 >= 6)))
 
-saveRDS(exposure, here("data", "aux", "dzud_exposure.rds"))
+saveRDS(exposure, here("data", "auxiliary", "dzud_exposure.rds"))
 
 # -----------------------------------------------------------------------------
 # 5. MERGE TO HSES & first stage
@@ -315,3 +315,6 @@ write_csv(summary_tbl, here("output", "tables", "T2c_dzud_iv.csv"))
 cat(sprintf("\nSaved: output/tables/T2c_dzud_iv.csv\n"))
 
 cli_h1("DZUD IV ANALYSIS COMPLETE")
+
+
+

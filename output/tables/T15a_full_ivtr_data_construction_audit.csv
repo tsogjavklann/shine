@@ -1,4 +1,4 @@
-variable,script_created_or_verified,source_variables,formula_or_rule,N_in_audit_dataset,missing_count,nonmissing_rate,pre_outcome_or_predetermined,post_outcome_or_post_treatment_risk,could_mechanically_use_lwage_or_educ_years,verification_note,status
+﻿variable,script_created_or_verified,source_variables,formula_or_rule,N_in_audit_dataset,missing_count,nonmissing_rate,pre_outcome_or_predetermined,post_outcome_or_post_treatment_risk,could_mechanically_use_lwage_or_educ_years,verification_note,status
 lwage,R/04_wage_construction.R or analysis_sample fallback,wage or ln_wage,log(wage) for wage > 0; or existing ln_wage/lwage,3188,0,1,TRUE,FALSE,FALSE,Present in analysis/IVTR samples; no evidence threshold scripts rebuild it from education.,PASS
 educ_years,R/03_harmonize.R / R/07_merge_final.R,education level / harmonized education records,years of schooling harmonized before IVTR,3188,0,1,TRUE,FALSE,FALSE,"Endogenous regressor, not used to build IV or q variables in final scripts.",PASS
 father_educ_years,R/03b_family_structure.R,father_educ_level,documented level-to-years mapping in family structure script,3188,1147,0.6402132998745295,TRUE,FALSE,FALSE,Used as parent input only; not separately used as final main IVTR IV.,PASS
@@ -6,9 +6,11 @@ mother_educ_years,R/03b_family_structure.R,mother_educ_level,documented level-to
 parent_educ_mean,R/14a_evaluate_parent_educ_mean_iv.R; R/23/R24/R27/R28 pipelines,"father_educ_years, mother_educ_years","rowMeans(cbind(father_educ_years, mother_educ_years), na.rm=TRUE); NaN -> NA",3188,0,1,TRUE,FALSE,FALSE,Max abs difference vs rebuild in main audit sample: 0.00000000,PASS
 age2,analysis construction / pipeline fallback,age,age^2,3188,0,1,TRUE,FALSE,FALSE,Max abs difference vs age^2: 0.00000000,PASS
 birth_cohort,R/03_harmonize.R or pipeline fallback,birth_year,cohort bands from birth_year,3188,0,1,TRUE,FALSE,FALSE,Used as fixed effect; not used as q.,PASS
-log_distance_to_ub,R/19a_prepare_logdist_threshold_sample.R,"birth_aimag, distance_to_ub from data/aux/aimag_distance_to_ub.csv","log(pmax(distance_to_ub, 1))",3188,0,1,TRUE,FALSE,FALSE,Max abs formula difference where distance exists: 0.00000000,PASS
+log_distance_to_ub,R/19a_prepare_logdist_threshold_sample.R,"birth_aimag, distance_to_ub from data/auxiliary/aimag_distance_to_ub.csv","log(pmax(distance_to_ub, 1))",3188,0,1,TRUE,FALSE,FALSE,Max abs formula difference where distance exists: 0.00000000,PASS
 q_school_access,R/05_education_supply.R; R/21_rename_q_home_to_q_school_access.R,"birth_aimag, school access/supply history","computed school-access proxy, renamed from q_home",3188,0,1,TRUE,FALSE,FALSE,Not a home-environment variable; interpretation corrected to school access.,WARNING
 student_teacher_ratio_at_17,R/23_student_teacher17_ch_full_pipeline.R,school_supply_panel: students/teachers by birth_aimag and birth_year+17,student_teacher_ratio at age 17,1032,0,1,TRUE,FALSE,FALSE,Higher means more students per teacher / more crowding.,PASS
 student_teacher_ratio_avg_16_17,R/27_student_teacher_avg_16_17_ch_parallel_bootstrap.R,"student_teacher_ratio_at_16, student_teacher_ratio_at_17","mean(at_16, at_17), complete cases only",3113,0,1,TRUE,FALSE,FALSE,Max abs formula difference: 0.00000000,PASS
 student_teacher_ratio_avg_16_18,R/24_student_teacher_avg_16_18_ch_full_pipeline.R,"student_teacher_ratio_at_16, at_17, at_18","mean(at_16, at_17, at_18), complete cases only",3113,0,1,TRUE,FALSE,FALSE,Max abs formula difference: 0.00000000,PASS
 student_teacher_ratio_avg_17_18,R/28_student_teacher_avg_17_18_ch_parallel_bootstrap.R,"student_teacher_ratio_at_17, student_teacher_ratio_at_18","mean(at_17, at_18), complete cases only",3188,0,1,TRUE,FALSE,FALSE,Max abs formula difference: 0.00000000,PASS
+
+

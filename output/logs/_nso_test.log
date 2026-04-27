@@ -1,0 +1,8 @@
+=== NSO1212 API smoke test ===
+ 2026-04-26 05:37:11.222123 
+
+Version: 1.4.0 
+
+--- 1. all_tables() ---
+class: try-error 
+length/nrow: 

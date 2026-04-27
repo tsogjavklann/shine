@@ -1,4 +1,4 @@
-# =============================================================================
+﻿# =============================================================================
 # paths.R — төслийн зам helper
 # -----------------------------------------------------------------------------
 # Бүх 02-23 скрипт энэ файлыг `source(here::here("R", "paths.R"))`-аар уншина.
@@ -14,7 +14,7 @@ PATHS <- list(
   data_root    = here::here("data"),
   data_raw     = here::here("data", "raw"),
   data_proc    = here::here("data", "processed"),
-  data_aux     = here::here("data", "aux"),
+  data_aux     = here::here("data", "auxiliary"),
   hses_2020    = here::here("data", "hses_2020"),
   hses_2021    = here::here("data", "hses_2021"),
   hses_2022    = here::here("data", "hses_2022"),
@@ -32,3 +32,4 @@ PATHS <- list(
 invisible(lapply(PATHS, function(p) {
   if (!dir.exists(p)) dir.create(p, recursive = TRUE, showWarnings = FALSE)
 }))
+
