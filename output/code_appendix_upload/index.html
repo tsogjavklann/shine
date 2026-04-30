@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="mn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Судалгааны кодын хавсралт</title>
+  <style>
+    :root {
+      --paper: #fbfaf7;
+      --ink: #171717;
+      --muted: #5f6368;
+      --rule: #d9d2c3;
+      --blue: #145db2;
+      --red: #9f2f24;
+      --soft: #efe9dc;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Cambria, Georgia, "Times New Roman", serif;
+      line-height: 1.55;
+    }
+
+    main {
+      width: min(1080px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 52px 0 64px;
+    }
+
+    .masthead {
+      border-top: 7px solid var(--ink);
+      border-bottom: 1px solid var(--rule);
+      padding: 26px 0 30px;
+    }
+
+    .label {
+      color: var(--red);
+      font-family: "Segoe UI", Calibri, sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 850px;
+      margin: 12px 0 14px;
+      font-size: clamp(2.35rem, 6vw, 5.1rem);
+      line-height: 0.98;
+      letter-spacing: 0;
+    }
+
+    .subtitle {
+      max-width: 760px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.18rem;
+    }
+
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      margin: 28px 0 38px;
+      background: var(--rule);
+      border: 1px solid var(--rule);
+    }
+
+    .meta div {
+      min-height: 92px;
+      padding: 18px;
+      background: var(--soft);
+    }
+
+    .meta strong {
+      display: block;
+      margin-bottom: 5px;
+      font-family: "Segoe UI", Calibri, sans-serif;
+      font-size: 0.76rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .section-title {
+      margin: 0 0 16px;
+      font-size: 1.55rem;
+    }
+
+    .link-list {
+      display: grid;
+      gap: 12px;
+      margin-bottom: 36px;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 18px;
+      align-items: center;
+      padding: 18px 0;
+      border-top: 1px solid var(--rule);
+    }
+
+    .row:last-child {
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .row h2 {
+      margin: 0 0 3px;
+      font-size: 1.2rem;
+    }
+
+    .row p {
+      margin: 0;
+      color: var(--muted);
+      font-family: "Segoe UI", Calibri, sans-serif;
+      font-size: 0.97rem;
+    }
+
+    a.button {
+      display: inline-flex;
+      min-width: 132px;
+      justify-content: center;
+      border: 1px solid var(--blue);
+      padding: 10px 14px;
+      color: var(--blue);
+      font-family: "Segoe UI", Calibri, sans-serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    a.button:hover {
+      background: var(--blue);
+      color: #fff;
+    }
+
+    .note {
+      max-width: 860px;
+      padding-left: 18px;
+      border-left: 4px solid var(--red);
+      color: var(--muted);
+      font-family: "Segoe UI", Calibri, sans-serif;
+    }
+
+    @media (max-width: 720px) {
+      main {
+        width: min(100% - 24px, 1080px);
+        padding-top: 28px;
+      }
+
+      .meta,
+      .row {
+        grid-template-columns: 1fr;
+      }
+
+      a.button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="masthead">
+      <div class="label">IVTR research appendix</div>
+      <h1>Судалгааны код, үр дүн, графикийн хавсралт</h1>
+      <p class="subtitle">
+        Энэхүү хуудсаар тайланд ашигласан R Markdown хавсралтууд, 17-18 threshold
+        IVTR шинжилгээний код, үр дүнгийн графикуудыг нэг дор үзнэ.
+      </p>
+    </header>
+
+    <section class="meta" aria-label="analysis metadata">
+      <div>
+        <strong>Instrument</strong>
+        parent_educ_mean / Parents_year_mean
+      </div>
+      <div>
+        <strong>Threshold</strong>
+        student_teacher_ratio_avg_17_18
+      </div>
+      <div>
+        <strong>Core method</strong>
+        IV, 2SLS, IV threshold regression
+      </div>
+    </section>
+
+    <section aria-labelledby="html-files">
+      <h2 class="section-title" id="html-files">Шууд харах HTML хавсралтууд</h2>
+      <div class="link-list">
+        <article class="row">
+          <div>
+            <h2>Нэгдсэн судалгааны код, үр дүн, график</h2>
+            <p>Бүх гол шинжилгээний кодын дараалал, үр дүнгийн хүснэгт, өмнө үүссэн графикууд.</p>
+          </div>
+          <a class="button" href="appendix_research_code.html">Нээх</a>
+        </article>
+        <article class="row">
+          <div>
+            <h2>17-18 IVTR кодын хавсралт</h2>
+            <p>student_teacher_ratio_avg_17_18 threshold дээрх final pipeline болон academic figures.</p>
+          </div>
+          <a class="button" href="ivtr_17_18_code_appendix.html">Нээх</a>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="source-files">
+      <h2 class="section-title" id="source-files">Эх R Markdown файлууд</h2>
+      <div class="link-list">
+        <article class="row">
+          <div>
+            <h2>appendix_research_code.Rmd</h2>
+            <p>Нэгдсэн хавсралтын source файл.</p>
+          </div>
+          <a class="button" href="appendix_research_code.Rmd">Татах</a>
+        </article>
+        <article class="row">
+          <div>
+            <h2>ivtr_17_18_code_appendix.Rmd</h2>
+            <p>17-18 final IVTR code appendix source файл.</p>
+          </div>
+          <a class="button" href="ivtr_17_18_code_appendix.Rmd">Татах</a>
+        </article>
+        <article class="row">
+          <div>
+            <h2>ivtr_results_appendix_word.Rmd</h2>
+            <p>Word report-д зориулсан үр дүн, графикийн хавсралтын source файл.</p>
+          </div>
+          <a class="button" href="ivtr_results_appendix_word.Rmd">Татах</a>
+        </article>
+      </div>
+    </section>
+
+    <p class="note">
+      QR код нь энэ index хуудсын public URL рүү чиглэхээр төлөвлөгдсөн. Ингэснээр
+      тайланд ганц QR оруулахад HTML output болон Rmd source файлууд бүгд нэг дор нээгдэнэ.
+    </p>
+  </main>
+</body>
+</html>

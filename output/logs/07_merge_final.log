@@ -1,0 +1,29 @@
+==========================================================
+07_merge_final.R лог   2026-04-26 20:20:51.144275 
+==========================================================
+Total alt_sample (22-60): 43070
+main_sample (25-60):      40779
+alt-only (22-24):         2291
+
+22-24 насны wage panel rows: 2291 (currently_student filter-гүй)
+
+IV distribution in main_sample (25-60):
+# A tibble: 1 × 6
+      n main_treated main_control main_donut_NA alt1997_treated alt1999_treated
+  <int>        <int>        <int>         <int>           <int>           <int>
+1 40779          438        39018          1323             996             210
+
+IV distribution in alt_sample (22-60):
+# A tibble: 1 × 6
+      n main_treated main_control main_donut_NA alt1997_treated alt1999_treated
+  <int>        <int>        <int>         <int>           <int>           <int>
+1 43070         2165        39018          1887            3046            1341
+
+school_access coverage:
+# A tibble: 1 × 5
+      n n_q_home n_q_new pct_q_home pct_q_new
+  <int>    <int>   <int>      <dbl>     <dbl>
+1 43070    23295   23331       54.1      54.2
+
+Final columns (68):
+  identif, ind_id, age, sex, marital, relation_head, educ_level, educ_years, work7d_pay, q0436a, q0436b, q0436c, q0437, q0438, q0439, q0427, born_in_current, birth_aimag_raw, birth_soum_raw, working_for_wage, aimag, newaimag_proxy, region, urban, location, hhsize, hhweight, month_interview, birth_aimag, birth_soum, birth_aimag_from_current, wave, year_month, birth_year, id, main_flag, annual_hours_t1, hourly_t1, hourly_t2, nominal_hourly, wage_method, ln_nominal_hourly, cpi_year_t1, cpi_year_t2, cpi_month_t2, cpi_ym_t2, cpi_t1, cpi_t2, cpi_used, real_hourly, lwage, cpi_source, q_home, n_years_home, q_new, n_years_new, reform_main, reform_fuzzy, reform_alt_1997, reform_alt_1999, exposure_intensity, age2, main_flag_25_60, sample_flag, is_female, is_married, region_f, location_f

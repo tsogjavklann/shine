@@ -1,0 +1,448 @@
+renv::init() ажиллаж байна — энэ удаа л нэг удаа...
+- Linking packages into the project library ... Done!
+- Resolving missing dependencies ... 
+# Downloading packages -------------------------------------------------------
+- Downloading remotes 2.5.0 from CRAN ...       OK [425.9 Kb in 0.77s]
+- Downloading NSO1212 1.4.0 from CRAN ...       OK [39.5 Kb in 0.56s]
+- Downloading httr 1.4.8 from CRAN ...          OK [480.2 Kb in 0.77s]
+- Downloading curl 7.1.0 from CRAN ...          OK [3.5 Mb in 1.1s]
+- Downloading jsonlite 2.0.0 from CRAN ...      OK [1.1 Mb in 0.78s]
+- Downloading mime 0.13 from CRAN ...           OK [51.2 Kb in 0.55s]
+- Downloading openssl 2.4.0 from CRAN ...       OK [3.3 Mb in 1.1s]
+- Downloading askpass 1.2.1 from CRAN ...       OK [73 Kb in 0.77s]
+- Downloading sys 3.4.3 from CRAN ...           OK [46.8 Kb in 0.67s]
+- Downloading R6 2.6.1 from CRAN ...            OK [86.7 Kb in 0.55s]
+Successfully downloaded 10 packages in 14 seconds.
+
+# Installing packages --------------------------------------------------------
+- Installing remotes 2.5.0 ...                  OK [installed binary and cached in 0.33s]
+- Installing curl 7.1.0 ...                     OK [installed binary and cached in 0.41s]
+- Installing jsonlite 2.0.0 ...                 OK [installed binary and cached in 0.39s]
+- Installing mime 0.13 ...                      OK [installed binary and cached in 0.29s]
+- Installing sys 3.4.3 ...                      OK [installed binary and cached in 0.36s]
+- Installing askpass 1.2.1 ...                  OK [installed binary and cached in 0.3s]
+- Installing openssl 2.4.0 ...                  OK [installed binary and cached in 0.37s]
+- Installing R6 2.6.1 ...                       OK [installed binary and cached in 1.0s]
+- Installing httr 1.4.8 ...                     OK [installed binary and cached in 0.32s]
+- Installing NSO1212 1.4.0 ...                  OK [installed binary and cached in 0.28s]
+The following package(s) will be updated in the lockfile:
+
+# CRAN -----------------------------------------------------------------------
+- askpass     [* -> 1.2.1]
+- cli         [* -> 3.6.5]
+- curl        [* -> 7.1.0]
+- here        [* -> 1.0.2]
+- httr        [* -> 1.4.8]
+- jsonlite    [* -> 2.0.0]
+- mime        [* -> 0.13]
+- NSO1212     [* -> 1.4.0]
+- openssl     [* -> 2.4.0]
+- R6          [* -> 2.6.1]
+- remotes     [* -> 2.5.0]
+- renv        [* -> 1.1.8]
+- rprojroot   [* -> 2.1.1]
+- sys         [* -> 3.4.3]
+
+The version of R recorded in the lockfile will be updated:
+- R           [* -> 4.4.3]
+
+- Lockfile written to "C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/renv.lock".
+CRAN-аас 24 багц суулгаж эхэлж байна: tidyverse, haven, data.table, janitor, labelled, fs, glue, readr, writexl, fixest, ivreg, AER, sandwich, lmtest, car, sampleSelection, strucchange, broom, modelsummary, kableExtra, ggplot2, scales, rlang, tictoc
+# Downloading packages -------------------------------------------------------
+- Downloading tidyverse 2.0.0 from CRAN ...     OK [421.6 Kb in 0.78s]
+- Downloading broom 1.0.12 from CRAN ...        OK [1.7 Mb in 1.2s]
+- Downloading backports 1.5.1 from CRAN ...     OK [121.5 Kb in 0.66s]
+- Downloading dplyr 1.2.1 from CRAN ...         OK [1.5 Mb in 0.99s]
+- Downloading generics 0.1.4 from CRAN ...      OK [82.7 Kb in 0.67s]
+- Downloading glue 1.8.1 from CRAN ...          OK [185.2 Kb in 0.67s]
+- Downloading crayon 1.5.3 from CRAN ...        OK [162.5 Kb in 0.66s]
+- Downloading DBI 1.3.0 from CRAN ...           OK [940.6 Kb in 0.77s]
+- Downloading knitr 1.51 from CRAN ...          OK [1.1 Mb in 0.88s]
+- Downloading evaluate 1.0.5 from CRAN ...      OK [102.8 Kb in 0.99s]
+- Downloading highr 0.12 from CRAN ...          OK [43.5 Kb in 0.66s]
+- Downloading xfun 0.57 from CRAN ...           OK [598.4 Kb in 0.77s]
+- Downloading yaml 2.3.12 from CRAN ...         OK [121.8 Kb in 0.67s]
+- Downloading rlang 1.2.0 from CRAN ...         OK [1.6 Mb in 1.3s]
+- Downloading covr 3.6.5 from CRAN ...          OK [346.1 Kb in 0.77s]
+- Downloading digest 0.6.39 from CRAN ...       OK [222.2 Kb in 0.67s]
+- Downloading rex 1.2.2 from CRAN ...           OK [124.7 Kb in 0.66s]
+- Downloading withr 3.0.2 from CRAN ...         OK [227.4 Kb in 0.66s]
+- Downloading desc 1.4.3 from CRAN ...          OK [330 Kb in 0.77s]
+- Downloading fs 2.1.0 from CRAN ...            OK [409.2 Kb in 0.76s]
+- Downloading pillar 1.11.1 from CRAN ...       OK [657.6 Kb in 0.99s]
+- Downloading lifecycle 1.0.5 from CRAN ...     OK [146.2 Kb in 0.87s]
+- Downloading utf8 1.2.6 from CRAN ...          OK [151.1 Kb in 0.88s]
+- Downloading vctrs 0.7.3 from CRAN ...         OK [1.8 Mb in 0.99s]
+- Downloading rmarkdown 2.31 from CRAN ...      OK [2.6 Mb in 0.99s]
+- Downloading bslib 0.10.0 from CRAN ...        OK [6.1 Mb in 1.3s]
+- Downloading base64enc 0.1-6 from CRAN ...     OK [34.4 Kb in 0.55s]
+- Downloading cachem 1.1.0 from CRAN ...        OK [72.4 Kb in 0.67s]
+- Downloading fastmap 1.2.0 from CRAN ...       OK [132.4 Kb in 0.67s]
+- Downloading htmltools 0.5.9 from CRAN ...     OK [355.9 Kb in 0.77s]
+- Downloading jquerylib 0.1.4 from CRAN ...     OK [513.8 Kb in 0.77s]
+- Downloading memoise 2.0.1 from CRAN ...       OK [50.4 Kb in 0.77s]
+- Downloading sass 0.4.10 from CRAN ...         OK [2.5 Mb in 1.0s]
+- Downloading rappdirs 0.3.4 from CRAN ...      OK [52 Kb in 0.56s]
+- Downloading fontawesome 0.5.3 from CRAN ...   OK [1.3 Mb in 1.1s]
+- Downloading tinytex 0.59 from CRAN ...        OK [147 Kb in 0.9s]
+- Downloading spelling 2.3.2 from CRAN ...      OK [56.2 Kb in 0.57s]
+- Downloading commonmark 2.0.0 from CRAN ...    OK [139.8 Kb in 0.67s]
+- Downloading xml2 1.5.2 from CRAN ...          OK [1.5 Mb in 2.0s]
+- Downloading hunspell 3.0.6 from CRAN ...      OK [1.4 Mb in 0.89s]
+- Downloading Rcpp 1.1.1 from CRAN ...          OK [2.8 Mb in 0.99s]
+- Downloading testthat 3.3.2 from CRAN ...      OK [2.4 Mb in 1.1s]
+- Downloading brio 1.1.5 from CRAN ...          OK [40.9 Kb in 0.56s]
+- Downloading callr 3.7.6 from CRAN ...         OK [468.3 Kb in 0.89s]
+- Downloading processx 3.9.0 from CRAN ...      OK [752.8 Kb in 0.78s]
+- Downloading ps 1.9.3 from CRAN ...            OK [649.5 Kb in 0.78s]
+- Downloading magrittr 2.0.5 from CRAN ...      OK [223.8 Kb in 0.78s]
+- Downloading pkgload 1.5.2 from CRAN ...       OK [221.2 Kb in 0.67s]
+- Downloading pkgbuild 1.4.8 from CRAN ...      OK [206.1 Kb in 0.67s]
+- Downloading praise 1.0.0 from CRAN ...        OK [19.7 Kb in 0.56s]
+- Downloading waldo 0.6.2 from CRAN ...         OK [134 Kb in 0.68s]
+- Downloading diffobj 0.3.6 from CRAN ...       OK [1008.2 Kb in 0.77s]
+- Downloading tibble 3.3.1 from CRAN ...        OK [651.3 Kb in 0.78s]
+- Downloading pkgconfig 2.0.3 from CRAN ...     OK [22.5 Kb in 0.57s]
+- Downloading usethis 3.2.1 from CRAN ...       OK [931.9 Kb in 1.9s]
+- Downloading clipr 0.8.0 from CRAN ...         OK [54.5 Kb in 0.87s]
+- Downloading gert 2.3.1 from CRAN ...          OK [3.8 Mb in 1.6s]
+- Downloading credentials 2.0.3 from CRAN ...   OK [217.5 Kb in 0.66s]
+- Downloading rstudioapi 0.18.0 from CRAN ...   OK [365 Kb in 0.77s]
+- Downloading zip 2.3.3 from CRAN ...           OK [442.8 Kb in 0.78s]
+- Downloading gh 1.5.0 from CRAN ...            OK [128 Kb in 1.2s]
+- Downloading gitcreds 0.1.2 from CRAN ...      OK [98.8 Kb in 0.66s]
+- Downloading httr2 1.2.2 from CRAN ...         OK [779.6 Kb in 0.77s]
+- Downloading ini 0.3.1 from CRAN ...           OK [15.8 Kb in 0.99s]
+- Downloading purrr 1.2.2 from CRAN ...         OK [557.9 Kb in 0.99s]
+- Downloading whisker 0.4.1 from CRAN ...       OK [82.3 Kb in 1.2s]
+- Downloading RSQLite 2.4.6 from CRAN ...       OK [1.6 Mb in 1.3s]
+- Downloading bit64 4.8.0 from CRAN ...         OK [565.6 Kb in 0.77s]
+- Downloading bit 4.6.0 from CRAN ...           OK [621.8 Kb in 0.76s]
+- Downloading blob 1.3.0 from CRAN ...          OK [51.2 Kb in 0.55s]
+- Downloading cpp11 0.5.4 from CRAN ...         OK [314.9 Kb in 0.88s]
+- Downloading tidyselect 1.2.1 from CRAN ...    OK [224 Kb in 0.67s]
+- Downloading stringr 1.6.0 from CRAN ...       OK [341.5 Kb in 1.0s]
+- Downloading stringi 1.8.7 from CRAN ...       OK [14.3 Mb in 2.2s]
+- Downloading tidyr 1.3.2 from CRAN ...         OK [1.2 Mb in 0.89s]
+- Downloading AER 1.2-16 from CRAN ...          OK [2.5 Mb in 0.99s]
+- Downloading car 3.1-5 from CRAN ...           OK [1.5 Mb in 0.9s]
+- Downloading carData 3.0-6 from CRAN ...       OK [1.6 Mb in 0.99s]
+- Downloading abind 1.4-8 from CRAN ...         OK [65.6 Kb in 0.66s]
+- Downloading Formula 1.2-5 from CRAN ...       OK [157.6 Kb in 0.67s]
+- Downloading pbkrtest 0.5.5 from CRAN ...      OK [222.5 Kb in 0.77s]
+- Downloading lme4 2.0-1 from CRAN ...          OK [4.6 Mb in 1.4s]
+- Downloading Rdpack 2.6.6 from CRAN ...        OK [626.8 Kb in 0.78s]
+- Downloading rbibutils 2.4.1 from CRAN ...     OK [1011.3 Kb in 1.0s]
+- Downloading minqa 1.2.8 from CRAN ...         OK [431.6 Kb in 0.77s]
+- Downloading nloptr 2.2.1 from CRAN ...        OK [866 Kb in 0.77s]
+- Downloading reformulas 0.4.4 from CRAN ...    OK [157 Kb in 0.68s]
+- Downloading RcppEigen 0.3.4.0.2 from CRAN ... OK [2.5 Mb in 1.0s]
+- Downloading numDeriv 2016.8-1.1 from CRAN ... OK [114.6 Kb in 0.66s]
+- Downloading doBy 4.7.1 from CRAN ...          OK [4.6 Mb in 1.3s]
+- Downloading cowplot 1.2.0 from CRAN ...       OK [1.3 Mb in 0.88s]
+- Downloading ggplot2 4.0.3 from CRAN ...       OK [8.1 Mb in 1.8s]
+- Downloading gtable 0.3.6 from CRAN ...        OK [245 Kb in 0.99s]
+- Downloading isoband 0.3.0 from CRAN ...       OK [1.9 Mb in 0.99s]
+- Downloading S7 0.2.2 from CRAN ...            OK [341.6 Kb in 0.78s]
+- Downloading scales 1.4.0 from CRAN ...        OK [862.3 Kb in 0.78s]
+- Downloading farver 2.1.2 from CRAN ...        OK [1.4 Mb in 0.89s]
+- Downloading labeling 0.4.3 from CRAN ...      OK [61.7 Kb in 0.56s]
+- Downloading RColorBrewer 1.1-3 from CRAN ...  OK [53.2 Kb in 0.78s]
+- Downloading viridisLite 0.4.3 from CRAN ...   OK [1.2 Mb in 0.89s]
+- Downloading dichromat 2.0-0.1 from CRAN ...   OK [145.9 Kb in 0.79s]
+- Downloading hms 1.1.4 from CRAN ...           OK [107 Kb in 0.68s]
+- Downloading ggplot2movies 0.0.1 from CRAN ... OK [1.2 Mb in 1.9s]
+- Downloading hexbin 1.28.5 from CRAN ...       OK [1.5 Mb in 0.89s]
+- Downloading Hmisc 5.2-5 from CRAN ...         OK [3.7 Mb in 1.1s]
+- Downloading gridExtra 2.3 from CRAN ...       OK [1.1 Mb in 0.8s]
+- Downloading data.table 1.18.2.1 from CRAN ... OK [3 Mb in 1.2s]
+- Downloading R.utils 2.13.0 from CRAN ...      OK [1.4 Mb in 0.89s]
+- Downloading R.oo 1.27.1 from CRAN ...         OK [978.1 Kb in 1.0s]
+- Downloading R.methodsS3 1.8.2 from CRAN ...   OK [82.6 Kb in 0.78s]
+- Downloading xts 0.14.2 from CRAN ...          OK [1.2 Mb in 1.1s]
+- Downloading zoo 1.8-15 from CRAN ...          OK [1 Mb in 0.79s]
+- Downloading markdown 2.0 from CRAN ...        OK [65.9 Kb in 0.78s]
+- Downloading litedown 0.9 from CRAN ...        OK [374 Kb in 1.4s]
+- Downloading htmlTable 2.5.0 from CRAN ...     OK [432.8 Kb in 1.4s]
+- Downloading checkmate 2.3.4 from CRAN ...     OK [756.9 Kb in 0.78s]
+- Downloading htmlwidgets 1.6.4 from CRAN ...   OK [795 Kb in 0.78s]
+- Downloading colorspace 2.1-2 from CRAN ...    OK [2.5 Mb in 1.0s]
+- Downloading mapproj 1.2.12 from CRAN ...      OK [58.8 Kb in 0.57s]
+- Downloading maps 3.4.3 from CRAN ...          OK [3 Mb in 1.1s]
+- Downloading multcomp 1.4-30 from CRAN ...     OK [738 Kb in 0.77s]
+- Downloading mvtnorm 1.3-7 from CRAN ...       OK [1 Mb in 0.78s]
+- Downloading TH.data 1.1-5 from CRAN ...       OK [8.4 Mb in 1.6s]
+- Downloading sandwich 3.1-1 from CRAN ...      OK [1.4 Mb in 0.98s]
+- Downloading geepack 1.3.13 from CRAN ...      OK [683 Kb in 1.2s]
+- Downloading lmtest 0.9-40 from CRAN ...       OK [402 Kb in 0.77s]
+- Downloading strucchange 1.5-4 from CRAN ...   OK [937.3 Kb in 0.78s]
+- Downloading dynlm 0.3-6 from CRAN ...         OK [55.1 Kb in 0.55s]
+- Downloading e1071 1.7-17 from CRAN ...        OK [648.8 Kb in 0.98s]
+- Downloading proxy 0.4-29 from CRAN ...        OK [173.9 Kb in 0.66s]
+- Downloading foreach 1.5.2 from CRAN ...       OK [146.4 Kb in 0.66s]
+- Downloading iterators 1.0.14 from CRAN ...    OK [345.4 Kb in 0.76s]
+- Downloading tseries 0.10-61 from CRAN ...     OK [393.4 Kb in 0.89s]
+- Downloading quadprog 1.5-8 from CRAN ...      OK [36.3 Kb in 0.55s]
+- Downloading quantmod 0.4.28 from CRAN ...     OK [1 Mb in 1.9s]
+- Downloading TTR 0.24.4 from CRAN ...          OK [521.6 Kb in 0.77s]
+- Downloading multiwayvcov 1.2.3 from CRAN ...  OK [119.3 Kb in 0.88s]
+- Downloading pcse 1.9.1.1 from CRAN ...        OK [383.4 Kb in 0.76s]
+- Downloading plm 2.6-7 from CRAN ...           OK [1.8 Mb in 1.2s]
+- Downloading bdsmatrix 1.3-7 from CRAN ...     OK [293.8 Kb in 1.4s]
+- Downloading collapse 2.1.6 from CRAN ...      OK [3.6 Mb in 1.1s]
+- Downloading maxLik 1.5-2.2 from CRAN ...      OK [1.1 Mb in 0.89s]
+- Downloading miscTools 0.6-30 from CRAN ...    OK [89.9 Kb in 0.66s]
+- Downloading pscl 1.5.9 from CRAN ...          OK [3.3 Mb in 1.1s]
+- Downloading scatterplot3d 0.3-45 from CRAN ... OK [353.6 Kb in 0.77s]
+- Downloading munsell 0.5.1 from CRAN ...       OK [240.2 Kb in 0.77s]
+- Downloading profvis 0.4.0 from CRAN ...       OK [345.7 Kb in 0.67s]
+- Downloading quantreg 6.1 from CRAN ...        OK [1.4 Mb in 1.1s]
+- Downloading SparseM 1.84-2 from CRAN ...      OK [866.2 Kb in 0.87s]
+- Downloading MatrixModels 0.5-4 from CRAN ...  OK [398.7 Kb in 0.78s]
+- Downloading quarto 1.5.1 from CRAN ...        OK [545.8 Kb in 0.87s]
+- Downloading later 1.4.8 from CRAN ...         OK [454.4 Kb in 0.78s]
+- Downloading ragg 1.5.2 from CRAN ...          OK [3.1 Mb in 1.2s]
+- Downloading systemfonts 1.3.2 from CRAN ...   OK [2 Mb in 0.99s]
+- Downloading textshaping 1.0.5 from CRAN ...   OK [1.4 Mb in 0.87s]
+- Downloading roxygen2 7.3.3 from CRAN ...      OK [1 Mb in 0.99s]
+- Downloading brew 1.0-10 from CRAN ...         OK [76.9 Kb in 0.66s]
+- Downloading sf 1.1-0 from CRAN ...            OK [44.9 Mb in 5.3s]
+- Downloading classInt 0.4-11 from CRAN ...     OK [491.9 Kb in 0.78s]
+- Downloading s2 1.1.9 from CRAN ...            OK [4.2 Mb in 1.2s]
+- Downloading wk 0.9.5 from CRAN ...            OK [2 Mb in 0.98s]
+- Downloading units 1.0-1 from CRAN ...         OK [888.7 Kb in 0.89s]
+- Downloading svglite 2.2.2 from CRAN ...       OK [698.1 Kb in 0.89s]
+- Downloading vdiffr 1.0.9 from CRAN ...        OK [671.6 Kb in 0.76s]
+- Downloading Deriv 4.2.0 from CRAN ...         OK [151 Kb in 0.67s]
+- Downloading forecast 9.0.2 from CRAN ...      OK [1.9 Mb in 1.2s]
+- Downloading fracdiff 1.5-3 from CRAN ...      OK [104.4 Kb in 0.67s]
+- Downloading timeDate 4052.112 from CRAN ...   OK [1.4 Mb in 0.88s]
+- Downloading urca 1.3-4 from CRAN ...          OK [1 Mb in 0.78s]
+- Downloading RcppArmadillo 15.2.6-1 from CRAN ... OK [1.9 Mb in 0.99s]
+- Downloading modelr 0.1.11 from CRAN ...       OK [199.3 Kb in 0.66s]
+- Downloading microbenchmark 1.5.0 from CRAN ... OK [71.7 Kb in 0.55s]
+- Downloading alr4 1.0.7 from CRAN ...          OK [675.9 Kb in 2.0s]
+- Downloading effects 4.2-5 from CRAN ...       OK [2.3 Mb in 2.5s]
+- Downloading survey 4.5 from CRAN ...          OK [3.7 Mb in 1.2s]
+- Downloading mitools 2.4 from CRAN ...         OK [293 Kb in 0.67s]
+- Downloading estimability 1.5.1 from CRAN ...  OK [53 Kb in 0.55s]
+- Downloading insight 1.5.0 from CRAN ...       OK [2.5 Mb in 0.99s]
+- Downloading coxme 2.2-22 from CRAN ...        OK [1.1 Mb in 1.1s]
+- Downloading leaps 3.2 from CRAN ...           OK [86.4 Kb in 0.56s]
+- Downloading ordinal 2025.12-29 from CRAN ...  OK [1.2 Mb in 0.88s]
+- Downloading ucminf 1.2.3 from CRAN ...        OK [40.3 Kb in 0.56s]
+- Downloading plotrix 3.8-14 from CRAN ...      OK [1.1 Mb in 0.88s]
+- Downloading rgl 1.3.36 from CRAN ...          OK [6 Mb in 1.3s]
+- Downloading rio 1.3.0 from CRAN ...           OK [609.9 Kb in 0.76s]
+- Downloading haven 2.5.5 from CRAN ...         OK [767.8 Kb in 0.77s]
+- Downloading forcats 1.0.1 from CRAN ...       OK [420.3 Kb in 0.78s]
+- Downloading readr 2.2.0 from CRAN ...         OK [1.1 Mb in 0.89s]
+- Downloading vroom 1.7.1 from CRAN ...         OK [1.3 Mb in 0.88s]
+- Downloading tzdb 0.5.0 from CRAN ...          OK [1014.4 Kb in 0.77s]
+- Downloading progress 1.2.3 from CRAN ...      OK [87.3 Kb in 0.77s]
+- Downloading prettyunits 1.2.0 from CRAN ...   OK [152.6 Kb in 0.66s]
+- Downloading readxl 1.4.5 from CRAN ...        OK [732.4 Kb in 0.77s]
+- Downloading cellranger 1.1.0 from CRAN ...    OK [104.9 Kb in 0.67s]
+- Downloading rematch 2.0.0 from CRAN ...       OK [19 Kb in 0.99s]
+- Downloading writexl 1.5.4 from CRAN ...       OK [199.5 Kb in 0.89s]
+- Downloading nycflights13 1.0.2 from CRAN ...  OK [4.3 Mb in 1.5s]
+- Downloading fGarch 4052.93 from CRAN ...      OK [696.7 Kb in 1.6s]
+- Downloading fBasics 4052.98 from CRAN ...     OK [2.4 Mb in 2.2s]
+- Downloading timeSeries 4052.112 from CRAN ... OK [2 Mb in 2.4s]
+- Downloading gss 2.2-10 from CRAN ...          OK [1.6 Mb in 1.2s]
+- Downloading stabledist 0.7-2 from CRAN ...    OK [77.8 Kb in 1.2s]
+- Downloading fastICA 1.2-7 from CRAN ...       OK [48 Kb in 0.56s]
+- Downloading cvar 0.6 from CRAN ...            OK [138 Kb in 0.66s]
+- Downloading gbutils 0.5.1 from CRAN ...       OK [309.2 Kb in 0.67s]
+- Downloading ineq 0.2-13 from CRAN ...         OK [88 Kb in 0.99s]
+- Downloading longmemo 1.1-4 from CRAN ...      OK [229.9 Kb in 0.77s]
+- Downloading mlogit 1.1-3 from CRAN ...        OK [888 Kb in 0.87s]
+- Downloading dfidx 0.2-0 from CRAN ...         OK [224.1 Kb in 0.88s]
+- Downloading statmod 1.5.1 from CRAN ...       OK [316.8 Kb in 0.78s]
+- Downloading np 0.60-20 from CRAN ...          OK [2.6 Mb in 0.99s]
+- Downloading cubature 2.1.4-1 from CRAN ...    OK [2.3 Mb in 2.1s]
+- Downloading ROCR 1.0-12 from CRAN ...         OK [459.9 Kb in 0.99s]
+- Downloading gplots 3.3.0 from CRAN ...        OK [4.7 Mb in 1.3s]
+- Downloading gtools 3.9.5 from CRAN ...        OK [360 Kb in 0.78s]
+- Downloading caTools 1.18.3 from CRAN ...      OK [246.5 Kb in 0.67s]
+- Downloading bitops 1.0-9 from CRAN ...        OK [32.1 Kb in 0.79s]
+- Downloading rugarch 1.5-5 from CRAN ...       OK [4.8 Mb in 1.2s]
+- Downloading Rsolnp 2.0.1 from CRAN ...        OK [939.3 Kb in 1.9s]
+- Downloading truncnorm 1.0-9 from CRAN ...     OK [28.5 Kb in 0.57s]
+- Downloading future.apply 1.20.2 from CRAN ... OK [207.5 Kb in 0.79s]
+- Downloading future 1.70.0 from CRAN ...       OK [1 Mb in 0.89s]
+- Downloading globals 0.19.1 from CRAN ...      OK [172.8 Kb in 0.67s]
+- Downloading listenv 0.10.1 from CRAN ...      OK [133.4 Kb in 0.68s]
+- Downloading parallelly 1.47.0 from CRAN ...   OK [652.6 Kb in 0.79s]
+- Downloading ks 1.15.1 from CRAN ...           OK [1.9 Mb in 1.9s]
+- Downloading FNN 1.1.4.1 from CRAN ...         OK [424.9 Kb in 0.79s]
+- Downloading kernlab 0.9-33 from CRAN ...      OK [2.2 Mb in 1.4s]
+- Downloading mclust 6.1.2 from CRAN ...        OK [4 Mb in 1.2s]
+- Downloading multicool 1.0.1 from CRAN ...     OK [424 Kb in 1.7s]
+- Downloading pracma 2.4.6 from CRAN ...        OK [1.7 Mb in 1.1s]
+- Downloading spd 2.0-1 from CRAN ...           OK [218.8 Kb in 0.68s]
+- Downloading chron 2.3-62 from CRAN ...        OK [190.7 Kb in 0.78s]
+- Downloading SkewHyperbolic 0.4-2 from CRAN ... OK [172.8 Kb in 0.67s]
+- Downloading DistributionUtils 0.6-2 from CRAN ... OK [186.3 Kb in 1.2s]
+- Downloading GeneralizedHyperbolic 0.8-7 from CRAN ... OK [591.5 Kb in 0.79s]
+- Downloading sampleSelection 1.2-14 from CRAN ... OK [1.5 Mb in 1.1s]
+- Downloading systemfit 1.1-30 from CRAN ...    OK [595.8 Kb in 0.77s]
+- Downloading VGAM 1.1-14 from CRAN ...         OK [7.6 Mb in 1.8s]
+- Downloading Ecdat 0.4.7 from CRAN ...         OK [3.9 Mb in 1.3s]
+- Downloading truncreg 0.2-5 from CRAN ...      OK [37.3 Kb in 0.78s]
+- Downloading vars 1.6-1 from CRAN ...          OK [421 Kb in 1.0s]
+- Downloading AUC 0.3.2 from CRAN ...           OK [46.7 Kb in 1.0s]
+- Downloading bbmle 1.0.25.1 from CRAN ...      OK [866.9 Kb in 0.78s]
+- Downloading betareg 3.2-4 from CRAN ...       OK [1.8 Mb in 2.2s]
+- Downloading flexmix 2.3-20 from CRAN ...      OK [1.7 Mb in 1.0s]
+- Downloading modeltools 0.2-24 from CRAN ...   OK [221.1 Kb in 0.78s]
+- Downloading biglm 0.9-3 from CRAN ...         OK [71.3 Kb in 1.5s]
+- Downloading binGroup 2.2-3 from CRAN ...      OK [766.1 Kb in 0.78s]
+- Downloading partitions 1.10-9 from CRAN ...   OK [800.4 Kb in 1.0s]
+- Downloading gmp 0.7-5.1 from CRAN ...         OK [511.7 Kb in 0.78s]
+- Downloading polynom 1.4-1 from CRAN ...       OK [397.7 Kb in 0.79s]
+- Downloading sets 1.0-25 from CRAN ...         OK [634.8 Kb in 0.79s]
+- Downloading btergm 1.11.1 from CRAN ...       OK [860.9 Kb in 0.78s]
+- Downloading network 1.20.0 from CRAN ...      OK [824.6 Kb in 0.78s]
+- Downloading statnet.common 4.13.0 from CRAN ... OK [338.3 Kb in 1.4s]
+- Downloading coda 0.19-4.1 from CRAN ...       OK [324.6 Kb in 0.78s]
+- Downloading sna 2.8 from CRAN ...             OK [1.2 Mb in 0.9s]
+- Downloading ergm 4.12.0 from CRAN ...         OK [3.1 Mb in 2.3s]
+- Downloading robustbase 0.99-7 from CRAN ...   OK [3 Mb in 1.9s]
+- Downloading DEoptimR 1.1-4 from CRAN ...      OK [75.4 Kb in 0.67s]
+- Downloading trust 0.1-9 from CRAN ...         OK [305.1 Kb in 1.6s]
+- Downloading lpSolveAPI 5.5.2.0-17.15 from CRAN ... OK [586.7 Kb in 0.78s]
+- Downloading rle 0.10.0 from CRAN ...          OK [65.4 Kb in 0.57s]
+- Downloading igraph 2.3.0 from CRAN ...        OK [7.4 Mb in 1.7s]
+- Downloading caret 7.0-1 from CRAN ...         OK [3.4 Mb in 1.1s]
+- Downloading ModelMetrics 1.2.2.2 from CRAN ... OK [469.6 Kb in 0.78s]
+- Downloading plyr 1.8.9 from CRAN ...          OK [1.1 Mb in 0.77s]
+- Downloading pROC 1.19.0.1 from CRAN ...       OK [1.1 Mb in 0.88s]
+- Downloading recipes 1.3.2 from CRAN ...       OK [1.7 Mb in 1.2s]
+Warning: package 'BiocVersion' is not available
+Warning: package 'BiocVersion' is not available
+Error: package 'BiocVersion' is not available
+Traceback (most recent calls last):
+74: install_if_missing(cran_pkgs)
+73: install.packages(todo, dependencies = TRUE)
+72: eval(call, envir = parent.frame())
+71: eval(call, envir = parent.frame())
+70: renv::install(todo, dependencies = TRUE)
+69: renv_retrieve_impl(packages)
+68: handler(package, renv_retrieve_impl_one(package))
+67: renv_retrieve_impl_one(package)
+66: renv_retrieve_repos(record)
+65: renv_retrieve_repos_impl(record)
+64: renv_retrieve_package(record, url, path)
+63: renv_retrieve_successful(record, path)
+62: (function() {
+        if (nzchar(desc[["biocViews"]] %||% "")) {
+            repos <- renv_bioconductor_repos()
+            renv_scope_options(repos = repos)
+        }
+        renv_retrieve_successful_recurse(strongdeps)
+    })()
+61: renv_retrieve_successful_recurse(strongdeps)
+60: renv_retrieve_successful_recurse_impl(remote)
+59: dynamic(key = list(remote = remote), value = renv_retrieve_successful_recurse_impl_one(remote), 
+        force = force)
+58: the$dynamic_objects[[id]] %||% {
+        dlog("dynamic", "memoizing dynamic value for '%s'", id)
+        value
+    }
+57: renv_retrieve_successful_recurse_impl_one(remote)
+56: renv_retrieve_impl_one(remote)
+55: renv_retrieve_repos(record)
+54: renv_retrieve_repos_impl(record)
+53: renv_retrieve_package(record, url, path)
+52: renv_retrieve_successful(record, path)
+51: (function() {
+        if (nzchar(desc[["biocViews"]] %||% "")) {
+            repos <- renv_bioconductor_repos()
+            renv_scope_options(repos = repos)
+        }
+        renv_retrieve_successful_recurse(weakdeps)
+    })()
+50: renv_retrieve_successful_recurse(weakdeps)
+49: renv_retrieve_successful_recurse_impl(remote)
+48: dynamic(key = list(remote = remote), value = renv_retrieve_successful_recurse_impl_one(remote), 
+        force = force)
+47: the$dynamic_objects[[id]] %||% {
+        dlog("dynamic", "memoizing dynamic value for '%s'", id)
+        value
+    }
+46: renv_retrieve_successful_recurse_impl_one(remote)
+45: renv_retrieve_impl_one(remote)
+44: renv_retrieve_repos(record)
+43: renv_retrieve_repos_impl(record)
+42: renv_retrieve_package(record, url, path)
+41: renv_retrieve_successful(record, path)
+40: (function() {
+        if (nzchar(desc[["biocViews"]] %||% "")) {
+            repos <- renv_bioconductor_repos()
+            renv_scope_options(repos = repos)
+        }
+        renv_retrieve_successful_recurse(strongdeps)
+    })()
+39: renv_retrieve_successful_recurse(strongdeps)
+38: renv_retrieve_successful_recurse_impl(remote)
+37: dynamic(key = list(remote = remote), value = renv_retrieve_successful_recurse_impl_one(remote), 
+        force = force)
+36: the$dynamic_objects[[id]] %||% {
+        dlog("dynamic", "memoizing dynamic value for '%s'", id)
+        value
+    }
+35: renv_retrieve_successful_recurse_impl_one(remote)
+34: renv_retrieve_impl_one(remote)
+33: renv_retrieve_repos(record)
+32: renv_retrieve_repos_impl(record)
+31: renv_retrieve_package(record, url, path)
+30: renv_retrieve_successful(record, path)
+29: (function() {
+        if (nzchar(desc[["biocViews"]] %||% "")) {
+            repos <- renv_bioconductor_repos()
+            renv_scope_options(repos = repos)
+        }
+        renv_retrieve_successful_recurse(strongdeps)
+    })()
+28: renv_bioconductor_repos()
+27: renv_bioconductor_init()
+26: renv_bioconductor_init_biocmanager(library)
+25: install("BiocManager", library = library, prompt = FALSE)
+24: renv_retrieve_impl(packages)
+23: handler(package, renv_retrieve_impl_one(package))
+22: renv_retrieve_impl_one(package)
+21: renv_retrieve_repos(record)
+20: renv_retrieve_repos_impl(record)
+19: renv_retrieve_package(record, url, path)
+18: renv_retrieve_successful(record, path)
+17: (function() {
+        if (nzchar(desc[["biocViews"]] %||% "")) {
+            repos <- renv_bioconductor_repos()
+            renv_scope_options(repos = repos)
+        }
+        renv_retrieve_successful_recurse(weakdeps)
+    })()
+16: renv_retrieve_successful_recurse(weakdeps)
+15: renv_retrieve_successful_recurse_impl(remote)
+14: dynamic(key = list(remote = remote), value = renv_retrieve_successful_recurse_impl_one(remote), 
+        force = force)
+13: the$dynamic_objects[[id]] %||% {
+        dlog("dynamic", "memoizing dynamic value for '%s'", id)
+        value
+    }
+12: renv_retrieve_successful_recurse_impl_one(remote)
+11: renv_retrieve_impl_one(remote)
+10: records[[package]] %||% renv_retrieve_resolve(package)
+ 9: renv_retrieve_resolve(package)
+ 8: tryCatch(renv_snapshot_description(package = package), error = function(e) {
+        renv_retrieve_missing_record(package)
+    })
+ 7: tryCatchList(expr, classes, parentenv, handlers)
+ 6: tryCatchOne(expr, names, parentenv, handlers[[1L]])
+ 5: value[[3L]](cond)
+ 4: renv_retrieve_missing_record(package)
+ 3: renv_available_packages_latest(package)
+ 2: stopf("package '%s' is not available", package)
+ 1: stop(sprintf(fmt, ...), call. = call.)
+Execution halted

@@ -1,0 +1,10 @@
+iv_var,fe_design,pi_hat,F_first,sign,sign_flip_across_designs
+dzud_count5_12_17,birth_aimag + birth_cohort + wave,0.05098871321285205,1.414984596471959,positive,FALSE
+dzud_count5_12_17,birth_aimag + wave,0.039418890987108136,1.4369855310769348,positive,FALSE
+dzud_count5_12_17,region + wave,0.021172866580761854,0.39382639348254433,positive,FALSE
+dzud_cum_12_17,birth_aimag + birth_cohort + wave,0.0049335769451553,4.982635023105158,positive,FALSE
+dzud_cum_12_17,birth_aimag + wave,0.003657950776463957,2.7153527979633463,positive,FALSE
+dzud_cum_12_17,region + wave,0.0019836055332204195,0.6596142707759898,positive,FALSE
+dzud_count5_6_17,birth_aimag + birth_cohort + wave,0.047065986380814724,1.9694551614318436,positive,TRUE
+dzud_count5_6_17,birth_aimag + wave,0.03680511445679777,1.6503767629744268,positive,TRUE
+dzud_count5_6_17,region + wave,-0.005467607970365183,0.017437936759533514,negative,TRUE

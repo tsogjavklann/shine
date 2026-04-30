@@ -1,0 +1,3 @@
+model,iv_basis,N,beta_educ_years,se,p_value,first_stage_joint_F,first_stage_joint_p,weak_iv_flag,overid_stat,overid_df,overid_p_value,cluster,weights
+M0_OLS,years-based,1802,0.04196367352228715,0.0034856127015641843,6.857368549932306e-11,NA,NA,NA,NA,NA,NA,birth_aimag,hhweight
+M1_Pastore_parental_IV,years-based,1802,0.10110179106555535,0.017811934714695252,1.238085673051473e-5,140.06621028860638,3.0868781147383034e-57,FALSE,5.422851206396549,1,0.01987487857009443,birth_aimag,hhweight

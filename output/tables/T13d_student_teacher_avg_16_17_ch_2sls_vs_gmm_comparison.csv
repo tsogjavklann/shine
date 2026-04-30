@@ -1,0 +1,2 @@
+threshold_variable,gamma_hat,beta_low_2sls,beta_high_2sls,beta_low_GMM,beta_high_GMM,beta_diff_GMM_high_minus_low,inference_method
+student_teacher_ratio_avg_16_17,19.729926191008722,0.08679476846913381,0.11064239365106651,0.08679476846912434,0.11064239365106573,0.02384762518194139,"two-step GMM, cluster-robust S by birth_aimag, t distribution with df=21"

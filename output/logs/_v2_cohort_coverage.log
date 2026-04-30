@@ -1,0 +1,97 @@
+- The project is out-of-sync -- use `renv::status()` for details.
+=================================================================
+DZUD V2 — өгөгдлийн cohort болон жилийн хамрах хүрээ
+=================================================================
+
+NSO loss data: 1991-2024 (34 жил)
+NSO count data: 1970-2024 (55 жил)
+
+=== Cohort coverage by window (per birth_year) ===
+
+12-17 window (loss data needed: birth+12 to birth+17):
+  Earliest fully covered cohort: birth_year >= 1991-12 = 1979
+  Latest fully covered cohort:   birth_year <= 2024-17 = 2007
+
+6-17 window (loss data needed: birth+6 to birth+17):
+  Earliest fully covered cohort: birth_year >= 1991-6 = 1985
+  Latest fully covered cohort:   birth_year <= 2024-17 = 2007
+
+=== HSES sample (main_flag_25_60) cohort distribution ===
+# A tibble: 17 × 2
+   birth_year     n
+        <int> <int>
+ 1       1983   578
+ 2       1984   637
+ 3       1985   717
+ 4       1986   771
+ 5       1987   733
+ 6       1988   731
+ 7       1989   688
+ 8       1990   767
+ 9       1991   723
+10       1992   637
+11       1993   518
+12       1994   438
+13       1995   466
+14       1996   291
+15       1997   211
+16       1998    94
+17       1999    77
+
+=== Coverage by birth_year (12-17 window) ===
+# A tibble: 17 × 4
+   birth_year     n n_full_12_17 pct_full
+        <int> <int>        <int>    <dbl>
+ 1       1983   578          578      100
+ 2       1984   637          637      100
+ 3       1985   717          717      100
+ 4       1986   771          771      100
+ 5       1987   733          733      100
+ 6       1988   731          731      100
+ 7       1989   688          688      100
+ 8       1990   767          767      100
+ 9       1991   723          723      100
+10       1992   637          637      100
+11       1993   518          518      100
+12       1994   438          438      100
+13       1995   466          466      100
+14       1996   291          291      100
+15       1997   211          211      100
+16       1998    94           94      100
+17       1999    77           77      100
+
+=== Coverage by birth_year (6-17 window) ===
+# A tibble: 17 × 4
+   birth_year     n n_full_6_17 pct_full
+        <int> <int>       <int>    <dbl>
+ 1       1983   578           0        0
+ 2       1984   637           0        0
+ 3       1985   717           0        0
+ 4       1986   771         771      100
+ 5       1987   733         733      100
+ 6       1988   731         731      100
+ 7       1989   688         688      100
+ 8       1990   767         767      100
+ 9       1991   723         723      100
+10       1992   637         637      100
+11       1993   518         518      100
+12       1994   438         438      100
+13       1995   466         466      100
+14       1996   291         291      100
+15       1997   211         211      100
+16       1998    94          94      100
+17       1999    77          77      100
+
+=== V2 final analysis sample ===
+N = 7145 (after both window full-coverage filters)
+Birth years: 1986 - 1999 (14 cohorts)
+Age at survey: 25 - 38
+
+N by wave:
+# A tibble: 4 × 2
+   wave     n
+  <int> <int>
+1  2020  1659
+2  2021  1095
+3  2022  2473
+4  2024  1918

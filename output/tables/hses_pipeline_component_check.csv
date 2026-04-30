@@ -1,0 +1,16 @@
+﻿wave,component,required_vars,ok,note
+2020,basicvars controls/weights,"identif,newaimag,region,urban,location,hhsize,hhweight,month",True,
+2020,demographic/education/wage variables,"identif,ind_id,q0102,q0103,q0105y,q0106,q0210,q0213,q0404,q0436a,q0436b,q0437,q0438,q0439,q0427",True,
+2020,birth place variables used by pipeline,"q0113,q0114a,q0114b",True,Correct birth-place source. q0118a/b exist but are migration-origin questions.
+2021,basicvars controls/weights,"identif,newaimag,region,urban,location,hhsize,hhweight,month",True,
+2021,demographic/education/wage variables,"identif,ind_id,q0102,q0103,q0105y,q0106,q0210,q0213,q0404,q0436a,q0436b,q0437,q0438,q0439,q0427",True,
+2021,birth place variables used by pipeline,"q0113,q0114a,q0114b",True,Correct birth-place source. q0118a/b exist but are migration-origin questions.
+2022,basicvars controls/weights,"identif,newaimag,region,urban,location,hhsize,hhweight,month",True,
+2022,demographic/education/wage variables,"identif,ind_id,q0102,q0103,q0105y,q0106,q0210,q0213,q0404,q0436a,q0436b,q0437,q0438,q0439,q0427",True,
+2022,birth place variables used by pipeline,"q0113,q0114a,q0114b",True,Correct birth-place source. q0118a/b exist but are migration-origin questions.
+2023,basicvars controls/weights,"identif,newaimag,region,urban,location,hhsize,hhweight,month",True,
+2023,demographic/education/wage variables,"identif,ind_id,q0102,q0103,q0105y,q0106,q0210,q0213,q0404,q0436a,q0436b,q0437,q0438,q0439,q0427",False,
+2023,birth place variables used by pipeline,"q0113,q0114a,q0114b,q0117,q0118a,q0118b",False,2023 checked but not used in final pipeline.
+2024,basicvars controls/weights,"identif,newaimag,region,urban,location,hhsize,hhweight,month",True,
+2024,demographic/education/wage variables,"identif,ind_id,q0102,q0103,q0105y,q0106,q0210,q0213,q0404,q0436a,q0436b,q0437,q0438,q0439,q0427",True,
+2024,birth place variables used by pipeline,"q0117,q0118a,q0118b",True,Correct birth-place source; question shifted to 1.18.

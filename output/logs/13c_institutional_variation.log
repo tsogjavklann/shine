@@ -1,0 +1,14 @@
+13c_institutional_variation.R
+Started: 2026-04-26 18:40:34.889803 
+
+Hits: 51 
+# A tibble: 5 × 2
+  section                n_hits
+  <chr>                   <int>
+1 A_dormitory_access          5
+2 B_school_type              13
+3 C_soum_level_geography     11
+4 D_birthplace_type          15
+5 E_schooling_shocks          7
+
+13c complete.

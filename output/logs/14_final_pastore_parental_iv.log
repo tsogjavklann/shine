@@ -1,0 +1,47 @@
+14_final_pastore_parental_iv.R
+Started: 2026-04-26 21:24:08.626856 
+
+Parent IV basis: years-based 
+Complete parental-IV sample N: 1802 
+q_home required: TRUE 
+Weights used: TRUE 
+Birth aimag clusters: 22 
+
+OLS result:
+# A tibble: 1 × 4
+  term       estimate      se  p_value
+  <chr>         <dbl>   <dbl>    <dbl>
+1 educ_years   0.0420 0.00349 6.86e-11
+
+IV result:
+# A tibble: 1 × 4
+  term           estimate     se   p_value
+  <chr>             <dbl>  <dbl>     <dbl>
+1 fit_educ_years    0.101 0.0178 0.0000124
+
+First stage:
+# A tibble: 2 × 11
+  model      N joint_F_father_mother joint_F_p_value weak_iv_flag term  estimate
+  <chr>  <int>                 <dbl>           <dbl> <lgl>        <chr>    <dbl>
+1 First…  1802                  140.        3.09e-57 FALSE        fath…    0.196
+2 First…  1802                  140.        3.09e-57 FALSE        moth…    0.189
+# ℹ 4 more variables: se <dbl>, p_value <dbl>, cluster <chr>, weights <chr>
+
+Overidentification:
+# A tibble: 1 × 7
+  test                           source    statistic    df p_value result caveat
+  <chr>                          <chr>         <dbl> <dbl>   <dbl> <chr>  <chr> 
+1 Sargan overidentification test ivreg we…      5.42     1  0.0199 The o… Paren…
+
+q_home diagnostics:
+# A tibble: 1 × 14
+  N_nonmissing  mean    sd   min   p10   p25   p50   p75   p90   max n_unique
+         <int> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl>    <int>
+1         1802  1.45 0.391 0.782 0.948  1.05  1.46  1.74  1.95  2.30      323
+# ℹ 3 more variables: cor_educ_years <dbl>, cor_father_educ_years <dbl>,
+#   cor_mother_educ_years <dbl>
+
+Decision: Do not proceed to IVTR as the main causal design without revisiting IV strength/validity. 
+Saved IVTR-ready dataset: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/processed/ivtr_ready_pastore_parental_qhome.rds 
+
+Completed: 2026-04-26 21:24:10.094226 

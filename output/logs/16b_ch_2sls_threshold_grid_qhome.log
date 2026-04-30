@@ -1,0 +1,29 @@
+16b_ch_2sls_threshold_grid_qhome.R
+Started: 2026-04-26 22:06:05.703553 
+
+Candidate thresholds: 279 
+q_home p10: 0.9478157  p90: 1.957223 
+
+Grid diagnostics:
+Candidates: 279 
+Valid: 279 
+Skipped/invalid: 0 
+Warning-flagged: 0 
+
+Gamma hat table:
+# A tibble: 1 × 17
+  gamma_hat     N N_low N_high beta_low_2sls beta_high_2sls min_SSR_2SLS rank_X
+      <dbl> <int> <int>  <int>         <dbl>          <dbl>        <dbl>  <int>
+1      1.04  3188   793   2395         0.120         0.0909       45608.      7
+# ℹ 9 more variables: rank_Z <int>, rank_XPZX <int>,
+#   condition_number_XPZX <dbl>, warning_flag <lgl>, warning_note <chr>,
+#   n_candidates <int>, n_valid_grid_points <int>, n_skipped_or_invalid <int>,
+#   safe_for_stage16c <lgl>
+
+Warning summary:
+# A tibble: 0 × 2
+# ℹ 2 variables: warning_note <chr>, n <int>
+
+Decision: Proceed to Stage 16C GMM slope estimation. 
+
+Completed: 2026-04-26 22:06:11.646945 

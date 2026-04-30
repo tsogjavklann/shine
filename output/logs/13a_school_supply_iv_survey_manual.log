@@ -1,0 +1,26 @@
+13a_school_supply_iv_survey_manual.R
+Root: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine 
+
+Selected HSES: ./data/processed/analysis_sample.rds 
+Columns:
+ identif, ind_id, age, sex, marital, relation_head, educ_level, educ_years, work7d_pay, q0436a, q0436b, q0436c, q0437, q0438, q0439, q0427, birth_aimag, birth_soum, working_for_wage, aimag, newaimag_proxy, region, urban, location, hhsize, hhweight, month_interview, wave, year_month, birth_year, id, main_flag, annual_hours_t1, hourly_t1, hourly_t2, nominal_hourly, wage_method, ln_nominal_hourly, cpi_year_t1, cpi_year_t2, cpi_month_t2, cpi_ym_t2, cpi_t1, cpi_t2, cpi_used, real_hourly, lwage, cpi_source, q_home, n_years_home, q_new, n_years_new, reform_main, reform_fuzzy, reform_alt_1997, reform_alt_1999, exposure_intensity, age2, main_flag_25_60, sample_flag, is_female, is_married, region_f, location_f 
+
+Main HSES N: 18216 
+Survey rows: 24 
+Top 10 corrected FE:
+# A tibble: 10 × 12
+   iv_name iv_var   pi_hat    pi_p F_first beta_2sls se_2sls     N expected_sign
+   <chr>   <chr>     <dbl>   <dbl>   <dbl>     <dbl>   <dbl> <int> <chr>        
+ 1 studen… stude…   0.0476 0.00399   10.4     0.0315  0.107   5641 negative     
+ 2 mean s… mean_…   0.0813 0.0174     6.67    0.254   0.188   2095 negative     
+ 3 teache… teach… -18.6    0.0295     5.46   -0.0666  0.0996  5641 positive     
+ 4 studen… stude…   0.0238 0.0378     4.92    0.216   0.0946  7862 negative     
+ 5 school… schoo…   1.09   0.0896     3.17    0.0616  0.104   7145 negative     
+ 6 school… schoo…  -1.09   0.0896     3.17    0.0616  0.104   7145 positive     
+ 7 studen… stude…   0.0138 0.176      1.96    0.0421  0.0743  9077 negative     
+ 8 school… schoo…  -0.739  0.178      1.94    0.243   0.189   4910 negative     
+ 9 school… schoo…   0.739  0.178      1.94    0.243   0.189   4910 positive     
+10 mean t… mean_… -15.8    0.180      1.93    0.111   0.203   2095 positive     
+# ℹ 3 more variables: sign_ok <lgl>, verdict <chr>, notes <chr>
+Recommended IV: NONE 
+13a complete.

@@ -1,0 +1,28 @@
+- The project is out-of-sync -- use `renv::status()` for details.
+
+── 04_wage_construction.R — nominal hourly wage ────────────────────────────────
+ℹ Harmonized panel: 234690 мөр × 31 багана
+ℹ Filter (working_for_wage=1, 22-60 нас): 234690 → 45442 мөр; 
+ℹ Outlier trim (top/bottom 1% wave-аар): 860 мөр устсан.
+ℹ Эцсийн nominal wage panel: 43070 мөр.
+
+── Wage method хуваарилалт (wave × tier) ──
+
+# A tibble: 4 × 3
+   wave tier1 tier2
+  <int> <int> <int>
+1  2020 10891    14
+2  2021  6694     3
+3  2022 15117    32
+4  2024 10311     8
+── Wave-аар nominal hourly wage товчлол (MNT) ──
+
+# A tibble: 4 × 7
+   wave     n n_main mean_nominal median_nominal sd_nominal mean_lnominal
+  <int> <int>  <int>        <dbl>          <dbl>      <dbl>         <dbl>
+1  2020 10905  10313        4384.          3807.      2591.          8.24
+2  2021  6697   6341        4609.          4001.      2579.          8.31
+3  2022 15149  14319        5231.          4545.      3156.          8.42
+4  2024 10319   9806        8405.          7500       4408.          8.91
+✔ Гарц: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/processed/wage_nominal.rds  (43070 мөр)
+ℹ Дараагийн алхам: R/04b_cpi_deflator.R

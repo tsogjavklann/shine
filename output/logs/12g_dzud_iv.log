@@ -1,0 +1,158 @@
+- The project is out-of-sync -- use `renv::status()` for details.
+
+── STEP 1: dzud_panel.csv ачааллах (R/02b_clean_nso_xlsx.R-ийн гарц) ─────────────────────────────────────────────────────────────
+dzud_panel: 748 мөр × 10 багана
+Жилийн хүрээ: 1991-2024, аймаг: 22
+
+loss_rate quantiles:
+       50%        75%        90%        95%        99% 
+0.01937501 0.04712600 0.09674139 0.16603382 0.35165068 
+
+Dzud-years counted (any aimag, any year):
+  >=5%  loss rate: 172 aimag-years
+  >=10% loss rate: 70 aimag-years
+  Top 10%: 73 aimag-years
+
+Top 15 dzud-years:
+# A tibble: 34 × 4
+    year n_aimags_dzud5 n_aimags_dzud10 mean_loss_rate
+   <int>          <int>           <int>          <dbl>
+ 1  2001             22              13         0.153 
+ 2  2010             20              17         0.204 
+ 3  1993             17               2         0.0625
+ 4  2024             14               9         0.133 
+ 5  2000             13               4         0.0828
+ 6  2023             11               4         0.0632
+ 7  2002              8               7         0.0894
+ 8  2003              8               5         0.0562
+ 9  1995              7               0         0.0337
+10  2018              7               0         0.0375
+11  1994              6               1         0.0374
+12  2009              6               1         0.0360
+13  2021              5               2         0.0406
+14  1992              4               0         0.0370
+15  1998              3               1         0.0238
+# ℹ 19 more rows
+
+── STEP 4: Childhood dzud exposure (age 6-17) ────────────────────────────────────────────────────────────────────────────────────
+Exposure cells (aimag × birth_year): 1232
+Cells with at least 6 obs in childhood window: 682
+
+── STEP 5: First-stage F-statistic ───────────────────────────────────────────────────────────────────────────────────────────────
+Main sample N: 9077
+With dzud5_6_17 (n_obs>=6 in window): 9077 (100.0%)
+Warning message:
+The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+
+--- First stage: educ_years ~ dzud5_6_17 (count) ---
+             Estimate Std. Error   t value   Pr(>|t|)
+dzud5_6_17 -0.0856954 0.02321417 -3.691513 0.03448032
+Warning messages:
+1: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+2: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+
+IV F-stat (cluster-robust):
+F-test (1st stage), educ_years: stat = 12.475, p = 4.146e-4, on 1 and 9,067 DoF.
+
+2SLS β (educ_years):
+                Estimate Std. Error  t value   Pr(>|t|)
+fit_educ_years 0.2069395 0.05524289 3.745994 0.03320751
+The variable 'any_dzud5_6_17' has been removed because of collinearity (see $collin.var).
+Warning message:
+The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+
+--- First stage: educ_years ~ any_dzud5_6_17 (binary) ---
+any_dzud5_6_17 collinear (mean = 1.000); skipping
+Warning message:
+The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+
+--- First stage: educ_years ~ dzud5_intensity (share) ---
+                 Estimate Std. Error   t value    Pr(>|t|)
+dzud5_intensity -1.105202  0.1758647 -6.284388 0.008136649
+Warning messages:
+1: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+2: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+IV F-stat:
+F-test (1st stage), educ_years: stat = 14.775, p = 1.22e-4, on 1 and 9,067 DoF.
+Warning message:
+The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+
+--- First stage: educ_years ~ cum_loss_rate_6_17 (continuous sum) ---
+                     Estimate Std. Error   t value  Pr(>|t|)
+cum_loss_rate_6_17 -0.2312617  0.1090427 -2.120836 0.1240841
+Warning messages:
+1: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+2: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+IV F-stat:
+F-test (1st stage), educ_years: stat = 2.1091, p = 0.146455, on 1 and 9,067 DoF.
+Warning message:
+The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+
+--- First stage: educ_years ~ log_cum_loss ---
+               Estimate Std. Error   t value   Pr(>|t|)
+log_cum_loss -0.4117341  0.1426416 -2.886493 0.06319337
+Warning messages:
+1: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+2: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+IV F-stat:
+F-test (1st stage), educ_years: stat = 2.5625, p = 0.10946, on 1 and 9,067 DoF.
+Warning message:
+The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+
+--- First stage: educ_years ~ dzud_top10_6_17 (Top-10% threshold) ---
+                  Estimate Std. Error  t value   Pr(>|t|)
+dzud_top10_6_17 0.07337812 0.03039126 2.414448 0.09463865
+Warning messages:
+1: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+2: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+IV F-stat:
+F-test (1st stage), educ_years: stat = 4.7872, p = 0.028698, on 1 and 9,067 DoF.
+Warning message:
+The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+
+--- First stage: educ_years ~ max_loss_rate_6_17 (worst single year) ---
+                     Estimate Std. Error   t value    Pr(>|t|)
+max_loss_rate_6_17 -0.7789691 0.08220932 -9.475435 0.002491886
+Warning messages:
+1: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+2: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+IV F-stat:
+F-test (1st stage), educ_years: stat = 7.0482, p = 0.007948, on 1 and 9,067 DoF.
+
+── STEP 6: Heterogeneity check (rural × dzud) ────────────────────────────────────────────────────────────────────────────────────
+The variables 'rural' and 'dzud5_6_17:rural' have been removed because of collinearity (see
+$collin.var).
+First stage with rural interaction:
+             Estimate Std. Error   t value   Pr(>|t|)
+dzud5_6_17 -0.0856954 0.02321417 -3.691513 0.03448032
+Warning message:
+The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+
+── STEP 7: Collinearity with q_home (threshold variable) ─────────────────────────────────────────────────────────────────────────
+N: 9077
+cor(dzud5_6_17, q_home)      = 0.2995
+cor(any_dzud5_6_17, q_home)  = NA
+Warning message:
+In cor(cor_check$any_dzud5_6_17, cor_check$q_home) :
+  the standard deviation is zero
+cor(dzud5_intensity, q_home) = 0.3202
+(|cor| < 0.5 → IVTR-д ашиглах боломжтой)
+
+── STEP 8: Summary table ─────────────────────────────────────────────────────────────────────────────────────────────────────────
+Warning message:
+In cor(cor_check$any_dzud5_6_17, cor_check$q_home) :
+  the standard deviation is zero
+# A tibble: 7 × 8
+  spec                                N  pi_hat F_first beta_iv se_beta cor_qhome verdict                            
+  <chr>                           <int>   <dbl>   <dbl>   <dbl>   <dbl>     <dbl> <chr>                              
+1 dzud5_6_17 (count)               9077 -0.0857   12.5   0.207   0.0552    0.300  "✅ STRONG (F>=10, low cor)"       
+2 any_dzud5_6_17 (binary)          9077 NA        NA    NA      NA        NA      "\U0001f6a8 USELESS (F<1)"         
+3 dzud5_intensity (share)          9077 -1.11     14.8   0.195   0.0474    0.320  "✅ STRONG (F>=10, low cor)"       
+4 cum_loss_rate_6_17 (continuous)  9077 -0.231     2.11  0.566   0.0691    0.317  "❌ WEAK (F<5)"                    
+5 log_cum_loss (log)               9077 -0.412     2.56  0.531   0.0507    0.320  "❌ WEAK (F<5)"                    
+6 dzud_top10_6_17 (Top-10%)        9077  0.0734    4.79 -0.0594  0.0829   -0.0782 "❌ WEAK (F<5)"                    
+7 max_loss_rate_6_17 (worst yr)    9077 -0.779     7.05  0.272   0.0229    0.430  "\U0001f7e1 MARGINAL (F in [5,10))"
+
+Saved: output/tables/T2c_dzud_iv.csv
+
+── DZUD IV ANALYSIS COMPLETE ─────────────────────────────────────────────────────────────────────────────────────────────────────

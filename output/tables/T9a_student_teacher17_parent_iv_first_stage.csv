@@ -1,0 +1,2 @@
+model,N,t_stat,first_stage_F,weak_iv_flag_F_lt_10,term,estimate,se,p_value
+first stage on student_teacher_ratio_at_17 sample,1032,9.407950336333133,88.50952953091071,FALSE,parent_educ_mean,0.379047485632227,0.04029012399952416,5.57918544489017e-9

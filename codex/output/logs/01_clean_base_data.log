@@ -1,0 +1,88 @@
+01_clean_base_data.R
+Project root: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine 
+Output root: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/codex 
+
+Candidate HSES/data files searched: 24 
+# A tibble: 24 × 4
+   path                                               n_cols n_rows_sample score
+   <chr>                                               <int>         <int> <dbl>
+ 1 C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnom…     64         43070    19
+ 2 C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnom…     48         43070    16
+ 3 C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnom…     38         43070    14
+ 4 C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnom…     31        234690    11
+ 5 C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnom…     12            20    10
+ 6 C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnom…    177           300     5
+ 7 C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnom…    177           300     5
+ 8 C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnom…    177           300     5
+ 9 C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnom…    184           300     5
+10 C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnom…      9         43070     5
+11 C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnom…     27           300     4
+12 C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnom…     11           300     3
+13 C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnom…     11           300     3
+14 C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnom…     12           300     3
+15 C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnom…     12           300     3
+16 C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnom…     14           300     3
+17 C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnom…      8         43070     3
+18 C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnom…     12        234690     2
+19 C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnom…     90           300     1
+20 C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnom…     90           300     1
+21 C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnom…    111           300     1
+22 C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnom…     47           300     1
+23 C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnom…    132           300     1
+24 C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnom…      5            15     1
+
+Selected HSES file: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/processed/analysis_sample.rds 
+
+Available HSES column names:
+identif, ind_id, age, sex, marital, relation_head, educ_level, educ_years, work7d_pay, q0436a, q0436b, q0436c, q0437, q0438, q0439, q0427, birth_aimag, birth_soum, working_for_wage, aimag, newaimag_proxy, region, urban, location, hhsize, hhweight, month_interview, wave, year_month, birth_year, id, main_flag, annual_hours_t1, hourly_t1, hourly_t2, nominal_hourly, wage_method, ln_nominal_hourly, cpi_year_t1, cpi_year_t2, cpi_month_t2, cpi_ym_t2, cpi_t1, cpi_t2, cpi_used, real_hourly, lwage, cpi_source, q_home, n_years_home, q_new, n_years_new, reform_main, reform_fuzzy, reform_alt_1997, reform_alt_1999, exposure_intensity, age2, main_flag_25_60, sample_flag, is_female, is_married, region_f, location_f 
+
+Variable mapping:
+# A tibble: 17 × 2
+   standard_name source_name
+   <chr>         <chr>      
+ 1 id            id         
+ 2 identif       identif    
+ 3 ind_id        ind_id     
+ 4 educ_years    educ_years 
+ 5 wage          real_hourly
+ 6 ln_wage       lwage      
+ 7 birth_year    birth_year 
+ 8 birth_aimag   birth_aimag
+ 9 age           age        
+10 age2          age2       
+11 sex           is_female  
+12 married       is_married 
+13 urban         urban      
+14 hhweight      hhweight   
+15 wave          wave       
+16 region        region     
+17 hhsize        hhsize     
+
+HSES rows loaded: 43070 
+HSES clean wage-earner sample rows: 18216 
+Birth year range: 1960 - 1999 
+Birth aimag matched rows: 18216 
+
+Livestock count XLSX: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/МАЛЫН ТОО, малын төрөл, аймаг, нийслэл, жилээр.xlsx 
+Livestock aimag mortality XLSX: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/ТОМ МАЛЫН ЗҮЙ БУС ХОРОГДОЛ, малын төрөл, аймаг, нийслэл, жилээр.xlsx 
+Bag/khoroo mortality XLSX listed in task was not found locally; using aimag-level mortality workbook.
+
+Livestock count rows: 7062 
+Livestock mortality rows: 4488 
+Count years: 1970 - 2024 
+Loss years: 1991 - 2024 
+
+Dzud panel rows: 1180 
+Dzud panel nonmissing loss_rate rows: 747 
+Dzud5 events: 178 
+Dzud10 events: 70 
+Dzud p75 events: 204 
+
+Saved:
+ - C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/codex/data/cleaned/hses_clean.rds 
+ - C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/codex/data/cleaned/dzud_panel.rds 
+ - C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/codex/data/cleaned/dzud_panel.csv 
+ - C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/codex/data/cleaned/livestock_by_animal.rds 
+ - C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/codex/data/cleaned/loss_by_animal.rds 
+
+01_clean_base_data.R complete.

@@ -1,0 +1,16 @@
+item,value
+N,3188
+num_trees,2000
+X_features,48
+mean_tau_log,0.10690480791125612
+median_tau_log,0.10055405752881708
+sd_tau_log,0.035088922597840716
+p10_tau_log,0.06687377296811503
+p90_tau_log,0.1556453480969681
+mean_return_pct,11.351797778429843
+median_return_pct,10.578341600835383
+p10_return_pct,6.916051269850709
+p90_return_pct,16.841175371895865
+OLS_beta_log_reference,0.0472347212262099
+IV_2SLS_beta_log_reference,0.10332046757685122
+threshold_gamma_reference,19.53062264661216

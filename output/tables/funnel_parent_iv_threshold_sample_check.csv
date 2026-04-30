@@ -1,0 +1,7 @@
+﻿step,description,N,age_min,age_max,birth_year_min,birth_year_max
+1,25-60 wage earners with log wage and education years,40779,25.0,60.0,1960,1999
+2,Step 1 + child of household head,3710,25.0,60.0,1960,1999
+3,Step 2 + age 25-41,3335,25.0,41.0,1979,1999
+4,Step 3 + birth aimag and STR 17/18 found,3188,25.0,41.0,1983,1999
+5,Step 4 + parent education mean nonmissing (final logic),3188,25.0,41.0,1983,1999
+final_script,Script final complete-case replication,3188,25.0,41.0,1983,1999

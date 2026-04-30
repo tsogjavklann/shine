@@ -1,0 +1,25 @@
+path,n_cols,n_rows_sample,score
+C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/processed/analysis_sample.rds,64,43070,19
+C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/processed/wage_real.rds,48,43070,16
+C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/processed/wage_nominal.rds,38,43070,14
+C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/processed/hses_harmonized.rds,31,234690,11
+C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/output/logs/07_analysis_sample_head.csv,12,20,10
+C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/hses_2020/02_indiv (12).dta,177,300,5
+C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/hses_2021/02_indiv (13).dta,177,300,5
+C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/hses_2022/02_indiv (14).dta,177,300,5
+C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/hses_2024/02_indiv.dta,184,300,5
+C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/processed/school_access.rds,9,43070,5
+C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/hses_2023/02_indiv (15).dta,27,300,4
+C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/hses_2020/basicvars (11).dta,11,300,3
+C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/hses_2021/basicvars (12).dta,11,300,3
+C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/hses_2022/basicvars (13).dta,12,300,3
+C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/hses_2023/basicvars (14).dta,12,300,3
+C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/hses_2024/basicvars.dta,14,300,3
+C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/processed/iv_assignment.rds,8,43070,3
+C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/processed/family_structure.rds,12,234690,2
+C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/hses_2020/01_hhold (11).dta,90,300,1
+C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/hses_2021/01_hhold (12).dta,90,300,1
+C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/hses_2022/01_hhold (13).dta,111,300,1
+C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/hses_2023/01_hhold (14).dta,47,300,1
+C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/hses_2024/01_hhold.dta,132,300,1
+C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/raw/hses_raw.rds,5,15,1

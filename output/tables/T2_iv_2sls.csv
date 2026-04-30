@@ -1,0 +1,3 @@
+spec,N,beta_iv,se_2way,se_1way,se_HC1,KP_F,ivf1_F,wald_1st_F,DWH_p,AR_CI_low,AR_CI_high
+"Main A 2SLS (reform_main, no loc FE)",8575,0.89097,0.79878,1.29788,2.93617,NA,0.11768,0.54397,0.07314,-1.10903,2.89097
+"Main B 2SLS (reform_main, + loc FE)",8575,0.82721,0.65826,1.04989,2.48914,NA,0.14146,0.66004,0.06988,-1.17279,2.82721

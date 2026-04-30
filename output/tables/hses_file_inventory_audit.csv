@@ -1,0 +1,16 @@
+﻿wave,file_type,file,n_rows,n_cols
+2020,basicvars,data\hses_2020\basicvars (11).dta,16460,11
+2020,hhold,data\hses_2020\01_hhold (11).dta,16460,90
+2020,indiv,data\hses_2020\02_indiv (12).dta,59737,177
+2021,basicvars,data\hses_2021\basicvars (12).dta,11199,11
+2021,hhold,data\hses_2021\01_hhold (12).dta,11199,90
+2021,indiv,data\hses_2021\02_indiv (13).dta,40129,177
+2022,basicvars,data\hses_2022\basicvars (13).dta,22995,12
+2022,hhold,data\hses_2022\01_hhold (13).dta,22995,111
+2022,indiv,data\hses_2022\02_indiv (14).dta,80926,177
+2023,basicvars,data\hses_2023\basicvars (14).dta,8550,12
+2023,hhold,data\hses_2023\01_hhold (14).dta,8550,47
+2023,indiv,data\hses_2023\02_indiv (15).dta,30284,27
+2024,basicvars,data\hses_2024\basicvars.dta,15513,14
+2024,hhold,data\hses_2024\01_hhold.dta,15513,132
+2024,indiv,data\hses_2024\02_indiv.dta,53898,184

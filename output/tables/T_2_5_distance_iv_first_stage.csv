@@ -1,0 +1,4 @@
+spec,N,pi_dist,se_2way,t_stat,p_value,F_dist,R2_adj
+"1) distance only, wave FE",21009,-2.1e-4,1.1e-4,-2.03104,0.04225,4.12514,0.06443
+2) distance + region FE + wave FE,21009,-1.4e-4,9e-5,-1.5792,0.11429,2.49388,0.08145
+3) + location FE (Main B-style),21009,-1.4e-4,8e-5,-1.69108,0.09082,2.85975,0.08732

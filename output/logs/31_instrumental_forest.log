@@ -1,0 +1,66 @@
+31_instrumental_forest.R
+Started: 2026-04-28 14:43:31.230603 
+
+Sample N: 3188 
+X columns: 48 
+Trees: 2000 
+Threads: 3 
+Clusters: 22 
+
+Saved figure: C:/Users/Tsogbayar/Downloads/shine-main (1)/shine-main/output/figures/instrumental_forest_tau_distribution.png 
+Saved figure: C:/Users/Tsogbayar/Downloads/shine-main (1)/shine-main/output/figures/instrumental_forest_tau_by_student_teacher_ratio.png 
+Saved figure: C:/Users/Tsogbayar/Downloads/shine-main (1)/shine-main/output/figures/instrumental_forest_variable_importance.png 
+
+Summary:
+# A tibble: 15 × 2
+   item                           value
+   <chr>                          <dbl>
+ 1 N                          3188     
+ 2 num_trees                  2000     
+ 3 X_features                   48     
+ 4 mean_tau_log                  0.107 
+ 5 median_tau_log                0.101 
+ 6 sd_tau_log                    0.0351
+ 7 p10_tau_log                   0.0669
+ 8 p90_tau_log                   0.156 
+ 9 mean_return_pct              11.4   
+10 median_return_pct            10.6   
+11 p10_return_pct                6.92  
+12 p90_return_pct               16.8   
+13 OLS_beta_log_reference        0.0472
+14 IV_2SLS_beta_log_reference    0.103 
+15 threshold_gamma_reference    19.5   
+
+Tau quartiles:
+# A tibble: 4 × 9
+  tau_group_label     N mean_tau_log mean_return_pct median_student_teacher_ra…¹
+  <chr>           <int>        <dbl>           <dbl>                       <dbl>
+1 Доод 25%          797       0.0671            6.95                        20.1
+2 Дунд-доод 25%     797       0.0909            9.52                        20.6
+3 Дунд-дээд 25%     797       0.113            12.0                         23.1
+4 Дээд 25%          797       0.156            16.9                         19.6
+# ℹ abbreviated name: ¹​median_student_teacher_ratio_17_18
+# ℹ 4 more variables: urban_share <dbl>, female_share <dbl>, mean_age <dbl>,
+#   mean_parent_educ <dbl>
+
+Threshold regimes:
+# A tibble: 2 × 8
+  threshold_regime     N mean_tau_log mean_return_pct median_student_teacher_r…¹
+  <chr>            <int>        <dbl>           <dbl>                      <dbl>
+1 Доод STR регим    1051        0.112            12.0                       17.8
+2 Дээд STR регим    2137        0.104            11.0                       22.6
+# ℹ abbreviated name: ¹​median_student_teacher_ratio_17_18
+# ℹ 3 more variables: urban_share <dbl>, female_share <dbl>, mean_age <dbl>
+
+Variable importance by family:
+# A tibble: 6 × 3
+  family                 importance  share
+  <chr>                       <dbl>  <dbl>
+1 Хувийн шинж                0.480  0.480 
+2 Сургуулийн хүртээмж        0.192  0.192 
+3 Сурагч-багшийн харьцаа     0.152  0.152 
+4 Судалгааны давалгаа        0.102  0.102 
+5 Төрсөн үе                  0.0729 0.0729
+6 Төрсөн аймаг               0      0     
+
+Finished: 2026-04-28 14:44:06.120175 

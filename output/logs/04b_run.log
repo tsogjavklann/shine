@@ -1,0 +1,27 @@
+﻿- The project is out-of-sync -- use `renv::status()` for details.
+
+── 04b_cpi_deflator.R — two CPI series + real hourly wage ──────────────────────
+ℹ Nominal wage panel: 43070 мөр; columns include wage_method
+→ CPI source-ийг туршиж байна: aimag_monthly (DT_NSO_0500_021V1)
+! NSO API attempt 1/3 failed for [DT_NSO_0500_021V1]: 'all_data' is not an exported object from 'namespace:NSO1212'
+! NSO API attempt 2/3 failed for [DT_NSO_0500_021V1]: 'all_data' is not an exported object from 'namespace:NSO1212'
+! NSO API attempt 3/3 failed for [DT_NSO_0500_021V1]: 'all_data' is not an exported object from 'namespace:NSO1212'
+→ CPI source-ийг туршиж байна: natl_monthly (DT_NSO_0500_001V1)
+! NSO API attempt 1/3 failed for [DT_NSO_0500_001V1]: 'all_data' is not an exported object from 'namespace:NSO1212'
+! NSO API attempt 2/3 failed for [DT_NSO_0500_001V1]: 'all_data' is not an exported object from 'namespace:NSO1212'
+! NSO API attempt 3/3 failed for [DT_NSO_0500_001V1]: 'all_data' is not an exported object from 'namespace:NSO1212'
+→ CPI source-ийг туршиж байна: natl_annual (DT_NSO_0500_002V1)
+! NSO API attempt 1/3 failed for [DT_NSO_0500_002V1]: 'all_data' is not an exported object from 'namespace:NSO1212'
+! NSO API attempt 2/3 failed for [DT_NSO_0500_002V1]: 'all_data' is not an exported object from 'namespace:NSO1212'
+! NSO API attempt 3/3 failed for [DT_NSO_0500_002V1]: 'all_data' is not an exported object from 'namespace:NSO1212'
+Error:
+! CPI series олдсонгүй. Сонголтууд:
+1) `NSO1212::all_tables()`-аар жинхэнэ table ID олж скриптэд оруулах
+2) data/auxiliary/cpi_manual.csv үүсгэх (багана: aimag, year, month, cpi)
+Backtrace:
+    ▆
+ 1. └─cli::cli_abort(...)
+ 2.   └─rlang::abort(...)
+Execution halted
+
+

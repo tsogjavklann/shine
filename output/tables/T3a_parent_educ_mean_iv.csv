@@ -1,0 +1,3 @@
+model,iv_basis,N,beta_educ_years,se,p_value,first_stage_F,first_stage_p_value,weak_iv_flag,just_identified,interpretation_note,cluster,weights
+M0_OLS,years-based,3710,0.048713508465069,0.003434842632656821,7.360999732410177e-13,NA,NA,NA,NA,OLS association conditional on controls and fixed effects.,birth_aimag,hhweight
+M1_parent_educ_mean_IV,years-based,3710,0.10018381078925596,0.011676506459306766,1.2645827106905338e-8,602.2311168710968,2.5003469352819195e-123,FALSE,TRUE,"Just-identified parent_educ_mean IV; overidentification does not apply. Parent education may affect wages through family background, networks, and unobserved ability channels.",birth_aimag,hhweight

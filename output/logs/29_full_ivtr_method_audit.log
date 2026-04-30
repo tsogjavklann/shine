@@ -1,0 +1,14 @@
+29_full_ivtr_method_audit.R
+Started: 2026-04-27 10:55:20.384233 
+
+
+Wrote audit tables:
+- C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/output/tables/T15a_full_ivtr_data_construction_audit.csv
+- C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/output/tables/T15b_full_ivtr_iv_audit.csv
+- C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/output/tables/T15c_full_ivtr_threshold_validity_audit.csv
+- C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/output/tables/T15d_full_ivtr_ch_estimation_audit.csv
+- C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/output/tables/T15e_full_ivtr_bootstrap_inference_audit.csv
+- C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/output/tables/T15f_full_ivtr_threshold_comparison.csv
+- C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/output/tables/T15g_full_ivtr_final_methodology_verdict.csv
+Report: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/output/reports/full_ivtr_method_audit_report.md 
+Completed: 2026-04-27 10:55:23.187778 

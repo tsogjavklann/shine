@@ -1,0 +1,32 @@
+- The project is out-of-sync -- use `renv::status()` for details.
+
+── 04b_cpi_deflator.R — two CPI series + real hourly wage ──────────────────────
+ℹ Nominal wage panel: 43070 мөр
+→ NSO PXWeb fetch attempt 1/3...
+! HTTP 400
+→ NSO PXWeb fetch attempt 2/3...
+! HTTP 400
+→ NSO PXWeb fetch attempt 3/3...
+! HTTP 400
+! NSO API failed — falling back to manual CSV
+✔ Manual CSV: 72 rows
+✔ Rebased to 2020=100 (base avg raw=99.5); 
+ℹ Annual range: [92.9, 143.1]; 
+
+── Wave × tier: nominal vs real hourly wage ──
+
+# A tibble: 8 × 6
+   wave wage_method     n mean_cpi mean_nom mean_real
+  <int> <chr>       <int>    <dbl>    <dbl>     <dbl>
+1  2020 tier1       10891    100      4385.     4385.
+2  2020 tier2          14     98.3    3963.     3993.
+3  2021 tier1        6694    108.     4609.     4270.
+4  2021 tier2           3    107.     3635.     3384.
+5  2022 tier1       15117    123.     5235.     4249.
+6  2022 tier2          32    120.     3323.     2752.
+7  2024 tier1       10311    143.     8406.     5876.
+8  2024 tier2           8    143.     7333.     5135.
+ℹ Missing cpi_used rows: 0
+Total: 0.7 sec elapsed
+✔ Гарц: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/processed/wage_real.rds  (43070 мөр)
+ℹ Дараагийн алхам: R/05_education_supply.R

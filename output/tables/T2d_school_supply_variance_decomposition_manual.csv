@@ -1,0 +1,31 @@
+iv_var,absorbed_by,N,r2_absorbed
+mean_student_teacher_ratio_age7_15,birth_aimag + birth_cohort FE,2095,0.6169646715880046
+mean_student_teacher_ratio_age7_15,birth_aimag FE,2095,0.4969578712437587
+mean_student_teacher_ratio_age7_15,region + wave FE,2095,0.05389937039925119
+mean_teachers_per_student_age7_15,birth_aimag + birth_cohort FE,2095,0.5826578066697551
+mean_teachers_per_student_age7_15,birth_aimag FE,2095,0.4457897930806862
+mean_teachers_per_student_age7_15,region + wave FE,2095,0.053806831090061236
+school_closure_rate_at_12,birth_aimag + birth_cohort FE,4910,0.14207341080971303
+school_closure_rate_at_12,birth_aimag FE,4910,0.12729717697689624
+school_closure_rate_at_12,region + wave FE,4910,6.134655933973665e-4
+school_closure_rate_at_15,birth_aimag + birth_cohort FE,7145,0.10320733896642842
+school_closure_rate_at_15,birth_aimag FE,7145,0.09436161938172993
+school_closure_rate_at_15,region + wave FE,7145,0.0027039389623711996
+school_growth_rate_at_12,birth_aimag + birth_cohort FE,4910,0.14207341080971303
+school_growth_rate_at_12,birth_aimag FE,4910,0.12729717697689624
+school_growth_rate_at_12,region + wave FE,4910,6.134655933973665e-4
+school_growth_rate_at_15,birth_aimag + birth_cohort FE,7145,0.10320733896642842
+school_growth_rate_at_15,birth_aimag FE,7145,0.09436161938172993
+school_growth_rate_at_15,region + wave FE,7145,0.0027039389623711996
+student_teacher_ratio_at_12,birth_aimag + birth_cohort FE,5641,0.5274459035154613
+student_teacher_ratio_at_12,birth_aimag FE,5641,0.1652058728784972
+student_teacher_ratio_at_12,region + wave FE,5641,0.03003069551343418
+student_teacher_ratio_at_15,birth_aimag + birth_cohort FE,7862,0.3989526396736137
+student_teacher_ratio_at_15,birth_aimag FE,7862,0.15761695743207005
+student_teacher_ratio_at_15,region + wave FE,7862,0.015237514077356629
+student_teacher_ratio_at_17,birth_aimag + birth_cohort FE,9077,0.45229844920215345
+student_teacher_ratio_at_17,birth_aimag FE,9077,0.18711765415393256
+student_teacher_ratio_at_17,region + wave FE,9077,0.010187045161496822
+teachers_per_student_at_12,birth_aimag + birth_cohort FE,5641,0.5245931606553392
+teachers_per_student_at_12,birth_aimag FE,5641,0.12914989766564122
+teachers_per_student_at_12,region + wave FE,5641,0.039579545847917785

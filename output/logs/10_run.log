@@ -1,0 +1,35 @@
+- The project is out-of-sync -- use `renv::status()` for details.
+
+── 10_ols_baseline.R — Mincer OLS (Main A + Main B + sensitivity) ──────────────
+ℹ MAIN home_aimag sample (complete cases): 9077 rows
+Warning messages:
+1: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+2: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+3: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+4: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+5: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+6: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+7: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+8: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+
+── T2 OLS baseline + sensitivity ──
+
+# A tibble: 4 × 8
+  spec                         N beta_educ se_2way se_1way  se_HC1 F_test R2_adj
+  <chr>                    <int>     <dbl>   <dbl>   <dbl>   <dbl>  <dbl>  <dbl>
+1 Main A (no location FE)   9077    0.0594 0.00222 0.00192 0.00198  355.   0.269
+2 Main B (+ location FE)    9077    0.0592 0.00231 0.00207 0.00198  352.   0.269
+3 Sens. drop urban (rural…  1661    0.0600 0.00571 0.00538 0.00479   56.7  0.203
+4 Sens. drop UB (non-UB o…  4508    0.0540 0.00525 0.00316 0.0028   175.   0.235
+── SE comparison (ratio 2way / one-way / HC1) ──
+
+# A tibble: 4 × 3
+  spec                        ratio_2way_1way ratio_2way_HC1
+  <chr>                                 <dbl>          <dbl>
+1 Main A (no location FE)                1.16           1.12
+2 Main B (+ location FE)                 1.12           1.17
+3 Sens. drop urban (rural+UB)            1.06           1.19
+4 Sens. drop UB (non-UB only)            1.66           1.88
+Total: 0.63 sec elapsed
+✔ Гарц: T2_ols_baseline.csv + 10_se_comparison.csv
+ℹ Дараагийн алхам: R/11_iv_2sls.R

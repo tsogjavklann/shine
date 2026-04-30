@@ -1,0 +1,161 @@
+﻿wave,file_type,var_name,role,present,n_rows,nonmissing,pct_nonmissing,n_unique_nonmissing,label,sample_values,file
+2020,basicvars,identif,household id / merge key,True,16460,16460,100.0,16460,group(identif),1; 2; 3; 4; 5; 6; 7; 8,data\hses_2020\basicvars (11).dta
+2020,basicvars,newaimag,current aimag / proxy when born in current place,True,16460,16460,100.0,22,New code of aimag,21; 22; 23; 41; 42; 43; 44; 45,data\hses_2020\basicvars (11).dta
+2020,basicvars,region,region control,True,16460,16460,100.0,5,Region,4; 3; 2; 1; 5,data\hses_2020\basicvars (11).dta
+2020,basicvars,urban,urban/rural control,True,16460,16460,100.0,2,Urban/rural,1; 2,data\hses_2020\basicvars (11).dta
+2020,basicvars,location,location control,True,16460,16460,100.0,4,Strata 4 locations,2; 4; 3; 1,data\hses_2020\basicvars (11).dta
+2020,basicvars,hhsize,household size,True,16460,16460,100.0,15,Household size,5; 1; 2; 6; 4; 3; 8; 7,data\hses_2020\basicvars (11).dta
+2020,basicvars,hhweight,survey weight,True,16460,16460,100.0,48,Last weight,53.224998474121094; 29.23177146911621; 22.337499618530273; 33.50520706176758; 26.912500381469727; 46.59635543823242; 19.941667556762695; 59.48176956176758,data\hses_2020\basicvars (11).dta
+2020,basicvars,month,interview month / CPI merge,True,16460,16460,100.0,12,Calendar month of the interview,3; 2; 1; 6; 5; 4; 7; 9,data\hses_2020\basicvars (11).dta
+2020,indiv,identif,household id / merge key,True,59737,59737,100.0,16460,group(identif),1; 2; 3; 4; 5; 6; 7; 8,data\hses_2020\02_indiv (12).dta
+2020,indiv,ind_id,person id / merge key,True,59737,59737,100.0,16,Хувийн дугаар,1; 2; 3; 4; 5; 6; 7; 8,data\hses_2020\02_indiv (12).dta
+2020,indiv,q0102,relation to household head,True,59737,59737,100.0,11,1.02 Өрхийн тэргүүлэгчтэй ямар хамааралтай в,1; 2; 3; 9; 4; 7; 5; 10,data\hses_2020\02_indiv (12).dta
+2020,indiv,q0103,sex,True,59737,59737,100.0,2,1.03 Хүйс,1; 2,data\hses_2020\02_indiv (12).dta
+2020,indiv,q0105y,age in years,True,59737,59737,100.0,101,1.05 Нас /жил/,36; 16; 8; 2; 58; 59; 55; 28,data\hses_2020\02_indiv (12).dta
+2020,indiv,q0105m,age/birth month if available,True,59737,1328,2.22,11,1.05 Нас /сар/,6; 11; 8; 2; 1; 3; 9; 7,data\hses_2020\02_indiv (12).dta
+2020,indiv,q0106,marital status,True,59737,40157,67.22,6,1.06 Гэрлэлтийн байдал,2; 1; 6; 5; 3; 4,data\hses_2020\02_indiv (12).dta
+2020,indiv,q0107,spouse person id,True,59737,24409,40.86,13,1.07 Эхнэр нөхрийн хувийн дугаар,2; 1; 98; 8; 3; 5; 4; 6,data\hses_2020\02_indiv (12).dta
+2020,indiv,q0113,"born in current place flag, 2020-2022",True,59737,58162,97.36,2,1.13 [НЭР] энэ нутагт төрсөн үү?,1; 2,data\hses_2020\02_indiv (12).dta
+2020,indiv,q0114a,birth aimag for 2020-2022,True,59737,17434,29.18,37,1.14 [НЭР] хаана төрсөн бэ? Аймаг/ Нийслэл,21; 22; 62; 23; 41; 43; 45; 11,data\hses_2020\02_indiv (12).dta
+2020,indiv,q0114b,birth soum for 2020-2022,True,59737,17317,28.99,27,1.14 [НЭР] хаана төрсөн бэ? Сум/ дүүрэг,13; 37; 4; 22; 46; 10; 7; 43,data\hses_2020\02_indiv (12).dta
+2020,indiv,q0117,"born in current place flag, 2024",True,59737,15077,25.24,5,1.17 [НЭР] хамгийн сүүлд хаанаас шилжиж ирсэн,3; 2; 1; 4; 5,data\hses_2020\02_indiv (12).dta
+2020,indiv,q0118a,birth aimag in 2024; migration aimag in 2020-2022,True,59737,15077,25.24,41,"1.18 [НЭР] хамгийн сүүлд аль аймаг, сумаас шил",21; 62; 22; 23; 43; 11; 65; 85,data\hses_2020\02_indiv (12).dta
+2020,indiv,q0118b,birth soum in 2024; migration soum in 2020-2022,True,59737,14859,24.87,27,"1.18 [НЭР] хамгийн сүүлд аль аймаг, сумаас шил",4; 22; 46; 10; 7; 43; 25; 19,data\hses_2020\02_indiv (12).dta
+2020,indiv,q0210,education level,True,59737,51238,85.77,10,2.10 [НЭР]-ын/ийн эзэмшсэн  боловсролын дээд т,2; 3; 1; 8; 5; 4; 6; 7,data\hses_2020\02_indiv (12).dta
+2020,indiv,q0213,total schooling years,True,59737,51238,85.77,25,2.13 [НЭР] нийт хэдэн жил сургуульд  суралцсан,7; 8; 10; 3; 14; 12; 1; 5,data\hses_2020\02_indiv (12).dta
+2020,indiv,q0404,paid work in last 7 days,True,59737,51352,85.96,2,4.04 [НЭР] сүүлийн 7 хоногт наад зах нь 1 цаг ям,1; 2,data\hses_2020\02_indiv (12).dta
+2020,indiv,q0436a,"main job wage amount, component used in wage construction",True,59737,14295,23.93,653,4.36 [НЭР] нь сүүлийн 12 сард үндсэн ажлаасаа х,850000; 250000; 500000; 320000; 540000; 800000; 650000; 780000,data\hses_2020\02_indiv (12).dta
+2020,indiv,q0436b,"main job wage amount, component used in wage construction",True,59737,14294,23.93,1465,4.36 [НЭР] нь сүүлийн 12 сард үндсэн ажлаасаа х,10200000; 750000; 6000000; 2560000; 6480000; 9600000; 7800000; 9360000,data\hses_2020\02_indiv (12).dta
+2020,indiv,q0436c,"main job wage component, extra/reference",True,59737,14295,23.93,421,4.36 [НЭР] нь сүүлийн 12 сард үндсэн ажлаасаа х,0; 300000; 720000; 700000; 29000; 6840000; 14400000; 2000000,data\hses_2020\02_indiv (12).dta
+2020,indiv,q0437,months worked in last 12 months,True,59737,22750,38.08,12,4.37 [НЭР] энэ ажлыг хэдэн сар хийсэн бэ?,12; 5; 3; 8; 4; 2; 6; 11,data\hses_2020\02_indiv (12).dta
+2020,indiv,q0438,days per month worked,True,59737,22750,38.08,30,4.38 [НЭР] ажилласан сарууддаа энэ ажилд сард,15; 30; 6; 20; 21; 25; 22; 28,data\hses_2020\02_indiv (12).dta
+2020,indiv,q0439,hours per day worked,True,59737,22750,38.08,22,4.39 [НЭР] ажилласан саруудын өдрүүддээ энэ а,10; 24; 8; 11; 12; 7; 9; 6,data\hses_2020\02_indiv (12).dta
+2020,indiv,q0427,hours worked in last 7 days,True,59737,20997,35.15,88,4.27 [НЭР] сүүлийн 7 хоногт үндсэн ажилдаа ний,24; 10; 8; 70; 20; 40; 72; 0,data\hses_2020\02_indiv (12).dta
+2021,basicvars,identif,household id / merge key,True,11199,11199,100.0,11199,group(identif),1; 2; 3; 4; 5; 6; 7; 8,data\hses_2021\basicvars (12).dta
+2021,basicvars,newaimag,current aimag / proxy when born in current place,True,11199,11199,100.0,21,New code of aimag,21; 22; 23; 41; 43; 44; 45; 46,data\hses_2021\basicvars (12).dta
+2021,basicvars,region,region control,True,11199,11199,100.0,5,Region,4; 3; 2; 1; 5,data\hses_2021\basicvars (12).dta
+2021,basicvars,urban,urban/rural control,True,11199,11199,100.0,2,Urban/rural,1; 2,data\hses_2021\basicvars (12).dta
+2021,basicvars,location,location control,True,11199,11199,100.0,4,Strata 4 locations,2; 4; 3; 1,data\hses_2021\basicvars (12).dta
+2021,basicvars,hhsize,household size,True,11199,11199,100.0,12,Household size,3; 4; 1; 6; 2; 5; 7; 8,data\hses_2021\basicvars (12).dta
+2021,basicvars,hhweight,survey weight,True,11199,11199,100.0,41,,108.61666870117188; 60.86458206176758; 47.04999923706055; 68.59896087646484; 55.21666717529297; 64.28819274902344; 41.150001525878906; 61.55208206176758,data\hses_2021\basicvars (12).dta
+2021,basicvars,month,interview month / CPI merge,True,11199,11199,100.0,12,Calendar month of the interview,2; 1; 3; 5; 6; 4; 8; 9,data\hses_2021\basicvars (12).dta
+2021,indiv,identif,household id / merge key,True,40129,40129,100.0,11199,group(identif),1; 2; 3; 4; 5; 6; 7; 8,data\hses_2021\02_indiv (13).dta
+2021,indiv,ind_id,person id / merge key,True,40129,40129,100.0,13,Хувийн дугаар,1; 2; 3; 4; 5; 6; 7; 8,data\hses_2021\02_indiv (13).dta
+2021,indiv,q0102,relation to household head,True,40129,40129,100.0,11,1.02 Өрхийн тэргүүлэгчтэй ямар хамааралтай вэ?,1; 2; 3; 4; 5; 9; 6; 7,data\hses_2021\02_indiv (13).dta
+2021,indiv,q0103,sex,True,40129,40129,100.0,2,1.03 Хүйс,1; 2,data\hses_2021\02_indiv (13).dta
+2021,indiv,q0105y,age in years,True,40129,40129,100.0,98,1.05 Нас /жил/,61; 57; 31; 48; 21; 65; 55; 51,data\hses_2021\02_indiv (13).dta
+2021,indiv,q0105m,age/birth month if available,True,40129,790,1.97,11,1.05 Нас /сар/,4; 10; 7; 8; 5; 11; 9; 2,data\hses_2021\02_indiv (13).dta
+2021,indiv,q0106,marital status,True,40129,26991,67.26,6,1.06 Гэрлэлтийн байдал,2; 1; 3; 5; 6; 4,data\hses_2021\02_indiv (13).dta
+2021,indiv,q0107,spouse person id,True,40129,16297,40.61,11,1.07 Эхнэр нөхрийн хувийн дугаар,2; 1; 3; 98; 6; 8; 7; 5,data\hses_2021\02_indiv (13).dta
+2021,indiv,q0113,"born in current place flag, 2020-2022",True,40129,39290,97.91,2,1.13 [НЭР] энэ нутагт төрсөн үү?,2; 1,data\hses_2021\02_indiv (13).dta
+2021,indiv,q0114a,birth aimag for 2020-2022,True,40129,10957,27.3,38,1.14 [НЭР] хаана төрсөн бэ? Аймаг/ Нийслэл,85; 62; 11; 21; 43; 82; 64; 22,data\hses_2021\02_indiv (13).dta
+2021,indiv,q0114b,birth soum for 2020-2022,True,40129,10878,27.11,27,1.14 [НЭР] хаана төрсөн бэ? Сум/ дүүрэг,25; 4; 16; 19; 37; 28; 34; 13,data\hses_2021\02_indiv (13).dta
+2021,indiv,q0117,"born in current place flag, 2024",True,40129,9500,23.67,5,1.17 [НЭР] хамгийн сүүлд хаанаас шилжиж ирсэн бэ?,3; 4; 2; 1; 5,data\hses_2021\02_indiv (13).dta
+2021,indiv,q0118a,birth aimag in 2024; migration aimag in 2020-2022,True,40129,9500,23.67,38,"1.18 [НЭР] хамгийн сүүлд аль аймаг, сумаас шилжиж ирсэн бэ? Аймаг/ Нийслэл",85; 62; 21; 43; 64; 11; 22; 45,data\hses_2021\02_indiv (13).dta
+2021,indiv,q0118b,birth soum in 2024; migration soum in 2020-2022,True,40129,9391,23.4,27,"1.18 [НЭР] хамгийн сүүлд аль аймаг, сумаас шилжиж ирсэн бэ? Сум/ дүүрэг",25; 4; 28; 19; 37; 34; 13; 1,data\hses_2021\02_indiv (13).dta
+2021,indiv,q0210,education level,True,40129,34898,86.96,10,2.10 [НЭР]-ын/ийн эзэмшсэн  боловсролын дээд түвшинг хэлнэ үү?,5; 1; 6; 4; 8; 7; 2; 3,data\hses_2021\02_indiv (13).dta
+2021,indiv,q0213,total schooling years,True,40129,34898,86.96,25,2.13 [НЭР] нийт хэдэн жил сургуульд  суралцсан бэ?,9; 0; 13; 11; 10; 17; 18; 14,data\hses_2021\02_indiv (13).dta
+2021,indiv,q0404,paid work in last 7 days,True,40129,34944,87.08,2,"4.04 [НЭР] сүүлийн 7 хоногт наад зах нь 1 цаг ямар нэг цалин хөлс, төлбөртэй ажи",2; 1,data\hses_2021\02_indiv (13).dta
+2021,indiv,q0436a,"main job wage amount, component used in wage construction",True,40129,8582,21.39,445,4.36 [НЭР] нь сүүлийн 12 сард үндсэн ажлаасаа хэдэн төгрөгийн цалин авсан бэ? Сү,450000; 1200000; 200000; 490000; 550000; 500000; 0; 800000,data\hses_2021\02_indiv (13).dta
+2021,indiv,q0436b,"main job wage amount, component used in wage construction",True,40129,8582,21.39,824,4.36 [НЭР] нь сүүлийн 12 сард үндсэн ажлаасаа хэдэн төгрөгийн цалин авсан бэ? Сү,4400000; 14400000; 10200000; 4410000; 6600000; 4000000; 1800000; 2250000,data\hses_2021\02_indiv (13).dta
+2021,indiv,q0436c,"main job wage component, extra/reference",True,40129,8582,21.39,229,4.36 [НЭР] нь сүүлийн 12 сард үндсэн ажлаасаа хэдэн төгрөгийн цалин авсан бэ? Ур,0; 11000000; 648000; 489000; 820000; 685000; 872000; 450000,data\hses_2021\02_indiv (13).dta
+2021,indiv,q0437,months worked in last 12 months,True,40129,14778,36.83,12,4.37 [НЭР] энэ ажлыг хэдэн сар хийсэн бэ?,12; 1; 9; 8; 3; 5; 6; 7,data\hses_2021\02_indiv (13).dta
+2021,indiv,q0438,days per month worked,True,40129,14778,36.83,29,4.38 [НЭР] ажилласан сарууддаа энэ ажилд сард  дунджаар  хэдэн өдөр зарцуулсан б,22; 10; 30; 28; 20; 26; 21; 5,data\hses_2021\02_indiv (13).dta
+2021,indiv,q0439,hours per day worked,True,40129,14778,36.83,21,4.39 [НЭР] ажилласан саруудын өдрүүддээ энэ ажилд өдөрт   дунджаар хэдэн цаг зар,8; 10; 12; 6; 9; 2; 24; 3,data\hses_2021\02_indiv (13).dta
+2021,indiv,q0427,hours worked in last 7 days,True,40129,13855,34.53,68,4.27 [НЭР] сүүлийн 7 хоногт үндсэн ажилдаа нийтдээ хэдэн цаг зарцуулсан бэ?,40; 70; 56; 42; 63; 46; 50; 14,data\hses_2021\02_indiv (13).dta
+2022,basicvars,identif,household id / merge key,True,22995,22995,100.0,22995,group(identif),1; 2; 3; 4; 5; 6; 7; 8,data\hses_2022\basicvars (13).dta
+2022,basicvars,newaimag,current aimag / proxy when born in current place,True,22995,22995,100.0,22,New code of aimag,21; 22; 23; 41; 42; 43; 44; 45,data\hses_2022\basicvars (13).dta
+2022,basicvars,region,region control,True,22995,22995,100.0,5,Region,4; 3; 2; 1; 5,data\hses_2022\basicvars (13).dta
+2022,basicvars,urban,urban/rural control,True,22995,22995,100.0,2,Urban/rural,1; 2,data\hses_2022\basicvars (13).dta
+2022,basicvars,location,location control,True,22995,22995,100.0,4,Strata 4 locations,2; 3; 4; 1,data\hses_2022\basicvars (13).dta
+2022,basicvars,hhsize,household size,True,22995,22995,100.0,14,Household size,4; 5; 2; 6; 7; 1; 3; 9,data\hses_2022\basicvars (13).dta
+2022,basicvars,hhweight,survey weight,True,22995,22995,100.0,72,,36.375; 21.735300064086914; 16.23889923095703; 24.42099952697754; 18.972200393676758; 34.36759948730469; 13.800000190734863; 37.13750076293945,data\hses_2022\basicvars (13).dta
+2022,basicvars,month,interview month / CPI merge,True,22995,22995,100.0,12,Calendar month of the interview,2; 1; 3; 5; 6; 4; 8; 9,data\hses_2022\basicvars (13).dta
+2022,indiv,identif,household id / merge key,True,80926,80926,100.0,22995,group(identif),1; 2; 3; 4; 5; 6; 7; 8,data\hses_2022\02_indiv (14).dta
+2022,indiv,ind_id,person id / merge key,True,80926,80926,100.0,17,Хувийн дугаар,1; 4; 2; 3; 5; 6; 7; 8,data\hses_2022\02_indiv (14).dta
+2022,indiv,q0102,relation to household head,True,80926,80926,100.0,11,1.02 Өрхийн тэргүүлэгчтэй ямар хамааралтай вэ?,1; 9; 3; 2; 7; 4; 10; 6,data\hses_2022\02_indiv (14).dta
+2022,indiv,q0103,sex,True,80926,80926,100.0,2,1.03 Хүйс,2; 1,data\hses_2022\02_indiv (14).dta
+2022,indiv,q0105y,age in years,True,80926,80926,100.0,102,1.05 Нас /жил/,52; 2; 25; 6; 13; 39; 15; 37,data\hses_2022\02_indiv (14).dta
+2022,indiv,q0105m,age/birth month if available,True,80926,1280,1.58,11,1.05 Нас /сар/,8; 9; 1; 2; 7; 5; 11; 10,data\hses_2022\02_indiv (14).dta
+2022,indiv,q0106,marital status,True,80926,54641,67.52,6,1.06 Гэрлэлтийн байдал,6; 1; 2; 3; 4; 5,data\hses_2022\02_indiv (14).dta
+2022,indiv,q0107,spouse person id,True,80926,32877,40.63,13,1.07 Эхнэр нөхрийн хувийн дугаар,2; 1; 98; 3; 5; 4; 9; 8,data\hses_2022\02_indiv (14).dta
+2022,indiv,q0113,"born in current place flag, 2020-2022",True,80926,78299,96.75,2,1.13 [НЭР] энэ нутагт төрсөн үү?,1; 2,data\hses_2022\02_indiv (14).dta
+2022,indiv,q0114a,birth aimag for 2020-2022,True,80926,21704,26.82,44,1.14 [НЭР] хаана төрсөн бэ? Аймаг/ Нийслэл,21; 11; 22; 23; 67; 62; 43; 41,data\hses_2022\02_indiv (14).dta
+2022,indiv,q0114b,birth soum for 2020-2022,True,80926,21586,26.67,27,1.14 [НЭР] хаана төрсөн бэ? Сум/ дүүрэг,31; 1; 19; 28; 40; 7; 46; 10,data\hses_2022\02_indiv (14).dta
+2022,indiv,q0117,"born in current place flag, 2024",True,80926,16867,20.84,5,1.17 [НЭР] хамгийн сүүлд хаанаас шилжиж ирсэн бэ?,3; 1; 2; 4; 5,data\hses_2022\02_indiv (14).dta
+2022,indiv,q0118a,birth aimag in 2024; migration aimag in 2020-2022,True,80926,16867,20.84,41,"1.18 [НЭР] хамгийн сүүлд аль аймаг, сумаас шилжиж ирсэн бэ? Аймаг/ Нийслэл",21; 11; 22; 67; 62; 43; 61; 45,data\hses_2022\02_indiv (14).dta
+2022,indiv,q0118b,birth soum in 2024; migration soum in 2020-2022,True,80926,16697,20.63,27,"1.18 [НЭР] хамгийн сүүлд аль аймаг, сумаас шилжиж ирсэн бэ? Сум/ дүүрэг",31; 1; 28; 40; 37; 22; 4; 25,data\hses_2022\02_indiv (14).dta
+2022,indiv,q0210,education level,True,80926,69824,86.28,10,2.10 [НЭР]-ын/ийн эзэмшсэн  боловсролын дээд түвшинг хэлнэ үү?,3; 8; 1; 2; 4; 6; 7; 5,data\hses_2022\02_indiv (14).dta
+2022,indiv,q0213,total schooling years,True,80926,69824,86.28,28,2.13 [НЭР] нийт хэдэн жил сургуульд  суралцсан бэ?,8; 14; 0; 7; 10; 9; 1; 4,data\hses_2022\02_indiv (14).dta
+2022,indiv,q0404,paid work in last 7 days,True,80926,70016,86.52,2,"4.04 [НЭР] сүүлийн 7 хоногт наад зах нь 1 цаг ямар нэг цалин хөлс, төлбөртэй ажи",2; 1,data\hses_2022\02_indiv (14).dta
+2022,indiv,q0436a,"main job wage amount, component used in wage construction",True,80926,18636,23.03,735,4.36 [НЭР] нь сүүлийн 12 сард үндсэн ажлаасаа хэдэн төгрөгийн цалин авсан бэ? Сү,500000; 700000; 0; 1200000; 1000000; 520000; 420000; 150000,data\hses_2022\02_indiv (14).dta
+2022,indiv,q0436b,"main job wage amount, component used in wage construction",True,80926,18636,23.03,1488,4.36 [НЭР] нь сүүлийн 12 сард үндсэн ажлаасаа хэдэн төгрөгийн цалин авсан бэ? Сү,6000000; 8400000; 16200000; 5000000; 14400000; 12000000; 6240000; 5040000,data\hses_2022\02_indiv (14).dta
+2022,indiv,q0436c,"main job wage component, extra/reference",True,80926,18636,23.03,384,4.36 [НЭР] нь сүүлийн 12 сард үндсэн ажлаасаа хэдэн төгрөгийн цалин авсан бэ? Ур,0; 1596000; 1600000; 840000; 2000000; 400000; 890000; 1000000,data\hses_2022\02_indiv (14).dta
+2022,indiv,q0437,months worked in last 12 months,True,80926,29223,36.11,12,4.37 [НЭР] энэ ажлыг хэдэн сар хийсэн бэ?,12; 9; 10; 1; 11; 4; 8; 7,data\hses_2022\02_indiv (14).dta
+2022,indiv,q0438,days per month worked,True,80926,29223,36.11,30,4.38 [НЭР] ажилласан сарууддаа энэ ажилд сард  дунджаар  хэдэн өдөр зарцуулсан б,20; 19; 22; 10; 30; 26; 14; 28,data\hses_2022\02_indiv (14).dta
+2022,indiv,q0439,hours per day worked,True,80926,29223,36.11,23,4.39 [НЭР] ажилласан саруудын өдрүүддээ энэ ажилд өдөрт   дунджаар хэдэн цаг зар,8; 24; 10; 12; 7; 5; 9; 6,data\hses_2022\02_indiv (14).dta
+2022,indiv,q0427,hours worked in last 7 days,True,80926,27524,34.01,82,4.27 [НЭР] сүүлийн 7 хоногт үндсэн ажилдаа нийтдээ хэдэн цаг зарцуулсан бэ?,40; 56; 8; 48; 70; 10; 0; 60,data\hses_2022\02_indiv (14).dta
+2023,basicvars,identif,household id / merge key,True,8550,8550,100.0,8550,group(identif),1; 2; 3; 4; 5; 6; 7; 8,data\hses_2023\basicvars (14).dta
+2023,basicvars,newaimag,current aimag / proxy when born in current place,True,8550,8550,100.0,21,New code of aimag,21; 22; 23; 41; 43; 44; 45; 46,data\hses_2023\basicvars (14).dta
+2023,basicvars,region,region control,True,8550,8550,100.0,5,Region,4; 3; 2; 1; 5,data\hses_2023\basicvars (14).dta
+2023,basicvars,urban,urban/rural control,True,8550,8550,100.0,2,Urban/rural,1; 2,data\hses_2023\basicvars (14).dta
+2023,basicvars,location,location control,True,8550,8550,100.0,4,Strata 4 locations,2; 3; 4; 1,data\hses_2023\basicvars (14).dta
+2023,basicvars,hhsize,household size,True,8550,8550,100.0,12,Household size,7; 4; 5; 2; 6; 3; 1; 8,data\hses_2023\basicvars (14).dta
+2023,basicvars,hhweight,survey weight,True,8550,8550,100.0,65,,83.76249694824219; 23.98684310913086; 79.79808044433594; 76.17500305175781; 48.94736862182617; 185.90383911132812; 74.93333435058594; 78.60150146484375,data\hses_2023\basicvars (14).dta
+2023,basicvars,month,interview month / CPI merge,True,8550,8550,100.0,12,Calendar month of the interview,1; 2; 3; 4; 5; 6; 7; 8,data\hses_2023\basicvars (14).dta
+2023,indiv,identif,household id / merge key,True,30284,30284,100.0,8550,group(identif),1; 2; 3; 4; 5; 6; 7; 8,data\hses_2023\02_indiv (15).dta
+2023,indiv,ind_id,person id / merge key,True,30284,30284,100.0,12,Хувийн дугаар,1; 2; 3; 4; 5; 6; 7; 8,data\hses_2023\02_indiv (15).dta
+2023,indiv,q0102,relation to household head,True,30284,30284,100.0,11,1.02 Өрхийн тэргүүлэгчтэй ямар хамааралтай вэ?,1; 2; 3; 7; 9; 4; 5; 10,data\hses_2023\02_indiv (15).dta
+2023,indiv,q0103,sex,True,30284,30284,100.0,2,1.03 Хүйс,1; 2,data\hses_2023\02_indiv (15).dta
+2023,indiv,q0105y,age in years,True,30284,30284,100.0,97,1.05 Нас /жил/,34; 35; 13; 11; 9; 7; 3; 21,data\hses_2023\02_indiv (15).dta
+2023,indiv,q0105m,age/birth month if available,True,30284,525,1.73,11,1.05 Нас /сар/,5; 9; 6; 7; 3; 8; 2; 10,data\hses_2023\02_indiv (15).dta
+2023,indiv,q0106,marital status,True,30284,20464,67.57,6,1.06 Гэрлэлтийн байдал,2; 3; 1; 4; 6; 5,data\hses_2023\02_indiv (15).dta
+2023,indiv,q0107,spouse person id,True,30284,12363,40.82,12,1.07 Эхнэр нөхрийн хувийн дугаар,2; 1; 4; 3; 98; 6; 5; 8,data\hses_2023\02_indiv (15).dta
+2023,indiv,q0113,"born in current place flag, 2020-2022",False,30284,,,,,,data\hses_2023\02_indiv (15).dta
+2023,indiv,q0114a,birth aimag for 2020-2022,False,30284,,,,,,data\hses_2023\02_indiv (15).dta
+2023,indiv,q0114b,birth soum for 2020-2022,False,30284,,,,,,data\hses_2023\02_indiv (15).dta
+2023,indiv,q0117,"born in current place flag, 2024",False,30284,,,,,,data\hses_2023\02_indiv (15).dta
+2023,indiv,q0118a,birth aimag in 2024; migration aimag in 2020-2022,False,30284,,,,,,data\hses_2023\02_indiv (15).dta
+2023,indiv,q0118b,birth soum in 2024; migration soum in 2020-2022,False,30284,,,,,,data\hses_2023\02_indiv (15).dta
+2023,indiv,q0210,education level,True,30284,10723,35.41,2,2.10 [НЭР] сүүлийн 12 сард үндсэн ажлаасаа гадна нэмэлт/давхар цалинтай ажил/орл,2; 1,data\hses_2023\02_indiv (15).dta
+2023,indiv,q0213,total schooling years,False,30284,,,,,,data\hses_2023\02_indiv (15).dta
+2023,indiv,q0404,paid work in last 7 days,False,30284,,,,,,data\hses_2023\02_indiv (15).dta
+2023,indiv,q0436a,"main job wage amount, component used in wage construction",False,30284,,,,,,data\hses_2023\02_indiv (15).dta
+2023,indiv,q0436b,"main job wage amount, component used in wage construction",False,30284,,,,,,data\hses_2023\02_indiv (15).dta
+2023,indiv,q0436c,"main job wage component, extra/reference",False,30284,,,,,,data\hses_2023\02_indiv (15).dta
+2023,indiv,q0437,months worked in last 12 months,False,30284,,,,,,data\hses_2023\02_indiv (15).dta
+2023,indiv,q0438,days per month worked,False,30284,,,,,,data\hses_2023\02_indiv (15).dta
+2023,indiv,q0439,hours per day worked,False,30284,,,,,,data\hses_2023\02_indiv (15).dta
+2023,indiv,q0427,hours worked in last 7 days,False,30284,,,,,,data\hses_2023\02_indiv (15).dta
+2024,basicvars,identif,household id / merge key,True,15513,15513,100.0,15513,group(identif),1; 2; 3; 4; 5; 6; 7; 8,data\hses_2024\basicvars.dta
+2024,basicvars,newaimag,current aimag / proxy when born in current place,True,15513,15513,100.0,22,New code of aimag,11; 21; 22; 23; 41; 42; 43; 44,data\hses_2024\basicvars.dta
+2024,basicvars,region,region control,True,15513,15513,100.0,5,Region,5; 4; 3; 2; 1,data\hses_2024\basicvars.dta
+2024,basicvars,urban,urban/rural control,True,15513,15513,100.0,2,Urban/rural,1; 2,data\hses_2024\basicvars.dta
+2024,basicvars,location,location control,True,15513,15513,100.0,4,Strata 4 locations,1; 2; 3; 4,data\hses_2024\basicvars.dta
+2024,basicvars,hhsize,household size,True,15513,15513,100.0,12,Household size,2; 1; 4; 5; 3; 8; 7; 6,data\hses_2024\basicvars.dta
+2024,basicvars,hhweight,survey weight,True,15513,15513,100.0,1614,Raked weights,211.60391235351562; 99.99198150634766; 98.42955017089844; 119.5306396484375; 108.88369750976562; 191.5255889892578; 170.83815002441406; 44.74491500854492,data\hses_2024\basicvars.dta
+2024,basicvars,month,interview month / CPI merge,True,15513,15513,100.0,12,Month,2; 1; 3; 4; 6; 5; 8; 9,data\hses_2024\basicvars.dta
+2024,indiv,identif,household id / merge key,True,53898,53898,100.0,15513,group(identif),1; 2; 3; 4; 5; 6; 7; 8,data\hses_2024\02_indiv.dta
+2024,indiv,ind_id,person id / merge key,True,53898,53898,100.0,12,Хувийн дугаар,1; 2; 3; 4; 5; 6; 7; 8,data\hses_2024\02_indiv.dta
+2024,indiv,q0102,relation to household head,True,53898,53898,100.0,11,1.02 Өрхийн тэргүүлэгчтэй ямар хамааралтай вэ?,1; 2; 3; 9; 4; 10; 5; 7,data\hses_2024\02_indiv.dta
+2024,indiv,q0103,sex,True,53898,53898,100.0,2,1.03 Хүйс,1; 2,data\hses_2024\02_indiv.dta
+2024,indiv,q0105y,age in years,True,53898,53898,100.0,101,1.05 Нас /жил/,54; 48; 60; 82; 84; 66; 62; 52,data\hses_2024\02_indiv.dta
+2024,indiv,q0105m,age/birth month if available,True,53898,807,1.5,11,1.05 Нас /сар/,6; 4; 8; 10; 7; 9; 11; 3,data\hses_2024\02_indiv.dta
+2024,indiv,q0106,marital status,True,53898,36961,68.58,6,1.06 Гэрлэлтийн байдал,2; 6; 1; 3; 4; 5,data\hses_2024\02_indiv.dta
+2024,indiv,q0107,spouse person id,True,53898,22179,41.15,10,1.07 Эхнэр нөхрийн хувийн дугаар,2; 1; 98; 8; 7; 4; 5; 6,data\hses_2024\02_indiv.dta
+2024,indiv,q0113,"born in current place flag, 2020-2022",True,53898,53898,100.0,2,1.13 Асуултанд хамрагдах эсэх,1; 2,data\hses_2024\02_indiv.dta
+2024,indiv,q0114a,birth aimag for 2020-2022,False,53898,,,,,,data\hses_2024\02_indiv.dta
+2024,indiv,q0114b,birth soum for 2020-2022,False,53898,,,,,,data\hses_2024\02_indiv.dta
+2024,indiv,q0117,"born in current place flag, 2024",True,53898,51471,95.5,2,1.17 [НЭР] энэ нутаг буюу [АЙМАГ]-ын/ийн [СУМ]-нд төрсөн үү?,2; 1,data\hses_2024\02_indiv.dta
+2024,indiv,q0118a,birth aimag in 2024; migration aimag in 2020-2022,True,53898,14103,26.17,39,1.18 [НЭР] хаана төрсөн бэ? Аймаг/ Нийслэл,21; 85; 62; 42; 63; 23; 83; 65,data\hses_2024\02_indiv.dta
+2024,indiv,q0118b,birth soum in 2024; migration soum in 2020-2022,True,53898,14036,26.04,339,1.18 [НЭР] хаана төрсөн бэ? Сум/ дүүрэг,2122; 8555; 6237; 4201; 6346; 2301; 8319; 8337,data\hses_2024\02_indiv.dta
+2024,indiv,q0210,education level,True,53898,46538,86.34,10,2.10 [НЭР]-ын/ийн эзэмшсэн  боловсролын дээд түвшинг хэлнэ үү?,4; 5; 8; 2; 1; 3; 9; 7,data\hses_2024\02_indiv.dta
+2024,indiv,q0213,total schooling years,True,53898,46538,86.34,27,2.13 [НЭР] нийт хэдэн жил сургуульд  суралцсан бэ?,10; 14; 12; 7; 2; 6; 11; 4,data\hses_2024\02_indiv.dta
+2024,indiv,q0404,paid work in last 7 days,True,53898,46538,86.34,2,"4.04 [НЭР] сүүлийн 7 хоногт наад зах нь 1 цаг ямар нэг цалин хөлс, төлбөртэй ажи",2; 1,data\hses_2024\02_indiv.dta
+2024,indiv,q0436a,"main job wage amount, component used in wage construction",True,53898,12564,23.31,394,4.36 [НЭР] нь сүүлийн 12 сард үндсэн ажлаасаа хэдэн төгрөгийн цалин авсан бэ? Сү,800000; 1300000; 1500000; 1200000; 2500000; 2000000; 2100000; 750000,data\hses_2024\02_indiv.dta
+2024,indiv,q0436b,"main job wage amount, component used in wage construction",True,53898,12564,23.31,918,4.36 [НЭР] нь сүүлийн 12 сард үндсэн ажлаасаа хэдэн төгрөгийн цалин авсан бэ? Сү,10000000; 16000000; 12000000; 15000000; 34000000; 25000000; 27000000; 18000000,data\hses_2024\02_indiv.dta
+2024,indiv,q0436c,"main job wage component, extra/reference",True,53898,12564,23.31,250,4.36 [НЭР] нь сүүлийн 12 сард үндсэн ажлаасаа хэдэн төгрөгийн цалин авсан бэ? Ур,0; 5000000; 3500000; 10000000; 2000000; 500000; 1500000; 1000000,data\hses_2024\02_indiv.dta
+2024,indiv,q0437,months worked in last 12 months,True,53898,19560,36.29,12,4.37 [НЭР] энэ ажлыг хэдэн сар хийсэн бэ?,12; 8; 9; 10; 5; 11; 6; 3,data\hses_2024\02_indiv.dta
+2024,indiv,q0438,days per month worked,True,53898,19560,36.29,30,4.38 [НЭР] ажилласан сарууддаа энэ ажилд сард  дунджаар  хэдэн өдөр зарцуулсан б,16; 14; 15; 23; 18; 20; 22; 24,data\hses_2024\02_indiv.dta
+2024,indiv,q0439,hours per day worked,True,53898,19560,36.29,23,4.39 [НЭР] ажилласан саруудын өдрүүддээ энэ ажилд өдөрт   дунджаар хэдэн цаг зар,12; 11; 10; 8; 9; 7; 6; 5,data\hses_2024\02_indiv.dta
+2024,indiv,q0427,hours worked in last 7 days,True,53898,18641,34.59,72,4.27 [НЭР] сүүлийн 7 хоногт үндсэн ажилдаа нийтдээ хэдэн цаг зарцуулсан бэ?,54; 50; 40; 60; 20; 48; 24; 56,data\hses_2024\02_indiv.dta

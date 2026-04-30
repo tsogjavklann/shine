@@ -1,0 +1,38 @@
+- The project is out-of-sync -- use `renv::status()` for details.
+
+── 12b_iv_search.R — comprehensive IV survey ───────────────────────────────────
+ℹ MAIN sample (with all IVs joined): 9077 rows
+→ Running spec 1: 01 reform_main (Cohort) — IV: reform_main
+→ Running spec 2: 02 reform_alt_1997 (Cohort) — IV: reform_alt_1997
+→ Running spec 3: 03 reform_alt_1999 (Cohort) — IV: reform_alt_1999
+→ Running spec 4: 04 distance_to_ub (Geography) — IV: distance_to_ub
+→ Running spec 5: 05 father_educ_level (Family) — IV: father_educ_level
+→ Running spec 6: 06 mother_educ_level (Family) — IV: mother_educ_level
+→ Running spec 7: 07 parents_combined (Family) — IV: father_educ_level + mother_educ_level
+→ Running spec 8: 08 n_siblings (Family) — IV: n_siblings
+→ Running spec 9: 09 birth_order (Family) — IV: birth_order
+→ Running spec 10: 10 quarter_of_birth (Time) — IV: as.factor(quarter_birth)
+→ Running spec 11: 11 birth_aimag_factor (Geography) — IV: as.factor(birth_aimag)
+→ Running spec 12: 12 distance + reform (Combo) — IV: distance_to_ub + reform_main
+There were 50 or more warnings (use warnings() to see the first 50)
+
+── T2b — IV search ranked by F descending ──
+
+# A tibble: 12 × 12
+   spec    family     N iv      pi_hat   se_pi    t_pi  F_first beta_iv  se_beta
+   <chr>   <chr>  <int> <chr>    <dbl>   <dbl>   <dbl>    <dbl>   <dbl>    <dbl>
+ 1 06 mot… Family   966 moth…  0.512    0.0472 10.8     1.17e+2  0.118   0.00717
+ 2 05 fat… Family   658 fath…  0.476    0.0469 10.1     1.03e+2  0.0672  0.0113 
+ 3 08 n_s… Family  1032 n_si… -0.177    0.0193 -9.19    8.44e+1  0.102   0.0155 
+ 4 07 par… Family   592 fath… NA       NA      NA       6.35e+1  0.0898  0.0140 
+ 5 11 bir… Geogr…  9077 as.f… NA       NA      NA       5.90e+0  0.0791  0.0151 
+ 6 04 dis… Geogr…  9077 dist… -0.00015  0.0001 -1.47    2.17e+0  0.409   0.127  
+ 7 12 dis… Combo   8575 dist… NA       NA      NA       1.18e+0  0.426   0.141  
+ 8 01 ref… Cohort  8575 refo…  0.0740   0.100   0.738   5.44e-1  0.891   0.799  
+ 9 09 bir… Family  1032 birt… -0.0179   0.0275 -0.648   4.20e-1  1.86    0.00292
+10 03 ref… Cohort  8772 refo…  0.0723   0.134   0.538   2.89e-1  0.593   0.806  
+11 02 ref… Cohort  8320 refo… -0.00633  0.104  -0.0608  3.69e-3 -8.21   99.1    
+12 10 qua… Time    9077 as.f… NA       NA      NA      NA       NA      NA      
+# ℹ 2 more variables: sargan_p <dbl>, verdict <chr>
+Total: 1.37 sec elapsed
+✔ Гарц: T2b_iv_search.csv

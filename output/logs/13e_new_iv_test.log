@@ -1,0 +1,23 @@
+13e_new_iv_test.R
+Started: 2026-04-26 18:42:59.710058 
+
+Main wage sample rows: 18264 
+Waves in sample: 2020, 2021, 2022, 2024 
+
+Results rows: 50 
+# A tibble: 10 × 12
+   iv_var  iv_name  pi_hat F_first beta_2sls se_2sls     N expected_sign sign_ok
+   <chr>   <chr>     <dbl>   <dbl>     <dbl>   <dbl> <int> <chr>         <lgl>  
+ 1 dropou… Grade …  0.939   2568.     0.0212  0.0201   406 positive      TRUE   
+ 2 health… Health…  2.02     440.     0.144   0.0124 18259 positive      TRUE   
+ 3 parent… Mean p…  0.382    136.     0.105   0.0158  1221 positive      TRUE   
+ 4 ever_d… Ever d… -7.73     119.     0.0407  0.0133   429 negative      TRUE   
+ 5 migrat… Migrat…  1.25     117.     0.0988  0.0163 18259 positive      TRUE   
+ 6 mother… Mother…  0.359    114.     0.120   0.0176  1129 positive      TRUE   
+ 7 father… Father…  0.343     98.7    0.0739  0.0201   729 positive      TRUE   
+ 8 rural_… Rural …  0.0273    45.8    0.0531  0.0223 18259 unknown       NA     
+ 9 born_u… UB bir… -0.0273    45.8    0.0531  0.0223 18259 unknown       NA     
+10 years_… Years … -0.0222    39.3    0.151   0.0306 14200 unknown       NA     
+# ℹ 3 more variables: cor_q_home <dbl>, verdict <chr>, notes <chr>
+
+13e complete.

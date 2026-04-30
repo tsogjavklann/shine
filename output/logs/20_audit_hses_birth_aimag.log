@@ -1,0 +1,98 @@
+20_audit_hses_birth_aimag.R
+Started: 2026-04-27 02:42:53.844539 
+
+Raw variable labels:
+# A tibble: 4 × 9
+   wave born_current_col
+  <int> <chr>           
+1  2020 q0113           
+2  2021 q0113           
+3  2022 q0113           
+4  2024 q0117           
+  born_current_label                                          
+  <chr>                                                       
+1 1.13 [НЭР] энэ нутагт төрсөн үү?                            
+2 1.13 [НЭР] энэ нутагт төрсөн үү?                            
+3 1.13 [НЭР] энэ нутагт төрсөн үү?                            
+4 1.17 [НЭР] энэ нутаг буюу [АЙМАГ]-ын/ийн [СУМ]-нд төрсөн үү?
+  birth_aimag_raw_col birth_aimag_raw_label                     
+  <chr>               <chr>                                     
+1 q0114a              1.14 [НЭР] хаана төрсөн бэ? Аймаг/ Нийслэл
+2 q0114a              1.14 [НЭР] хаана төрсөн бэ? Аймаг/ Нийслэл
+3 q0114a              1.14 [НЭР] хаана төрсөн бэ? Аймаг/ Нийслэл
+4 q0118a              1.18 [НЭР] хаана төрсөн бэ? Аймаг/ Нийслэл
+  birth_soum_raw_col birth_soum_raw_label                    current_aimag_col
+  <chr>              <chr>                                   <chr>            
+1 q0114b             1.14 [НЭР] хаана төрсөн бэ? Сум/ дүүрэг newaimag         
+2 q0114b             1.14 [НЭР] хаана төрсөн бэ? Сум/ дүүрэг newaimag         
+3 q0114b             1.14 [НЭР] хаана төрсөн бэ? Сум/ дүүрэг newaimag         
+4 q0118b             1.18 [НЭР] хаана төрсөн бэ? Сум/ дүүрэг newaimag         
+  current_aimag_label
+  <chr>              
+1 New code of aimag  
+2 New code of aimag  
+3 New code of aimag  
+4 New code of aimag  
+
+Raw/harmonized audit:
+# A tibble: 4 × 16
+   wave raw_N birth_aimag_nonmissing birth_aimag_missing born_current_yes
+  <int> <int>                  <int>               <int>            <int>
+1  2020 59737                  58162                1575            40728
+2  2021 40129                  39290                 839            28333
+3  2022 80926                  78299                2627            56595
+4  2024 53898                  51471                2427            37368
+  born_current_no born_current_missing raw_birth_aimag_nonmissing
+            <int>                <int>                      <int>
+1           17434                 1575                      17434
+2           10957                  839                      10957
+3           21704                 2627                      21704
+4           14103                 2427                      14103
+  raw_birth_aimag_missing filled_from_current filled_from_raw
+                    <int>               <int>           <int>
+1                   42303               40728           17434
+2                   29172               28333           10957
+3                   59222               56595           21704
+4                   39795               37368           14103
+  processed_equals_expected processed_differs_expected birth_equals_current
+                      <int>                      <int>                <int>
+1                     58162                          0                47190
+2                     39290                          0                32074
+3                     78299                          0                65199
+4                     51471                          0                42915
+  birth_differs_current unique_birth_aimag
+                  <int>              <int>
+1                 10972                 37
+2                  7216                 38
+3                 13100                 44
+4                  8556                 39
+
+Analysis sample audit:
+# A tibble: 4 × 7
+   wave     N birth_aimag_nonmissing birth_aimag_from_current
+  <int> <int>                  <int>                    <int>
+1  2020 10905                  10905                     5870
+2  2021  6697                   6697                     3579
+3  2022 15149                  15149                     8657
+4  2024 10319                  10319                     5923
+  birth_aimag_from_current_share birth_equals_current birth_differs_current
+                           <dbl>                <int>                 <int>
+1                          0.538                 7404                  3501
+2                          0.534                 4417                  2280
+3                          0.571                10810                  4339
+4                          0.574                 7363                  2956
+
+IVTR sample audit:
+# A tibble: 4 × 4
+  wave      N birth_aimag_nonmissing unique_birth_aimag
+  <fct> <int>                  <int>              <int>
+1 2020    818                    818                 22
+2 2021    543                    543                 22
+3 2022   1079                   1079                 22
+4 2024    748                    748                 22
+
+Mismatches expected vs processed:
+# A tibble: 0 × 6
+# ℹ 6 variables: wave <int>, id <chr>, born_in_current <dbl>, birth_aimag_raw <dbl>, newaimag_proxy_raw <dbl>, birth_aimag_processed <dbl>
+
+Completed: 2026-04-27 02:42:55.719533 

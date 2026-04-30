@@ -1,0 +1,21 @@
+03a_clean_manual_education_supply.R
+Root: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine 
+
+Manual Excel files found:
+# A tibble: 5 × 2
+  role                      path                                                
+  <chr>                     <chr>                                               
+1 schools                   data/ЕРӨНХИЙ БОЛОВСРОЛЫН СУРГУУЛИЙН ТОО, аймаг, ний…
+2 students                  data/ЕРӨНХИЙ БОЛОВСРОЛЫН СУРГУУЛЬД ӨДРӨӨР СУРАЛЦАГЧ…
+3 teachers                  data/ЕРӨНХИЙ БОЛОВСРОЛЫН СУРГУУЛИЙН ҮНДСЭН БАГШ, ай…
+4 population_age            data/ХҮН АМЫН ТОО, хүйс, насны бүлэг, жилээр.xlsx   
+5 annual_average_population data/ЖИЛИЙН ДУНДАЖ ХҮН АМЫН ТОО, аймаг, нийслэл, жи…
+
+Panel rows: 792 
+Panel years: 1990 - 2025 
+Aimag count: 22 
+
+Saved data/cleaned/school_supply_panel.rds/csv
+Saved output/reports/manual_1212_excel_verification.md
+Saved output/tables/unmatched_aimag_names_school_supply.csv rows: 0 
+03a complete.

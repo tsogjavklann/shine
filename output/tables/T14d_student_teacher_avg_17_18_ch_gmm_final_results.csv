@@ -1,0 +1,3 @@
+threshold_variable,gamma_hat,term,estimate,se,t_stat,p_value,N,N_low,N_high,weighting_matrix_used,inference_reference,beta_difference_high_minus_low,warning_note
+student_teacher_ratio_avg_17_18,19.53062264661216,educ_low,0.07842788268444512,0.01911565231529452,4.102809644727353,5.081590576812005e-4,3188,1051,2137,cluster-robust S by birth_aimag,t distribution with df=21,0.03100958442284489,
+student_teacher_ratio_avg_17_18,19.53062264661216,educ_high,0.10943746710729,0.00951892169566137,11.496834474136973,1.5976833887934546e-10,3188,1051,2137,cluster-robust S by birth_aimag,t distribution with df=21,0.03100958442284489,

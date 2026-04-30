@@ -1,0 +1,5 @@
+- The project is out-of-sync -- use `renv::status()` for details.
+
+── 04b_cpi_deflator.R — two CPI series + real hourly wage ──────────────────────
+ℹ Nominal wage panel: 43070 мөр; columns include wage_method
+→ CPI source-ийг туршиж байна: aimag_monthly (DT_NSO_0500_021V1)

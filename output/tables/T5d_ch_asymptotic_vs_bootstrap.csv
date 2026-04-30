@@ -1,0 +1,2 @@
+beta_diff_observed,asymptotic_wald_p_value,bootstrap_p_value,beta_diff_boot_ci_low,beta_diff_boot_ci_high,beta_diff_ci_contains_zero,conclusion
+-0.029577299834500678,0.07037158758290443,0.10776942355889724,-0.057924986185735564,0.016248893341505317,TRUE,Bootstrap does not strongly support threshold heterogeneity at 5%.

@@ -1,0 +1,15 @@
+﻿step,description,criterion,N,by_wave
+1,Raw harmonized pooled HSES individual records,"HSES 2020, 2021, 2022, 2024 individual files after harmonization",234690,2020:59737; 2021:40129; 2022:80926; 2024:53898
+2,Raw working-age population,age >=25 & age <=60 in harmonized HSES,104820,2020:26966; 2021:17999; 2022:36084; 2024:23771
+3,"Potential wage earners, alt age range",working_for_wage == 1 and age 22-60,45442,2020:11577; 2021:7045; 2022:15917; 2024:10903
+4,Hourly wage constructible,Tier 1 annual-hours or Tier 2 weekly-hours formula gives positive nominal hourly wage,43930,2020:11122; 2021:6820; 2022:15457; 2024:10531
+5,Nominal wage panel after outlier trim,drop bottom/top 1 percent of nominal hourly wage within each wave,43070,2020:10905; 2021:6697; 2022:15149; 2024:10319
+6,"Real wage analysis base, alt sample",CPI-deflated real hourly wage and lwage available; age 22-60,43070,2020:10905; 2021:6697; 2022:15149; 2024:10319
+7,Main wage sample,main analysis age range: age 25-60,40779,2020:10313; 2021:6341; 2022:14319; 2024:9806
+8,Parent-IV eligible wage sample,Step 7 plus respondent is child of household head; parent education can be taken from head/spouse,3710,2020:987; 2021:642; 2022:1242; 2024:839
+9,Parent-IV eligible and age 25-41,"Step 8 plus age 25-41, the age window that can potentially match observed school-supply years",3335,2020:899; 2021:573; 2022:1115; 2024:748
+10,Birthplace observed inside 25-41 parent-IV sample,Step 9 plus birth_aimag available,3335,2020:899; 2021:573; 2022:1115; 2024:748
+11,School supply available at age 17,Step 10 plus student-teacher ratio at birth_year + 17 found,3188,2020:818; 2021:543; 2022:1079; 2024:748
+12,School supply available at both ages 17 and 18,Step 11 plus student-teacher ratio at birth_year + 18 found; average threshold can be computed,3188,2020:818; 2021:543; 2022:1079; 2024:748
+13,Parent education IV complete,Step 12 plus parent_educ_mean nonmissing,3188,2020:818; 2021:543; 2022:1079; 2024:748
+14,Final IVTR complete-case sample,Step 13 plus controls and weights complete,3188,2020:818; 2021:543; 2022:1079; 2024:748

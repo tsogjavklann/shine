@@ -1,0 +1,2 @@
+gamma_example,N,N_low,N_high,ncol_X_gamma,ncol_Z_gamma,rank_X_gamma,rank_Z_gamma,ZtZ_rank,ZtZ_invertible,XPZX_rank,XPZX_invertible,XPZX_condition_number,full_rank_X,full_rank_Z,safe_for_grid
+20.95435684647303,1032,520,512,7,7,7,7,7,TRUE,7,TRUE,239490.220194596,TRUE,TRUE,TRUE

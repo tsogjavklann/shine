@@ -1,0 +1,17 @@
+standard_name,source_name
+id,id
+identif,identif
+ind_id,ind_id
+educ_years,educ_years
+lwage,lwage
+wage,real_hourly
+birth_year,birth_year
+birth_aimag,birth_aimag
+age,age
+age2,age2
+female,is_female
+married,is_married
+urban,urban
+hhweight,hhweight
+wave,wave
+region,region

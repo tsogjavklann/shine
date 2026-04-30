@@ -1,0 +1,98 @@
+- The project is out-of-sync -- use `renv::status()` for details.
+
+── VERIFY 1: NSO teachers data ───────────────────────────────────────────────────────────────────────────────────────────────────
+Year range: 2000-2025
+N matched aimags: 22
+Total cells (aimag-year): 572
+
+── VERIFY 2: Merge teachers_at_17 to HSES analysis sample ────────────────────────────────────────────────────────────────────────
+HSES main sample N (after filters): 9077
+With teachers_at_17 (non-NA): 9077 (100.0%)
+With teacher_density_17 (non-NA): 9077 (100.0%)
+
+--- Year-at-17 distribution ---
+# A tibble: 17 × 2
+   year_at_17     n
+        <int> <int>
+ 1       2000   578
+ 2       2001   637
+ 3       2002   717
+ 4       2003   771
+ 5       2004   733
+ 6       2005   731
+ 7       2006   688
+ 8       2007   767
+ 9       2008   723
+10       2009   637
+11       2010   518
+12       2011   438
+13       2012   466
+14       2013   291
+15       2014   211
+16       2015    94
+17       2016    77
+
+── VERIFY 3: RAW teachers_at_17 IV diagnostics ───────────────────────────────────────────────────────────────────────────────────
+IV sample N: 9077
+
+Warning message:
+The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+First stage (teachers_at_17 raw count):
+                   Estimate   Std. Error  t value   Pr(>|t|)
+teachers_at_17 7.259533e-05 8.715994e-06 8.328979 0.00362748
+Warning messages:
+1: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+2: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+
+IV F-stat (cluster-robust ivf1):
+F-test (1st stage), educ_years: stat = 47.923, p = 4.734e-12, on 1 and 9,067 DoF.
+
+R² of teachers_at_17 ~ birth_aimag dummies: 0.9582
+(If R² ≈ 1: teachers_at_17 нь зөвхөн aimag-аас тогтсон)
+
+Pearson cor(teachers_at_17, q_home) = -0.6193, N = 9077
+
+── VERIFY 4: NORMALIZED teacher_density_17 IV diagnostics ────────────────────────────────────────────────────────────────────────
+Density sample N: 9077
+
+Warning message:
+The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+First stage (teacher_density_17):
+                       Estimate  Std. Error   t value   Pr(>|t|)
+teacher_density_17 -0.007801396 0.002629094 -2.967333 0.05919457
+Warning messages:
+1: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+2: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+
+IV F-stat (cluster-robust ivf1):
+F-test (1st stage), educ_years: stat = 7.1827, p = 0.007374, on 1 and 9,067 DoF.
+
+── VERIFY 5: birth_order pathology ───────────────────────────────────────────────────────────────────────────────────────────────
+birth_order NA rate: 88.6%
+birth_order non-NA mean: 1.193, median: 1
+Distribution:
+
+  1   2   3   4 
+865 140  22   5 
+Warning message:
+The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+
+First stage (birth_order):
+               Estimate Std. Error    t value  Pr(>|t|)
+birth_order -0.01785806 0.02754295 -0.6483716 0.5629485
+Warning messages:
+1: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+2: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+
+IV F-stat (cluster-robust ivf1):
+F-test (1st stage), educ_years: stat = 0.00998, p = 0.92046, on 1 and 1,022 DoF.
+
+── VERIFY 6: aimag × cohort cell distribution ────────────────────────────────────────────────────────────────────────────────────
+Total (aimag × cohort) cells: 66 (max 22 × 5 = 110)
+Cells with N < 30: 23
+Cells with N >= 30: 43
+Median cell size: 130
+
+R² of educ_years ~ aimag × cohort: 0.0392
+
+── VERIFICATION COMPLETE ─────────────────────────────────────────────────────────────────────────────────────────────────────────

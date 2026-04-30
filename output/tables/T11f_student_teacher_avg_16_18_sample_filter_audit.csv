@@ -1,0 +1,2 @@
+N,age_min,age_max,nonfinite_lwage,missing_educ_years,missing_parent_educ_mean,missing_threshold,missing_controls,missing_fe,nonpositive_weight,n_clusters,n_birth_cohorts,n_waves
+3113,25,40,0,0,0,0,0,0,0,22,4,4

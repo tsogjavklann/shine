@@ -1,0 +1,35 @@
+- The project is out-of-sync -- use `renv::status()` for details.
+
+── 11_iv_2sls.R — 2SLS + KP-F + AR-robust CI ───────────────────────────────────
+ℹ MAIN sample (post-donut): 8575 rows
+ℹ   treated (reform_main=1): 171
+ℹ   control (reform_main=0): 8404
+→ Fitting Main A (no location FE)...
+Warning messages:
+1: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+2: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+3: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+4: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+→ Fitting Main B (+ location FE)...
+Warning messages:
+1: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+2: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+3: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+4: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+→ Computing AR CI for Main A (grid search ±0.16 around β̂)...
+There were 50 or more warnings (use warnings() to see the first 50)
+→ Computing AR CI for Main B...
+There were 50 or more warnings (use warnings() to see the first 50)
+
+── T2 IV 2SLS results (β_educ + 3 SE + KP-F + AR CI) ──
+
+# A tibble: 2 × 12
+  spec           N beta_iv se_2way se_1way se_HC1  KP_F ivf1_F wald_1st_F  DWH_p
+  <chr>      <int>   <dbl>   <dbl>   <dbl>  <dbl> <dbl>  <dbl>      <dbl>  <dbl>
+1 Main A 2S…  8575   0.891   0.799    1.30   2.94    NA  0.118      0.544 0.0731
+2 Main B 2S…  8575   0.827   0.658    1.05   2.49    NA  0.141      0.660 0.0699
+# ℹ 2 more variables: AR_CI_low <dbl>, AR_CI_high <dbl>
+ℹ First-stage strength (Main A KP-F = NA): F NA — KP not computed
+Total: 25.52 sec elapsed
+✔ Гарц: T2_iv_2sls.csv + iv_diagnostics.log
+ℹ Дараагийн алхам: R/12_iv_robustness.R

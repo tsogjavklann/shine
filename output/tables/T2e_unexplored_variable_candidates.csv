@@ -1,0 +1,51 @@
+iv_var,iv_name,expected_sign,source,exclusion_warning,n_nonmissing,n_unique,mean_value,hidden_gem
+ever_migrated,Ever migrated,unknown,HSES migration,Migration is likely endogenous; diagnostic only,43070,2,0.3860227536568377,FALSE
+years_since_migration,Years since last migration,unknown,HSES migration,Migration timing is likely endogenous,16260,59,14.554612546125462,FALSE
+migrated_before_18,Migrated before age 18,unknown,HSES migration,Retrospective migration; exclusion risk,42704,2,0.08502716373173473,FALSE
+migrated_school_age_6_17,Migrated during age 6-17,unknown,HSES migration,Retrospective migration; exclusion risk,42704,2,0.05599007118771075,TRUE
+migration_reason_education_self,Migration reason: own education,positive,HSES migration,Directly education-related; invalid as excluded IV,43070,2,0.02147666589273276,FALSE
+migration_reason_children_school,Migration reason: children school,unknown,HSES migration,Household choice; exclusion risk,43070,2,0.006059902484327838,FALSE
+migration_reason_natural_disaster,Migration reason: natural disaster,negative,HSES migration 2024 only,2024-only and migration selection,3475,1,0,TRUE
+lived_5y_ago_diff_aimag,Different aimag 5 years ago,unknown,HSES migration,Recent migration; not childhood for older cohorts,16626,2,0.06351497654276435,FALSE
+born_foreign,Born abroad,unknown,HSES birthplace,Small cell likely,19041,2,0.002783467254871068,FALSE
+birth_aimag_matches_raw,Processed birth aimag matches raw birthplace,unknown,HSES validation,Data-quality diagnostic only,19041,1,1,FALSE
+birth_soum_available,Birth soum observed,unknown,HSES birthplace,"Availability indicator, not substantive shock",43070,2,0.44086371023914556,TRUE
+rural_birth_x_birth_year_c,Rural birth x cohort,unknown,Cohort x geography,Interaction diagnostic; needs substantive shock story,19041,43,-2.427393519247939,FALSE
+born_ub_x_birth_year_c,UB birth x cohort,unknown,Cohort x geography,Interaction diagnostic; needs substantive shock story,19041,43,-0.3316002310803004,FALSE
+herder_household_current,Current household herder/livestock,negative,HSES household,Current household status is endogenous,43070,2,0.2195960065010448,FALSE
+herder_current_x_birth_year_c,Herder household x cohort,negative,Cohort x household,Current status and cohort interaction; exclusion risk,43070,43,-0.4256094729510099,FALSE
+ever_migrated_x_birth_year_c,Migration x cohort,unknown,Cohort x migration,Endogenous migration interaction,43070,43,-1.0786162061759925,FALSE
+migrated_school_age_x_rural_birth,School-age migration x rural birth,unknown,Migration x geography,Endogenous migration interaction,18680,2,0.10802997858672377,FALSE
+diff_5y_aimag_x_birth_year_c,5-year migration x cohort,unknown,Migration x cohort,"Recent migration, not childhood for older cohorts",16626,42,0.1898833152893059,FALSE
+ever_dropout,Ever dropped out of general school,negative,HSES schooling,Post-treatment: not a valid IV,1212,2,0.9397689768976898,FALSE
+dropout_grade,Grade at dropout,positive,HSES schooling,Post-treatment: not a valid IV,1139,10,4.539069359086918,FALSE
+dropout_reason_parent,Dropout reason: parent,negative,HSES schooling,Post-treatment: not a valid IV,1139,2,0.28797190517998245,FALSE
+dropout_reason_finance,Dropout reason: finance,negative,HSES schooling,Post-treatment: not a valid IV,1139,2,0.021071115013169446,FALSE
+dropout_reason_work,Dropout reason: work,negative,HSES schooling,Post-treatment: not a valid IV,1139,2,0.10008779631255488,FALSE
+dropout_reason_health,Dropout reason: health/disability,negative,HSES schooling,Post-treatment and direct health channel,1139,2,0.03511852502194908,FALSE
+dropout_reason_distance,Dropout reason: school too far,negative,HSES schooling,Post-treatment; mechanism only,1139,2,0.019315188762071993,TRUE
+dropout_reason_migration,Dropout reason: migration,negative,HSES schooling,Post-treatment; mechanism only,1139,2,0.007901668129938543,FALSE
+never_school_reason_finance,Never school: finance,negative,HSES schooling,Post-treatment/education outcome reason,166,2,0.030120481927710843,FALSE
+never_school_reason_distance,Never school: school too far,negative,HSES schooling,Post-treatment/education outcome reason,166,2,0.018072289156626505,FALSE
+never_school_reason_dorm_shortage,Never school: dorm shortage,negative,HSES schooling,Post-treatment/education outcome reason,166,1,0,TRUE
+current_school_public,Current student: public school,unknown,HSES current school,Current student only; low adult wage coverage,328,2,0.6737804878048781,FALSE
+current_school_private,Current student: private school,positive,HSES current school,Current student only; low adult wage coverage,328,2,0.31402439024390244,FALSE
+current_school_soum_center,Current student: school in soum center,unknown,HSES current school,Current student only,328,2,0.018292682926829267,FALSE
+dormitory_current_student,Current student: dormitory,positive,HSES current school,Current student only; not adult childhood exposure,328,2,0.07926829268292683,TRUE
+school_transport_walk,Current student: walks to school,unknown,HSES current school,Current student only,328,2,0.20121951219512196,FALSE
+school_transport_boarding,Current student: transport=dorm,positive,HSES current school,Current student only,328,2,0.003048780487804878,FALSE
+health_insured,Health insured,positive,HSES health,Current health insurance; endogenous,43070,2,0.9132807058277224,FALSE
+severe_vision_difficulty,Severe vision difficulty,negative,HSES disability,Current disability; direct wage channel,43070,2,0.005827722312514511,FALSE
+severe_hearing_difficulty,Severe hearing difficulty,negative,HSES disability,Current disability; direct wage channel,43070,2,0.004666821453447875,FALSE
+severe_mobility_difficulty,Severe mobility difficulty,negative,HSES disability,Current disability; direct wage channel,43070,2,0.00462038541908521,FALSE
+severe_cognitive_difficulty,Severe cognitive difficulty,negative,HSES disability,Current disability; direct wage channel,43070,2,0.0010215927559786395,FALSE
+severe_language_difficulty,Severe language communication difficulty,negative,HSES language/disability,Not ethnicity; direct channels possible,43070,2,0.0013234269793359647,FALSE
+any_severe_disability,Any severe disability,negative,HSES disability,Current disability; direct wage channel,43070,2,0.016113303923844906,FALSE
+any_mildplus_disability,Any mild+ disability,negative,HSES disability,Current disability; direct wage channel,43070,2,0.09212909217552821,FALSE
+father_educ_years,Father education years,positive,Family roster,Strong first stage possible but exclusion restriction caveat,3307,23,10.041124886604173,FALSE
+mother_educ_years,Mother education years,positive,Family roster,Strong first stage possible but exclusion restriction caveat,4773,23,10.452755080662058,FALSE
+parent_educ_mean,Mean parent education years,positive,Family roster,Strong first stage possible but exclusion restriction caveat,5155,42,10.22929194956353,FALSE
+n_siblings,Number of siblings,negative,Family roster,Family size exclusion caveat,5155,8,1.080698351115422,FALSE
+birth_order,Birth order,negative,Family roster,Family composition exclusion caveat,5155,6,1.2221144519883609,FALSE
+large_sibship_ge4,At least 4 siblings,negative,Family roster,Family size exclusion caveat,5155,2,0.03646944713870029,FALSE
+firstborn,Firstborn,positive,Family roster,Family composition exclusion caveat,5155,2,0.8102812803103783,FALSE

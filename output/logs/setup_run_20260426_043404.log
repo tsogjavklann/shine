@@ -1,0 +1,17 @@
+renv.lock байна — `renv::restore()` шаардлагатай эсэхийг шалгана уу.
+Бүх CRAN багц суулгагдсан.
+GitHub-аас mongolstats (soyolgerel/mongolstats) суулгаж байна...
+Warning in value[[3L]](cond) :
+  [mongolstats] суулгахад алдаа: Failed to install 'unknown package' from GitHub:
+  HTTP error 404.
+  Not Found
+
+  Did you spell the repo owner (`soyolgerel`) and repo name (`mongolstats`) correctly?
+  - If spelling is correct, check that you have the required permissions to access the repo.
+
+── Setup дууслаа ───────────────────────────────────────────────────────────────
+✔ R version : R version 4.4.3 (2025-02-28 ucrt)
+✔ Working   : C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine
+✔ Лог       : C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/output/logs/setup.log
+ℹ Хугацаа   : 5.7 сек
+ℹ Дараагийн алхам: R/02_import_hses.R

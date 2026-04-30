@@ -1,0 +1,36 @@
+- The project is out-of-sync -- use `renv::status()` for details.
+
+── 06_iv_construction.R — 4 IV variants ────────────────────────────────────────
+ℹ Wage panel: 43070 мөр
+
+── 4 IV variants — distribution (full panel) ──
+
+# A tibble: 13 × 3
+   label           value     n
+   <chr>           <chr> <int>
+ 1 reform_main     0     39018
+ 2 reform_main     1      2165
+ 3 reform_main     <NA>   1887
+ 4 reform_fuzzy    0     39018
+ 5 reform_fuzzy    0.5    1887
+ 6 reform_fuzzy    1      2165
+ 7 reform_fuzzy    <NA>      0
+ 8 reform_alt_1997 0     37868
+ 9 reform_alt_1997 1      3046
+10 reform_alt_1997 <NA>   2156
+11 reform_alt_1999 0     40024
+12 reform_alt_1999 1      1341
+13 reform_alt_1999 <NA>   1705
+── Wave × IV breakdown ──
+
+# A tibble: 4 × 7
+   wave n_total main_treated main_control main_donut_NA alt1997_treated
+  <int>   <int>        <int>        <int>         <int>           <int>
+1  2020   10905          157        10313           435             351
+2  2021    6697          227         6197           273             356
+3  2022   15149          830        13662           657            1134
+4  2024   10319          951         8846           522            1205
+# ℹ 1 more variable: alt1999_treated <int>
+Total: 0.28 sec elapsed
+✔ Гарц: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/processed/iv_assignment.rds
+ℹ Дараагийн алхам: R/07_merge_final.R

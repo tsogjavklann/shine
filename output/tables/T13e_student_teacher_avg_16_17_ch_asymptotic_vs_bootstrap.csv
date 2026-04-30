@@ -1,0 +1,2 @@
+beta_diff_observed,asymptotic_wald_p_value,bootstrap_p_value,beta_diff_boot_ci_low,beta_diff_boot_ci_high,beta_diff_ci_contains_zero,conclusion
+0.02384762518194139,0.2226131257120823,0.12280701754385964,0.00422773659653142,0.067588681038306,FALSE,Bootstrap does not strongly support student-teacher-ratio threshold heterogeneity at 5%.

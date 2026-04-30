@@ -1,0 +1,34 @@
+- The project is out-of-sync -- use `renv::status()` for details.
+
+── 07_merge_final.R — final analysis_sample ────────────────────────────────────
+ℹ Inputs loaded — wage:43070  sa:43070  iv:43070  harm:234690
+ℹ After merge: 43070 rows × 57 cols
+ℹ 22-24 насны wage-panel rows: 2291 (5.32%) — 
+
+── Final analysis_sample sizes ──
+
+ℹ Total (alt_sample, 22-60):     43070
+ℹ main_sample (25-60):           40779
+ℹ alt_sample-only (22-24 нэмэлт): 2291
+
+── IV distribution in main_sample (25-60) ──
+
+# A tibble: 1 × 6
+      n main_treated main_control main_donut_NA alt1997_treated alt1999_treated
+  <int>        <int>        <int>         <int>           <int>           <int>
+1 40779          438        39018          1323             996             210
+── IV distribution in alt_sample (22-60) ──
+
+# A tibble: 1 × 6
+      n main_treated main_control main_donut_NA alt1997_treated alt1999_treated
+  <int>        <int>        <int>         <int>           <int>           <int>
+1 43070         2165        39018          1887            3046            1341
+── school_access coverage in analysis_sample ──
+
+# A tibble: 1 × 5
+      n n_q_home n_q_new pct_q_home pct_q_new
+  <int>    <int>   <int>      <dbl>     <dbl>
+1 43070     9849   23331       22.9      54.2
+Total: 1.17 sec elapsed
+✔ Гарц: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/processed/analysis_sample.rds  (43070 rows × 64 cols)
+ℹ Долоо хоног 1 ДУУСЛАА. Checkpoint 1 — RESULTS_LOG.md-д бичнэ.

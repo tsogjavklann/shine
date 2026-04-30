@@ -1,0 +1,2 @@
+beta_diff_observed,asymptotic_wald_p_value,bootstrap_p_value,beta_diff_boot_ci_low,beta_diff_boot_ci_high,beta_diff_ci_contains_zero,conclusion
+-0.03058310842251831,0.3505771284528547,0.12781954887218044,-0.06323605475389962,0.027734051389499678,TRUE,Bootstrap does not strongly support geographic threshold heterogeneity at 5%.

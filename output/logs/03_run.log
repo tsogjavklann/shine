@@ -1,0 +1,28 @@
+- The project is out-of-sync -- use `renv::status()` for details.
+
+── 03_harmonize.R ──────────────────────────────────────────────────────────────
+ℹ raw_list ачаалсан: 15 (wave × type) row
+→ [2020] processing...
+✔ [2020] harmonized: 59737 мөр; 
+→ [2021] processing...
+✔ [2021] harmonized: 40129 мөр; 
+→ [2022] processing...
+✔ [2022] harmonized: 80926 мөр; 
+→ [2024] processing...
+✔ [2024] harmonized: 53898 мөр; 
+✔ Pooled panel: 234690 мөр × 31 багана (4 wave)
+! educ_years range warning: 2 мөр (0-26 хязгаараас гадуур, NA-аар орлуулна)
+
+── Wave × coverage ──
+
+# A tibble: 4 × 10
+   wave     n n_age_25_60 pct_birth_aimag pct_newaimag pct_educ_years pct_q0436b
+  <int> <int>       <int>           <dbl>        <dbl>          <dbl>      <dbl>
+1  2020 59737       26966            29.2          100           85.8       23.9
+2  2021 40129       17999            27.3          100           87         21.4
+3  2022 80926       36084            26.8          100           86.3       23  
+4  2024 53898       23771            26.2          100           86.3       23.3
+# ℹ 3 more variables: pct_q0436a <dbl>, pct_q0427 <dbl>, pct_hhweight <dbl>
+Total: 3.86 sec elapsed
+✔ Гарц: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/processed/hses_harmonized.rds  (234690 мөр)
+ℹ Дараагийн алхам: R/04_wage_construction.R

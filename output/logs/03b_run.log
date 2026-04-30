@@ -1,0 +1,29 @@
+- The project is out-of-sync -- use `renv::status()` for details.
+
+── 03b_family_structure.R — parental educ + siblings + birth month ─────────────
+→ [2020] processing roster...
+→ [2021] processing roster...
+→ [2022] processing roster...
+→ [2024] processing roster...
+✔ Family panel: 234690 rows × 12 cols
+
+── Coverage by wave ──
+
+# A tibble: 4 × 7
+   wave n_total n_child_of_head pct_father_educ pct_mother_educ pct_n_siblings
+  <int>   <int>           <int>           <dbl>           <dbl>          <dbl>
+1  2020   59737           27173            38.8            44.4           45.5
+2  2021   40129           18236            38.6            44.3           45.4
+3  2022   80926           36845            38.7            44.4           45.5
+4  2024   53898           24520            39.0            44.1           45.5
+# ℹ 1 more variable: pct_age_m <dbl>
+── EFFECTIVE coverage in MAIN home_aimag wage-panel sample ──
+
+# A tibble: 1 × 9
+  n_main_home n_father_educ n_mother_educ n_either_parent n_siblings_obs
+        <int>         <int>         <int>           <int>          <int>
+1        9077           658           966            1032           1032
+# ℹ 4 more variables: pct_father_educ <dbl>, pct_mother_educ <dbl>,
+#   pct_either_parent <dbl>, pct_siblings <dbl>
+Total: 2.69 sec elapsed
+✔ Гарц: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/processed/family_structure.rds

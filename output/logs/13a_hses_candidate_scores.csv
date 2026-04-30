@@ -1,0 +1,28 @@
+path,score,n_cols
+./data/processed/analysis_sample.rds,15,64
+./data/cleaned/hses_school_supply_exposure_manual.rds,10,56
+./data/processed/wage_nominal.rds,10,38
+./data/processed/wage_real.rds,10,48
+./data/processed/hses_harmonized.rds,9,31
+./output/logs/07_analysis_sample_head.csv,9,12
+./data/processed/school_access.rds,3,9
+./data/hses_2020/basicvars (11).dta,2,11
+./data/hses_2021/basicvars (12).dta,2,11
+./data/hses_2022/basicvars (13).dta,2,12
+./data/hses_2023/basicvars (14).dta,2,12
+./data/hses_2024/basicvars.dta,2,14
+./data/processed/iv_assignment.rds,2,8
+./data/hses_2020/02_indiv (12).dta,1,177
+./data/hses_2021/02_indiv (13).dta,1,177
+./data/hses_2022/02_indiv (14).dta,1,177
+./data/hses_2023/02_indiv (15).dta,1,27
+./data/hses_2024/02_indiv.dta,1,184
+./data/processed/family_structure.rds,1,12
+./data/raw/hses_raw.rds,1,5
+./data/hses_2020/01_hhold (11).dta,0,90
+./data/hses_2021/01_hhold (12).dta,0,90
+./data/hses_2022/01_hhold (13).dta,0,111
+./data/hses_2023/01_hhold (14).dta,0,47
+./data/hses_2024/01_hhold.dta,0,132
+./output/logs/13a_hses_candidate_scores.csv,0,3
+./output/logs/13a_hses_variable_mapping.csv,0,2

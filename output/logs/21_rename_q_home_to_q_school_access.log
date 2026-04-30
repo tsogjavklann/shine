@@ -1,0 +1,27 @@
+21_rename_q_home_to_q_school_access.R
+Started: 2026-04-27 05:13:50.355065 
+
+RDS migration
+NO CHANGE RDS: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/processed/school_access.rds 
+NO CHANGE RDS: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/processed/analysis_sample.rds 
+NO CHANGE RDS: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/processed/ivtr_ready_parent_educ_mean_qhome.rds 
+WROTE CANONICAL COPY: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/processed/ivtr_ready_parent_educ_mean_qschool_access.rds 
+NO CHANGE RDS: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/processed/ivtr_ready_pastore_parental_qhome.rds 
+WROTE CANONICAL COPY: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/processed/ivtr_ready_pastore_parental_qschool_access.rds 
+NO CHANGE RDS: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/processed/ch_residualized_qhome_parent_mean.rds 
+WROTE CANONICAL COPY: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/data/processed/ch_residualized_qschool_access_parent_mean.rds 
+
+Text migration
+UPDATED TEXT: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/output/reports/ch_stage16a_matrix_preparation.md 
+UPDATED TEXT: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/output/reports/ch_stage16b_2sls_threshold_grid.md 
+UPDATED TEXT: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/output/reports/ch_stage16c_gmm_slope_estimation.md 
+UPDATED TEXT: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/output/reports/ch_stage16d_bootstrap_inference.md 
+UPDATED TEXT: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/output/reports/final_pastore_parental_iv_summary.md 
+UPDATED TEXT: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/output/reports/logdist_threshold_sample_preparation.md 
+UPDATED TEXT: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/output/reports/main_ivtr_qhome_parent_mean_summary.md 
+UPDATED TEXT: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/output/reports/new_iv_search_summary.md 
+UPDATED TEXT: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/output/reports/parent_educ_mean_iv_evaluation.md 
+UPDATED TEXT: C:/tsogoo/Hicheel/erdem shinjilgeenii hural/ecnometric/shine/output/reports/threshold_variable_audit_from_data_summary.md 
+
+Text files changed: 10 
+Finished: 2026-04-27 05:13:50.594704 

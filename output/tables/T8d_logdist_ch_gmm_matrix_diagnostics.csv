@@ -1,0 +1,2 @@
+gamma_hat,distance_cutoff_km,N,N_low,N_high,rank_X,rank_Z,rank_ZtZ,rank_XZ,rank_XZ_W_ZX,condition_number_ZtZ,condition_number_S_robust,condition_number_S_cluster,condition_number_XZ_W_ZX,S_cluster_invertible,S_robust_invertible,near_singular_warning,warning_note
+6.228819337004976,507.15634914338665,3188,2086,1102,7,7,7,7,7,181692.76561742745,158337.49389488727,166039.20485248248,378623.7018295715,TRUE,TRUE,FALSE,

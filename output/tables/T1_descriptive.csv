@@ -1,0 +1,89 @@
+sample,cohort,variable,n,mean,sd,p25,p50,p75
+MAIN_home_aimag,ALL,Schooling years (q0213),9077,12.992,2.808,10,14,14
+MAIN_home_aimag,control_le1995,Schooling years (q0213),8404,12.912,2.842,10,14,14
+MAIN_home_aimag,donut_1996_97,Schooling years (q0213),502,13.751,2.243,12,14,15
+MAIN_home_aimag,treated_ge1998,Schooling years (q0213),171,14.017,2.266,12,14,16
+MAIN_home_aimag,ALL,ln(real hourly wage),9077,8.488,0.509,8.082,8.402,8.736
+MAIN_home_aimag,control_le1995,ln(real hourly wage),8404,8.484,0.513,8.082,8.397,8.736
+MAIN_home_aimag,donut_1996_97,ln(real hourly wage),502,8.465,0.471,8.051,8.364,8.674
+MAIN_home_aimag,treated_ge1998,ln(real hourly wage),171,8.652,0.432,8.364,8.611,8.889
+MAIN_home_aimag,ALL,"Real hourly wage (MNT, 2020 base)",9077,5541.251,3096.129,3235.54,4454.545,6222.192
+MAIN_home_aimag,control_le1995,"Real hourly wage (MNT, 2020 base)",8404,5534.224,3118.631,3235.54,4431.818,6222.192
+MAIN_home_aimag,donut_1996_97,"Real hourly wage (MNT, 2020 base)",502,5340.178,2917.825,3137.238,4289.769,5849.686
+MAIN_home_aimag,treated_ge1998,"Real hourly wage (MNT, 2020 base)",171,6237.957,2568.873,4289.769,5493.618,7251.753
+MAIN_home_aimag,ALL,Nominal hourly wage (MNT),9077,6958.917,4355.929,3703.704,5208.333,7812.5
+MAIN_home_aimag,control_le1995,Nominal hourly wage (MNT),8404,6876.888,4358.26,3693.182,5113.636,7738.095
+MAIN_home_aimag,donut_1996_97,Nominal hourly wage (MNT),502,7270.462,4319.088,3866.477,5681.818,7718.531
+MAIN_home_aimag,treated_ge1998,Nominal hourly wage (MNT),171,9088.421,3742.731,6250,8003.953,10565.476
+MAIN_home_aimag,ALL,Age,9077,32.662,4.132,29,33,36
+MAIN_home_aimag,control_le1995,Age,8404,33.264,3.789,30,33,36
+MAIN_home_aimag,donut_1996_97,Age,502,26.568,1.156,25,26,27
+MAIN_home_aimag,treated_ge1998,Age,171,25.606,0.489,25,26,26
+MAIN_home_aimag,ALL,"school_access (q_school_access, MAIN)",9077,1.51,0.392,1.274,1.524,1.874
+MAIN_home_aimag,control_le1995,"school_access (q_school_access, MAIN)",8404,1.508,0.393,1.274,1.523,1.881
+MAIN_home_aimag,donut_1996_97,"school_access (q_school_access, MAIN)",502,1.529,0.372,1.259,1.685,1.823
+MAIN_home_aimag,treated_ge1998,"school_access (q_school_access, MAIN)",171,1.519,0.413,1.216,1.539,1.816
+MAIN_home_aimag,ALL,"school_access (q_new, robustness)",9077,1.063,0.277,0.926,1.021,1.545
+MAIN_home_aimag,control_le1995,"school_access (q_new, robustness)",8404,1.056,0.28,0.907,1.013,1.545
+MAIN_home_aimag,donut_1996_97,"school_access (q_new, robustness)",502,1.137,0.231,1.052,1.065,1.685
+MAIN_home_aimag,treated_ge1998,"school_access (q_new, robustness)",171,1.142,0.217,1.069,1.069,1.499
+MAIN_home_aimag,ALL,Female (1=Эм),9077,0.461,0.498,0,0,1
+MAIN_home_aimag,control_le1995,Female (1=Эм),8404,0.461,0.498,0,0,1
+MAIN_home_aimag,donut_1996_97,Female (1=Эм),502,0.491,0.5,0,1,1
+MAIN_home_aimag,treated_ge1998,Female (1=Эм),171,0.396,0.489,0,0,1
+MAIN_home_aimag,ALL,Married (q0106 ∈ 2:3),9077,0.799,0.4,1,1,1
+MAIN_home_aimag,control_le1995,Married (q0106 ∈ 2:3),8404,0.817,0.387,1,1,1
+MAIN_home_aimag,donut_1996_97,Married (q0106 ∈ 2:3),502,0.642,0.48,0,1,1
+MAIN_home_aimag,treated_ge1998,Married (q0106 ∈ 2:3),171,0.541,0.498,0,1,1
+MAIN_home_aimag,ALL,Household size,9077,4.28,1.411,4,4,5
+MAIN_home_aimag,control_le1995,Household size,8404,4.323,1.395,4,4,5
+MAIN_home_aimag,donut_1996_97,Household size,502,3.844,1.446,3,4,4
+MAIN_home_aimag,treated_ge1998,Household size,171,3.779,1.63,3,4,5
+MAIN_home_aimag,ALL,Sampling weight,9077,118.898,60.93,34.368,90.928,115.149
+MAIN_home_aimag,control_le1995,Sampling weight,8404,116.074,58.723,34.368,90.928,114.591
+MAIN_home_aimag,donut_1996_97,Sampling weight,502,137.077,72.063,31.321,90.928,114.591
+MAIN_home_aimag,treated_ge1998,Sampling weight,171,175.378,72.665,35.969,88.377,183.601
+ALT_newaimag,ALL,Schooling years (q0213),21040,12.863,2.853,10,14,14
+ALT_newaimag,control_le1995,Schooling years (q0213),19279,12.789,2.885,10,14,14
+ALT_newaimag,donut_1996_97,Schooling years (q0213),1323,13.459,2.395,12,14,15
+ALT_newaimag,treated_ge1998,Schooling years (q0213),438,13.975,2.334,12,14,16
+ALT_newaimag,ALL,ln(real hourly wage),21040,8.428,0.515,8.035,8.348,8.674
+ALT_newaimag,control_le1995,ln(real hourly wage),19279,8.426,0.518,8.032,8.346,8.673
+ALT_newaimag,donut_1996_97,ln(real hourly wage),1323,8.387,0.49,7.987,8.305,8.615
+ALT_newaimag,treated_ge1998,ln(real hourly wage),438,8.593,0.456,8.269,8.538,8.834
+ALT_newaimag,ALL,"Real hourly wage (MNT, 2020 base)",21040,5238.576,2977.949,3087.208,4221.95,5849.686
+ALT_newaimag,control_le1995,"Real hourly wage (MNT, 2020 base)",19279,5235.805,2997.142,3077.652,4212.943,5844.156
+ALT_newaimag,donut_1996_97,"Real hourly wage (MNT, 2020 base)",1323,4965.331,2721.407,2941.4,4044.425,5515.125
+ALT_newaimag,treated_ge1998,"Real hourly wage (MNT, 2020 base)",438,5965.971,2779.253,3899.79,5105.18,6863.631
+ALT_newaimag,ALL,Nominal hourly wage (MNT),21040,6525.799,4153.618,3522.727,5000,7386.364
+ALT_newaimag,control_le1995,Nominal hourly wage (MNT),19279,6450.12,4147.704,3471.648,4886.364,7211.538
+ALT_newaimag,donut_1996_97,Nominal hourly wage (MNT),1323,6683.329,4024.993,3636.364,5303.03,7500
+ALT_newaimag,treated_ge1998,Nominal hourly wage (MNT),438,8692.15,4049.246,5681.818,7438.017,10000
+ALT_newaimag,ALL,Age,21040,32.483,4.192,29,33,36
+ALT_newaimag,control_le1995,Age,19279,33.112,3.849,30,33,36
+ALT_newaimag,donut_1996_97,Age,1323,26.409,1.172,25,26,27
+ALT_newaimag,treated_ge1998,Age,438,25.549,0.498,25,26,26
+ALT_newaimag,ALL,"school_access (q_school_access, MAIN)",9077,1.51,0.392,1.274,1.524,1.874
+ALT_newaimag,control_le1995,"school_access (q_school_access, MAIN)",8404,1.508,0.393,1.274,1.523,1.881
+ALT_newaimag,donut_1996_97,"school_access (q_school_access, MAIN)",502,1.529,0.372,1.259,1.685,1.823
+ALT_newaimag,treated_ge1998,"school_access (q_school_access, MAIN)",171,1.519,0.413,1.216,1.539,1.816
+ALT_newaimag,ALL,"school_access (q_new, robustness)",21040,1.181,0.357,0.988,1.372,1.731
+ALT_newaimag,control_le1995,"school_access (q_new, robustness)",19279,1.174,0.36,0.972,1.351,1.73
+ALT_newaimag,donut_1996_97,"school_access (q_new, robustness)",1323,1.258,0.328,1.065,1.393,1.75
+ALT_newaimag,treated_ge1998,"school_access (q_new, robustness)",438,1.233,0.304,1.069,1.44,1.788
+ALT_newaimag,ALL,Female (1=Эм),21040,0.456,0.498,0,0,1
+ALT_newaimag,control_le1995,Female (1=Эм),19279,0.457,0.498,0,0,1
+ALT_newaimag,donut_1996_97,Female (1=Эм),1323,0.462,0.499,0,0,1
+ALT_newaimag,treated_ge1998,Female (1=Эм),438,0.435,0.496,0,0,1
+ALT_newaimag,ALL,Married (q0106 ∈ 2:3),21040,0.766,0.423,1,1,1
+ALT_newaimag,control_le1995,Married (q0106 ∈ 2:3),19279,0.786,0.41,1,1,1
+ALT_newaimag,donut_1996_97,Married (q0106 ∈ 2:3),1323,0.58,0.494,0,1,1
+ALT_newaimag,treated_ge1998,Married (q0106 ∈ 2:3),438,0.511,0.5,0,1,1
+ALT_newaimag,ALL,Household size,21040,4.303,1.494,3,4,5
+ALT_newaimag,control_le1995,Household size,19279,4.345,1.48,4,4,5
+ALT_newaimag,donut_1996_97,Household size,1323,3.882,1.527,3,4,5
+ALT_newaimag,treated_ge1998,Household size,438,3.855,1.648,3,4,5
+ALT_newaimag,ALL,Sampling weight,21040,104.058,69.936,27.147,43.578,90.928
+ALT_newaimag,control_le1995,Sampling weight,19279,101.991,68.47,27.147,44.359,90.928
+ALT_newaimag,donut_1996_97,Sampling weight,1323,113.654,76.842,25.482,38.042,90.928
+ALT_newaimag,treated_ge1998,Sampling weight,438,150.936,82.289,29.147,44.216,162.616

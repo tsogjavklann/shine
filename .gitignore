@@ -1,0 +1,27 @@
+# =============================================================================
+# .gitignore - IV-Threshold Mongolia (HSES 2020-2024)
+# =============================================================================
+#
+# Project data, outputs, logs, reports, and renv/library are intentionally tracked
+# for a complete GitHub handoff.
+
+# ---- R session/runtime files --------------------------------------------------
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# ---- OS/IDE -------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# ---- Package/archive artifacts ------------------------------------------------
+*.tar.gz
+*.zip
+*.rds.bak
+shine.rar
+*.rar

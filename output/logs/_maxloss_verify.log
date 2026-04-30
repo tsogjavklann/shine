@@ -1,0 +1,50 @@
+- The project is out-of-sync -- use `renv::status()` for details.
+N=7145
+
+Warning message:
+The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+=== V1 (region+wave) ===
+       Estimate Std. Error  t value    Pr(>|t|)
+maxv -0.4622388 0.04292909 -10.7675 0.001713181
+Warning messages:
+1: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+2: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+ivf1 (Kleibergen-Paap):
+F-test (1st stage), educ_years: stat = 2.1912, p = 0.138842, on 1 and 7,135 DoF.
+Simple Wald t² = 115.94
+2SLS β=+0.3635, SE=0.0247
+Warning message:
+The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+
+=== V2 (birth_aimag + birth_cohort + wave) ===
+      Estimate Std. Error  t value    Pr(>|t|)
+maxv 0.8276681  0.1325071 6.246216 0.008278103
+Warning messages:
+1: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+2: The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+ivf1 (Kleibergen-Paap):
+F-test (1st stage), educ_years: stat = 1.0495, p = 0.305651, on 1 and 7,116 DoF.
+Simple Wald t² = 39.02
+2SLS β=-0.0470, SE=0.1022
+Warning message:
+The VCOV matrix is not positive definite and was 'fixed' (see ?vcov). 
+
+=== V3 (birth_aimag + birth_year + wave) — STRICTEST ===
+      Estimate Std. Error  t value     Pr(>|t|)
+maxv 0.9829172 0.01011567 97.16776 2.402916e-06
+Simple Wald t² = 9441.57
+
+=== max_loss distribution by birth_year (within-aimag variation check) ===
+# A tibble: 10 × 4
+   birth_aimag min_maxv max_maxv  range
+         <dbl>    <dbl>    <dbl>  <dbl>
+ 1          42   0.0907    0.437 0.347 
+ 2          62   0.214     0.460 0.246 
+ 3          64   0.236     0.432 0.196 
+ 4          46   0.188     0.353 0.165 
+ 5          85   0.152     0.287 0.135 
+ 6          21   0.0858    0.217 0.131 
+ 7          63   0.0857    0.216 0.130 
+ 8          11   0.105     0.184 0.0794
+ 9          67   0.178     0.257 0.0787
+10          22   0.155     0.227 0.0719

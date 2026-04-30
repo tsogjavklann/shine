@@ -1,0 +1,20 @@
+==========================================================
+03_harmonize.R лог   2026-04-26 20:20:00.885044 
+==========================================================
+Waves kept (2023 excluded): 2020, 2021, 2022, 2024
+Pooled panel: 234690 rows × 35 cols
+
+Column names:
+  identif, ind_id, age, sex, marital, relation_head, educ_level, educ_years, work7d_pay, q0436a, q0436b, q0436c, q0437, q0438, q0439, q0427, born_in_current, birth_aimag_raw, birth_soum_raw, working_for_wage, aimag, newaimag_proxy, region, urban, location, hhsize, hhweight, month_interview, birth_aimag, birth_soum, birth_aimag_from_current, wave, year_month, birth_year, id
+
+Wave × coverage (%):
+# A tibble: 4 × 10
+   wave     n n_age_25_60 pct_birth_aimag pct_newaimag pct_educ_years pct_q0436b
+  <int> <int>       <int>           <dbl>        <dbl>          <dbl>      <dbl>
+1  2020 59737       26966            97.4          100           85.8       23.9
+2  2021 40129       17999            97.9          100           87         21.4
+3  2022 80926       36084            96.8          100           86.3       23  
+4  2024 53898       23771            95.5          100           86.3       23.3
+# ℹ 3 more variables: pct_q0436a <dbl>, pct_q0427 <dbl>, pct_hhweight <dbl>
+
+bad educ_years (>26 or <0) flagged → NA:  2 

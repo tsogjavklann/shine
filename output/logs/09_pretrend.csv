@@ -1,0 +1,4 @@
+cohort_bin,n,pct_female,mean_age,mean_educ,pct_married,mean_q_home
+1990-1995 (control late),3549,46.8,29.67,13.18,79.06,1.543
+1996-1997 (donut),502,50.2,26.27,13.63,65.14,1.581
+1998-2003 (treated),171,43.27,25.55,13.81,57.89,1.585
